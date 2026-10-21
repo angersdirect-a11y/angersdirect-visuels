@@ -12,7 +12,8 @@ Fiche « meteo » :
     icônes : soleil, eclaircies, nuage, pluie_faible, pluie, orage
 
 Fiche « article » (photo en haut, style Angers Direct) :
-    {"type": "article", "photo": "chemin/photo.jpg", "credit": "Photo d'illustration : X / Unsplash",
+    {"type": "article", "photo": "chemin/photo.jpg", "credit": "",
+     (crédit vide pour les photos d'illustration ; à remplir seulement si la licence l'impose, ex. Wikimedia CC BY-SA)
      "bloc": "SCORE FINAL", "rubrique": "SPORT", "titre": "...", "texte": "..."}
     rubriques : ACTU, SPORT, CULTURE, SOCIÉTÉ, ÉCONOMIE, ENVIRONNEMENT, MÉTÉO
 """
@@ -77,9 +78,12 @@ def meteo(f):
 def article(f):
     couleur = COULEURS.get(f['rubrique'].upper(), '#2F7BD6')
     photo = pathlib.Path(f['photo']).resolve()
+    credit = ''
+    if f.get('credit'):
+        credit = f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>'
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#FFFFFF;font-family:Barlow;color:#0F1B2D">
 <img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:640px;object-fit:cover">
-<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f.get('credit', ''))}</div>
+{credit}
 <div style="position:absolute;left:0;top:570px;height:140px;box-sizing:border-box;padding:0 70px 0 72px;background:#1C8FE3;clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%);display:flex;align-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#FFFFFF">{e(f['bloc'])}</div>
 <div style="position:absolute;left:72px;right:72px;top:755px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg)"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
