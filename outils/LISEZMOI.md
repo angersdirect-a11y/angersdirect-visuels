@@ -14,3 +14,10 @@ Le crédit n'est affiché que lorsque la licence l'impose, par exemple une photo
 Dans le doute, préférer une photo Unsplash.
 
 Les images publiées vont dans un dossier daté (`AAAA-MM-JJ/`). Lien public : `https://raw.githubusercontent.com/angersdirect-a11y/angersdirect-visuels/main/<dossier>/<fichier>.png`.
+
+## Visuels sport (`sport.py`)
+
+Cinq modèles, sur le style des maquettes Angers Direct : `score` (score final avec buteurs et statistiques), `classement` (Ligue 1, ligne d'Angers surlignée), `calendrier` (matchs du mois), `jdm_story` (jour de match 1080x1920) et `jdm_paysage` (jour de match 1920x1080).
+Exemples de fiches dans `outils/exemples/`. Logos des clubs dans `outils/logos/<slug>.png` (ex. `fc-lorient.png`) ; sans logo, les initiales du club s'affichent.
+Pour un résultat : publier `score` + `classement` en carrousel (Facebook et fil Instagram), en validation (autoPublish false).
+Ne jamais remplir une statistique, un buteur ou une ligne de classement sans l'avoir vérifié sur deux sources.
