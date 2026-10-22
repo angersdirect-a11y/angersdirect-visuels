@@ -64,10 +64,13 @@ def rond(slug, nom, d):
 
 
 def fond(w, h, photo=True):
-    p = ICI / 'photos/stade-nuit.jpg'
-    img = f'<img src="file://{p}" style="position:absolute;left:-60px;top:-60px;width:{w+120}px;height:{h+120}px;object-fit:cover;filter:blur(26px) grayscale(0.6);opacity:0.45">' if photo else ''
-    return (f'<div style="position:absolute;inset:0;background:#0F1B2D"></div>{img}'
-            f'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,27,45,0.35) 0%,rgba(15,27,45,0.55) 55%,rgba(13,24,41,0.95) 100%)"></div>')
+    """Fond bleu nuit, photo du stade qui apparaît en dégradé dans le bas, voile sombre par-dessus."""
+    p = ICI / 'photos/stade-tribunes.jpg'
+    ph = int(h * 0.62)
+    img = (f'<img src="file://{p}" style="position:absolute;left:-20px;bottom:-10px;width:{w+40}px;height:{ph}px;object-fit:cover;object-position:center 40%;'
+           f'filter:blur(3px) grayscale(0.4) brightness(0.85);-webkit-mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.55) 40%,#000 75%);mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.55) 40%,#000 75%)">'
+           f'<div style="position:absolute;left:0;right:0;bottom:0;height:{ph}px;background:linear-gradient(180deg,rgba(15,27,45,0.66) 0%,rgba(11,20,34,0.72) 100%)"></div>') if photo else ''
+    return (f'<div style="position:absolute;inset:0;background:linear-gradient(180deg,#0D1626 0%,#16233A 55%,#0F1B2D 100%)"></div>{img}')
 
 
 def entete(w, tag, rouge=False, top=70):
