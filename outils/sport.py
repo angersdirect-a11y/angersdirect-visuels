@@ -32,7 +32,25 @@ def polices():
     return out
 
 
+ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', 'brest': 'stade-brestois',
+         'havre': 'le-havre-ac', 'le mans': 'le-mans-fc', 'lens': 'rc-lens', 'lille': 'losc-lille', 'losc': 'losc-lille',
+         'lorient': 'fc-lorient', 'lyon': 'olympique-lyonnais', 'lyonnais': 'olympique-lyonnais',
+         'marseille': 'olympique-de-marseille', 'monaco': 'as-monaco', 'nice': 'ogc-nice', 'paris fc': 'paris-fc',
+         'saint-germain': 'paris-saint-germain', 'psg': 'paris-saint-germain', 'strasbourg': 'rc-strasbourg',
+         'toulouse': 'toulouse-fc', 'troyes': 'estac-troyes', 'estac': 'estac-troyes', 'rennes': 'stade-rennais',
+         'rennais': 'stade-rennais'}
+
+
+def trouver_slug(nom):
+    n = nom.lower()
+    for cle in sorted(ALIAS, key=len, reverse=True):
+        if cle in n:
+            return ALIAS[cle]
+    return ''
+
+
 def logo(slug, nom, taille):
+    slug = slug or trouver_slug(nom)
     f = ICI / 'logos' / f'{slug}.png'
     if slug and f.exists():
         return f'<img src="file://{f}" style="width:{taille}px;height:{taille}px;object-fit:contain">'
