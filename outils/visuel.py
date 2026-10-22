@@ -22,8 +22,14 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-COULEURS = {'ACTU': '#2F7BD6', 'SPORT': '#2F9E52', 'CULTURE': '#C2385A', 'SOCIÉTÉ': '#6A3FD0',
-            'ÉCONOMIE': '#B07A1F', 'ENVIRONNEMENT': '#23907A', 'MÉTÉO': '#1C8FE3'}
+COULEURS = {'ACTU': 'linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%)',
+            'SPORT': 'linear-gradient(90deg,#3DCB6E 0%,#16834A 100%)',
+            'CULTURE': 'linear-gradient(90deg,#F0587F 0%,#B01E4C 100%)',
+            'SOCIÉTÉ': 'linear-gradient(90deg,#9B6BFF 0%,#5B28CC 100%)',
+            'ÉCONOMIE': 'linear-gradient(90deg,#F5B841 0%,#C2701A 100%)',
+            'ENVIRONNEMENT': 'linear-gradient(90deg,#2FD3AB 0%,#0F8069 100%)',
+            'MÉTÉO': 'linear-gradient(90deg,#3AA3F5 0%,#1665D8 100%)'}
+BLOC = 'linear-gradient(90deg,#3AA3F5 0%,#1665D8 100%)'
 
 NUAGE = '<g fill="#FFFFFF"><circle cx="66" cy="{y1}" r="28"/><circle cx="102" cy="{y2}" r="36"/><circle cx="134" cy="{y3}" r="22"/><rect x="38" y="{y4}" width="118" height="26" rx="13"/></g>'
 
@@ -76,7 +82,7 @@ def meteo(f):
 
 
 def article(f):
-    couleur = COULEURS.get(f['rubrique'].upper(), '#2F7BD6')
+    couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
     photo = pathlib.Path(f['photo']).resolve()
     credit = ''
     if f.get('credit'):
@@ -84,7 +90,7 @@ def article(f):
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#FFFFFF;font-family:Barlow;color:#0F1B2D">
 <img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:640px;object-fit:cover">
 {credit}
-<div style="position:absolute;left:0;top:570px;height:140px;box-sizing:border-box;padding:0 70px 0 72px;background:#1C8FE3;clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%);display:flex;align-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#FFFFFF">{e(f['bloc'])}</div>
+<div style="position:absolute;left:0;top:570px;height:140px;box-sizing:border-box;padding:0 70px 0 72px;background:{BLOC};clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%);display:flex;align-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#FFFFFF">{e(f['bloc'])}</div>
 <div style="position:absolute;left:72px;right:72px;top:755px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg)"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
 <div style="font-family:'Barlow Condensed';font-weight:700;font-size:66px;line-height:1.08">{e(f['titre'])}</div>
