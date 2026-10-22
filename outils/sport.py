@@ -8,7 +8,7 @@ Fiches (exemples complets dans outils/exemples/) :
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
-  jdm_story / jdm_paysage : journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif)
+  jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif)
 Les valeurs non vérifiées ne doivent jamais être inventées : laisser une liste vide plutôt.
 """
 import html, json, pathlib, sys
@@ -153,22 +153,30 @@ def calendrier(f):
 <div style="position:absolute;left:0;right:0;top:1276px;text-align:center;font-size:26px;color:#A7B0BD">{e(f.get('pied','Horaires sous réserve · angersdirect.fr'))}</div></div>'''
 
 
-def jdm(f, paysage):
-    if paysage:
+def jdm(f, paysage, post=False):
+    if post:
+        W, H, d, cy = 1080, 1350, 300, 400
+        lx, rx = 110, 670
+    elif paysage:
         W, H, d, cy = 1920, 1080, 380, 297
         lx, rx = 233, 1307
     else:
         W, H, d, cy = 1080, 1920, 354, 590
         lx, rx = 93, 633
-    top = 70 if paysage else 230
+    top = 70 if (paysage or post) else 230
     band_h = d + 20
-    vs_w, vs_h = (180, 172) if paysage else (150, 160)
+    vs_w, vs_h = (180, 172) if paysage else (130, 140) if post else (150, 160)
     infos = (f'''<div style="position:absolute;left:0;right:0;top:826px;text-align:center;{BC};font-weight:700;font-size:72px">{e(f['date'])} · {e(f['heure'])}</div>
 <div style="position:absolute;left:0;right:0;top:914px;text-align:center;font-size:32px;color:#D3D5D9">{e(f['stade'])} · Live sur angersdirect.fr</div>''' if paysage else
              f'''<div style="position:absolute;left:0;right:0;top:1238px;text-align:center;{BC};font-weight:700;font-size:72px">{e(f['date'])}</div>
 <div style="position:absolute;left:0;right:0;top:1326px;text-align:center;{BC};font-weight:700;font-size:116px;line-height:1">{e(f['heure'])}</div>
 <div style="position:absolute;left:0;right:0;top:1468px;text-align:center;font-size:34px">{e(f['stade'])}</div>
 <div style="position:absolute;left:0;right:0;top:1520px;text-align:center;font-size:28px;color:#D3D5D9">{e((('Diffusion : ' + f['diffusion'] + ' · ') if f.get('diffusion') else '') + 'Live texte sur angersdirect.fr')}</div>''')
+    if post:
+        infos = f'''<div style="position:absolute;left:0;right:0;top:850px;text-align:center;{BC};font-weight:700;font-size:68px">{e(f['date'])}</div>
+<div style="position:absolute;left:0;right:0;top:930px;text-align:center;{BC};font-weight:700;font-size:112px;line-height:1">{e(f['heure'])}</div>
+<div style="position:absolute;left:0;right:0;top:1075px;text-align:center;font-size:34px">{e(f['stade'])}</div>
+<div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e((('Diffusion : ' + f['diffusion'] + ' · ') if f.get('diffusion') else '') + 'Live texte sur angersdirect.fr')}</div>'''
     ny = cy + band_h + 22
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,'JOUR DE MATCH',False,top)}
 <div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">LIGUE 1 · {e(f['journee']).upper()}</div>
@@ -182,7 +190,8 @@ def jdm(f, paysage):
 
 
 TYPES = {'score': (score, 1080, 1350), 'classement': (classement, 1080, 1350), 'calendrier': (calendrier, 1080, 1350),
-         'jdm_story': (lambda f: jdm(f, False), 1080, 1920), 'jdm_paysage': (lambda f: jdm(f, True), 1920, 1080)}
+         'jdm_story': (lambda f: jdm(f, False), 1080, 1920), 'jdm_paysage': (lambda f: jdm(f, True), 1920, 1080),
+         'jdm_post': (lambda f: jdm(f, False, True), 1080, 1350)}
 
 
 def main():
