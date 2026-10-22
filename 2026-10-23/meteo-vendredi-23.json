@@ -1,0 +1,5 @@
+{"type": "meteo", "jour": "Vendredi 23 octobre",
+ "creneaux": [{"label": "Matin", "icone": "pluie_faible", "temp": 12},
+              {"label": "Après-midi", "icone": "nuage", "temp": 15},
+              {"label": "Soir", "icone": "nuage", "temp": 12}],
+ "bas": "Min. 10° · Max. 15° · Vent 35 km/h · Pluie 90 %"}
