@@ -22,3 +22,9 @@ Cinq modèles, sur le style des maquettes Angers Direct : `score` (score final a
 Exemples de fiches dans `outils/exemples/`. Logos des 18 clubs de Ligue 1 dans `outils/logos/<slug>.png`, trouvés automatiquement à partir du nom du club (laisser `logo` vide). Un club sans fichier (promu, coupe) s'affiche avec ses initiales.
 Pour un résultat : publier `score` + `classement` en carrousel (Facebook et fil Instagram), en validation (autoPublish false).
 Ne jamais remplir une statistique, un buteur ou une ligne de classement sans l'avoir vérifié sur deux sources.
+
+## Stories : toujours en 1080x1920
+
+Instagram et Facebook recadrent une story qui n'est pas au format 9:16 : le haut, le bas et les côtés d'un visuel 1080x1350 sont coupés.
+Avant toute story, passer le visuel par `python3 outils/story.py visuel.png visuel-story.png` (le visuel entier au centre, fond flouté autour).
+Un post Facebook et une story Instagram ne peuvent donc pas partager le même média : programmer deux publications séparées (Facebook POST avec le 1080x1350, story avec la version 1080x1920).
