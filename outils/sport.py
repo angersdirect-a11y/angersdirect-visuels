@@ -43,7 +43,7 @@ ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', '
 ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
 ALIAS_SPORT = {'handball': {'sco': 'sco-handball', 'angers': 'sco-handball', 'belfort': 'belfort-handball'},
                'hockey': {'angers': 'ducs-angers', 'rouen': 'rouen-dragons'},
-               'basket': {'angers': 'eab', 'challans': 'challans'}}
+               'basket': {'angers': 'eab', 'challans': 'challans', 'sables': 'les-sables-basket'}}
 CTX = {'foot': True, 'fond': 'stade-tribunes.jpg', 'sport': 'football'}
 
 
