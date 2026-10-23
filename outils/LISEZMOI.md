@@ -34,4 +34,5 @@ Un post Facebook et une story Instagram ne peuvent donc pas partager le même m�
 - Angers SCO (Ligue 1) : ligue1.com, angers-sco.fr ; deuxième source L'Équipe ou FotMob.
 - Ducs d'Angers (Ligue Magnus, hockey) : lesducsdangers.fr, hockeyfrance.com ; deuxième source planetehockey.com ou Sofascore.
 - Étoile Angers Basket, « l'EAB » (Nationale 1) : nm1.ffbb.com (fiche équipe 33-angers), etoile-angers-basket.com.
-Logos à ajouter : `logos/ducs-angers.png` et `logos/eab.png` (en attendant, initiales).
+- Angers SCO Handball (Nationale 1 masculine, poule Fédérale) : handball.angers-sco.fr, ffhandball.fr ou scorenco.com.
+Logos : `logos/ducs-angers.png`, `logos/eab.png`, `logos/sco-handball.png`, trouvés automatiquement selon le champ `sport` de la fiche. Les adversaires hors Ligue 1 s'affichent avec leurs initiales tant que leur logo n'est pas ajouté.

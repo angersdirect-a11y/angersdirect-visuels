@@ -5,7 +5,7 @@ Polices : cd outils && npm i --silent (une fois par session).
 Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec les initiales est affiché.
 
 Fiches (exemples complets dans outils/exemples/) :
-  sport (facultatif : football, hockey ou basket, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
+  sport (facultatif : football, hockey, basket ou handball, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
@@ -41,12 +41,13 @@ ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', '
          'toulouse': 'toulouse-fc', 'troyes': 'estac-troyes', 'estac': 'estac-troyes', 'rennes': 'stade-rennais',
          'rennais': 'stade-rennais'}
 ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
-CTX = {'foot': True, 'fond': 'stade-tribunes.jpg'}
+ALIAS_SPORT = {'handball': {'sco': 'sco-handball', 'angers': 'sco-handball'}, 'hockey': {'angers': 'ducs-angers'}, 'basket': {'angers': 'eab'}}
+CTX = {'foot': True, 'fond': 'stade-tribunes.jpg', 'sport': 'football'}
 
 
 def trouver_slug(nom):
     n = nom.lower()
-    table = {**(ALIAS if CTX['foot'] else {}), **ALIAS_AUTRES}
+    table = {**(ALIAS if CTX['foot'] else {}), **ALIAS_SPORT.get(CTX['sport'], {}), **ALIAS_AUTRES}
     for cle in sorted(table, key=len, reverse=True):
         if cle in n:
             return table[cle]
@@ -206,7 +207,8 @@ def main():
     comp = fiche.get('competition', 'Ligue 1')
     CTX['foot'] = comp.lower().startswith('ligue 1')
     sport = fiche.get('sport', 'football' if CTX['foot'] else '')
-    CTX['fond'] = fiche.get('fond') or {'hockey': 'patinoire.jpg', 'basket': 'basket.jpg'}.get(sport, 'stade-tribunes.jpg')
+    CTX['sport'] = sport
+    CTX['fond'] = fiche.get('fond') or {'hockey': 'patinoire.jpg', 'basket': 'basket.jpg', 'handball': 'basket.jpg'}.get(sport, 'stade-tribunes.jpg')
     sortie = pathlib.Path(sys.argv[2]).resolve()
     fn, W, H = TYPES[fiche['type']]
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{fn(fiche)}</body></html>"
