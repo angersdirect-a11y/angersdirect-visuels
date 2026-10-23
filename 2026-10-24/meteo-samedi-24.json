@@ -1,0 +1,5 @@
+{"type": "meteo", "jour": "Samedi 24 octobre",
+ "creneaux": [{"label": "Matin", "icone": "nuage", "temp": 11},
+              {"label": "Après-midi", "icone": "pluie_faible", "temp": 13},
+              {"label": "Soir", "icone": "pluie", "temp": 13}],
+ "bas": "Min. 10° · Max. 15° · Vent 25 km/h · Pluie 90 %"}
