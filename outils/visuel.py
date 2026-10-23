@@ -17,6 +17,9 @@ Fiche « article » (photo en haut, style Angers Direct) :
      "bloc": "SCORE FINAL", "rubrique": "SPORT", "titre": "...", "texte": "..."}
     rubriques : ACTU, SPORT, CULTURE, SOCIÉTÉ, ÉCONOMIE, ENVIRONNEMENT, MÉTÉO
 
+Fiche « fiche » (carte de carrousel sans photo, gros chiffre en tête) :
+    {"type": "fiche", "rubrique": "ÉCONOMIE", "chiffre": "+6,6 %", "titre": "...", "texte": "...", "page": "2/5"}
+
 Fiche « sombre » (style principal du fil Instagram : photo plein cadre, titre blanc sur dégradé bleu nuit) :
     {"type": "sombre", "photo": "chemin/photo.jpg", "credit": "", "rubrique": "CULTURE",
      "titre": "Tolkien en tapisserie, [derniers jours] à Angers", "sous_titre": "...", "date": "Jusqu'au 8 novembre"}
@@ -104,6 +107,20 @@ def article(f):
 <div style="position:absolute;right:70px;top:1240px;font-size:26px;letter-spacing:1px;color:#3B4656">angersdirect.fr</div></div>'''
 
 
+def carte(f):
+    couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
+    page = f'<div style="position:absolute;right:70px;top:1240px;font-size:26px;letter-spacing:1px;color:#3B4656">{e(f["page"])}</div>' if f.get('page') else '<div style="position:absolute;right:70px;top:1240px;font-size:26px;letter-spacing:1px;color:#3B4656">angersdirect.fr</div>'
+    return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#FFFFFF;font-family:Barlow;color:#0F1B2D">
+<div style="position:absolute;left:0;top:0;width:1080px;height:500px;background:{couleur}"></div>
+<div style="position:absolute;left:72px;right:72px;top:150px;font-family:'Barlow Condensed';font-weight:700;font-size:210px;line-height:1;color:#FFFFFF">{e(f['chiffre'])}</div>
+<div style="position:absolute;left:72px;right:72px;top:575px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
+<div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg)"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:72px;line-height:1.05">{e(f['titre'])}</div>
+<div style="font-size:34px;line-height:1.5;color:#3B4656">{e(f['texte'])}</div></div>
+<img src="file://{ICI}/assets/logo_bleu.png" style="position:absolute;left:72px;top:1222px;width:146px">
+{page}</div>'''
+
+
 def sombre(f):
     import re
     couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
@@ -126,7 +143,7 @@ def sombre(f):
 def main():
     fiche = json.load(open(sys.argv[1]))
     sortie = pathlib.Path(sys.argv[2]).resolve()
-    corps = {'meteo': meteo, 'article': article, 'sombre': sombre}[fiche['type']](fiche)
+    corps = {'meteo': meteo, 'article': article, 'sombre': sombre, 'fiche': carte}[fiche['type']](fiche)
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{corps}</body></html>"
     tmp = sortie.with_suffix('.html')
     tmp.write_text(page)

@@ -1,6 +1,6 @@
 # Outils de production des visuels
 
-- `visuel.py` : génère un visuel PNG 1080x1350 (météo ou article avec photo) à partir d'une fiche JSON. Voir l'en-tête du fichier.
+- `visuel.py` : génère un visuel PNG 1080x1350 à partir d'une fiche JSON : `meteo`, `article` (carte blanche avec photo, style principal), `fiche` (carte de carrousel avec gros chiffre, pour la rubrique pratique), `sombre` (infos urgentes). Voir l'en-tête du fichier.
 - `chercher_photo.py` et `telecharger_photo.py` : recherche de photos sur Wikimedia Commons et Unsplash, avec auteur et licence.
 - `photos/stade-tribunes.jpg` : photo des tribunes de Raymond-Kopa utilisée en fond dégradé des visuels sport.
 - `photos/` : photos déjà validées, réutilisables sans crédit sur le visuel (laisser `credit` vide) :
