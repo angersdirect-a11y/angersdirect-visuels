@@ -2,3 +2,4 @@ node_modules/
 cand/
 sel/
 *.html
+__pycache__/

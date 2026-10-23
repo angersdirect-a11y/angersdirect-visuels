@@ -16,6 +16,11 @@ Fiche « article » (photo en haut, style Angers Direct) :
      (crédit vide pour les photos d'illustration ; à remplir seulement si la licence l'impose, ex. Wikimedia CC BY-SA)
      "bloc": "SCORE FINAL", "rubrique": "SPORT", "titre": "...", "texte": "..."}
     rubriques : ACTU, SPORT, CULTURE, SOCIÉTÉ, ÉCONOMIE, ENVIRONNEMENT, MÉTÉO
+
+Fiche « sombre » (style principal du fil Instagram : photo plein cadre, titre blanc sur dégradé bleu nuit) :
+    {"type": "sombre", "photo": "chemin/photo.jpg", "credit": "", "rubrique": "CULTURE",
+     "titre": "Tolkien en tapisserie, [derniers jours] à Angers", "sous_titre": "...", "date": "Jusqu'au 8 novembre"}
+    les mots entre crochets s'affichent en bleu
 """
 import html, json, pathlib, sys
 from playwright.sync_api import sync_playwright
@@ -99,10 +104,29 @@ def article(f):
 <div style="position:absolute;right:70px;top:1240px;font-size:26px;letter-spacing:1px;color:#3B4656">angersdirect.fr</div></div>'''
 
 
+def sombre(f):
+    import re
+    couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
+    photo = pathlib.Path(f['photo']).resolve()
+    titre = re.sub(r'\[(.+?)\]', r'<span style="color:#4FA8FF">\1</span>', e(f['titre']))
+    credit = f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>' if f.get('credit') else ''
+    sous = f'<div style="font-weight:500;font-size:34px;line-height:1.4;color:#E3E8EF;margin-top:22px">{e(f["sous_titre"])}</div>' if f.get('sous_titre') else ''
+    return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#0F1B2D;font-family:Barlow;color:#FFFFFF">
+<img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:1350px;object-fit:cover">
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,22,38,0.55) 0%,rgba(13,22,38,0) 18%,rgba(13,22,38,0) 38%,rgba(15,27,45,0.82) 60%,#0F1B2D 80%)"></div>
+{credit}
+<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:64px;width:196px">
+<div style="position:absolute;left:72px;right:72px;bottom:150px;display:flex;flex-direction:column;align-items:flex-start">
+<div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg);margin-bottom:26px"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:88px;line-height:1.02">{titre}</div>{sous}</div>
+<div style="position:absolute;left:72px;bottom:70px;font-weight:500;font-size:26px;color:#C9D3E0">{e(f.get('date', ''))}</div>
+<div style="position:absolute;right:72px;bottom:70px;font-weight:500;font-size:26px;letter-spacing:1px;color:#C9D3E0">angersdirect.fr</div></div>'''
+
+
 def main():
     fiche = json.load(open(sys.argv[1]))
     sortie = pathlib.Path(sys.argv[2]).resolve()
-    corps = {'meteo': meteo, 'article': article}[fiche['type']](fiche)
+    corps = {'meteo': meteo, 'article': article, 'sombre': sombre}[fiche['type']](fiche)
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{corps}</body></html>"
     tmp = sortie.with_suffix('.html')
     tmp.write_text(page)
