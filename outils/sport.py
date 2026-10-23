@@ -5,6 +5,7 @@ Polices : cd outils && npm i --silent (une fois par session).
 Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec les initiales est affiché.
 
 Fiches (exemples complets dans outils/exemples/) :
+  sport (facultatif : football, hockey ou basket, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
@@ -39,13 +40,16 @@ ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', '
          'saint-germain': 'paris-saint-germain', 'psg': 'paris-saint-germain', 'strasbourg': 'rc-strasbourg',
          'toulouse': 'toulouse-fc', 'troyes': 'estac-troyes', 'estac': 'estac-troyes', 'rennes': 'stade-rennais',
          'rennais': 'stade-rennais'}
+ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
+CTX = {'foot': True, 'fond': 'stade-tribunes.jpg'}
 
 
 def trouver_slug(nom):
     n = nom.lower()
-    for cle in sorted(ALIAS, key=len, reverse=True):
+    table = {**(ALIAS if CTX['foot'] else {}), **ALIAS_AUTRES}
+    for cle in sorted(table, key=len, reverse=True):
         if cle in n:
-            return ALIAS[cle]
+            return table[cle]
     return ''
 
 
@@ -65,7 +69,7 @@ def rond(slug, nom, d):
 
 def fond(w, h, photo=True):
     """Fond bleu nuit, photo du stade qui apparaît en dégradé dans le bas, voile sombre par-dessus."""
-    p = ICI / 'photos/stade-tribunes.jpg'
+    p = ICI / 'photos' / CTX['fond']
     ph = int(h * 0.62)
     img = (f'<img src="file://{p}" style="position:absolute;left:-20px;bottom:-10px;width:{w+40}px;height:{ph}px;object-fit:cover;object-position:center 40%;'
            f'filter:blur(3px) grayscale(0.4) brightness(0.85);-webkit-mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.55) 40%,#000 75%);mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.55) 40%,#000 75%)">'
@@ -96,11 +100,11 @@ def score(f):
 <div style="position:absolute;left:550px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:550px;top:{y+56}px;width:{wr}px;height:9px;background:#D3D5D9"></div>'''
         y += 92
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,1350)}{entete(1080,'SCORE FINAL',True)}
-<div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">LIGUE 1 · {e(f['journee']).upper()}</div>
+<div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
 <div style="position:absolute;left:0;right:0;top:346px;height:282px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:44px;top:369px">{rond(f['dom'].get('logo'),f['dom']['nom'],236)}</div>
 <div style="position:absolute;right:44px;top:369px">{rond(f['ext'].get('logo'),f['ext']['nom'],236)}</div>
-<div style="position:absolute;left:330px;top:366px;width:420px;height:240px;background:#111C2C;transform:skewX(-8deg);display:flex;align-items:center;justify-content:center"><div style="transform:skewX(8deg);{BC};font-weight:700;font-size:200px;line-height:1">{a} - {b}</div></div>
+<div style="position:absolute;left:330px;top:366px;width:420px;height:240px;background:#111C2C;transform:skewX(-8deg);display:flex;align-items:center;justify-content:center"><div style="transform:skewX(8deg);{BC};font-weight:700;font-size:{200 if len(f'{a}{b}') <= 2 else (140 if len(f'{a}{b}') <= 4 else 110)}px;line-height:1;white-space:nowrap">{a} - {b}</div></div>
 <div style="position:absolute;left:56px;top:652px;{BC};font-weight:600;font-size:46px">{e(f['dom']['nom'])}</div>
 <div style="position:absolute;right:75px;top:652px;{BC};font-weight:600;font-size:46px">{e(f['ext']['nom'])}</div>
 <div style="position:absolute;left:70px;right:70px;top:746px;height:2px;background:rgba(255,255,255,0.25)"></div>
@@ -182,7 +186,7 @@ def jdm(f, paysage, post=False):
 <div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e((('Diffusion : ' + f['diffusion'] + ' · ') if f.get('diffusion') else '') + 'Live texte sur angersdirect.fr')}</div>'''
     ny = cy + band_h + 22
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,'JOUR DE MATCH',False,top)}
-<div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">LIGUE 1 · {e(f['journee']).upper()}</div>
+<div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
 <div style="position:absolute;left:0;right:0;top:{cy-8}px;height:{band_h}px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:{lx}px;top:{cy}px">{rond(f['dom'].get('logo'),f['dom']['nom'],d)}</div>
 <div style="position:absolute;left:{rx}px;top:{cy}px">{rond(f['ext'].get('logo'),f['ext']['nom'],d)}</div>
@@ -199,6 +203,10 @@ TYPES = {'score': (score, 1080, 1350), 'classement': (classement, 1080, 1350), '
 
 def main():
     fiche = json.load(open(sys.argv[1]))
+    comp = fiche.get('competition', 'Ligue 1')
+    CTX['foot'] = comp.lower().startswith('ligue 1')
+    sport = fiche.get('sport', 'football' if CTX['foot'] else '')
+    CTX['fond'] = fiche.get('fond') or {'hockey': 'patinoire.jpg', 'basket': 'basket.jpg'}.get(sport, 'stade-tribunes.jpg')
     sortie = pathlib.Path(sys.argv[2]).resolve()
     fn, W, H = TYPES[fiche['type']]
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{fn(fiche)}</body></html>"
