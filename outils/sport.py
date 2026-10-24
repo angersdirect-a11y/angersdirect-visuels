@@ -9,7 +9,7 @@ Fiches (exemples complets dans outils/exemples/) :
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
-  jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif)
+  jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
 Les valeurs non vérifiées ne doivent jamais être inventées : laisser une liste vide plutôt.
 """
 import html, json, pathlib, sys
@@ -164,6 +164,11 @@ def calendrier(f):
 <div style="position:absolute;left:0;right:0;top:1276px;text-align:center;font-size:26px;color:#A7B0BD">{e(f.get('pied','Horaires sous réserve · angersdirect.fr'))}</div></div>'''
 
 
+def pied_jdm(f):
+    parts = (['Diffusion : ' + f['diffusion']] if f.get('diffusion') else []) + (['Live texte sur angersdirect.fr'] if f.get('live', True) else [])
+    return ' · '.join(parts)
+
+
 def jdm(f, paysage, post=False):
     if post:
         W, H, d, cy = 1080, 1350, 300, 400
@@ -182,12 +187,12 @@ def jdm(f, paysage, post=False):
              f'''<div style="position:absolute;left:0;right:0;top:1238px;text-align:center;{BC};font-weight:700;font-size:72px">{e(f['date'])}</div>
 <div style="position:absolute;left:0;right:0;top:1326px;text-align:center;{BC};font-weight:700;font-size:116px;line-height:1">{e(f['heure'])}</div>
 <div style="position:absolute;left:0;right:0;top:1468px;text-align:center;font-size:34px">{e(f['stade'])}</div>
-<div style="position:absolute;left:0;right:0;top:1520px;text-align:center;font-size:28px;color:#D3D5D9">{e((('Diffusion : ' + f['diffusion'] + ' · ') if f.get('diffusion') else '') + 'Live texte sur angersdirect.fr')}</div>''')
+<div style="position:absolute;left:0;right:0;top:1520px;text-align:center;font-size:28px;color:#D3D5D9">{e(pied_jdm(f))}</div>''')
     if post:
         infos = f'''<div style="position:absolute;left:0;right:0;top:850px;text-align:center;{BC};font-weight:700;font-size:68px">{e(f['date'])}</div>
 <div style="position:absolute;left:0;right:0;top:930px;text-align:center;{BC};font-weight:700;font-size:112px;line-height:1">{e(f['heure'])}</div>
 <div style="position:absolute;left:0;right:0;top:1075px;text-align:center;font-size:34px">{e(f['stade'])}</div>
-<div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e((('Diffusion : ' + f['diffusion'] + ' · ') if f.get('diffusion') else '') + 'Live texte sur angersdirect.fr')}</div>'''
+<div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e(pied_jdm(f))}</div>'''
     ny = cy + band_h + 22
     nm = 60 if post else 0  # fil Instagram : noms longs (« Angers SCO Handball ») sur une ligne
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,'JOUR DE MATCH',False,top)}
