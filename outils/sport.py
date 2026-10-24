@@ -5,7 +5,7 @@ Polices : cd outils && npm i --silent (une fois par session).
 Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec les initiales est affiché.
 
 Fiches (exemples complets dans outils/exemples/) :
-  sport (facultatif : football, hockey, basket ou handball, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
+  sport (facultatif : football, hockey, basket, handball ou roller, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
@@ -43,6 +43,7 @@ ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', '
 ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
 ALIAS_SPORT = {'handball': {'sco': 'sco-handball', 'angers': 'sco-handball', 'belfort': 'belfort-handball'},
                'hockey': {'angers': 'ducs-angers', 'rouen': 'rouen-dragons', 'chamonix': 'chamonix-pionniers', 'nice': 'nice-aigles', 'amiens': 'amiens-gothiques', 'anglet': 'anglet-hormadi', 'bordeaux': 'bordeaux-boxers', 'briançon': 'briancon-diables-rouges', 'briancon': 'briancon-diables-rouges', 'cergy': 'cergy-jokers', 'gap': 'gap-rapaces', 'grenoble': 'grenoble-bruleurs-de-loups', 'marseille': 'marseille-spartiates'},
+               'roller': {'hawks': 'hawks-angers', 'angers': 'hawks-angers', 'aiglons': 'valence-aiglons', 'valence': 'valence-aiglons'},
                'basket': {'angers': 'eab', 'challans': 'challans', 'sables': 'les-sables-basket'}}
 CTX = {'foot': True, 'fond': 'stade-tribunes.jpg', 'sport': 'football'}
 
@@ -211,7 +212,7 @@ def main():
     CTX['foot'] = comp.lower().startswith('ligue 1')
     sport = fiche.get('sport', 'football' if CTX['foot'] else '')
     CTX['sport'] = sport
-    CTX['fond'] = fiche.get('fond') or {'hockey': 'patinoire.jpg', 'basket': 'basket.jpg', 'handball': 'basket.jpg'}.get(sport, 'stade-tribunes.jpg')
+    CTX['fond'] = fiche.get('fond') or {'hockey': 'patinoire.jpg', 'basket': 'basket.jpg', 'handball': 'basket.jpg', 'roller': 'basket.jpg'}.get(sport, 'stade-tribunes.jpg')
     sortie = pathlib.Path(sys.argv[2]).resolve()
     fn, W, H = TYPES[fiche['type']]
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{fn(fiche)}</body></html>"
