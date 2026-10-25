@@ -36,3 +36,9 @@ Un post Facebook et une story Instagram ne peuvent donc pas partager le même m�
 - Étoile Angers Basket, « l'EAB » (Nationale 1) : nm1.ffbb.com (fiche équipe 33-angers), etoile-angers-basket.com.
 - Angers SCO Handball (Nationale 1 masculine, poule Fédérale) : handball.angers-sco.fr, ffhandball.fr ou scorenco.com.
 Logos : `logos/ducs-angers.png`, `logos/eab.png`, `logos/sco-handball.png`, `logos/les-sables-basket.png`, `logos/chamonix-pionniers.png`, `logos/nice-aigles.png`, et les 12 clubs de Ligue Magnus 2026-27 (amiens-gothiques, anglet-hormadi, bordeaux-boxers, briancon-diables-rouges, cergy-jokers, gap-rapaces, grenoble-bruleurs-de-loups, marseille-spartiates), trouvés automatiquement selon le champ `sport` de la fiche. Les adversaires hors Ligue 1 s'affichent avec leurs initiales tant que leur logo n'est pas ajouté.
+
+## Vidéos TikTok (`video.py`)
+
+`python3 outils/video.py fiche.json sortie.mp4` : vidéo verticale 1080x1920 dans le style de la vidéo de présentation Angers Direct (photos plein cadre avec léger zoom, logo blanc en haut à gauche, étiquette de rubrique puis titre qui monte, fondus enchaînés). Voir l'en-tête du fichier pour la fiche.
+Chaque vidéo se termine automatiquement par la carte de fin : bandes de couleur animées, logo, « Le média d'Angers et de sa région », « Suivez-nous » avec Instagram, Facebook, TikTok, YouTube et LinkedIn, @angersdirect et angersdirect.fr.
+Les photos doivent être assez grandes pour du plein cadre 9:16 (au moins 1080 px de haut sur la partie gardée) ; une affiche paysage trop petite rend flou. Piste audio silencieuse : le son s'ajoute dans TikTok.
