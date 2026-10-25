@@ -1,0 +1,15 @@
+{"duree_scene": 3.2,
+ "musique": true,
+ "graine": 7,
+ "scenes": [
+  {"type": "photo", "photo": "outils/photos/stade-raymond-kopa.jpg", "cadrage": "50% 50%",
+   "titre": "Titre d'accroche avec [un mot en bleu] ?", "sous_titre": "Une phrase courte qui donne envie de regarder."},
+  {"type": "photo", "photo": "outils/photos/stade-nuit.jpg", "cadrage": "50% 50%", "rubrique": "SPORT",
+   "titre": "Sujet 1 : [l'info clé]", "sous_titre": "Date, lieu ou chiffre vérifié."},
+  {"type": "photo", "photo": "outils/photos/patinage.jpg", "cadrage": "50% 50%", "rubrique": "CULTURE",
+   "titre": "Sujet 2 : [l'info clé]", "sous_titre": "Jusqu'au JJ mois."},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "3 infos",
+   "titre": "Scène sans photo", "lignes": ["Première ligne factuelle.", "Deuxième ligne factuelle."]},
+  {"type": "photo", "photo": "outils/photos/stade-tribunes.jpg", "mode": "haut", "rubrique": "ÉCONOMIE",
+   "titre": "Image peu haute : [mode haut]", "sous_titre": "L'image reste en haut, fondue dans le bleu nuit."}
+ ]}
