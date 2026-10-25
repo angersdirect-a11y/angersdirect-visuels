@@ -20,7 +20,8 @@ Fiche :
        {"type": "texte", "rubrique": "CULTURE", "chiffre": "2 expos", "titre": "...", "lignes": ["...", "..."]}
      ]}
     rubrique facultative ; les mots entre crochets s'affichent en bleu.
-    Pas de musique : la piste audio est silencieuse, le son s'ajoute dans l'application.
+    Musique : composée automatiquement par musique.py (originale, libre de droits).
+    "musique": false pour une piste muette, "graine": 3 pour une autre variante.
 """
 import html, json, pathlib, re, subprocess, sys
 from playwright.sync_api import sync_playwright
@@ -140,10 +141,16 @@ def main():
     tmp = sortie.with_suffix('.html')
     tmp.write_text(contenu)
     n = int(round(total * FPS))
+    wav = sortie.with_suffix('.wav')
+    if fiche.get('musique', True):
+        subprocess.run([sys.executable, str(ICI / 'musique.py'), f'{total:.3f}', str(wav), str(fiche.get('graine', 7))], check=True)
+        audio = ['-i', str(wav)]
+    else:
+        audio = ['-f', 'lavfi', '-t', f'{total:.3f}', '-i', 'anullsrc=r=44100:cl=stereo']
     ff = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', str(FPS), '-i', '-',
-                           '-f', 'lavfi', '-t', f'{total:.3f}', '-i', 'anullsrc=r=44100:cl=stereo',
+                           *audio,
                            '-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-pix_fmt', 'yuv420p',
-                           '-c:a', 'aac', '-shortest', '-movflags', '+faststart', str(sortie)], stdin=subprocess.PIPE)
+                           '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', str(sortie)], stdin=subprocess.PIPE)
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': 1080, 'height': 1920})
@@ -164,6 +171,7 @@ def main():
     ff.stdin.close()
     ff.wait()
     tmp.unlink()
+    wav.unlink(missing_ok=True)
     print('ok', sortie, f'{total:.1f} s', n, 'images')
 
 
