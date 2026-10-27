@@ -26,3 +26,4 @@ Les visuels qui intègrent une photo sous licence CC BY-SA sont diffusés sous l
 - terra-botanica-automne (28/10) : Chabe01, CC BY-SA 4.0 (https://commons.wikimedia.org/wiki/File:Terra_Botanica_2017.08.23_Angers_135.jpg)
 - inondasonges (28/10) : Romainberth, CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Lac_de_maine_angers_soleil.jpg)
 - halloween-anjou (29/10) : Smoke It, CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Le_Ch%C3%A2teau_du_Plessis-Bourr%C3%A9.jpg)
+- mobilisation-lyceenne (27/10) : FreCha, CC BY-SA 4.0 (https://commons.wikimedia.org/wiki/File:Manifestation_du_17_octobre_2026_%C3%A0_Paris_35.jpg)

@@ -44,3 +44,7 @@ Chaque vidéo se termine automatiquement par la carte de fin : bandes de couleur
 Les photos doivent être assez grandes pour du plein cadre 9:16 (au moins 1080 px de haut sur la partie gardée) ; une affiche paysage trop petite rend flou. Musique : `musique.py` compose une boucle pop originale (synthétisée, sans échantillon, donc libre de droits), ajoutée automatiquement ; `"musique": false` dans la fiche pour une vidéo muette.
 
 Modèle de fiche vidéo : `outils/exemples/video.json` (scène d'accroche sans rubrique, scènes photo avec rubrique, scène « texte » sans photo, mode « haut » pour une image peu haute). Copier la fiche dans le dossier daté, remplacer textes et photos, puis lancer `video.py`. Accroche en question ou chiffre, 4 à 6 scènes de 3,2 s, une idée par scène, titres de 6 mots maximum si possible ; la carte de fin est ajoutée automatiquement.
+
+## Story « points clés » (`story_points.py`)
+
+`python3 outils/story_points.py fiche.json story.png` (lancer depuis la racine du dépôt) : story 1080x1920 native avec photo en haut, titre, 3 à 5 chiffres clés et un encart final. Exemple : `2026-10-27/mobilisation-lyceenne-story.json`.
