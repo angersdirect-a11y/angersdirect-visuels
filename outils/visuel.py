@@ -22,7 +22,8 @@ Fiche « fiche » (carte de carrousel sans photo, gros chiffre en tête) :
 
 Fiche « sombre » (style principal du fil Instagram : photo plein cadre, titre blanc sur dégradé bleu nuit) :
     {"type": "sombre", "photo": "chemin/photo.jpg", "credit": "", "rubrique": "CULTURE",
-     "titre": "Tolkien en tapisserie, [derniers jours] à Angers", "sous_titre": "...", "date": "Jusqu'au 8 novembre"}
+     "titre": "Tolkien en tapisserie, [derniers jours] à Angers", "sous_titre": "...", "date": "Jusqu'au 8 novembre",
+     "cadrage": "40% 50%"}  (facultatif : partie de la photo gardée, horizontale puis verticale ; centre par défaut)
     les mots entre crochets s'affichent en bleu
 """
 import html, json, pathlib, sys
@@ -129,7 +130,7 @@ def sombre(f):
     credit = f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>' if f.get('credit') else ''
     sous = f'<div style="font-weight:500;font-size:34px;line-height:1.4;color:#E3E8EF;margin-top:22px">{e(f["sous_titre"])}</div>' if f.get('sous_titre') else ''
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#0F1B2D;font-family:Barlow;color:#FFFFFF">
-<img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:1350px;object-fit:cover">
+<img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:1350px;object-fit:cover;object-position:{f.get('cadrage', '50% 50%')}">
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,22,38,0.55) 0%,rgba(13,22,38,0) 18%,rgba(13,22,38,0) 38%,rgba(15,27,45,0.82) 60%,#0F1B2D 80%)"></div>
 {credit}
 <img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:64px;width:196px">

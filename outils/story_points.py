@@ -3,7 +3,7 @@
 Usage : python3 outils/story_points.py fiche.json sortie.png
 Fiche : {"photo": "outils/sel/x.jpg", "credit": "", "rubrique": "SOCIÉTÉ", "titre": "...",
          "points": [{"chiffre": "2028", "texte": "..."}, ...3 à 5],
-         "encart": {"label": "À SUIVRE", "texte": "..."}}
+         "encart": {"label": "À SUIVRE", "texte": "..."}, "logo": "haut" (défaut) ou "bas"}
 Contenu utile entre 250 et 1670 px de haut (zones libres des interfaces Instagram et Facebook).
 """
 import json, pathlib, sys
@@ -21,6 +21,10 @@ def corps(f):
 <div style="flex:0 0 250px;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#B497FF">{e(p['chiffre'])}</div>
 <div style="font-weight:500;font-size:34px;line-height:1.3;color:#FFFFFF">{e(p['texte'])}</div></div>'''
         for p in f['points'])
+    logo = f'<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:{{t}}px;width:{{w}}px;filter:drop-shadow(0 2px 10px rgba(0,0,0,0.6))">'
+    bas = f.get('logo') == 'bas'   # "logo": "bas" quand la photo est chargée en haut (pancartes, visages)
+    logo_haut = '' if bas else logo.format(t=250, w=210)
+    logo_bas = logo.format(t=1738, w=170) if bas else ''
     enc = f.get('encart')
     encart = (f'''<div style="margin-top:34px;padding:26px 30px;background:{couleur};border-radius:6px">
 <div style="font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:2px;color:#FFFFFF;opacity:.9">{e(enc['label'])}</div>
@@ -29,12 +33,12 @@ def corps(f):
 <img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:900px;object-fit:cover">
 <div style="position:absolute;left:0;top:0;width:1080px;height:900px;background:linear-gradient(180deg,rgba(13,22,38,0.6) 0%,rgba(13,22,38,0) 30%,rgba(13,22,38,0) 55%,#0F1B2D 100%)"></div>
 {credit}
-<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:250px;width:210px;filter:drop-shadow(0 2px 10px rgba(0,0,0,0.6))">
+{logo_haut}
 <div style="position:absolute;left:72px;right:72px;top:660px;display:flex;flex-direction:column;align-items:flex-start">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg);margin-bottom:24px"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px">{e(f['rubrique'].upper())}</div></div>
 <div style="font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1.02;margin-bottom:30px">{e(f['titre'])}</div>
 <div style="width:100%">{points}</div>{encart}</div>
-<div style="position:absolute;right:72px;top:1760px;font-weight:500;font-size:28px;letter-spacing:1px;color:#C9D3E0">angersdirect.fr</div></div>'''
+{logo_bas}<div style="position:absolute;right:72px;top:1760px;font-weight:500;font-size:28px;letter-spacing:1px;color:#C9D3E0">angersdirect.fr</div></div>'''
 
 
 def main():
