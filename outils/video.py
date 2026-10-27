@@ -8,8 +8,9 @@ qui monte en fondu, fondus enchaînés entre les scènes. La vidéo se termine T
 la carte de fin : bandes de couleur animées, logo, « Le média d'Angers et de sa région »,
 les réseaux pour nous suivre et angersdirect.fr (ajoutée automatiquement).
 
-Les textes restent dans la zone sûre de TikTok (ni le bas ni la marge droite, où
-l'application affiche la légende et les boutons).
+Zone sûre TikTok respectée : tous les textes restent entre y=200 et y=1360, x=90 et x=900
+(en haut les onglets « Suivis / Pour toi », à droite les boutons, en bas le pseudo et la légende).
+Garder les titres courts (6 mots) et 2 lignes de 40 caractères au plus par scène texte.
 
 Fiche :
     {"duree_scene": 3.2,
@@ -71,42 +72,42 @@ def scene_photo(s, t0, d):
     if s.get('rubrique'):
         tag = (f'<div style="align-self:flex-start;padding:6px 22px;background:{couleur};transform:skewX(-12deg);margin-bottom:28px;{anim("tag", t0 + .15, .5)}">'
                f'<div style="transform:skewX(12deg);font-family:\'Barlow Condensed\';font-weight:600;font-size:38px;letter-spacing:1px">{e(s["rubrique"].upper())}</div></div>')
-    sous = (f'<div style="font-weight:500;font-size:44px;line-height:1.3;color:#E3E8EF;margin-top:24px;{anim("monte", t0 + .55, .6)}">{e(s["sous_titre"])}</div>'
+    sous = (f'<div style="font-weight:500;font-size:40px;line-height:1.3;color:#E3E8EF;margin-top:22px;{anim("monte", t0 + .55, .6)}">{e(s["sous_titre"])}</div>'
             if s.get('sous_titre') else '')
     return f'''<div class="scene" style="background:{NUIT};{anim("entree", t0, FONDU, "linear")}">
 {img}
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,22,38,.5) 0%,rgba(13,22,38,0) 14%,rgba(13,22,38,0) 40%,rgba(15,27,45,.85) 62%,{NUIT} 82%)"></div>
-<div style="position:absolute;left:72px;right:150px;top:1130px;display:flex;flex-direction:column">
-{tag}<div style="font-family:'Barlow Condensed';font-weight:700;font-size:104px;line-height:1.02;{anim("monte", t0 + .3, .6)}">{bleu(s["titre"])}</div>{sous}</div></div>'''
+<div style="position:absolute;left:90px;right:180px;bottom:560px;display:flex;flex-direction:column">
+{tag}<div style="font-family:'Barlow Condensed';font-weight:700;font-size:92px;line-height:1.02;{anim("monte", t0 + .3, .6)}">{bleu(s["titre"])}</div>{sous}</div></div>'''
 
 
 def scene_texte(s, t0, d):
     couleur = COULEURS.get(s.get('rubrique', 'CULTURE').upper(), COULEURS['CULTURE'])
-    lignes = ''.join(f'<div style="font-weight:500;font-size:44px;line-height:1.3;color:#E3E8EF;margin-top:26px;{anim("monte", t0 + .7 + .25 * i, .6)}">{e(l)}</div>'
+    lignes = ''.join(f'<div style="font-weight:500;font-size:40px;line-height:1.3;color:#E3E8EF;margin-top:22px;{anim("monte", t0 + .7 + .25 * i, .6)}">{e(l)}</div>'
                      for i, l in enumerate(s.get('lignes', [])))
     return f'''<div class="scene" style="background:{NUIT};{anim("entree", t0, FONDU, "linear")}">
-<div style="position:absolute;left:0;top:300px;height:420px;width:1080px;background:{couleur};{anim("balaye", t0 + .1, .7)}"></div>
-<div style="position:absolute;left:72px;top:400px;font-family:'Barlow Condensed';font-weight:700;font-size:200px;line-height:1;{anim("monte", t0 + .35, .6)}">{e(s["chiffre"])}</div>
-<div style="position:absolute;left:72px;right:150px;top:820px">
-<div style="font-family:'Barlow Condensed';font-weight:700;font-size:104px;line-height:1.02;{anim("monte", t0 + .5, .6)}">{bleu(s["titre"])}</div>{lignes}</div></div>'''
+<div style="position:absolute;left:0;top:330px;height:360px;width:1080px;background:{couleur};{anim("balaye", t0 + .1, .7)}"></div>
+<div style="position:absolute;left:90px;top:415px;font-family:'Barlow Condensed';font-weight:700;font-size:180px;line-height:1;{anim("monte", t0 + .35, .6)}">{e(s["chiffre"])}</div>
+<div style="position:absolute;left:90px;right:180px;top:770px">
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:92px;line-height:1.02;{anim("monte", t0 + .5, .6)}">{bleu(s["titre"])}</div>{lignes}</div></div>'''
 
 
 def carte_fin(t0):
     bandes = ''.join(f'<div style="height:16px;width:{420 - 52 * i}px;margin-top:{0 if i == 0 else 10}px;background:{c};transform:skewX(-30deg);transform-origin:0 50%;{anim("bande", t0 + .1 + .08 * i, .55)}"></div>'
                      for i, c in enumerate(BANDES))
-    icones = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:150px;{anim("pop", t0 + 1.5 + .12 * i, .45, "cubic-bezier(.3,1.6,.5,1)")}">'
-                     f'<div style="width:112px;height:112px;border-radius:30px;background:rgba(255,255,255,.1);border:2px solid {BANDES[i % 6]};display:flex;align-items:center;justify-content:center">'
-                     f'<svg width="62" height="62" viewBox="0 0 24 24">{svg}</svg></div>'
-                     f'<div style="font-size:26px;font-weight:500;color:#C9D3E0;margin-top:14px">{nom}</div></div>'
+    icones = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:148px;{anim("pop", t0 + 1.5 + .12 * i, .45, "cubic-bezier(.3,1.6,.5,1)")}">'
+                     f'<div style="width:100px;height:100px;border-radius:28px;background:rgba(255,255,255,.1);border:2px solid {BANDES[i % 6]};display:flex;align-items:center;justify-content:center">'
+                     f'<svg width="54" height="54" viewBox="0 0 24 24">{svg}</svg></div>'
+                     f'<div style="font-size:24px;font-weight:500;color:#C9D3E0;margin-top:12px">{nom}</div></div>'
                      for i, (nom, svg) in enumerate(ICONES.items()))
     return f'''<div class="scene" style="background:linear-gradient(180deg,#0D1626 0%,#152A48 100%);{anim("entree", t0, FONDU, "linear")}">
-<div style="position:absolute;left:90px;top:300px">{bandes}</div>
-<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:90px;top:520px;width:520px;{anim("monte", t0 + .5, .6)}">
-<div style="position:absolute;left:90px;right:120px;top:740px;font-family:'Barlow Condensed';font-weight:600;font-size:64px;line-height:1.1;{anim("monte", t0 + .8, .6)}">Le média d'Angers et de sa région</div>
-<div style="position:absolute;left:90px;top:900px;padding:8px 26px;background:{COULEURS['ACTU']};transform:skewX(-12deg);{anim("tag", t0 + 1.1, .5)}"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:46px;letter-spacing:1px">SUIVEZ-NOUS</div></div>
-<div style="position:absolute;left:60px;right:60px;top:1040px;display:flex;justify-content:space-between">{icones}</div>
-<div style="position:absolute;left:90px;top:1290px;font-weight:600;font-size:48px;{anim("monte", t0 + 2.3, .6)}">@angersdirect</div>
-<div style="position:absolute;left:90px;top:1370px;font-family:'Barlow Condensed';font-weight:700;font-size:92px;color:#4FA8FF;{anim("monte", t0 + 2.55, .6)}">angersdirect.fr</div>
+<div style="position:absolute;left:90px;top:260px">{bandes}</div>
+<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:90px;top:450px;width:440px;{anim("monte", t0 + .5, .6)}">
+<div style="position:absolute;left:90px;right:180px;top:640px;font-family:'Barlow Condensed';font-weight:600;font-size:58px;line-height:1.1;{anim("monte", t0 + .8, .6)}">Le média d'Angers et de sa région</div>
+<div style="position:absolute;left:90px;top:790px;padding:8px 26px;background:{COULEURS['ACTU']};transform:skewX(-12deg);{anim("tag", t0 + 1.1, .5)}"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:46px;letter-spacing:1px">SUIVEZ-NOUS</div></div>
+<div style="position:absolute;left:90px;right:180px;top:910px;display:flex;justify-content:space-between">{icones}</div>
+<div style="position:absolute;left:90px;top:1120px;font-weight:600;font-size:46px;{anim("monte", t0 + 2.3, .6)}">@angersdirect</div>
+<div style="position:absolute;left:90px;top:1190px;font-family:'Barlow Condensed';font-weight:700;font-size:84px;color:#4FA8FF;{anim("monte", t0 + 2.55, .6)}">angersdirect.fr</div>
 </div>'''
 
 
@@ -129,7 +130,7 @@ body{{margin:0;width:1080px;height:1920px;overflow:hidden;background:{NUIT}}}
 @keyframes bande{{from{{opacity:0;transform:skewX(-30deg) translateX(-480px)}}to{{opacity:1;transform:skewX(-30deg)}}}}
 @keyframes pop{{from{{opacity:0;transform:scale(.4)}}to{{opacity:1;transform:scale(1)}}}}
 '''
-    logo = f'<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:110px;width:230px;z-index:9">'
+    logo = f'<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:90px;top:200px;width:200px;z-index:9">'
     corps = '\n'.join(blocs)
     return f'<html><head><meta charset="utf-8"><style>{css}</style></head><body>{corps}{logo}<div id="fin" style="display:none" data-t="{t}"></div></body></html>', total, t
 
