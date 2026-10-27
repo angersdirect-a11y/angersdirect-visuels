@@ -8,17 +8,18 @@ Contenu utile entre 250 et 1670 px de haut (zones libres des interfaces Instagra
 """
 import json, pathlib, sys
 from playwright.sync_api import sync_playwright
-from visuel import COULEURS, polices, e, ICI
+from visuel import ACCENTS, COULEURS, polices, e, ICI
 
 
 def corps(f):
     couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
+    accent = ACCENTS.get(f['rubrique'].upper(), ACCENTS['ACTU'])
     photo = pathlib.Path(f['photo']).resolve()
     credit = (f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);'
               f'font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>') if f.get('credit') else ''
     points = ''.join(
         f'''<div style="display:flex;align-items:center;gap:34px;padding:18px 0;border-top:2px solid rgba(255,255,255,0.12)">
-<div style="flex:0 0 250px;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#B497FF">{e(p['chiffre'])}</div>
+<div style="flex:0 0 250px;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:{accent}">{e(p['chiffre'])}</div>
 <div style="font-weight:500;font-size:34px;line-height:1.3;color:#FFFFFF">{e(p['texte'])}</div></div>'''
         for p in f['points'])
     logo = f'<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:{{t}}px;width:{{w}}px;filter:drop-shadow(0 2px 10px rgba(0,0,0,0.6))">'
@@ -26,7 +27,7 @@ def corps(f):
     logo_haut = '' if bas else logo.format(t=250, w=210)
     logo_bas = logo.format(t=1738, w=170) if bas else ''
     enc = f.get('encart')
-    encart = (f'''<div style="margin-top:34px;padding:26px 30px;background:{couleur};border-radius:6px">
+    encart = (f'''<div style="margin-top:34px;padding:26px 30px;background:{couleur};border-radius:6px;align-self:stretch">
 <div style="font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:2px;color:#FFFFFF;opacity:.9">{e(enc['label'])}</div>
 <div style="font-weight:600;font-size:36px;line-height:1.3;color:#FFFFFF;margin-top:6px">{e(enc['texte'])}</div></div>''') if enc else ''
     return f'''<div style="width:1080px;height:1920px;position:relative;overflow:hidden;background:#0F1B2D;font-family:Barlow;color:#FFFFFF">

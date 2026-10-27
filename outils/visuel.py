@@ -15,7 +15,7 @@ Fiche « article » (photo en haut, style Angers Direct) :
     {"type": "article", "photo": "chemin/photo.jpg", "credit": "",
      (crédit vide pour les photos d'illustration ; à remplir seulement si la licence l'impose, ex. Wikimedia CC BY-SA)
      "bloc": "SCORE FINAL", "rubrique": "SPORT", "titre": "...", "texte": "..."}
-    rubriques : ACTU, SPORT, CULTURE, SOCIÉTÉ, ÉCONOMIE, ENVIRONNEMENT, MÉTÉO
+    rubriques : ACTU, VILLE, SPORT, CULTURE, SOCIÉTÉ, ÉCONOMIE, ENVIRONNEMENT, MÉTÉO
 
 Fiche « fiche » (carte de carrousel sans photo, gros chiffre en tête) :
     {"type": "fiche", "rubrique": "ÉCONOMIE", "chiffre": "+6,6 %", "titre": "...", "texte": "...", "page": "2/5"}
@@ -37,7 +37,11 @@ COULEURS = {'ACTU': 'linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%)',
             'SOCIÉTÉ': 'linear-gradient(90deg,#9B6BFF 0%,#5B28CC 100%)',
             'ÉCONOMIE': 'linear-gradient(90deg,#F5B841 0%,#C2701A 100%)',
             'ENVIRONNEMENT': 'linear-gradient(90deg,#2FD3AB 0%,#0F8069 100%)',
-            'MÉTÉO': 'linear-gradient(90deg,#3AA3F5 0%,#1665D8 100%)'}
+            'MÉTÉO': 'linear-gradient(90deg,#3AA3F5 0%,#1665D8 100%)',
+            'VILLE': 'linear-gradient(90deg,#35B3C4 0%,#0E6E80 100%)'}
+# Teinte claire de chaque rubrique, pour les chiffres et mots mis en avant sur fond bleu nuit
+ACCENTS = {'ACTU': '#7CC4FF', 'SPORT': '#6EE69A', 'CULTURE': '#FF9EB5', 'SOCIÉTÉ': '#B497FF', 'ÉCONOMIE': '#F5C76A',
+           'ENVIRONNEMENT': '#6FE3C6', 'MÉTÉO': '#7CC4FF', 'VILLE': '#5DD3D9'}
 BLOC = 'linear-gradient(90deg,#3AA3F5 0%,#1665D8 100%)'
 
 NUAGE = '<g fill="#FFFFFF"><circle cx="66" cy="{y1}" r="28"/><circle cx="102" cy="{y2}" r="36"/><circle cx="134" cy="{y3}" r="22"/><rect x="38" y="{y4}" width="118" height="26" rx="13"/></g>'
