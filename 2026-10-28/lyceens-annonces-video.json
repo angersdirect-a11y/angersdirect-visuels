@@ -1,0 +1,17 @@
+{"duree_scene": 3.2,
+ "musique": true,
+ "graine": 5,
+ "scenes": [
+  {"type": "photo", "photo": "outils/sel/lyceens-video-haut.jpg", "mode": "haut", "rubrique": "SOCIÉTÉ",
+   "titre": "Lycéens : ce que [promet le gouvernement]", "sous_titre": "Après plus d'un mois de blocages, les premières annonces."},
+  {"type": "texte", "rubrique": "SOCIÉTÉ", "chiffre": "2028",
+   "titre": "Parcoursup [remplacé]", "lignes": ["Une forte évolution dès 2027.", "Puis une nouvelle plateforme en 2028."]},
+  {"type": "texte", "rubrique": "SOCIÉTÉ", "chiffre": "28",
+   "titre": "élèves maximum [en seconde]", "lignes": ["Un plafond mis en place progressivement,", "d'ici la rentrée 2028."]},
+  {"type": "texte", "rubrique": "SOCIÉTÉ", "chiffre": "1 764",
+   "titre": "postes [créés]", "lignes": ["500 dans les lycées.", "1 264 dans les formations de BTS."]},
+  {"type": "texte", "rubrique": "SOCIÉTÉ", "chiffre": "4 Md€",
+   "titre": "pour [rénover] lycées et facs", "lignes": ["Une enveloppe promise pour les", "bâtiments scolaires et universitaires."]},
+  {"type": "texte", "rubrique": "SOCIÉTÉ", "chiffre": "31 OCT.",
+   "titre": "La mobilisation [continue]", "lignes": ["Journée d'action à Angers le 31 octobre.", "Grève nationale le 5 novembre."]}
+ ]}
