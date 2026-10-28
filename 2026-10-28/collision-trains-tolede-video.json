@@ -1,0 +1,16 @@
+{"duree_scene": 3.8,
+ "musique": false,
+ "scenes": [
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "8h54",
+   "titre": "Collision de deux [trains] en Espagne", "lignes": ["Ce mercredi matin, près de Tolède,", "au sud de Madrid."]},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "64 morts",
+   "titre": "Au moins, [bilan provisoire]", "lignes": ["Chiffre du gouvernement régional", "de Castille-La Manche."]},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "544",
+   "titre": "personnes à [bord]", "lignes": ["Un AVE de la Renfe et un train Iryo,", "sur la ligne Madrid-Séville."]},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "Enquête",
+   "titre": "Une cause [pas encore établie]", "lignes": ["Selon les premiers éléments, l'AVE", "aurait percuté l'arrière de l'Iryo."]},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "Trafic",
+   "titre": "La grande vitesse [coupée]", "lignes": ["Aucun train entre Tolède", "et Séville, selon Adif."]},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "Voyageurs",
+   "titre": "Billets Renfe [sans frais]", "lignes": ["Échange ou annulation possible", "pour les trains concernés."]}
+ ]}
