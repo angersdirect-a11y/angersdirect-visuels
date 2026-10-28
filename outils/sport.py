@@ -9,7 +9,7 @@ Fiches (exemples complets dans outils/exemples/) :
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
-  jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
+  jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : entete (facultatif, défaut « JOUR DE MATCH », ex. « NOUVEL HORAIRE »), journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
 Les valeurs non vérifiées ne doivent jamais être inventées : laisser une liste vide plutôt.
 """
 import html, json, pathlib, sys
@@ -195,7 +195,7 @@ def jdm(f, paysage, post=False):
 <div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e(pied_jdm(f))}</div>'''
     ny = cy + band_h + 22
     nm = 60 if post else 0  # fil Instagram : noms longs (« Angers SCO Handball ») sur une ligne
-    return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,'JOUR DE MATCH',False,top)}
+    return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,f.get('entete','JOUR DE MATCH'),False,top)}
 <div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
 <div style="position:absolute;left:0;right:0;top:{cy-8}px;height:{band_h}px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:{lx}px;top:{cy}px">{rond(f['dom'].get('logo'),f['dom']['nom'],d)}</div>
