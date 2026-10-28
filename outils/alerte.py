@@ -3,6 +3,7 @@
 Usage : python3 outils/alerte.py fiche.json sortie.png
 Fiche : {"format": "post" (1080x1350) ou "story" (1080x1920), "tag": "TRAVAUX · CIRCULATION",
          "titre": "...", "blocs": [{"label": "OÙ", "texte": "..."}, ...]}
+Jamais de bloc « SOURCE » : la rédaction n'affiche aucune source (voir LISEZMOI.md).
 Fond bleu nuit, bandes jaunes en haut, étiquette jaune, blocs avec filet jaune, logo et angersdirect.fr en bas.
 """
 import html, json, pathlib, sys

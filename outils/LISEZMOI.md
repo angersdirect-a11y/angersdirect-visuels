@@ -8,6 +8,12 @@
   - `stade-raymond-kopa.jpg` : M. Mouchoir / Wikimedia Commons, domaine public
   - `patinage.jpg` : Kelli McClintock / Unsplash
 
+## Règle sur les sources (règle générale de la rédaction)
+
+Jamais de source affichée : ni sur un visuel (pas de bloc « SOURCE »), ni dans un texte de post, de story ou d'article (pas de ligne « Source : »).
+On ne nomme jamais un média comme source de l'information, et **jamais Angers Info / My Angers**, concurrent direct.
+Seules les attributions officielles utiles à l'exactitude restent possibles dans le texte (« selon la préfecture », « indique la mairie »).
+
 ## Règle sur les crédits photo
 
 Choix éditorial d'Angers Direct : pas de crédit affiché sur les photos d'illustration (Unsplash, domaine public).
