@@ -7,6 +7,7 @@
   - `stade-nuit.jpg` : Alex Simpson / Unsplash
   - `stade-raymond-kopa.jpg` : M. Mouchoir / Wikimedia Commons, domaine public
   - `patinage.jpg` : Kelli McClintock / Unsplash
+  - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
 ## Règle sur les sources (règle générale de la rédaction)
 
