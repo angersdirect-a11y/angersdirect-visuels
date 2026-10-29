@@ -7,7 +7,7 @@ Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec l
 Fiches (exemples complets dans outils/exemples/) :
   sport (facultatif : football, hockey, basket, handball ou roller, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
   score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
-  classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}], source
+  classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}]
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
   jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : entete (facultatif, défaut « JOUR DE MATCH », ex. « NOUVEL HORAIRE »), journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
 Les valeurs non vérifiées ne doivent jamais être inventées : laisser une liste vide plutôt.
@@ -142,7 +142,7 @@ def classement(f):
 <div style="position:absolute;right:206px;width:60px;top:336px;text-align:center;font-size:22px;color:{BLEU}">J</div>
 <div style="position:absolute;right:86px;width:60px;top:336px;text-align:center;font-size:22px;letter-spacing:2px;color:{BLEU}">PTS</div>
 {rows}
-<div style="position:absolute;right:70px;top:1290px;font-size:22px;color:#A7B0BD">{e(f.get('source','Source : ligue officielle · angersdirect.fr'))}</div></div>'''
+</div>'''  # jamais de source affichée sur un visuel
 
 
 def calendrier(f):

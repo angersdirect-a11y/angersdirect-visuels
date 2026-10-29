@@ -18,9 +18,12 @@ Seules les attributions officielles utiles à l'exactitude restent possibles dan
 
 ## Règle sur les crédits photo
 
-Choix éditorial d'Angers Direct : pas de crédit affiché sur les photos d'illustration (Unsplash, domaine public).
-Le crédit n'est affiché que lorsque la licence l'impose, par exemple une photo Wikimedia sous CC BY ou CC BY-SA : « Photo : Auteur / Wikimedia Commons, CC BY-SA 4.0 ».
-Dans le doute, préférer une photo Unsplash.
+Règle absolue d'Angers Direct : **jamais de source ni de crédit affiché sur une photo**, quelle que soit son origine (Unsplash, Wikimedia, domaine public, rédaction). Laisser `credit` vide ; les scripts ignorent ce champ de toute façon.
+La provenance de la photo est notée seulement dans `sel/credits.json`, jamais sur le visuel. Comme une photo sous CC BY ou CC BY-SA impose un crédit, ne pas utiliser ces photos : préférer Unsplash, Pexels, Pixabay, le domaine public ou les photos de la rédaction.
+
+## Jamais « lien en bio »
+
+Aucun texte de post, de story ou de visuel ne contient « lien en bio » : on écrit « Tous les détails sur angersdirect.fr ».
 
 Les images publiées vont dans un dossier daté (`AAAA-MM-JJ/`). Lien public : `https://raw.githubusercontent.com/angersdirect-a11y/angersdirect-visuels/main/<dossier>/<fichier>.png`.
 

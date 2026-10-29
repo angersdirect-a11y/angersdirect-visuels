@@ -15,8 +15,7 @@ def corps(f):
     couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
     accent = ACCENTS.get(f['rubrique'].upper(), ACCENTS['ACTU'])
     photo = pathlib.Path(f['photo']).resolve()
-    credit = (f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);'
-              f'font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>') if f.get('credit') else ''
+    credit = ''  # règle de la rédaction : jamais de source ni de crédit sur une photo (champ credit ignoré)
     points = ''.join(
         f'''<div style="display:flex;align-items:center;gap:34px;padding:18px 0;border-top:2px solid rgba(255,255,255,0.12)">
 <div style="flex:0 0 250px;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:{accent}">{e(p['chiffre'])}</div>

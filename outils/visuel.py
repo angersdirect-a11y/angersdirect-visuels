@@ -97,9 +97,7 @@ def meteo(f):
 def article(f):
     couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
     photo = pathlib.Path(f['photo']).resolve()
-    credit = ''
-    if f.get('credit'):
-        credit = f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>'
+    credit = ''  # règle de la rédaction : jamais de source ni de crédit sur une photo (champ credit ignoré)
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#FFFFFF;font-family:Barlow;color:#0F1B2D">
 <img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:640px;object-fit:cover">
 {credit}
@@ -131,7 +129,7 @@ def sombre(f):
     couleur = COULEURS.get(f['rubrique'].upper(), COULEURS['ACTU'])
     photo = pathlib.Path(f['photo']).resolve()
     titre = re.sub(r'\[(.+?)\]', r'<span style="color:#4FA8FF">\1</span>', e(f['titre']))
-    credit = f'<div style="position:absolute;right:16px;top:16px;padding:4px 10px;background:rgba(15,27,45,0.55);font-size:18px;color:#FFFFFF">{e(f["credit"])}</div>' if f.get('credit') else ''
+    credit = ''  # règle de la rédaction : jamais de source ni de crédit sur une photo (champ credit ignoré)
     sous = f'<div style="font-weight:500;font-size:34px;line-height:1.4;color:#E3E8EF;margin-top:22px">{e(f["sous_titre"])}</div>' if f.get('sous_titre') else ''
     return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:#0F1B2D;font-family:Barlow;color:#FFFFFF">
 <img src="file://{photo}" style="position:absolute;left:0;top:0;width:1080px;height:1350px;object-fit:cover;object-position:{f.get('cadrage', '50% 50%')}">
