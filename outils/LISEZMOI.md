@@ -59,3 +59,7 @@ Modèle de fiche vidéo : `outils/exemples/video.json` (scène d'accroche sans r
 ## Story « points clés » (`story_points.py`)
 
 `python3 outils/story_points.py fiche.json story.png` (lancer depuis la racine du dépôt) : story 1080x1920 native avec photo en haut, titre, 3 à 5 chiffres clés et un encart final. Exemple : `2026-10-27/mobilisation-lyceenne-story.json`.
+
+## Visuels X (`paysage.py`)
+
+`python3 outils/paysage.py fiche.json sortie.png` : visuel 1200x675 (16:9) pour X, photo à gauche, titre sur panneau bleu nuit à droite. Fiche : `photo`, `rubrique`, `titre` (mots entre crochets dans la teinte de la rubrique), `date` et `cadrage` facultatifs. Exemple : `2026-10-29/pepina-x.json`. Instagram, Facebook et LinkedIn gardent le 1080x1350, les stories le 1080x1920.
