@@ -1,4 +1,23 @@
-{"rubrique": "ACTU", "chiffre": "AUSSI", "titre": "Ports, aéroports et routes", "page": "7/7", "paragraphes": [
-{"label": "PORTS", "texte": "Les dockers CGT seront en grève dans tous les ports français, après une première grève de 24 heures vendredi dernier."},
-{"label": "AVIONS", "texte": "Les syndicats des contrôleurs aériens ont déposé un préavis. Des baisses de trafic pourraient être demandées aux compagnies."},
-{"label": "ROUTES", "texte": "Des gilets jaunes prévoient des actions sur des routes, ronds-points et autoroutes. Leur ampleur est difficile à anticiper."}]}
+{
+ "format": "story",
+ "tag": "ÉCOLES · ACCUEIL",
+ "titre": "Enseignant en grève : où faire garder son enfant ?",
+ "blocs": [
+  {
+   "label": "LE HUTREAU",
+   "texte": "Accueil de loisirs, route du Hutreau, à Sainte-Gemmes-sur-Loire"
+  },
+  {
+   "label": "LA CLAVERIE",
+   "texte": "Accueil de loisirs, 25 rue Hélène-Boucher, à Saint-Barthélemy-d'Anjou"
+  },
+  {
+   "label": "HORAIRES",
+   "texte": "Arrivée entre 8h35 et 9h, départ entre 16h45 et 17h30"
+  },
+  {
+   "label": "POUR QUI",
+   "texte": "Les enfants dont l'enseignant est gréviste et qui ne peuvent pas rester à l'école. Le site dépend du secteur"
+  }
+ ]
+}

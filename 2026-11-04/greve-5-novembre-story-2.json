@@ -1,1 +1,24 @@
-{"format": "story", "tag": "TRANSPORTS · IRIGO", "titre": "Grève : le réseau Irigo fortement perturbé jeudi", "blocs": [{"label": "HORAIRES ADAPTÉS", "texte": "Tram A, B et C, bus urbains 1 à 11 et ligne Express E20"}, {"label": "SUBURBAINS", "texte": "Horaires adaptés sur les lignes 31, 33, 34, 35, 37 et 38. Déviations possibles sur les autres lignes Express et suburbaines"}, {"label": "NORMAL", "texte": "La ligne 12 circule normalement"}, {"label": "CENTRE-VILLE", "texte": "Non desservi pendant la manifestation. Le réseau peut être interrompu selon la situation"}]}
+{
+ "rubrique": "ACTU",
+ "chiffre": "10H30",
+ "titre": "Départ de la manifestation place Leclerc",
+ "page": "2/11",
+ "paragraphes": [
+  {
+   "label": "DÉPART",
+   "texte": "10h30, place Leclerc."
+  },
+  {
+   "label": "PARCOURS",
+   "texte": "Boulevard Foch, boulevard du Roi-René puis voies sur berges. Circulation difficile : prévoyez du temps."
+  },
+  {
+   "label": "QUI DÉFILE",
+   "texte": "CFDT, CGT, FO, CFTC, Unsa, Solidaires, FSU, CGC, Unef, Union étudiante, Confédération paysanne et FCPE."
+  },
+  {
+   "label": "POURQUOI",
+   "texte": "Salaires, Smic, services publics, justice fiscale."
+  }
+ ]
+}

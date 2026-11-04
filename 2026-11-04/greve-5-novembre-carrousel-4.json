@@ -1,1 +1,27 @@
-{"type": "fiche", "rubrique": "ACTU", "chiffre": "17,54 %", "titre": "de grévistes attendus dans les écoles", "texte": "C'est l'estimation du ministère de l'Éducation nationale pour le primaire public. Le Snes-FSU prévoit une grève bien suivie en collège et lycée. Le privé est aussi appelé à la grève. Les cantines peuvent être touchées.", "page": "4/7"}
+{
+ "format": "post",
+ "tag": "TRANSPORTS · IRIGO",
+ "titre": "Irigo : terminus déplacés sur les lignes express et suburbaines",
+ "blocs": [
+  {
+   "label": "DE 10H15 À 14H",
+   "texte": "E23, E24, E25, 30, 31 et 32 : terminus à Savary au lieu de l'Hôtel de Ville"
+  },
+  {
+   "label": "NON DESSERVIS",
+   "texte": "Constant-Lemoine, Sécurité sociale, Saint-Exupéry et Gardot"
+  },
+  {
+   "label": "DÈS 10H15",
+   "texte": "40, 41 et 42 : terminus à André Leroy au lieu de la gare routière Esplanade"
+  },
+  {
+   "label": "E21 ET E22",
+   "texte": "Interruptions possibles pendant le passage du cortège"
+  },
+  {
+   "label": "HORAIRES ADAPTÉS",
+   "texte": "Express E20 et lignes 31, 33, 34, 35, 37 et 38"
+  }
+ ]
+}

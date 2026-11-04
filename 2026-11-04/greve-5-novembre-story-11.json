@@ -1,0 +1,20 @@
+{
+ "rubrique": "ACTU",
+ "chiffre": "AUSSI",
+ "titre": "Ports, aéroports et routes",
+ "page": "11/11",
+ "paragraphes": [
+  {
+   "label": "PORTS",
+   "texte": "Les dockers CGT seront en grève dans tous les ports français, après une première grève de 24 heures vendredi dernier."
+  },
+  {
+   "label": "AVIONS",
+   "texte": "Les syndicats des contrôleurs aériens ont déposé un préavis. Des baisses de trafic pourraient être demandées aux compagnies."
+  },
+  {
+   "label": "ROUTES",
+   "texte": "Des gilets jaunes prévoient des actions sur des routes, ronds-points et autoroutes. Leur ampleur est difficile à anticiper."
+  }
+ ]
+}

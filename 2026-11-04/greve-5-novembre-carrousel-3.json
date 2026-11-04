@@ -1,5 +1,27 @@
-{"format":"post","tag":"SÉCURITÉ · MANIFESTATION","titre":"Manifestation : un dispositif de sécurité renforcé à Angers",
-"blocs":[
-{"label":"GENDARMERIE","texte":"La préfecture de Maine-et-Loire mobilise de nouveau une unité de gendarmes mobiles"},
-{"label":"POLICE NATIONALE","texte":"Les effectifs du commissariat d'Angers : brigade de roulement et brigade anti-criminalité (BAC)"},
-{"label":"POLICE MUNICIPALE","texte":"Ses agents viennent s'ajouter au dispositif"}]}
+{
+ "format": "post",
+ "tag": "TRANSPORTS · IRIGO",
+ "titre": "Irigo : tram et bus urbains perturbés jeudi",
+ "blocs": [
+  {
+   "label": "TRAM A",
+   "texte": "Horaires adaptés sur les trois lignes. Interruptions possibles entre Berges de Maine et Les Gares"
+  },
+  {
+   "label": "TRAM B",
+   "texte": "Interruptions possibles entre Doutre-Maine et Conservatoire"
+  },
+  {
+   "label": "TRAM C",
+   "texte": "Perturbations possibles entre Les Gares et Doutre-Maine"
+  },
+  {
+   "label": "BUS 1 À 11",
+   "texte": "Horaires adaptés, interruptions ou déviations possibles. La ligne 12 circule normalement"
+  },
+  {
+   "label": "CENTRE-VILLE",
+   "texte": "Non desservi pendant la manifestation"
+  }
+ ]
+}

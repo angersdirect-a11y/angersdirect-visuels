@@ -1,3 +1,20 @@
-{"rubrique": "ACTU", "chiffre": "4", "titre": "syndicats de La Poste appellent à la grève", "page": "6/7", "paragraphes": [
-{"label": "QUI ?", "texte": "La CFDT, la CGT FAPT, Sud PTT et FO."},
-{"label": "PRÉAVIS ILLIMITÉ", "texte": "La CGT, deuxième syndicat de l'entreprise, a déposé un préavis de grève illimité à partir de ce jeudi 5 novembre."}]}
+{
+ "rubrique": "ACTU",
+ "chiffre": "53/72",
+ "titre": "écoles publiques d'Angers perturbées",
+ "page": "6/11",
+ "paragraphes": [
+  {
+   "label": "SELON LA VILLE",
+   "texte": "53 écoles publiques sur 72, d'après les intentions de grève."
+  },
+  {
+   "label": "CENTRE-VILLE",
+   "texte": "La Blancheraie, Parcheminerie : cantine, TAP et garderie du soir fermés. Victor-Hugo : périscolaire et cantine fermés."
+  },
+  {
+   "label": "AUTRES QUARTIERS",
+   "texte": "Voltaire, Henri-Chiron, Alfred-de-Musset, François-Raspail, Nelson-Mandela, René-Gasnier… Services en partie maintenus à Jean-Jacques-Rousseau, Claude-Monet et Adrien-Tigeot."
+  }
+ ]
+}

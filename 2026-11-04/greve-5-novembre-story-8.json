@@ -1,0 +1,24 @@
+{
+ "rubrique": "ACTU",
+ "chiffre": "3 SUR 5",
+ "titre": "TER en moyenne dans les Pays de la Loire",
+ "page": "8/11",
+ "paragraphes": [
+  {
+   "label": "TER",
+   "texte": "Environ trois trains sur cinq en moyenne dans la région, selon les lignes et les horaires."
+  },
+  {
+   "label": "ANGERS SAINT-LAUD",
+   "texte": "Vérifiez votre train avant de partir, notamment depuis Cholet ou Saumur."
+  },
+  {
+   "label": "TGV ET INTERCITÉS",
+   "texte": "TGV légèrement perturbés, Intercités plus touchés."
+  },
+  {
+   "label": "CARS ALÉOP",
+   "texte": "Vérifiez votre ligne, surtout en cas de correspondance avec un train ou un bus Irigo."
+  }
+ ]
+}
