@@ -6,7 +6,7 @@
  "paragraphes": [
   {
    "label": "TER",
-   "texte": "Environ trois trains sur cinq en moyenne dans la région, selon les lignes et les horaires."
+   "texte": "Trois TER sur cinq prévus en moyenne. Le chiffre change d'une ligne à l'autre et au fil de la journée."
   },
   {
    "label": "ANGERS SAINT-LAUD",
@@ -14,11 +14,11 @@
   },
   {
    "label": "TGV ET INTERCITÉS",
-   "texte": "TGV légèrement perturbés, Intercités plus touchés."
+   "texte": "TGV un peu touchés, Intercités davantage."
   },
   {
    "label": "CARS ALÉOP",
-   "texte": "Vérifiez votre ligne, surtout en cas de correspondance avec un train ou un bus Irigo."
+   "texte": "Contrôlez votre ligne, surtout si vous enchaînez avec un TER ou un bus Irigo."
   }
  ]
 }
