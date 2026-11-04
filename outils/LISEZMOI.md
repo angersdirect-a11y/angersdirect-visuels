@@ -16,6 +16,15 @@ Jamais de source affichée : ni sur un visuel (pas de bloc « SOURCE »), ni dan
 On ne nomme jamais un média comme source de l'information, et **jamais Angers Info / My Angers**, concurrent direct.
 Seules les attributions officielles utiles à l'exactitude restent possibles dans le texte (« selon la préfecture », « indique la mairie »).
 
+## Règle anti-doublon (obligatoire, pour toutes les tâches)
+
+Avant de choisir un sujet, puis de nouveau juste avant le premier createScheduledPost (une autre tâche a pu programmer le même sujet entre-temps), vérifie qu'il n'a pas déjà été traité. Un doublon, c'est le même événement, la même décision, la même exposition, le même match ou la même alerte, quelle que soit la formulation. Vérifie, sur les 15 derniers jours et jusqu'à J+15 :
+1. Metricool `getScheduledPosts` (marque 7574505, fuseau Europe/Paris), par tranches d'1 ou 2 jours : posts, stories, X, LinkedIn, publiés, programmés ou en brouillon. Les stories n'ont pas de texte : lis leur `mediaAltText`.
+2. Les posts publiés hors Metricool : `getAnalyticsDataByMetrics` avec FBPO02 + FBPO03 (Facebook) et IGPO02 + IGPO03 (Instagram) sur la même période.
+3. Ce dépôt : les fiches JSON des dossiers datés des 15 derniers jours (titres et textes des visuels, y compris des stories).
+4. Le dépôt privé angersdirect-auto : `veille/sujets.json`, `alertes/vues.json`, `reseaux/traites.json` et `reseaux/a-faire/`, et, après l'ouverture du site (lundi 9 novembre 2026 à 19h), les articles déjà publiés sur angersdirect.fr.
+Si le sujet existe déjà : ne publie rien. Exception seulement pour un vrai fait nouveau (bilan officiel, date changée, ouverture effective, résultat après une annonce, rappel « ce soir » d'un événement annoncé plusieurs jours avant), et alors sous un angle nouveau, en le signalant dans le résumé. Un même sujet n'a jamais deux posts Facebook ou deux posts Instagram le même jour. En cas de doute, abstiens-toi et signale-le.
+
 ## Règle sur les crédits photo
 
 Règle absolue d'Angers Direct : **jamais de source ni de crédit affiché sur une photo**, quelle que soit son origine (Unsplash, Wikimedia, domaine public, rédaction). Laisser `credit` vide ; les scripts ignorent ce champ de toute façon.
