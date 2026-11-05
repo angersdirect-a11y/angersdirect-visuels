@@ -1,0 +1,5 @@
+{"type": "meteo", "jour": "Vendredi 6 novembre",
+ "creneaux": [{"label": "Matin", "icone": "eclaircies", "temp": 6},
+              {"label": "Après-midi", "icone": "soleil", "temp": 13},
+              {"label": "Soir", "icone": "soleil", "temp": 9}],
+ "bas": "Min. 3° · Max. 14° · Vent 5 km/h · Pluie 0 %"}
