@@ -1,0 +1,19 @@
+{
+ "tag": "DERNIÈRE MINUTE",
+ "titre": "Budget 2027 : l'Assemblée rejette le texte, 0 vote pour",
+ "blocs": [
+  {
+   "label": "QUOI",
+   "texte": "Les députés ont rejeté la partie recettes du projet de budget de l'État pour 2027."
+  },
+  {
+   "label": "LE VOTE",
+   "texte": "458 voix contre, aucune pour et 2 abstentions, mercredi 4 novembre au soir."
+  },
+  {
+   "label": "ET MAINTENANT",
+   "texte": "Les dépenses ne seront pas débattues à l'Assemblée. Le Sénat repart de la version initiale du gouvernement."
+  }
+ ],
+ "format": "post"
+}
