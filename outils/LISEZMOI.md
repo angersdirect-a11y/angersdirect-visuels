@@ -46,7 +46,11 @@ Ne jamais remplir une statistique, un buteur ou une ligne de classement sans l'a
 ## Stories : toujours en 1080x1920
 
 Instagram et Facebook recadrent une story qui n'est pas au format 9:16 : le haut, le bas et les côtés d'un visuel 1080x1350 sont coupés.
-Avant toute story, passer le visuel par `python3 outils/story.py visuel.png visuel-story.png` (le visuel entier au centre, fond flouté autour).
+
+**Règle de la rédaction : une story occupe toute la page.** Le visuel est conçu nativement en 1080x1920 (fond, photo ou graphique jusqu'aux bords, pas de bandes floutées en haut et en bas), avec le texte utile entre 250 et 1670 px.
+- Avec une photo : `outils/story_points.py`.
+- Sans photo (chiffre, courbe, carte) : un script dédié qui compose la page en 1080x1920 (exemple : `2026-11-09/smic_story.py`).
+- `python3 outils/story.py visuel.png visuel-story.png` (visuel 1080x1350 au centre, fond flouté autour) seulement en dernier recours, quand aucune version pleine page n'est possible.
 Un post Facebook et une story Instagram ne peuvent donc pas partager le même média : programmer deux publications séparées (Facebook POST avec le 1080x1350, story avec la version 1080x1920).
 
 ## Calendriers officiels
