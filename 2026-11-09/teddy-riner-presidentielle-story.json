@@ -1,8 +1,29 @@
-{"photo": "outils/sel/riner.jpg", "credit": "", "rubrique": "ACTU", "logo": "haut",
+{
+ "photo": "outils/sel/riner.jpg",
+ "credit": "",
+ "rubrique": "ACTU",
+ "logo": "haut",
  "titre": "Teddy Riner candidat à la présidentielle",
  "points": [
-  {"chiffre": "2027", "texte": "Il annonce sa candidature à l'élection présidentielle"},
-  {"chiffre": "3", "texte": "Titres olympiques individuels pour la légende du judo"},
-  {"chiffre": "500", "texte": "Parrainages d'élus à réunir pour être candidat"},
-  {"chiffre": "18 avril", "texte": "Premier tour de l'élection, en 2027"}],
- "encart": {"label": "TOUT SAVOIR", "texte": "L'article complet sur angersdirect.fr"}}
+  {
+   "chiffre": "2027",
+   "texte": "Il annonce sa candidature à l'élection présidentielle"
+  },
+  {
+   "chiffre": "3",
+   "texte": "Titres olympiques individuels pour la légende du judo"
+  },
+  {
+   "chiffre": "500",
+   "texte": "Parrainages d'élus à réunir pour être candidat"
+  },
+  {
+   "chiffre": "18 avril",
+   "texte": "Premier tour de l'élection, en 2027"
+  }
+ ],
+ "encart": {
+  "label": "À SUIVRE",
+  "texte": "Sa campagne, à suivre sur nos réseaux"
+ }
+}
