@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/renovation-energetique-anjou.jpg",
+ "credit": "",
+ "rubrique": "ENVIRONNEMENT",
+ "logo": "haut",
+ "titre": "Rénover : qui contacter en Anjou",
+ "points": [
+  {
+   "chiffre": "43 %",
+   "texte": "Part du bâtiment dans la consommation d'énergie régionale"
+  },
+  {
+   "chiffre": "Alisée",
+   "texte": "L'espace conseil France Rénov' à Angers, avenue René-Gasnier"
+  },
+  {
+   "chiffre": "Siéml",
+   "texte": "L'interlocuteur des communes et intercommunalités"
+  },
+  {
+   "chiffre": "Région",
+   "texte": "Pour produire, stocker et piloter son énergie"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

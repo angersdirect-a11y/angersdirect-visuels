@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/ducs-rouen-iceparc.jpg",
+ "credit": "",
+ "rubrique": "SPORT",
+ "logo": "haut",
+ "titre": "Les Ducs défient Rouen mardi",
+ "points": [
+  {
+   "chiffre": "20h",
+   "texte": "Mardi 10 novembre à l'IceParc, 12e journée de Ligue Magnus"
+  },
+  {
+   "chiffre": "2e",
+   "texte": "Rouen, 32 points en 15 matchs"
+  },
+  {
+   "chiffre": "6e",
+   "texte": "Les Ducs, 21 points en 14 matchs"
+  },
+  {
+   "chiffre": "0-1",
+   "texte": "Le dernier match des Ducs, contre Nice le 30 octobre"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "photo": "outils/sel/loups-angers-pro-a.jpg",
+ "credit": "",
+ "rubrique": "SPORT",
+ "logo": "haut",
+ "titre": "Les Loups d'Angers en Pro A",
+ "points": [
+  {
+   "chiffre": "7e",
+   "texte": "Sur 10 après quatre journées"
+  },
+  {
+   "chiffre": "3-2",
+   "texte": "La victoire à Nîmes Montpellier lors de la 1re journée"
+  },
+  {
+   "chiffre": "3-0",
+   "texte": "Trois défaites, dont Rouen à Angers le 23 octobre"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

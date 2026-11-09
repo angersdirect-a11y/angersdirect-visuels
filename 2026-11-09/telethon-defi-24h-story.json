@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/telethon-defi-24h.jpg",
+ "credit": "",
+ "rubrique": "VILLE",
+ "logo": "haut",
+ "titre": "Le Défi 24h du Téléthon",
+ "points": [
+  {
+   "chiffre": "16h",
+   "texte": "Départ vendredi 4 décembre, esplanade Saint-Jacques"
+  },
+  {
+   "chiffre": "24h",
+   "texte": "Marcher ou courir autour de l'étang Saint-Nicolas, à toute heure"
+  },
+  {
+   "chiffre": "1 000",
+   "texte": "Kilomètres : l'objectif de l'Université d'Angers"
+  },
+  {
+   "chiffre": "En ligne",
+   "texte": "Participation à distance possible, après inscription"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

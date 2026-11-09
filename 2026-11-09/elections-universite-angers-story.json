@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/elections-universite-angers.jpg",
+ "credit": "",
+ "rubrique": "ACTU",
+ "logo": "haut",
+ "titre": "Université d'Angers : on vote en ligne",
+ "points": [
+  {
+   "chiffre": "En ligne",
+   "texte": "Vote du 3 au 10 décembre, uniquement par internet"
+  },
+  {
+   "chiffre": "3",
+   "texte": "Instances renouvelées : CSA, CCP et CPE"
+  },
+  {
+   "chiffre": "5",
+   "texte": "Organisations syndicales candidates"
+  },
+  {
+   "chiffre": "8h-20h",
+   "texte": "Assistance en semaine pendant le vote"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/bernarda-alba-quai.jpg",
+ "credit": "",
+ "rubrique": "CULTURE",
+ "logo": "haut",
+ "titre": "Lorca au Quai d'Angers",
+ "points": [
+  {
+   "chiffre": "18-19",
+   "texte": "Mercredi 18 et jeudi 19 novembre"
+  },
+  {
+   "chiffre": "1h45",
+   "texte": "La durée du spectacle de Thibaud Croisy"
+  },
+  {
+   "chiffre": "15 ans",
+   "texte": "L'âge conseillé pour y assister"
+  },
+  {
+   "chiffre": "19 nov.",
+   "texte": "Rencontre avec l'équipe artistique après la pièce"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}
