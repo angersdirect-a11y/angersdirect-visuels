@@ -1,0 +1,15 @@
+{"duree_scene": 3.2,
+ "musique": true,
+ "graine": 4,
+ "scenes": [
+  {"type": "texte", "rubrique": "ÉCONOMIE", "chiffre": "1 501,90 €",
+   "titre": "Le Smic net au [1er décembre]", "lignes": ["Pour un temps plein.", "Hausse de 1,6 % annoncée lundi."]},
+  {"type": "texte", "rubrique": "ÉCONOMIE", "chiffre": "+23,97 €",
+   "titre": "De plus [chaque mois]", "lignes": ["Contre 1 477,93 € aujourd'hui.", "Soit 287,64 € sur un an."]},
+  {"type": "texte", "rubrique": "ÉCONOMIE", "chiffre": "2012",
+   "titre": "Premier [coup de pouce] depuis", "lignes": ["0,6 % décidés par le gouvernement,", "en plus de la hausse automatique."]},
+  {"type": "texte", "rubrique": "ÉCONOMIE", "chiffre": "2,1 millions",
+   "titre": "De salariés [concernés]", "lignes": ["Dès la fiche de paie de décembre.", "Temps partiel : au prorata."]},
+  {"type": "texte", "rubrique": "ÉCONOMIE", "chiffre": "« Miettes »",
+   "titre": "Les syndicats [en veulent plus]", "lignes": ["La CFDT demandait 100 € de plus,", "la CGT environ 150 €."]}
+ ]}
