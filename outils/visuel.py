@@ -10,6 +10,7 @@ Fiche « meteo » :
      "creneaux": [{"label": "Matin", "icone": "nuage", "temp": 11}, ...3 créneaux],
      "bas": "Min. 10° · Max. 15° · Vent 20 km/h · Pluie 60 %"}
     icônes : soleil, eclaircies, nuage, pluie_faible, pluie, orage
+    « meteo_story » : même fiche, story pleine page 1080x1920.
 
 Fiche « article » (photo en haut, style Angers Direct) :
     {"type": "article", "photo": "chemin/photo.jpg", "credit": "",
@@ -83,21 +84,24 @@ def e(t):
     return html.escape(str(t))
 
 
-def meteo(f):
+def meteo(f, H=1350):
+    """Météo ; H=1920 donne la story pleine page (contenu entre 250 et 1670 px)."""
+    st = H == 1920
+    y = (lambda a, b: b if st else a)
     cartes = ''
     for c in f['creneaux']:
         cartes += f'''<div style="border-radius:24px;background:rgba(255,255,255,0.15);display:flex;flex-direction:column;align-items:center;padding-top:40px;box-sizing:border-box">
 <div style="font-weight:500;font-size:34px">{e(c['label'])}</div>
 <svg width="190" height="190" viewBox="0 0 180 180" style="margin-top:30px">{ICONES[c['icone']]}</svg>
 <div style="font-family:'Barlow Condensed';font-weight:700;font-size:116px;line-height:1;margin-top:34px">{e(c['temp'])}°</div></div>'''
-    return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;background:linear-gradient(135deg,#5AB6F1 0%,#3B9DE6 45%,#1E8DE3 100%);font-family:Barlow;color:#FFFFFF">
-<div style="position:absolute;left:72px;top:70px;width:133px;height:50px;background:#FFFFFF;transform:skewX(-12deg);display:flex;align-items:center;justify-content:center"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:32px;letter-spacing:2px;color:#1C8FE3">MÉTÉO</div></div>
-<div style="position:absolute;left:70px;top:196px;font-family:'Barlow Condensed';font-weight:700;font-size:112px;line-height:1">Angers</div>
-<div style="position:absolute;left:72px;top:336px;font-weight:500;font-size:36px">{e(f['jour'])}</div>
-<div style="position:absolute;left:70px;top:470px;width:940px;height:520px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:20px">{cartes}</div>
-<div style="position:absolute;left:72px;right:72px;top:1056px;font-weight:500;font-size:34px">{e(f['bas'])}</div>
-<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:1205px;width:215px">
-<div style="position:absolute;right:70px;top:1228px;font-weight:500;font-size:30px;letter-spacing:2px">angersdirect.fr</div></div>'''
+    return f'''<div style="width:1080px;height:{H}px;position:relative;overflow:hidden;background:linear-gradient(135deg,#5AB6F1 0%,#3B9DE6 45%,#1E8DE3 100%);font-family:Barlow;color:#FFFFFF">
+<div style="position:absolute;left:72px;top:{y(70,270)}px;width:133px;height:50px;background:#FFFFFF;transform:skewX(-12deg);display:flex;align-items:center;justify-content:center"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:32px;letter-spacing:2px;color:#1C8FE3">MÉTÉO</div></div>
+<div style="position:absolute;left:70px;top:{y(196,370)}px;font-family:'Barlow Condensed';font-weight:700;font-size:112px;line-height:1">Angers</div>
+<div style="position:absolute;left:72px;top:{y(336,510)}px;font-weight:500;font-size:36px">{e(f['jour'])}</div>
+<div style="position:absolute;left:70px;top:{y(470,650)}px;width:940px;height:{y(520,600)}px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:20px">{cartes}</div>
+<div style="position:absolute;left:72px;right:72px;top:{y(1056,1330)}px;font-weight:500;font-size:34px">{e(f['bas'])}</div>
+<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:72px;top:{y(1205,1520)}px;width:215px">
+<div style="position:absolute;right:70px;top:{y(1228,1543)}px;font-weight:500;font-size:30px;letter-spacing:2px">angersdirect.fr</div></div>'''
 
 
 def article(f):
@@ -152,17 +156,18 @@ def sombre(f):
 def main():
     fiche = json.load(open(sys.argv[1]))
     sortie = pathlib.Path(sys.argv[2]).resolve()
-    corps = {'meteo': meteo, 'article': article, 'sombre': sombre, 'fiche': carte}[fiche['type']](fiche)
+    corps = {'meteo': meteo, 'meteo_story': lambda f: meteo(f, 1920), 'article': article, 'sombre': sombre, 'fiche': carte}[fiche['type']](fiche)
+    H = 1920 if fiche['type'].endswith('_story') else 1350
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{corps}</body></html>"
     tmp = sortie.with_suffix('.html')
     tmp.write_text(page)
     with sync_playwright() as p:
         b = p.chromium.launch()
-        pg = b.new_page(viewport={'width': 1080, 'height': 1350})
+        pg = b.new_page(viewport={'width': 1080, 'height': H})
         pg.goto('file://' + str(tmp))
         pg.evaluate('document.fonts.ready')
         pg.wait_for_timeout(400)
-        pg.screenshot(path=str(sortie), clip={'x': 0, 'y': 0, 'width': 1080, 'height': 1350})
+        pg.screenshot(path=str(sortie), clip={'x': 0, 'y': 0, 'width': 1080, 'height': H})
         b.close()
     tmp.unlink()
     print('ok', sortie)

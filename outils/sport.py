@@ -6,7 +6,7 @@ Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec l
 
 Fiches (exemples complets dans outils/exemples/) :
   sport (facultatif : football, hockey, basket, handball ou roller, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
-  score       : journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
+  score       : (score_story = même fiche en story pleine page 1080x1920) journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}]
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
   jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : entete (facultatif, défaut « JOUR DE MATCH », ex. « NOUVEL HORAIRE »), journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
@@ -89,8 +89,10 @@ def entete(w, tag, rouge=False, top=70):
             f'<div style="transform:skewX(12deg);{BC};font-weight:600;font-size:38px;letter-spacing:2px;color:{col}">{e(tag)}</div></div>')
 
 
-def score(f):
+def score(f, H=1350):
+    """Score final ; H=1920 donne la story pleine page (même contenu, centré, fond jusqu'aux bords)."""
     a, b = f['score']
+    dy = (H - 1350) // 2
     def buts(l, align):
         return ''.join(f'<div style="text-align:{align}">{e(x)}</div>' for x in l)
     stats = ''
@@ -103,7 +105,7 @@ def score(f):
 <div style="position:absolute;left:70px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:{530-wl}px;top:{y+56}px;width:{wl}px;height:9px;background:#FFFFFF"></div>
 <div style="position:absolute;left:550px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:550px;top:{y+56}px;width:{wr}px;height:9px;background:#D3D5D9"></div>'''
         y += 92
-    return f'''<div style="width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,1350)}{entete(1080,'SCORE FINAL',True)}
+    return f'''<div style="width:1080px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,H)}<div style="position:absolute;left:0;top:{dy}px;width:1080px;height:1350px">{entete(1080,'SCORE FINAL',True)}
 <div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
 <div style="position:absolute;left:0;right:0;top:346px;height:282px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:44px;top:369px">{rond(f['dom'].get('logo'),f['dom']['nom'],236)}</div>
@@ -115,7 +117,7 @@ def score(f):
 <div style="position:absolute;left:90px;top:782px;font-size:32px;line-height:1.6">{buts(f.get('buteurs_dom',[]),'left')}</div>
 <div style="position:absolute;right:90px;top:782px;font-size:32px;line-height:1.6">{buts(f.get('buteurs_ext',[]),'right')}</div>
 {stats}
-<div style="position:absolute;left:0;right:0;top:1240px;text-align:center;font-size:32px;color:{BLEU}">{e(f.get('pied','Le résumé et les réactions sur angersdirect.fr'))}</div></div>'''
+<div style="position:absolute;left:0;right:0;top:1240px;text-align:center;font-size:32px;color:{BLEU}">{e(f.get('pied','Le résumé et les réactions sur angersdirect.fr'))}</div></div></div>'''
 
 
 def classement(f):
@@ -206,7 +208,7 @@ def jdm(f, paysage, post=False):
 {infos}</div>'''
 
 
-TYPES = {'score': (score, 1080, 1350), 'classement': (classement, 1080, 1350), 'calendrier': (calendrier, 1080, 1350),
+TYPES = {'score': (score, 1080, 1350), 'score_story': (lambda f: score(f, 1920), 1080, 1920), 'classement': (classement, 1080, 1350), 'calendrier': (calendrier, 1080, 1350),
          'jdm_story': (lambda f: jdm(f, False), 1080, 1920), 'jdm_paysage': (lambda f: jdm(f, True), 1920, 1080),
          'jdm_post': (lambda f: jdm(f, False, True), 1080, 1350)}
 
