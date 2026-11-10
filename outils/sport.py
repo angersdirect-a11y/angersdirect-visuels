@@ -106,7 +106,7 @@ def score(f, H=1350):
 <div style="position:absolute;left:550px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:550px;top:{y+56}px;width:{wr}px;height:9px;background:#D3D5D9"></div>'''
         y += 92
     return f'''<div style="width:1080px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,H)}<div style="position:absolute;left:0;top:{dy}px;width:1080px;height:1350px">{entete(1080,'SCORE FINAL',True)}
-<div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
+<div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()}{(' · ' + e(f['journee']).upper()) if f.get('journee') else ''}</div>
 <div style="position:absolute;left:0;right:0;top:346px;height:282px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:44px;top:369px">{rond(f['dom'].get('logo'),f['dom']['nom'],236)}</div>
 <div style="position:absolute;right:44px;top:369px">{rond(f['ext'].get('logo'),f['ext']['nom'],236)}</div>
@@ -198,7 +198,7 @@ def jdm(f, paysage, post=False):
     ny = cy + band_h + 22
     nm = 60 if post else 0  # fil Instagram : noms longs (« Angers SCO Handball ») sur une ligne
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,f.get('entete','JOUR DE MATCH'),False,top)}
-<div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()} · {e(f['journee']).upper()}</div>
+<div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()}{(' · ' + e(f['journee']).upper()) if f.get('journee') else ''}</div>
 <div style="position:absolute;left:0;right:0;top:{cy-8}px;height:{band_h}px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:{lx}px;top:{cy}px">{rond(f['dom'].get('logo'),f['dom']['nom'],d)}</div>
 <div style="position:absolute;left:{rx}px;top:{cy}px">{rond(f['ext'].get('logo'),f['ext']['nom'],d)}</div>
