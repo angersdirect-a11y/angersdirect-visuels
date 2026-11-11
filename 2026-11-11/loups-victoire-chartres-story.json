@@ -1,0 +1,14 @@
+{
+ "photo": "outils/sel/loups-victoire-chartres.jpg",
+ "credit": "©AngersDirect",
+ "rubrique": "SPORT",
+ "logo": "haut",
+ "titre": "Les Loups d'Angers relèvent la tête à Chartres",
+ "points": [
+  {"chiffre": "3-1", "texte": "La victoire à Chartres, mardi 10 novembre en Pro A"},
+  {"chiffre": "2", "texte": "Parties gagnées par Joé Seyfried"},
+  {"chiffre": "3", "texte": "Défaites 3-0 d'affilée effacées par ce succès"},
+  {"chiffre": "2 sur 5", "texte": "Les victoires des Loups après cinq rencontres"}
+ ],
+ "encart": {"label": "TOUT SAVOIR", "texte": "L'article complet sur angersdirect.fr"}
+}
