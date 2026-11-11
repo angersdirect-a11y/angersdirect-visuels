@@ -16,6 +16,13 @@ Sur Facebook, le visuel doit être beau avant tout. Le bandeau de couleur avec u
 - En session avec la rédaction : demander d'abord à la rédaction si elle a des photos du sujet, avant de produire le visuel.
 - Sans photo de la rédaction (ou en tâche automatique, sans personne à qui demander) : chercher une photo libre et utilisable sans crédit (voir la règle sur les crédits photo) ; si aucune ne convient, publier quand même avec le bandeau.
 
+## Règle du bandeau : une photo par défaut (règle de la rédaction, 12 novembre 2026)
+
+Le haut de chaque visuel (post et story) porte une **photo**, sauf quand le sujet repose sur un chiffre ou une statistique : seulement dans ce cas, le bandeau de couleur avec le gros chiffre (type `fiche`, `story_fiche.py`) est autorisé.
+- Post : type `article` (photo en haut) ou `sombre` ; story : `story_points.py` avec la même photo.
+- Concert, spectacle, sortie, sport, vie locale : toujours une photo (photo de la rédaction, `outils/photos/`, ou photo libre Unsplash/Pexels/Pixabay/domaine public, jamais de crédit affiché).
+- Sans photo libre adaptée : chercher une photo d'ambiance cohérente (instrument, salle, lieu, objet) avant de se rabattre sur le bandeau ; signaler dans le résumé tout visuel publié sans photo.
+
 ## Règle sur les sources (règle générale de la rédaction)
 
 Jamais de source affichée : ni sur un visuel (pas de bloc « SOURCE »), ni dans un texte de post, de story ou d'article (pas de ligne « Source : »).
