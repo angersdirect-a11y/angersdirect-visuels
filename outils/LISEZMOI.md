@@ -10,6 +10,12 @@
   - `cinema-fantastique.jpg` : illustration originale générée par `outils/cinema.py` (salle de cinéma, film fantastique), libre de droits
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
+## Visuels Facebook : photo plutôt que bandeau (consigne de la rédaction, 11 novembre 2026)
+
+Sur Facebook, le visuel doit être beau avant tout. Le bandeau de couleur avec un gros chiffre (type `fiche`) est réservé aux sujets dont l'information principale est un chiffre ou une statistique. Pour tous les autres sujets, on met une photo en haut à la place du bandeau (type `article`, ou `sombre` pour un sujet grave).
+- En session avec la rédaction : demander d'abord à la rédaction si elle a des photos du sujet, avant de produire le visuel.
+- Sans photo de la rédaction (ou en tâche automatique, sans personne à qui demander) : chercher une photo libre et utilisable sans crédit (voir la règle sur les crédits photo) ; si aucune ne convient, publier quand même avec le bandeau.
+
 ## Règle sur les sources (règle générale de la rédaction)
 
 Jamais de source affichée : ni sur un visuel (pas de bloc « SOURCE »), ni dans un texte de post, de story ou d'article (pas de ligne « Source : »).
