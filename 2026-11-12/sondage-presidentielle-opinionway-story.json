@@ -1,0 +1,93 @@
+{
+ "rubrique": "ACTU",
+ "titre": "Présidentielle 2027 : les intentions de vote au 1er tour",
+ "sous_titre": "Sondage OpinionWay pour CNEWS, publié le 12 novembre",
+ "lignes": [
+  {
+   "nom": "Marine Le Pen",
+   "parti": "Rassemblement national",
+   "valeur": 31,
+   "affiche": "31 %"
+  },
+  {
+   "nom": "Jean-Luc Mélenchon",
+   "parti": "La France insoumise",
+   "valeur": 16,
+   "affiche": "16 %"
+  },
+  {
+   "nom": "Édouard Philippe",
+   "parti": "Horizons",
+   "valeur": 12,
+   "affiche": "12 %"
+  },
+  {
+   "nom": "Raphaël Glucksmann",
+   "parti": "Place publique",
+   "valeur": 10,
+   "affiche": "10 %"
+  },
+  {
+   "nom": "David Lisnard",
+   "parti": "Nouvelle Énergie",
+   "valeur": 9,
+   "affiche": "9 %"
+  },
+  {
+   "nom": "Teddy Riner",
+   "parti": "Sans étiquette",
+   "valeur": 4,
+   "affiche": "4 %"
+  },
+  {
+   "nom": "Bruno Retailleau",
+   "parti": "Les Républicains",
+   "valeur": 4,
+   "affiche": "4 %"
+  },
+  {
+   "nom": "Éric Zemmour",
+   "parti": "Reconquête",
+   "valeur": 3,
+   "affiche": "3 %"
+  },
+  {
+   "nom": "Gabriel Attal",
+   "parti": "Renaissance",
+   "valeur": 3,
+   "affiche": "3 %"
+  },
+  {
+   "nom": "Marine Tondelier",
+   "parti": "Les Écologistes",
+   "valeur": 3,
+   "affiche": "3 %"
+  },
+  {
+   "nom": "Nicolas Dupont-Aignan",
+   "parti": "Debout la France",
+   "valeur": 2,
+   "affiche": "2 %"
+  },
+  {
+   "nom": "Fabien Roussel",
+   "parti": "Parti communiste",
+   "valeur": 2,
+   "affiche": "2 %"
+  },
+  {
+   "nom": "Nathalie Arthaud",
+   "parti": "Lutte ouvrière",
+   "valeur": 1,
+   "affiche": "1 %"
+  },
+  {
+   "nom": "Karim Bouamrane",
+   "parti": "Parti socialiste",
+   "valeur": 0.4,
+   "affiche": "< 1 %"
+  }
+ ],
+ "mentions": "Sondage OpinionWay pour CNEWS réalisé en ligne du 10 au 12 novembre 2026 auprès d'un échantillon de 1 001 personnes représentatif de la population française âgée de 18 ans et plus (méthode des quotas), dont 964 inscrits sur les listes électorales. 14 % n'expriment pas d'intention de vote. Les résultats doivent être lus en tenant compte des marges d'incertitude. Notice consultable sur le site de la Commission des sondages.",
+ "format": "story"
+}
