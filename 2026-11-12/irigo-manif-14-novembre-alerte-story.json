@@ -1,0 +1,23 @@
+{
+ "format": "story",
+ "tag": "TRAM · IRIGO",
+ "titre": "Tram et bus perturbés samedi dans le centre d'Angers",
+ "blocs": [
+  {
+   "label": "QUAND",
+   "texte": "Samedi 14 novembre, pendant la manifestation"
+  },
+  {
+   "label": "QUOI",
+   "texte": "Horaires adaptés sur les trams A, B, C, les bus 1 à 11 et l'E20. La ligne 12 circule normalement."
+  },
+  {
+   "label": "OÙ",
+   "texte": "Centre-ville non desservi pendant le cortège. Coupures possibles sur les trois lignes de tram."
+  },
+  {
+   "label": "CONSEILS",
+   "texte": "Consultez l'info trafic Irigo avant de partir. Infos au 02 41 33 64 64"
+  }
+ ]
+}
