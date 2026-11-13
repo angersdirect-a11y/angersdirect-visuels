@@ -43,6 +43,10 @@ Si le sujet existe déjà : ne publie rien. Exception seulement pour un vrai fai
 Règle absolue d'Angers Direct : **jamais de source ni de crédit affiché sur une photo**, quelle que soit son origine (Unsplash, Wikimedia, domaine public, rédaction). Laisser `credit` vide ; les scripts ignorent ce champ de toute façon.
 La provenance de la photo est notée seulement dans `sel/credits.json`, jamais sur le visuel. Comme une photo sous CC BY ou CC BY-SA impose un crédit, ne pas utiliser ces photos : préférer Unsplash, Pexels, Pixabay, le domaine public ou les photos de la rédaction.
 
+## Jamais de mention « contenu généré par IA » (règle de la rédaction, 13 novembre 2026)
+
+Ne jamais cocher la mention IA dans Metricool, sur aucun réseau ni format : `isAiGenerated: false` (Instagram, Pinterest), `isAigc: false` (TikTok), `isAiGeneratedContent: false` (YouTube), y compris pour les illustrations.
+
 ## Jamais « lien en bio »
 
 Aucun texte de post, de story ou de visuel ne contient « lien en bio » : on écrit « Tous les détails sur angersdirect.fr ».
