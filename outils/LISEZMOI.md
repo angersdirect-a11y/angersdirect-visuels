@@ -27,7 +27,7 @@ Le haut de chaque visuel (post et story) porte une **photo**, sauf quand le suje
 
 `outils/alerte.py` a deux modèles, choisis avec le champ `modele` de la fiche :
 - `"modele": "trafic"` (par défaut, bandes jaunes et noires « chantier ») : **uniquement** pour les problèmes de circulation, accidents de la route, travaux.
-- `"modele": "info"` (en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges, sans bandes) : toutes les autres alertes, notamment les alertes nationales et internationales (catastrophe, attentat, décès, décision majeure, rapport, chiffre national...).
+- `"modele": "info"` (léger halo de lumière en haut, en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges, sans bandes) : toutes les autres alertes, notamment les alertes nationales et internationales (catastrophe, attentat, décès, décision majeure, rapport, chiffre national...).
 Jamais les bandes de chantier sur un sujet qui n'est pas trafic, accident ou travaux. Un sujet qui repose sur un chiffre (rapport, statistique) peut aussi prendre la carte `fiche` / `story_fiche.py`.
 Exemple : `2026-11-13/exemple-alerte-info-post.json`.
 

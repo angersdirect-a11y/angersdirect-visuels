@@ -2,7 +2,7 @@
 - « trafic » (par défaut) : modèle angers-direct-modele-travaux-circulation, bandes jaunes et noires en haut.
   RÉSERVÉ aux problèmes de circulation, accidents de la route, travaux (règle de la rédaction, 13 novembre 2026).
 - « info » : alerte info nationale ou internationale (catastrophe, attentat, décès, décision majeure...),
-  sans bandes de chantier : en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges.
+  sans bandes de chantier : léger halo de lumière en haut, en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges.
 
 Usage : python3 outils/alerte.py fiche.json sortie.png
 Fiche : {"modele": "trafic" | "info", "format": "post" (1080x1350) ou "story" (1080x1920), "tag": "TRAVAUX · CIRCULATION",
@@ -37,7 +37,8 @@ def page(f, W, H):
     accent = ROUGE if info else JAUNE
     label_c = ROUGE_CLAIR if info else JAUNE
     if info:
-        haut = f'''<div style="position:absolute;left:72px;top:{190 if story else 70}px;display:flex;align-items:center;gap:18px">
+        haut = f'''<div style="position:absolute;left:-{W//4}px;top:-{H//4}px;width:{W*3//2}px;height:{H*3//5}px;background:radial-gradient(ellipse at 50% 40%,rgba(120,180,255,.22) 0%,rgba(60,120,220,.10) 38%,rgba(15,27,45,0) 70%)"></div>
+<div style="position:absolute;left:72px;top:{190 if story else 70}px;display:flex;align-items:center;gap:18px">
 <div style="width:26px;height:26px;border-radius:50%;background:{ROUGE};box-shadow:0 0 0 10px rgba(229,50,45,.25)"></div>
 <div style="{BC};font-weight:700;font-size:40px;letter-spacing:6px">ALERTE INFO</div></div>
 <div style="position:absolute;left:72px;right:72px;top:{262 if story else 140}px;height:2px;background:rgba(255,255,255,.18)"></div>'''
