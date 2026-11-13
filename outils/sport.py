@@ -41,7 +41,7 @@ ALIAS = {'angers': 'angers-sco', 'sco': 'angers-sco', 'auxerre': 'aj-auxerre', '
          'toulouse': 'toulouse-fc', 'troyes': 'estac-troyes', 'estac': 'estac-troyes', 'rennes': 'stade-rennais',
          'rennais': 'stade-rennais'}
 ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
-ALIAS_SPORT = {'handball': {'sco': 'sco-handball', 'angers': 'sco-handball', 'belfort': 'belfort-handball', 'paris': 'psg-handball', 'psg': 'psg-handball', 'saint-germain': 'psg-handball'},
+ALIAS_SPORT = {'handball': {'tremblay': 'tremblay-handball', 'sco': 'sco-handball', 'angers': 'sco-handball', 'belfort': 'belfort-handball', 'paris': 'psg-handball', 'psg': 'psg-handball', 'saint-germain': 'psg-handball'},
                'hockey': {'angers': 'ducs-angers', 'rouen': 'rouen-dragons', 'chamonix': 'chamonix-pionniers', 'nice': 'nice-aigles', 'amiens': 'amiens-gothiques', 'anglet': 'anglet-hormadi', 'bordeaux': 'bordeaux-boxers', 'briançon': 'briancon-diables-rouges', 'briancon': 'briancon-diables-rouges', 'cergy': 'cergy-jokers', 'gap': 'gap-rapaces', 'grenoble': 'grenoble-bruleurs-de-loups', 'marseille': 'marseille-spartiates'},
                'roller': {'hawks': 'hawks-angers', 'angers': 'hawks-angers', 'aiglons': 'valence-aiglons', 'valence': 'valence-aiglons'},
                'basket': {'angers': 'eab', 'challans': 'challans', 'sables': 'les-sables-basket'}}
