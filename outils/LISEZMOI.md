@@ -23,6 +23,14 @@ Le haut de chaque visuel (post et story) porte une **photo**, sauf quand le suje
 - Concert, spectacle, sortie, sport, vie locale : toujours une photo (photo de la rédaction, `outils/photos/`, ou photo libre Unsplash/Pexels/Pixabay/domaine public, jamais de crédit affiché).
 - Sans photo libre adaptée : chercher une photo d'ambiance cohérente (instrument, salle, lieu, objet) avant de se rabattre sur le bandeau ; signaler dans le résumé tout visuel publié sans photo.
 
+## Alertes : bon modèle selon le sujet (règle de la rédaction, 13 novembre 2026)
+
+`outils/alerte.py` a deux modèles, choisis avec le champ `modele` de la fiche :
+- `"modele": "trafic"` (par défaut, bandes jaunes et noires « chantier ») : **uniquement** pour les problèmes de circulation, accidents de la route, travaux.
+- `"modele": "info"` (liseré rouge, en-tête « ALERTE INFO », étiquette et filets rouges, sans bandes) : toutes les autres alertes, notamment les alertes nationales et internationales (catastrophe, attentat, décès, décision majeure, rapport, chiffre national...).
+Jamais les bandes de chantier sur un sujet qui n'est pas trafic, accident ou travaux. Un sujet qui repose sur un chiffre (rapport, statistique) peut aussi prendre la carte `fiche` / `story_fiche.py`.
+Exemple : `2026-11-13/exemple-alerte-info-post.json`.
+
 ## Règle sur les sources (règle générale de la rédaction)
 
 Jamais de source affichée : ni sur un visuel (pas de bloc « SOURCE »), ni dans un texte de post, de story ou d'article (pas de ligne « Source : »).
@@ -69,7 +77,7 @@ Instagram et Facebook recadrent une story qui n'est pas au format 9:16 : le haut
 - Carte sans photo (gros chiffre) : `outils/story_fiche.py`.
 - Météo : `outils/visuel.py` avec la même fiche en type `meteo_story`.
 - Score : `outils/sport.py` avec la même fiche en type `score_story` ; jour de match : `jdm_story`.
-- Alerte : `outils/alerte.py` au format « story ».
+- Alerte : `outils/alerte.py` au format « story » (même `modele` que le post).
 - Courbe, carrousel ou cas particulier : un script dédié qui compose la page en 1080x1920 (exemple : `2026-11-09/smic_story.py`).
 - `outils/story.py` (visuel 1080x1350 au centre, fond flouté autour) est interdit pour une publication.
 Un post Facebook et une story Instagram ne peuvent donc pas partager le même média : programmer deux publications séparées (Facebook POST avec le 1080x1350, story avec la version 1080x1920).
