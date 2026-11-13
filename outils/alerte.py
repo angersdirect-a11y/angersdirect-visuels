@@ -5,7 +5,7 @@
   sans bandes de chantier : léger halo de lumière en haut, en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges.
 
 Usage : python3 outils/alerte.py fiche.json sortie.png
-Fiche : {"modele": "trafic" | "info", "format": "post" (1080x1350) ou "story" (1080x1920), "tag": "TRAVAUX · CIRCULATION",
+Fiche : {"modele": "trafic" | "info", "photo": "outils/photos/x.jpg" (image fondue derrière, voir LISEZMOI), "cadrage": "50% 50%", "format": "post" (1080x1350) ou "story" (1080x1920), "tag": "TRAVAUX · CIRCULATION",
          "titre": "...", "blocs": [{"label": "OÙ", "texte": "..."}, ...]}
 Jamais de bloc « SOURCE » : la rédaction n'affiche aucune source (voir LISEZMOI.md).
 Fond bleu nuit, bandes jaunes en haut, étiquette jaune, blocs avec filet jaune, logo et angersdirect.fr en bas.
@@ -36,6 +36,12 @@ def page(f, W, H):
     info = f.get('modele', 'trafic') == 'info'
     accent = ROUGE if info else JAUNE
     label_c = ROUGE_CLAIR if info else JAUNE
+    fond = ''
+    if f.get('photo'):
+        ph = pathlib.Path(f['photo'])
+        ph = ph if ph.is_absolute() else (pathlib.Path.cwd() / ph).resolve()
+        fond = (f'''<img src="file://{ph}" style="position:absolute;inset:0;width:{W}px;height:{H}px;object-fit:cover;object-position:{f.get('cadrage', '50% 50%')};filter:blur(3px) saturate(.85);transform:scale(1.03)">'''
+                f'''<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,27,45,.82) 0%,rgba(15,27,45,.72) 45%,rgba(15,27,45,.80) 75%,rgba(15,27,45,.95) 100%)"></div>''')
     if info:
         haut = f'''<div style="position:absolute;left:-{W//4}px;top:-{H//4}px;width:{W*3//2}px;height:{H*3//5}px;background:radial-gradient(ellipse at 50% 40%,rgba(120,180,255,.22) 0%,rgba(60,120,220,.10) 38%,rgba(15,27,45,0) 70%)"></div>
 <div style="position:absolute;left:72px;top:{190 if story else 70}px;display:flex;align-items:center;gap:18px">
@@ -53,7 +59,7 @@ def page(f, W, H):
                     for b in f['blocs'])
     top = (340 if info else 300) if story else (210 if info else 150)
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;background:{NUIT};color:#FFFFFF;font-family:Barlow">
-{haut}
+{fond}{haut}
 <div style="position:absolute;left:72px;right:72px;top:{top}px">
 <div style="display:inline-block;background:{tag_fond};padding:4px 26px;transform:skewX(-12deg)"><div style="transform:skewX(12deg);{BC};font-weight:600;font-size:36px;letter-spacing:2px;color:{tag_txt}">{e(f['tag'])}</div></div>
 <div style="{BC};font-weight:700;font-size:{88 if story else 80}px;line-height:1.08;margin:{70 if story else 56}px 0 {64 if story else 50}px">{e(f['titre'])}</div>

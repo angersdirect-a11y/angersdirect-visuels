@@ -4,6 +4,7 @@
 - `chercher_photo.py` et `telecharger_photo.py` : recherche de photos sur Wikimedia Commons et Unsplash, avec auteur et licence.
 - `photos/stade-tribunes.jpg` (football), `photos/patinoire.jpg` (hockey, vidéo de la rédaction) et `photos/basket.jpg` (Unsplash) : fonds dégradés des visuels sport, choisis avec le champ `sport` de la fiche.
 - `photos/` : photos déjà validées, réutilisables sans crédit sur le visuel (laisser `credit` vide) :
+  - `colis-alimentaire-illustration.jpg` : illustration originale générée par `outils/colis.py`, libre de droits (pauvreté, aide alimentaire)
   - `stade-nuit.jpg` : Alex Simpson / Unsplash
   - `stade-raymond-kopa.jpg` : M. Mouchoir / Wikimedia Commons, domaine public
   - `patinage.jpg` : Kelli McClintock / Unsplash
@@ -28,6 +29,7 @@ Le haut de chaque visuel (post et story) porte une **photo**, sauf quand le suje
 `outils/alerte.py` a deux modèles, choisis avec le champ `modele` de la fiche :
 - `"modele": "trafic"` (par défaut, bandes jaunes et noires « chantier ») : **uniquement** pour les problèmes de circulation, accidents de la route, travaux.
 - `"modele": "info"` (léger halo de lumière en haut, en-tête « ALERTE INFO » avec point rouge, étiquette et filets rouges, sans bandes) : toutes les autres alertes, notamment les alertes nationales et internationales (catastrophe, attentat, décès, décision majeure, rapport, chiffre national...).
+**Image fondue derrière, obligatoire pour toutes les alertes `info` (règle de Valentin, 13 novembre 2026)** : champs `"photo"` (chemin depuis la racine du dépôt) et `"cadrage"` facultatif. L'image est floutée et assombrie sous le texte ; elle doit être adaptée au sujet (catastrophe, transport, santé, solidarité...). Ordre de choix : photo déjà validée de `outils/photos/`, sinon photo libre sans crédit (Unsplash, Pexels, Pixabay, domaine public, jamais CC BY ni photo de presse), sinon une illustration originale générée par script (modèle : `outils/colis.py` → `photos/colis-alimentaire-illustration.jpg`, pour pauvreté, précarité, aide alimentaire). Jamais de victime ni de personne identifiable sur un fait grave.
 Jamais les bandes de chantier sur un sujet qui n'est pas trafic, accident ou travaux. Un sujet qui repose sur un chiffre (rapport, statistique) peut aussi prendre la carte `fiche` / `story_fiche.py`.
 Exemple : `2026-11-13/exemple-alerte-info-post.json`.
 
