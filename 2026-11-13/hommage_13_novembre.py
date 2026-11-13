@@ -25,7 +25,7 @@ background:radial-gradient(ellipse 900px 600px at 50% {top + 380}px,rgba(120,150
  <div style="display:flex;justify-content:center;gap:0;margin:34px auto 0;width:240px;height:6px">
   <div style="flex:1;background:#2A5BD7"></div><div style="flex:1;background:#FFFFFF"></div><div style="flex:1;background:#E0313B"></div></div>
  <div style="font-family:'Barlow Condensed';font-weight:800;font-size:{300 if st else 260}px;line-height:1;margin-top:{50 if st else 30}px">132</div>
- <div style="font-family:'Barlow Condensed';font-weight:600;font-size:44px;letter-spacing:3px;color:#DDE3EE;margin-top:6px">VIES FAUCHÉES À PARIS ET SAINT-DENIS</div>
+ <div style="font-family:'Barlow Condensed';font-weight:600;font-size:44px;letter-spacing:3px;color:#DDE3EE;margin-top:6px">VICTIMES À PARIS ET À SAINT-DENIS</div>
  <div style="font-family:'Barlow Condensed';font-weight:700;font-size:{88 if st else 80}px;line-height:1.05;margin-top:{90 if st else 60}px">Onze ans après,<br>nous n'oublions pas.</div>
  <div style="font-weight:400;font-size:30px;line-height:1.6;color:#AEB9CF;margin:{80 if st else 54}px auto 0;max-width:900px">{lieux}</div>
 </div>
