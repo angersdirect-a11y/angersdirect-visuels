@@ -33,6 +33,20 @@ background:radial-gradient(ellipse 900px 600px at 50% {top + 380}px,rgba(120,150
 </div>'''
 
 
+def paysage():
+    return f'''<div style="width:1200px;height:675px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF;
+background:radial-gradient(ellipse 700px 400px at 50% 300px,rgba(120,150,210,.22) 0%,rgba(10,20,40,0) 70%),#0B1628;text-align:center">
+<img src="file://{ICI}/assets/logo_blanc.png" style="position:absolute;left:56px;top:48px;width:120px;opacity:.9">
+<div style="position:absolute;right:56px;top:60px;font-family:'Barlow Condensed';font-weight:600;font-size:24px;letter-spacing:4px;color:#AEB9CF">HOMMAGE</div>
+<div style="position:absolute;left:0;right:0;top:150px">
+ <div style="font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:8px;color:#AEB9CF">13 NOVEMBRE 2015</div>
+ <div style="display:flex;margin:22px auto 0;width:180px;height:5px"><div style="flex:1;background:#2A5BD7"></div><div style="flex:1;background:#FFFFFF"></div><div style="flex:1;background:#E0313B"></div></div>
+ <div style="font-family:'Barlow Condensed';font-weight:800;font-size:170px;line-height:1;margin-top:18px">132</div>
+ <div style="font-family:'Barlow Condensed';font-weight:600;font-size:32px;letter-spacing:3px;color:#DDE3EE">VICTIMES À PARIS ET À SAINT-DENIS</div>
+ <div style="font-family:'Barlow Condensed';font-weight:700;font-size:54px;margin-top:30px">Onze ans après, nous n'oublions pas.</div>
+</div></div>'''
+
+
 with sync_playwright() as p:
     b = p.chromium.launch()
     for nom, H in [('hommage-13-novembre-post', 1350), ('hommage-13-novembre-story', 1920)]:
@@ -41,4 +55,11 @@ with sync_playwright() as p:
         pg = b.new_page(viewport={'width': 1080, 'height': H})
         pg.goto(f'file://{tmp}'); pg.wait_for_timeout(300)
         pg.screenshot(path=str(D / f'{nom}.png')); tmp.unlink(); print('ok', nom)
+    tmp = D / 'hommage-13-novembre-x.html'
+    tmp.write_text(f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{paysage()}</body></html>")
+    pg = b.new_page(viewport={'width': 1200, 'height': 675})
+    pg.goto(f'file://{tmp}'); pg.wait_for_timeout(300)
+    pg.screenshot(path=str(D / 'hommage-13-novembre-x.png')); tmp.unlink(); print('ok x')
     b.close()
+    from PIL import Image
+    Image.open(D / 'hommage-13-novembre-story.png').convert('RGB').save(D / 'hommage-13-novembre-story.jpg', quality=92)
