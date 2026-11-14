@@ -1,0 +1,28 @@
+{
+ "photo": "outils/sel/ohva-objectif-lune-theatre-chanzy-angers.jpg",
+ "credit": "",
+ "rubrique": "CULTURE",
+ "titre": "L'OHVA part pour « Objectif Lune »",
+ "points": [
+  {
+   "chiffre": "20h",
+   "texte": "Ce samedi 14 novembre, au théâtre Chanzy"
+  },
+  {
+   "chiffre": "15h",
+   "texte": "Dimanche 15 novembre, la séance idéale en famille"
+  },
+  {
+   "chiffre": "12 €",
+   "texte": "Tarif plein, 5 € en réduit, gratuit pour les moins de 12 ans"
+  },
+  {
+   "chiffre": "Soliste",
+   "texte": "La soprano Clara Guillon, sous la direction d'Emmanuel Descol"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}
