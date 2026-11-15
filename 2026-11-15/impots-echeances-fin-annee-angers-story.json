@@ -1,0 +1,13 @@
+{
+ "photo": "outils/sel/impots-echeances-fin-annee-angers.jpg",
+ "credit": "",
+ "rubrique": "ÉCONOMIE",
+ "titre": "Impôts : les dates clés de fin d'année",
+ "points": [
+  {"chiffre": "30 nov.", "texte": "Dernier jour pour corriger sa déclaration de revenus en ligne"},
+  {"chiffre": "15 déc.", "texte": "Taxe d'habitation à payer hors internet, et inscription à la mensualisation 2027"},
+  {"chiffre": "20 déc.", "texte": "Paiement en ligne de la taxe d'habitation, jusqu'à minuit"},
+  {"chiffre": "15 janv.", "texte": "Premier prélèvement pour les nouveaux mensualisés"}
+ ],
+ "encart": {"label": "TOUT SAVOIR", "texte": "L'article complet sur angersdirect.fr"}
+}
