@@ -10,6 +10,7 @@
   - `patinage.jpg` : Kelli McClintock / Unsplash
   - `cinema-fantastique.jpg` : illustration originale générée par `outils/cinema.py` (salle de cinéma, film fantastique), libre de droits
   - `autoroute-nuit-chantier-illustration.jpg` : illustration originale générée par `outils/autoroute_nuit.py` (autoroute la nuit, balisage de chantier), libre de droits
+  - `numerique-recup-illustration.jpg` : illustration originale générée par `outils/numerique_recup.py` (vieux ordinateurs, écran, téléphones), libre de droits, pour les collectes et le réemploi du numérique
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
 ## Visuels Facebook : photo plutôt que bandeau (consigne de la rédaction, 11 novembre 2026)
