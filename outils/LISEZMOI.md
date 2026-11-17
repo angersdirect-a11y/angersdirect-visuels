@@ -20,7 +20,7 @@ Ne jamais passer par l'assistant IA de Lovable (`send_message`, `create_project`
 - **Événements de l'agenda** : écriture directe dans la table `evenements` avec l'outil base de données Lovable (`query_database`, sans IA) : `statut` = `publie`, `debut`/`fin` en heure de Paris, `image_url` publique (lien raw de ce dépôt), `lien` vers l'organisateur, même `auteur` que les fiches existantes. Vérifier d'abord qu'aucune fiche n'existe déjà (titre ou slug).
 - **Corrections de données** (événement, article déjà publié) : `UPDATE` ciblé avec le même outil, jamais de suppression sans accord.
 - **Après toute écriture directe** : supprimer de `cache_html` les copies des pages concernées (`/agenda`, `/` et la page de l'événement ou de l'article), sinon le site continue d'afficher l'ancienne version.
-- **Code du site** : par GitHub une fois le projet Lovable relié à un dépôt ; d'ici là, demander à Valentin avant toute modification du code.
+- **Code du site** : dépôt GitHub `angersdirect-a11y/spark-idea-forge-90` (branche `main`, synchronisé dans les deux sens avec Lovable depuis le 17 novembre 2026). Toute modification de code passe par ce dépôt, jamais par l'assistant Lovable. L'ajouter à la session s'il n'y est pas.
 
 ## Visuels Facebook : photo plutôt que bandeau (consigne de la rédaction, 11 novembre 2026)
 
