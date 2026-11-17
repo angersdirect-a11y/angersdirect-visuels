@@ -185,7 +185,7 @@ def jdm(f, paysage, post=False):
     band_h = d + 20
     vs_w, vs_h = (180, 172) if paysage else (130, 140) if post else (150, 160)
     infos = (f'''<div style="position:absolute;left:0;right:0;top:826px;text-align:center;{BC};font-weight:700;font-size:72px">{e(f['date'])} · {e(f['heure'])}</div>
-<div style="position:absolute;left:0;right:0;top:914px;text-align:center;font-size:32px;color:#D3D5D9">{e(f['stade'])} · Live sur angersdirect.fr</div>''' if paysage else
+<div style="position:absolute;left:0;right:0;top:914px;text-align:center;font-size:32px;color:#D3D5D9">{e(f['stade'])}{' · Live sur angersdirect.fr' if f.get('live', True) else ''}</div>''' if paysage else
              f'''<div style="position:absolute;left:0;right:0;top:1238px;text-align:center;{BC};font-weight:700;font-size:72px">{e(f['date'])}</div>
 <div style="position:absolute;left:0;right:0;top:1326px;text-align:center;{BC};font-weight:700;font-size:116px;line-height:1">{e(f['heure'])}</div>
 <div style="position:absolute;left:0;right:0;top:1468px;text-align:center;font-size:34px">{e(f['stade'])}</div>
