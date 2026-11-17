@@ -13,6 +13,15 @@
   - `numerique-recup-illustration.jpg` : illustration originale générée par `outils/numerique_recup.py` (vieux ordinateurs, écran, téléphones), libre de droits, pour les collectes et le réemploi du numérique
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
+## Site angersdirect.fr : zéro crédit Lovable (règle de Valentin, 17 novembre 2026)
+
+Ne jamais passer par l'assistant IA de Lovable (`send_message`, `create_project`…) pour ajouter ou modifier du contenu : il consomme les crédits. Uniquement s'il n'existe aucune autre voie, et après accord explicite de Valentin.
+- **Articles** : fiche JSON (`titre`, `chapo`, `contenu`, `essentiel`, `rubrique`, `slug`, `tags`, `notes`, `a_verifier`) dans `import/<dossier>/` du dépôt angersdirect-auto, puis workflow « Veille Angers Direct » en mode `importer` (GitHub Actions). L'article arrive en relecture avec une photo ; Valentin valide.
+- **Événements de l'agenda** : écriture directe dans la table `evenements` avec l'outil base de données Lovable (`query_database`, sans IA) : `statut` = `publie`, `debut`/`fin` en heure de Paris, `image_url` publique (lien raw de ce dépôt), `lien` vers l'organisateur, même `auteur` que les fiches existantes. Vérifier d'abord qu'aucune fiche n'existe déjà (titre ou slug).
+- **Corrections de données** (événement, article déjà publié) : `UPDATE` ciblé avec le même outil, jamais de suppression sans accord.
+- **Après toute écriture directe** : supprimer de `cache_html` les copies des pages concernées (`/agenda`, `/` et la page de l'événement ou de l'article), sinon le site continue d'afficher l'ancienne version.
+- **Code du site** : par GitHub une fois le projet Lovable relié à un dépôt ; d'ici là, demander à Valentin avant toute modification du code.
+
 ## Visuels Facebook : photo plutôt que bandeau (consigne de la rédaction, 11 novembre 2026)
 
 Sur Facebook, le visuel doit être beau avant tout. Le bandeau de couleur avec un gros chiffre (type `fiche`) est réservé aux sujets dont l'information principale est un chiffre ou une statistique. Pour tous les autres sujets, on met une photo en haut à la place du bandeau (type `article`, ou `sombre` pour un sujet grave).
