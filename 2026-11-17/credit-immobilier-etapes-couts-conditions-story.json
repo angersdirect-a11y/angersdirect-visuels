@@ -1,0 +1,28 @@
+{
+ "photo": "outils/sel/credit-immobilier-etapes-couts-conditions.jpg",
+ "credit": "",
+ "rubrique": "SOCIÉTÉ",
+ "titre": "Crédit immobilier : les repères avant d'acheter",
+ "points": [
+  {
+   "chiffre": "25 ANS",
+   "texte": "La durée maximale du prêt, en général"
+  },
+  {
+   "chiffre": "33 %",
+   "texte": "Des revenus pour les mensualités, la règle habituelle"
+  },
+  {
+   "chiffre": "35 %",
+   "texte": "Le taux d'effort à ne pas dépasser, en principe"
+  },
+  {
+   "chiffre": "TAEG",
+   "texte": "Le taux à comparer d'une banque à l'autre"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}
