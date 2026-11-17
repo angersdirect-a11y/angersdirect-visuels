@@ -1,0 +1,28 @@
+{
+ "photo": "outils/sel/bronchiolite-bebe-angers-bons-reflexes.jpg",
+ "credit": "",
+ "rubrique": "SOCIÉTÉ",
+ "titre": "Bronchiolite : les bons réflexes pour bébé",
+ "points": [
+  {
+   "chiffre": "2 à 8",
+   "texte": "L'âge en mois des bébés les plus touchés, en automne et en hiver"
+  },
+  {
+   "chiffre": "19°",
+   "texte": "Au maximum dans la chambre, à aérer régulièrement"
+  },
+  {
+   "chiffre": "116 117",
+   "texte": "Le numéro gratuit pour un médecin de garde le soir et le dimanche"
+  },
+  {
+   "chiffre": "15",
+   "texte": "Sans attendre si bébé respire mal ou a les lèvres bleues"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}
