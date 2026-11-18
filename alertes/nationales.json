@@ -1,0 +1,53 @@
+[
+  {
+    "id": "2026-11-17-iran-usa-qeshm-bahrein",
+    "titre": "Échanges de frappes Iran / États-Unis (Qeshm, Bahreïn, drones au Koweït)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T13:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, faits du 17/11 et de la nuit, pas de bilan officiel",
+    "sources": [
+      "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks",
+      "https://time.com/article/2026/11/18/qeshm-island-strikes-us-iran-end-forever-war-vance/",
+      "https://gulfnews.com/world/mena/middle-east-war-iran-attacks-bahrain-kuwait-drone-threats-keep-gulf-on-high-alert-as-us-hits-irans-qeshm-1.500751444"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-pannes-informatiques-usa",
+    "titre": "Série de pannes informatiques aux États-Unis (Microsoft, FAA, banques)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T13:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pannes du 12 au 17/11, pas de dernière minute, pas d'impact en France",
+    "sources": [
+      "https://www.foxnews.com/us/america-hits-tech-wall-outages-cripple-email-ground-flights-disrupt-major-banks",
+      "https://www.npr.org/2026/11/18/nx-s1-6045411/rubio-outages-malign-actor"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-orages-vigilance-jaune",
+    "titre": "Orages : vigilance jaune dans des dizaines de départements",
+    "portee": "france",
+    "detectee_le": "2026-11-18T13:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune seulement",
+    "sources": [
+      "https://www.cnews.fr/france/2026-11-18/orages-voici-les-46-departements-places-en-vigilance-jaune-ce-mercredi-1955999"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-frappe-odessa",
+    "titre": "Frappe russe sur Odessa, au moins 4 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-18T13:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source",
+    "sources": [
+      "https://unn.ua/en/news/four-people-killed-fires-and-destruction-reported-including-within-the-unesco-protected-area-aftermath-of-the-attack-on-odesa"
+    ],
+    "plannerUrls": []
+  }
+]
