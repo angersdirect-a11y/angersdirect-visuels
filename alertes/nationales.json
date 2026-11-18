@@ -232,5 +232,29 @@
       "https://www.ouest-france.fr/monde/video-xi-jinping-donald-trump-et-vladimir-poutine-reunis-pour-la-premiere-fois-en-chine-a04665b6-c14b-43a2-be32-ab4b882d90d3"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "frappes-russes-ukraine-5-morts-2026-11-18",
+    "titre": "Frappes russes en Ukraine, au moins cinq morts",
+    "portee": "international",
+    "detectee_le": "2026-11-18T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, sans escalade majeure",
+    "sources": [
+      "https://aljazeera.com/news/2026/11/18/russian-attacks-on-ukraine-kill-at-least-five-people"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "serbie-etudiants-parlement-2026-11",
+    "titre": "Serbie : le mouvement étudiant entre au Parlement après la défaite de Vučić",
+    "portee": "international",
+    "detectee_le": "2026-11-18T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : élection du 25 octobre, hors fenêtre de 3 heures",
+    "sources": [
+      "https://english.ahram.org.eg/News/580904.aspx"
+    ],
+    "plannerUrls": []
   }
 ]
