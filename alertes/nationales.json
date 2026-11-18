@@ -280,5 +280,53 @@
       "https://www.usnews.com/news/world/articles/2026-11-18/at-least-12-dead-in-organized-crime-attacks-in-honduras-police-spokesman-says"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "seisme-kumamoto-japon-m56-20261118",
+    "titre": "Séisme de magnitude 5,6 près de Kamiamakusa (Kumamoto, Japon)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : ni victimes ni dégâts signalés",
+    "sources": [
+      "https://quakemap24.com/en/event/9ca8ca207ba07af392a06a6e2373eb2e671a171e/earthquake-m5-6-kamiamakusa-kumamoto-prefecture-2026-11-18"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-chateau-renault-m38-20261118",
+    "titre": "Séisme de magnitude 3,8 près de Château-Renault (Indre-et-Loire)",
+    "portee": "france",
+    "detectee_le": "2026-11-18T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible magnitude, sans dégâts, ressenti local",
+    "sources": [
+      "https://x.com/AssoMeteoCVDL/status/2123018387039404276"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "algerie-accidents-route-9-morts-20261118",
+    "titre": "Algérie : neuf morts dans deux accidents de la route",
+    "portee": "international",
+    "detectee_le": "2026-11-18T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur pour le public français, une seule source",
+    "sources": [
+      "https://lanouvelletribune.info/2026/11/algerie-neuf-morts-dans-deux-accidents-de-la-route-dans-la-nuit-du-17-au-18-novembre/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "gaza-operation-terrestre-20261118",
+    "titre": "Opération terrestre dans le centre de Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-18T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://www.nbcnews.com/world/gaza/israel-tanks-gaza-ground-operation-ceasefire-hamas-rcna609979"
+    ],
+    "plannerUrls": []
   }
 ]
