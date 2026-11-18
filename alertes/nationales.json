@@ -328,5 +328,29 @@
       "https://www.nbcnews.com/world/gaza/israel-tanks-gaza-ground-operation-ceasefire-hamas-rcna609979"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "los-angeles-panache-gaz-decharge-20261118",
+    "titre": "Panache de gaz après un accident de forage dans une décharge de Los Angeles",
+    "portee": "international",
+    "detectee_le": "2026-11-18T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : sans victimes signalées, peu d'impact pour le public français",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/18/latest-news-bulletin-november-18th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "israel-iran-action-militaire-rapport-tv-20261118",
+    "titre": "Israël envisagerait une action militaire contre l'Iran (rapport télévisé non sourcé)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : rapport télévisé non sourcé, aucune annonce officielle",
+    "sources": [
+      "https://www.timesofisrael.com/liveblog-november-18-2026/"
+    ],
+    "plannerUrls": []
   }
 ]
