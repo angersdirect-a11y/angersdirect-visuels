@@ -123,5 +123,41 @@
       "https://theglobaleye.it/2026/11/18/global-news-18-november-2026/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-iran-attaque-ali-al-salem-koweit",
+    "titre": "Iran revendique une attaque contre la base américaine d'Ali al-Salem au Koweït",
+    "portee": "international",
+    "detectee_le": "2026-11-18T16:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, pas de bilan officiel",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-18-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-17-navire-adnoc-attaque-ormuz",
+    "titre": "Navire d'ADNOC L&S attaqué dans le détroit d'Ormuz (1 disparu, 11 blessés)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T16:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : faits du 17/11 au soir, hors fenêtre de 3 heures",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-18-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-greve-fonction-publique-salaires",
+    "titre": "Grève des fonctionnaires sur les salaires",
+    "portee": "france",
+    "detectee_le": "2026-11-18T16:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas de paralysie du pays",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/18/latest-news-bulletin-november-18th-2026-midday"
+    ],
+    "plannerUrls": []
   }
 ]
