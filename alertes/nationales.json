@@ -195,5 +195,42 @@
       "https://asiaplus.news/en/2026/11/18/an-earthquake-strikes-tajikistan-leaving-no-casualties-or-damage/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "tsunami-nouvelle-zelande-2026-11-18",
+    "titre": "Alerte tsunami levée sur la côte est de l'île du Nord (Nouvelle-Zélande)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T18:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : alerte levée, ni victimes ni dégâts",
+    "sources": [
+      "https://home.nzcity.co.nz/news/article.aspx?fm=psp%2Ctsf&id=458266"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-perou-m6-2026-11-18",
+    "titre": "Séisme de magnitude 6 au large du Pérou",
+    "portee": "international",
+    "detectee_le": "2026-11-18T18:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas de victimes signalées, une seule source",
+    "sources": [
+      "https://en.tempo.co/read/2123919/m6-0-earthquake-strikes-off-the-coast-of-peru"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "trump-poutine-xi-shenzhen-2026-11-18",
+    "titre": "Trump, Poutine et Xi réunis à Shenzhen avant un sommet trilatéral jeudi",
+    "portee": "international",
+    "detectee_le": "2026-11-18T18:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur à ce stade : sommet prévu jeudi 19/11, aucune annonce ; à réexaminer si accord (Ukraine)",
+    "sources": [
+      "https://www.euronews.com/2026/11/18/trump-arrives-in-china-for-unprecedented-trilateral-encounter-with-xi-and-putin",
+      "https://www.ouest-france.fr/monde/video-xi-jinping-donald-trump-et-vladimir-poutine-reunis-pour-la-premiere-fois-en-chine-a04665b6-c14b-43a2-be32-ab4b882d90d3"
+    ],
+    "plannerUrls": []
   }
 ]
