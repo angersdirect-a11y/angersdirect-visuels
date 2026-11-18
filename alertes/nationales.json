@@ -256,5 +256,29 @@
       "https://english.ahram.org.eg/News/580904.aspx"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "seisme-roumanie-vrancea-2026-11-18",
+    "titre": "Séisme de magnitude 5,7 en Roumanie (Vrancea)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T20:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien et trop mineur : séisme à 2h48 locales, ni morts ni dégâts importants",
+    "sources": [
+      "https://www.democrata.es/fr/international/seisme-de-magnitude-5-7-en-roumanie-six-hospitalises-et-des-secousses-ressenties-en-bulgarie/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "honduras-attaques-crime-organise-2026-11-18",
+    "titre": "Au moins 12 morts dans des attaques du crime organisé au Honduras",
+    "portee": "international",
+    "detectee_le": "2026-11-18T20:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur pour le public français, une seule source",
+    "sources": [
+      "https://www.usnews.com/news/world/articles/2026-11-18/at-least-12-dead-in-organized-crime-attacks-in-honduras-police-spokesman-says"
+    ],
+    "plannerUrls": []
   }
 ]
