@@ -159,5 +159,41 @@
       "https://www.euronews.com/video/2026/11/18/latest-news-bulletin-november-18th-2026-midday"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "pannes-apple-google-2026-11-18",
+    "titre": "Pannes de services chez Apple et Google",
+    "portee": "international",
+    "detectee_le": "2026-11-18T17:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pannes de services sans impact majeur confirmé en France",
+    "sources": [
+      "https://www.democracynow.org/2026/11/18/headlines"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "deces-nabeel-rajab-2026-11-18",
+    "titre": "Décès du militant bahreïni des droits humains Nabeel Rajab",
+    "portee": "international",
+    "detectee_le": "2026-11-18T17:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas une personnalité de tout premier plan pour le public français",
+    "sources": [
+      "https://www.democracynow.org/2026/11/18/headlines"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-tadjikistan-2026-11-18",
+    "titre": "Séisme au Tadjikistan sans victimes ni dégâts",
+    "portee": "international",
+    "detectee_le": "2026-11-18T17:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : ni victimes ni dégâts",
+    "sources": [
+      "https://asiaplus.news/en/2026/11/18/an-earthquake-strikes-tajikistan-leaving-no-casualties-or-damage/"
+    ],
+    "plannerUrls": []
   }
 ]
