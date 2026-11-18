@@ -352,5 +352,18 @@
       "https://www.timesofisrael.com/liveblog-november-18-2026/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-usa-venezuela-cooperation-militaire",
+    "titre": "Accord de coopération militaire entre les États-Unis et le Venezuela",
+    "portee": "international",
+    "detectee_le": "2026-11-18T23:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.clintonherald.com/news/national_news/ap-news-summary-at-12-46-p-m-est/article_d93dfb4c-25d3-5eff-9970-cd89675becf2.html",
+      "https://www.euronews.com/top-news-stories-today"
+    ],
+    "plannerUrls": []
   }
 ]
