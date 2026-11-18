@@ -49,5 +49,30 @@
       "https://unn.ua/en/news/four-people-killed-fires-and-destruction-reported-including-within-the-unesco-protected-area-aftermath-of-the-attack-on-odesa"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-17-pont-kertch-frappe-ukraine",
+    "titre": "Frappe ukrainienne de drones et missiles sur le pont de Kertch (Crimée)",
+    "portee": "international",
+    "detectee_le": "2026-11-18T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : faits du 17/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://www.npr.org/2026/11/17/g-s1-153946/russia-ukraine-war",
+      "https://www.military.com/ukraine-strikes-section-of-russias-crimean-bridge-two-days-before-putin-meets-trump-xi"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-sommet-trump-xi-shenzhen",
+    "titre": "Arrivée de Donald Trump à Shenzhen pour un sommet avec Xi Jinping",
+    "portee": "international",
+    "detectee_le": "2026-11-18T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : rencontre diplomatique prévue, pas de dernière minute",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/18/latest-news-bulletin-november-18th-2026-midday"
+    ],
+    "plannerUrls": []
   }
 ]
