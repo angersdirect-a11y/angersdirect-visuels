@@ -74,5 +74,54 @@
       "https://www.euronews.com/video/2026/11/18/latest-news-bulletin-november-18th-2026-midday"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-17-crash-avion-militaire-siberie",
+    "titre": "Crash d'un avion de transport militaire russe en Sibérie (Kemerovo), 19 morts selon la Défense russe",
+    "portee": "international",
+    "detectee_le": "2026-11-18T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : crash du 17/11 au soir, hors fenêtre de 3 heures, et trop mineur pour le public français",
+    "sources": [
+      "https://aa.com.tr/en/world/military-transport-plane-crash-in-siberia-russia-kills-all-19-people-on-board-defense-ministry/4128154",
+      "https://www.nbcnews.com/world/russia/russian-military-transport-plane-crashes-siberia-killing-19-according-rcna609886"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-bangladesh-violences-hasina",
+    "titre": "Bangladesh : déploiement de paramilitaires face aux violences liées au retour annoncé de Sheikh Hasina",
+    "portee": "international",
+    "detectee_le": "2026-11-18T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : tensions en cours sans bilan majeur, peu d'impact pour le public français",
+    "sources": [
+      "https://www.brecorder.com/news/40449551/bangladesh-deploys-paramilitary-as-unrest-grows-over-hasinas-return"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-vigilance-orange-somme-pas-de-calais",
+    "titre": "Vigilance orange pluie-inondation dans la Somme et le Pas-de-Calais",
+    "portee": "france",
+    "detectee_le": "2026-11-18T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange sur deux départements, pas de vigilance rouge",
+    "sources": [
+      "https://www.cnews.fr/france/2026-11-18/pluie-inondation-voici-les-deux-departements-places-en-vigilance-orange-ce"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-18-kosovo-thaci-condamne",
+    "titre": "Kosovo : l'ex-président Hashim Thaçi reconnu coupable d'entrave à la justice",
+    "portee": "international",
+    "detectee_le": "2026-11-18T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://theglobaleye.it/2026/11/18/global-news-18-november-2026/"
+    ],
+    "plannerUrls": []
   }
 ]
