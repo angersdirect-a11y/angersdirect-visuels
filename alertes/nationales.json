@@ -649,5 +649,41 @@
       "https://fr.euronews.com/video/2026/11/19/linfo-du-jour-19-novembre-2026-mi-journee"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "cybersecurite-reunion-lecornu-2026-11-19",
+    "titre": "Cybersécurité : réunion interministérielle et conférence de presse du Premier ministre",
+    "portee": "france",
+    "detectee_le": "2026-11-19T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réunion annoncée la veille, aucune mesure changeant la vie quotidienne confirmée à ce stade",
+    "sources": [
+      "https://fr.headtopics.com/news/cybersecurite-sebastien-lecornu-reunit-le-gouvernement-89966851"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "tirs-mortiers-lycees-blesses-2026-11-19",
+    "titre": "Élèves et personnels blessés par des tirs de mortiers dans des lycées",
+    "portee": "france",
+    "detectee_le": "2026-11-19T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faits divers localisés, pas de bilan officiel national",
+    "sources": [
+      "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1k0YkRsakVnSm1jaWdBUAE?hl=fr&gl=FR&ceid=FR%3Afr"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-intemperies-8-departements-2026-11-19",
+    "titre": "Huit départements en vigilance orange intempéries",
+    "portee": "france",
+    "detectee_le": "2026-11-19T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange, pas de vigilance rouge",
+    "sources": [
+      "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1k0YkRsakVnSm1jaWdBUAE?hl=fr&gl=FR&ceid=FR%3Afr"
+    ],
+    "plannerUrls": []
   }
 ]
