@@ -451,5 +451,41 @@
       "https://www.sudradio.fr/societe/deces-de-lancien-patron-de-canal-bertrand-meheut"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "kenya-isiolo-garissa-attaque-20261119",
+    "titre": "Au moins 9 morts dans une attaque à la frontière Isiolo-Garissa (Kenya)",
+    "portee": "international",
+    "detectee_le": "2026-11-19T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur pour le public français, une seule source",
+    "sources": [
+      "https://thepeninsulaqatar.com/article/19/11/2026/at-least-9-killed-in-retaliatory-attack-along-kenyas-isiolo-garissa-border"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-landes-pluie-20261119",
+    "titre": "Les Landes rejoignent la vigilance orange pluie-inondation",
+    "portee": "france",
+    "detectee_le": "2026-11-19T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange étendue, pas de vigilance rouge",
+    "sources": [
+      "https://lautomobiliste.fr/19/11/2026/vigilance-orange-landes-routes-19-novembre-2026/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "frappe-odessa-4-morts-20261118-confirmee",
+    "titre": "Frappe russe sur Odessa : 4 morts, 13 blessés (administration militaire)",
+    "portee": "international",
+    "detectee_le": "2026-11-19T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : frappe du 18/11, hors fenêtre de 3 heures ; suite d'une guerre en cours",
+    "sources": [
+      "https://www.africanews.com/2026/11/19/ukraine-four-killed-and-at-least-13-injured-in-russian-strike-on-odesa/"
+    ],
+    "plannerUrls": []
   }
 ]
