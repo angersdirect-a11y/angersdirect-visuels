@@ -711,5 +711,55 @@
       "https://libnanews.com/lessentiel-en-5-minutes-19-novembre-2026-18-h"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "commission-europeenne-cyberattaque-2026-11",
+    "titre": "Cyberattaque contre la Commission européenne",
+    "portee": "international",
+    "detectee_le": "2026-11-19T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : attaque connue depuis une dizaine de jours, ampleur de la fuite non établie",
+    "sources": [
+      "https://www.cyberattaque.org/cyberattaque-a-la-commission-europeenne-dix-jours-de-perturbations-et-des-donnees-sensibles-potentiellement-exposees/",
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "irak-kataib-hezbollah-bras-de-fer-2026-11-19",
+    "titre": "Irak : bras de fer avec Kataib Hezbollah",
+    "portee": "international",
+    "detectee_le": "2026-11-19T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : compromis trouvé, pas d'affrontement",
+    "sources": [
+      "https://www.middleeasteye.net/news/iraq-narrowly-avoids-conflict-after-compromise-reached-take-over-key-kataib-hezbollah-base",
+      "https://www.euronews.com/2026/11/19/iraq-orders-armed-factions-to-withdraw-from-strategic-area-amid-alleged-oil-smuggling-and-"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "introduction-bourse-anthropic-2026-11-19",
+    "titre": "Introduction en Bourse d'Anthropic au Nasdaq",
+    "portee": "international",
+    "detectee_le": "2026-11-19T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : actualité économique, pas une breaking news grand public",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "algerie-tamanrasset-accident-8-morts-2026-11-19",
+    "titre": "Algérie : accident de la route à Tamanrasset, 8 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-19T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur pour le public français, une seule source",
+    "sources": [
+      "https://www.lnr-dz.com/2026/11/19/huit-deces-dans-un-accident-de-la-route-a-tamanrasset/"
+    ],
+    "plannerUrls": []
   }
 ]
