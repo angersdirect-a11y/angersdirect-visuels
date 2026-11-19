@@ -588,5 +588,66 @@
       "https://kyivindependent.com/breaking-dutch-embassy-damaged-in-russian-drone-strike-on-kyiv/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "pont-crimee-troisieme-attaque-2026-11-19",
+    "titre": "Pont de Crimée attaqué pour la troisième fois en une semaine, trafic ferroviaire interrompu",
+    "portee": "international",
+    "detectee_le": "2026-11-19T15:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, sans victime signalée",
+    "sources": [
+      "https://latele.ch/articles/le-pont-de-crimee-attaque-pour-la-troisieme-fois-cette-semaine",
+      "https://www.dhnet.be/actu/monde/2026/11/19/guerre-en-ukraine-le-pont-de-crimee-attaque-pour-la-troisieme-fois-cette-semaine-KH3A7DEUFNAPRFZJLQYNJWRYHA/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "bangladesh-greve-maison-yunus-incendiee-2026-11-19",
+    "titre": "Bangladesh : grève générale de la Ligue Awami, maison ancestrale de Yunus incendiée",
+    "portee": "international",
+    "detectee_le": "2026-11-19T15:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : peu d'impact pour le public français, une seule source (Reuters)",
+    "sources": [
+      "https://www.dawn.com/news/2045664/parts-of-bangladesh-shut-down-in-protests-by-hasinas-party-yunus-home-set-ablaze"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "effondrement-falaise-saint-jouin-bruneval-2026-11-19",
+    "titre": "Effondrement d'un pan de falaise de 90 m à Saint-Jouin-Bruneval (Seine-Maritime)",
+    "portee": "france",
+    "detectee_le": "2026-11-19T15:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun blessé, impact local",
+    "sources": [
+      "https://www.titrespresse.com/29741642603/havre-etretat-saint"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "deces-corrado-augias-2026-11-19",
+    "titre": "Mort du journaliste italien Corrado Augias",
+    "portee": "international",
+    "detectee_le": "2026-11-19T15:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas une personnalité de tout premier plan pour le public français",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/19/linfo-du-jour-19-novembre-2026-mi-journee"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "frappe-hodeida-yemen-2026-11-19",
+    "titre": "Frappe saoudienne présumée à Hodeida (Yémen), au moins sept morts selon les Houthis",
+    "portee": "international",
+    "detectee_le": "2026-11-19T15:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : bilan des Houthis non confirmé",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/19/linfo-du-jour-19-novembre-2026-mi-journee"
+    ],
+    "plannerUrls": []
   }
 ]
