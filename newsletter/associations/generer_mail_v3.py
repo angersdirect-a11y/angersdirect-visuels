@@ -31,7 +31,7 @@ def badge(t,deg): return etiquette(t,deg[0],degrade=deg,angle=110,taille=14,pad=
 def liste(items):
     out=[]
     for i,(rub,deg,titre,txt) in enumerate(items):
-        out.append(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:{"1px solid #E3E8EF" if i<len(items)-1 else "0"}"><tr><td width="42" valign="middle" style="padding:16px 0;font-family:{FC};font-weight:700;font-size:28px;color:{BLEU}">{i+1:02d}</td><td valign="middle" style="padding:16px 12px 16px 0">{badge(rub,deg)}<div style="height:8px;line-height:8px;font-size:0">&nbsp;</div><span style="font-family:{FC};font-weight:700;font-size:20px;line-height:24px;color:{NUIT}">{titre}</span><div style="margin-top:6px;font-family:{FT};font-size:14px;line-height:21px;color:#5A6575">{txt}</div></td></tr></table>')
+        out.append(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:{"1px solid #E3E8EF" if i<len(items)-1 else "0"}"><tr><td width="42" valign="middle" style="padding:16px 0;font-family:{FC};font-weight:700;font-size:28px;color:{BLEU}">{i+1:02d}</td><td valign="middle" style="padding:16px 12px 16px 0">{badge(rub,deg)}<div style="height:8px;line-height:8px;font-size:0">&nbsp;</div><span style="font-family:{FC};font-weight:600;font-size:20px;line-height:24px;color:#2A3A52">{titre}</span><div style="margin-top:6px;font-family:{FT};font-size:14px;line-height:21px;color:#5A6575">{txt}</div></td></tr></table>')
     return "".join(out)
 def bouton(icone,l,h,alt,fond,coul,texte,href):
     return f'<a href="{e(href)}" style="display:block;background:{fond};text-decoration:none;padding:13px 6px;text-align:center;height:26px;line-height:26px"><table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto"><tr><td valign="middle" height="26" style="padding-right:8px;height:26px"><img src="{SITE}{icone}" width="{l}" height="{h}" alt="{e(alt)}" style="display:block;width:{l}px;height:auto;border:0"></td><td valign="middle" style="font-family:{FC};font-weight:700;font-size:15px;line-height:18px;letter-spacing:1px;text-transform:uppercase;color:{coul};white-space:nowrap">{e(texte)}</td></tr></table></a>'
@@ -59,7 +59,7 @@ def gros_bouton(texte,href,fond=LIEN,coul="#ffffff"):
     return f'<table role="presentation" cellpadding="0" cellspacing="0"><tr><td bgcolor="{fond}" style="background:{fond}"><a href="{e(href)}" style="display:inline-block;padding:15px 26px;font-family:{FC};font-weight:700;font-size:17px;line-height:20px;letter-spacing:1px;text-transform:uppercase;color:{coul};text-decoration:none">{texte}</a></td></tr></table>'
 
 une = f"""{entete(etiquette("À LA UNE",BLEU))}<div style="height:16px"></div>
-<h1 style="margin:0 0 14px;font-family:{FC};font-weight:700;font-size:30px;line-height:34px;color:{NUIT}">Votre association a une actu&nbsp;?<br>Angers Direct la&nbsp;relaie.</h1>
+<h1 style="margin:0 0 14px;font-family:{FC};font-weight:600;font-size:30px;line-height:34px;color:#2A3A52">Votre association a une actu&nbsp;?<br>Angers Direct la&nbsp;relaie.</h1>
 {P("Bonjour,")}
 {P("Angers Direct raconte chaque jour la vie d’Angers et du Maine-et-Loire, avec une conviction&nbsp;: ce qui nous rassemble compte plus que ce qui nous divise. Et les associations font vivre nos quartiers et nos communes.")}
 {P("Nous vous proposons deux choses, gratuitement&nbsp;:","0 0 8px")}
@@ -68,7 +68,7 @@ une = f"""{entete(etiquette("À LA UNE",BLEU))}<div style="height:16px"></div>
 
 espace = f"""<table role="presentation" class="ad-agenda" width="100%" cellpadding="0" cellspacing="0" bgcolor="{AG["fond"]}" style="background:{AG["fond"]}"><tr><td class="ad-p" style="padding:36px 20px">
 {etiquette("NOUVEAU · VOTRE ESPACE EST OUVERT",AG["debut"],degrade=(AG["debut"],AG["fin"]),angle=110)}<div style="height:18px"></div>
-<h2 style="margin:0 0 12px;font-family:{FC};font-weight:700;font-size:24px;line-height:28px;color:{NUIT}">Déposez vos actus en quelques minutes</h2>
+<h2 style="margin:0 0 12px;font-family:{FC};font-weight:600;font-size:24px;line-height:28px;color:#2A3A52">Déposez vos actus en quelques minutes</h2>
 <p style="margin:0 0 14px;font-family:{FT};font-size:16px;line-height:26px;color:{NUIT}">Sur <strong style="font-weight:500">angersdirect.fr/associations</strong>, un formulaire pas à pas vous guide&nbsp;:</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 {"".join(f'<tr><td width="26" valign="top" style="padding:4px 0;font-family:{FC};font-weight:700;font-size:18px;color:{AG["framboise"]}">✓</td><td style="padding:4px 0;font-family:{FT};font-size:15px;line-height:23px;color:{NUIT}">{t}</td></tr>' for t in ["un événement ou un communiqué, avec une photo (1&nbsp;200&nbsp;px de large minimum, que vous avez le droit de diffuser)&nbsp;;","un clic dans l’e-mail de confirmation, et c’est envoyé&nbsp;;","la rédaction relit, met en forme et publie, gratuitement."])}
