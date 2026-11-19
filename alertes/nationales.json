@@ -685,5 +685,31 @@
       "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1k0YkRsakVnSm1jaWdBUAE?hl=fr&gl=FR&ceid=FR%3Afr"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "naufrage-pirogue-yenne-senegal-2026-11-19",
+    "titre": "Naufrage d'une pirogue de migrants à Yenne (Sénégal), morts et dizaines de disparus",
+    "portee": "international",
+    "detectee_le": "2026-11-19T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : bilan non officiel et contradictoire (1 à 4 morts, disparus selon une ONG)",
+    "sources": [
+      "https://fr.allafrica.com/stories/202611190175.html",
+      "https://www.ndarinfo.com/Chavirement-d-une-pirogue-a-Yenne-au-moins-quatre-morts-et-plusieurs-disparus_a47261.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "sommet-berlin-allies-ukraine-2026-11-19",
+    "titre": "Alliés de l'Ukraine réunis à Berlin avec Zelensky après le sommet de Shenzhen",
+    "portee": "international",
+    "detectee_le": "2026-11-19T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réunion annoncée depuis le 13/11, aucune décision majeure annoncée",
+    "sources": [
+      "https://www.dhnet.be/dernieres-depeches/2026/11/13/invasion-de-lukraine-les-allies-de-lukraine-en-sommet-a-berlin-le-19-novembre-SBQBKPXG25HC5KWEJDTXYVAIMY/",
+      "https://libnanews.com/lessentiel-en-5-minutes-19-novembre-2026-18-h"
+    ],
+    "plannerUrls": []
   }
 ]
