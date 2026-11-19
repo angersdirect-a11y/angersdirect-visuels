@@ -848,18 +848,6 @@
     "plannerUrls": []
   },
   {
-    "id": "seisme-kumamoto-m57-2026-11-19",
-    "titre": "Séisme de magnitude 5,7 à Kumamoto (Japon), sans tsunami",
-    "portee": "international",
-    "detectee_le": "2026-11-19T22:20:00+01:00",
-    "statut": "ignoree",
-    "raison": "trop mineur et trop ancien : 18/11 18h22 heure de Paris, aucun dégât ni victime signalé",
-    "sources": [
-      "https://infoslocalesaujapon.org/seisme/seisme-du-19-novembre-2026-a-2h22-kumamoto/"
-    ],
-    "plannerUrls": []
-  },
-  {
     "id": "vigilance-orange-manche-pluie-2026-11-19",
     "titre": "Vigilance orange pluie-inondation dans la Manche à partir de 22h",
     "portee": "france",
