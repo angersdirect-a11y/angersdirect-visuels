@@ -785,5 +785,29 @@
       "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-17-crash-avion-militaire-russe-siberie",
+    "titre": "Crash d'un avion de transport militaire russe en Sibérie, 19 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-19T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : crash du 17/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://www.thestar.com.my/news/world/2026/11/18/russian-military-transport-aircraft-crashes-in-siberia-19-dead-defence-ministry-says"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-19-koursk-batiments-endommages",
+    "titre": "Bâtiments endommagés à Koursk après une attaque ukrainienne",
+    "portee": "international",
+    "detectee_le": "2026-11-19T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, sans bilan",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
