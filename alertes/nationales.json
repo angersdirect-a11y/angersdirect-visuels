@@ -427,5 +427,29 @@
       "https://www.allocine.fr/tvactu/articles/article-1000232930.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "petroliers-mines-ormuz-iran-20261119",
+    "titre": "Trois pétroliers en feu après des mines près d'Ormuz, selon l'armée iranienne",
+    "portee": "international",
+    "detectee_le": "2026-11-19T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : revendication de l'armée iranienne sans confirmation indépendante, pas de victimes signalées",
+    "sources": [
+      "https://www.aa.com.tr/en/middle-east/3-oil-tankers-disabled-by-mine-blasts-in-strait-of-hormuz-iranian-army/4129906"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "deces-bertrand-meheut-20261119",
+    "titre": "Mort de Bertrand Méheut, ancien patron de Canal+",
+    "portee": "france",
+    "detectee_le": "2026-11-19T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas une personnalité de tout premier plan pour le grand public",
+    "sources": [
+      "https://www.sudradio.fr/societe/deces-de-lancien-patron-de-canal-bertrand-meheut"
+    ],
+    "plannerUrls": []
   }
 ]
