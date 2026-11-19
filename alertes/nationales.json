@@ -761,5 +761,29 @@
       "https://www.lnr-dz.com/2026/11/19/huit-deces-dans-un-accident-de-la-route-a-tamanrasset/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-19-62",
+    "titre": "Cyberattaque visant des prestataires de JPMorgan Chase",
+    "portee": "international",
+    "detectee_le": "2026-11-19T19:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : incident américain sans impact direct établi pour le public français",
+    "sources": [
+      "https://abcnews.com/US/jpmorgan-chase-reports-cyberattack-party-service-providers/story?id=138287705"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-19-63",
+    "titre": "Le commissaire européen Várhelyi aspergé de cendres par des manifestants anti-pesticides",
+    "portee": "international",
+    "detectee_le": "2026-11-19T19:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : incident sans blessé",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
