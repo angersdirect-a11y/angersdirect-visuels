@@ -550,5 +550,43 @@
       "https://www.franceinfo.fr/societe/education/blocage-des-lycees/ce-qui-va-changer-pour-les-lyceens-apres-l-annonce-du-remplacement-de-parcoursup_8255467.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "sommet-shenzhen-declaration-2026-11-19",
+    "titre": "Xi, Trump et Poutine adoptent une « déclaration de paix » à Shenzhen",
+    "portee": "international",
+    "detectee_le": "2026-11-19T13:20:00+01:00",
+    "statut": "proposee",
+    "sources": [],
+    "plannerUrls": [],
+    "note": "visuels 2026-11-19/sommet-shenzhen-alerte-* générés au passage de 13h20, entrée absente du fichier : ajoutée au passage de 14h20 pour ne pas reproposer"
+  },
+  {
+    "id": "cij-birmanie-genocide-rohingyas-2026-11-19",
+    "titre": "Génocide des Rohingyas : la Birmanie reconnue responsable par la CIJ",
+    "portee": "international",
+    "detectee_le": "2026-11-19T14:20:00+01:00",
+    "statut": "proposee",
+    "sources": [
+      "https://www.yahoo.com/news/world/articles/world-court-finds-myanmar-committed-113829588.html",
+      "https://www.dawn.com/news/2045689/top-un-court-finds-myanmar-committed-state-sponsored-genocide-against-muslim-rohingya",
+      "https://www.cbsnews.com/news/myanmar-genocide-rohingyas-un-top-court/",
+      "https://fr.euronews.com/2026/11/19/la-cour-internationale-de-justice-juge-que-la-birmanie-a-commis-un-genocide-contre-les-roh",
+      "https://www.franceinfo.fr/monde/asie/rohingyas/la-birmanie-a-commis-un-genocide-a-l-encontre-des-rohingyas-statue-la-cour-internationale-de-justice-dans-un-arret-historique_8289806.html",
+      "https://www.hrw.org/news/2026/11/19/world-court-finds-myanmar-responsible-for-rohingya-genocide"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "drone-ambassade-pays-bas-kiev-2026-11-19",
+    "titre": "Drone russe tombé près de l'ambassade des Pays-Bas à Kiev, sans victime",
+    "portee": "international",
+    "detectee_le": "2026-11-19T14:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : dégâts matériels sans victime, une seule source",
+    "sources": [
+      "https://kyivindependent.com/breaking-dutch-embassy-damaged-in-russian-drone-strike-on-kyiv/"
+    ],
+    "plannerUrls": []
   }
 ]
