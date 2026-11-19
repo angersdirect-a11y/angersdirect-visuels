@@ -231,7 +231,8 @@
       "https://www.euronews.com/2026/11/18/trump-arrives-in-china-for-unprecedented-trilateral-encounter-with-xi-and-putin",
       "https://www.ouest-france.fr/monde/video-xi-jinping-donald-trump-et-vladimir-poutine-reunis-pour-la-premiere-fois-en-chine-a04665b6-c14b-43a2-be32-ab4b882d90d3"
     ],
-    "plannerUrls": []
+    "plannerUrls": [],
+    "note_20261119_0830": "rencontre trilatérale en cours à Shenzhen jeudi matin, aucune annonce ni accord à 8h30 ; à réexaminer si accord (Ukraine, Iran)"
   },
   {
     "id": "frappes-russes-ukraine-5-morts-2026-11-18",
@@ -363,6 +364,67 @@
     "sources": [
       "https://www.clintonherald.com/news/national_news/ap-news-summary-at-12-46-p-m-est/article_d93dfb4c-25d3-5eff-9970-cd89675becf2.html",
       "https://www.euronews.com/top-news-stories-today"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "houthis-missile-riyad-degats-20261119",
+    "titre": "Missile houthi intercepté au-dessus de Riyad, débris et dégâts (tour PIF)",
+    "portee": "international",
+    "detectee_le": "2026-11-19T08:30:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : dégâts matériels sans victimes signalées, suite d'une guerre en cours",
+    "sources": [
+      "https://cyprus-mail.com/2026/11/19/houthi-missile-threat-towards-riyadh-causes-damage-saudi-led-coalition-says",
+      "https://www.thenationalnews.com/news/gulf/2026/11/19/saudi-sovereign-wealth-fund-tower-in-riyadh-damaged-in-houthi-strike/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-pluie-inondation-4-departements-20261119",
+    "titre": "Vigilance orange pluie-inondation : Pas-de-Calais, Somme, Seine-Maritime, Landes",
+    "portee": "france",
+    "detectee_le": "2026-11-19T08:30:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange sur 4 départements, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/les-landes-et-la-seine-maritime-rejoignent-le-pas-de-calais-et-la-somme-places-en-vigilance-orange-pour-pluie-inondation-pour-la-journee-de-jeudi_8289359.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "incendie-manoir-forges-les-eaux-20261117",
+    "titre": "Incendie d'un manoir à Forges-les-Eaux, sept blessés dont deux graves",
+    "portee": "france",
+    "detectee_le": "2026-11-19T08:30:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien et trop mineur : faits du 17/11 au soir, pas de décès",
+    "sources": [
+      "https://www.ouest-france.fr/faits-divers/incendie/incendie-dans-un-manoir-en-normandie-cette-nuit-sept-blesses-dont-deux-gravement-les-pompiers-toujours-sur-place-18726356-e321-11f1-a3b1-0c6de532ce7d"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "incendie-appartement-paris-13e-20261119",
+    "titre": "Incendie d'appartement mortel avenue d'Italie, Paris 13e",
+    "portee": "france",
+    "detectee_le": "2026-11-19T08:30:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers avec un décès",
+    "sources": [
+      "https://www.ouest-france.fr/faits-divers/incendie/une-personne-tuee-a-paris-dans-lincendie-dun-appartement-dans-le-xiiie-arrondissement-76179652-e326-11f1-a3b1-0c6de532ce7d"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "france2-grille-attal-heure-verite-20261119",
+    "titre": "France 2 déprogramme ses magazines pour une émission politique avec un candidat à 2027",
+    "portee": "france",
+    "detectee_le": "2026-11-19T08:30:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique",
+    "sources": [
+      "https://www.allocine.fr/tvactu/articles/article-1000232930.html"
     ],
     "plannerUrls": []
   }
