@@ -809,5 +809,30 @@
       "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "frappe-houthie-tour-riyad-2026-11-19",
+    "titre": "Frappe houthie sur une tour du quartier financier de Riyad, dégâts matériels sans victime",
+    "portee": "international",
+    "detectee_le": "2026-11-19T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : dégâts matériels sans victime selon l'Arabie saoudite",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south",
+      "https://www.boursorama.com/bourse/actualites/arabie-saoudite-la-plus-haute-tour-de-riyad-endommagee-par-une-frappe-houthie-01643c9d1de6818878b70f143a5d7967"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "france2-heure-verite-attal-2026-11-19",
+    "titre": "France 2 bouleverse sa grille pour une émission politique avec Gabriel Attal",
+    "portee": "france",
+    "detectee_le": "2026-11-19T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique",
+    "sources": [
+      "https://allocine.fr/tvactu/articles/article-1000232930.html"
+    ],
+    "plannerUrls": []
   }
 ]
