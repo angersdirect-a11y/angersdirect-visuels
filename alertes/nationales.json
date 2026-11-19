@@ -487,5 +487,42 @@
       "https://www.africanews.com/2026/11/19/ukraine-four-killed-and-at-least-13-injured-in-russian-strike-on-odesa/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "sommet-shenzhen-fin-sans-accord-20261119",
+    "titre": "Fin du sommet Trump-Poutine-Xi à Shenzhen, sans accord annoncé",
+    "portee": "international",
+    "detectee_le": "2026-11-19T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réunion d'une heure terminée sans accord ni cessez-le-feu annoncé",
+    "sources": [
+      "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/direct-rencontre-donald-trump-vladimir-poutine-xi-jinping-suivez-l-entretien-inedit-entre-les-trois-presidents-en-chine_8288564.html",
+      "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "effondrement-immeuble-brooklyn-20261112",
+    "titre": "Effondrement d'un immeuble à Brooklyn (New York), 8 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-19T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop ancien : faits du 11-12/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://abcnews.com/US/victims-deadly-brooklyn-building-collapse/story?id=138098954"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-jaune-orages-35-departements-20261119",
+    "titre": "Vigilance jaune orages dans 35 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-19T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune seulement",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-orages-situation-orageuse-a-surveiller-dans-35-departements-ce-19-novembre-2026_8289479.html"
+    ],
+    "plannerUrls": []
   }
 ]
