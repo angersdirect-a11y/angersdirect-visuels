@@ -858,5 +858,41 @@
       "https://www.ici.fr/normandie/manche-50/la-manche-en-vigilance-orange-pluie-et-inondation-a-partir-de-22h-ce-jeudi-19-novembre-6210836"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "haiti-raid-martissant-2026-11-19",
+    "titre": "Haïti : au moins 34 membres présumés de gangs tués lors d'une opération de police à Martissant (Port-au-Prince)",
+    "portee": "international",
+    "detectee_le": "2026-11-19T23:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : opération de police, bilan de la seule police haïtienne, faible impact pour le public français",
+    "sources": [
+      "https://www.yahoo.com/news/world/articles/haiti-police-least-34-suspected-213939768.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "incendie-fontenay-sous-bois-2026-11-19",
+    "titre": "Incendie à Fontenay-sous-Bois (Val-de-Marne), un mort et au moins cinq blessés",
+    "portee": "france",
+    "detectee_le": "2026-11-19T23:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers avec un décès",
+    "sources": [
+      "https://www.titrespresse.com/29792912603/fontenay-bois-val"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "sortie-gta-vi-2026-11-19",
+    "titre": "Sortie de GTA VI, plus de 17 millions d'exemplaires vendus",
+    "portee": "international",
+    "detectee_le": "2026-11-19T23:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : actualité culturelle et économique, pas une breaking news",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
