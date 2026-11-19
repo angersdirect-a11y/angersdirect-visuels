@@ -834,5 +834,41 @@
       "https://allocine.fr/tvactu/articles/article-1000232930.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "vente-record-van-gogh-2026-11-19",
+    "titre": "Vente record d'un tableau de Van Gogh aux enchères",
+    "portee": "international",
+    "detectee_le": "2026-11-19T22:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : actualité culturelle, pas une breaking news",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-kumamoto-m57-2026-11-19",
+    "titre": "Séisme de magnitude 5,7 à Kumamoto (Japon), sans tsunami",
+    "portee": "international",
+    "detectee_le": "2026-11-19T22:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur et trop ancien : 18/11 18h22 heure de Paris, aucun dégât ni victime signalé",
+    "sources": [
+      "https://infoslocalesaujapon.org/seisme/seisme-du-19-novembre-2026-a-2h22-kumamoto/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-manche-pluie-2026-11-19",
+    "titre": "Vigilance orange pluie-inondation dans la Manche à partir de 22h",
+    "portee": "france",
+    "detectee_le": "2026-11-19T22:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange, pas de vigilance rouge",
+    "sources": [
+      "https://www.ici.fr/normandie/manche-50/la-manche-en-vigilance-orange-pluie-et-inondation-a-partir-de-22h-ce-jeudi-19-novembre-6210836"
+    ],
+    "plannerUrls": []
   }
 ]
