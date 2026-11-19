@@ -524,5 +524,31 @@
       "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-orages-situation-orageuse-a-surveiller-dans-35-departements-ce-19-novembre-2026_8289479.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-19-cij-birmanie-rohingyas",
+    "titre": "La CIJ rend son arrêt dans l'affaire de génocide contre les Rohingyas (Gambie c. Birmanie)",
+    "portee": "international",
+    "detectee_le": "2026-11-19T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "verdict en cours de lecture (environ 3h depuis 10h), issue sur le génocide non encore confirmée ; à réexaminer seulement si la CIJ conclut officiellement au génocide (fait nouveau majeur)",
+    "sources": [
+      "https://www.lalibre.be/international/asie/2026/11/19/les-forces-birmanes-ont-tue-des-milliers-de-civils-rohingyas-declare-la-cour-internationale-de-justice-5F56OLVYYBHHTKJCMJADWO2DAU/",
+      "https://www.yahoo.com/news/articles/world-court-finds-myanmar-forces-093810758.html",
+      "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-19-parcoursup-remplacement-2028",
+    "titre": "Remplacement de Parcoursup en 2028 annoncé par le gouvernement",
+    "portee": "france",
+    "detectee_le": "2026-11-19T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "annonce antérieure, hors fenêtre des 3 dernières heures",
+    "sources": [
+      "https://www.franceinfo.fr/societe/education/blocage-des-lycees/ce-qui-va-changer-pour-les-lyceens-apres-l-annonce-du-remplacement-de-parcoursup_8255467.html"
+    ],
+    "plannerUrls": []
   }
 ]
