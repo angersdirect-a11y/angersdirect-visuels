@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "post", "tag": "INFO TRAFIC",
+ "titre": "Grève : sept lignes de bus suburbaines Irigo perturbées",
+ "blocs": [
+  {"label": "QUOI", "texte": "Grève chez un transporteur du réseau : horaires spécifiques"},
+  {"label": "LIGNES", "texte": "Suburbaines 31, 32, 33, 34, 35, 37 et 38, et le circuit scolaire 111 (St Aubin La Salle)"},
+  {"label": "QUAND", "texte": "Ce vendredi 20 novembre"},
+  {"label": "CONSEILS", "texte": "Consultez les horaires du jour sur irigo.fr. Autres lignes : trafic normal"}
+ ]}
