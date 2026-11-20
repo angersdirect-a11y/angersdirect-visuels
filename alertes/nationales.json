@@ -894,5 +894,31 @@
       "https://www.euronews.com/video/2026/11/19/latest-news-bulletin-november-19th-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "frappes-ponts-kiev-3-morts-2026-11-20",
+    "titre": "Frappes russes sur trois ponts de Kiev : 3 morts, environ 15 blessés selon le maire",
+    "portee": "international",
+    "detectee_le": "2026-11-20T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité",
+    "sources": [
+      "https://english.aawsat.com/world/5343473-three-killed-missile-strikes-kyiv-mayor-says-biggest-attack-bridges",
+      "https://www.ouest-france.fr/europe/ukraine/guerre-en-ukraine-trois-morts-et-deux-ponts-endommages-a-kiev-apres-de-nouvelles-frappes-russes-bd3a5172-e4a3-11f1-afa7-9a0bb82a33d1"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "greve-nationale-20-novembre-2026",
+    "titre": "Grève nationale du 20 novembre (bus, taxis, aéroports)",
+    "portee": "france",
+    "detectee_le": "2026-11-20T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement annoncé, trafic quasi normal, pas de paralysie du pays",
+    "sources": [
+      "https://www.actu-alt-plus.com/idees-solutions/greve-bus-taxis-aeroports-20-novembre-2026/43456/",
+      "https://gomet.net/greve-nationale-trafic-rtm-quasi-normal-ce-vendredi-20-novembre/"
+    ],
+    "plannerUrls": []
   }
 ]
