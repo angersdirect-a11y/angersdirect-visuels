@@ -920,5 +920,18 @@
       "https://gomet.net/greve-nationale-trafic-rtm-quasi-normal-ce-vendredi-20-novembre/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-20-frappes-russes-ukraine-bilan-8-morts",
+    "titre": "Frappes russes en Ukraine : bilan porté à huit morts et 28 blessés (Kiev et autres régions)",
+    "portee": "international",
+    "detectee_le": "2026-11-20T10:20:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan revu mais pas d'escalade majeure (déjà écarté à 8h)",
+    "sources": [
+      "https://www.france24.com/fr/europe/20261120-en-direct-trois-morts-et-deux-ponts-endommag%C3%A9s-%C3%A0-kiev-suite-%C3%A0-des-frappes-russes",
+      "https://www.cnn.com/2026/11/20/europe/russia-ukraine-putin-trump-intl-hnk"
+    ],
+    "plannerUrls": []
   }
 ]
