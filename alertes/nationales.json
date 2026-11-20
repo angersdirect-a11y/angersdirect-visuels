@@ -1123,5 +1123,18 @@
       "https://ouest-france.fr/faits-divers/accidents/un-bus-de-lyceens-et-un-minibus-entrent-en-collision-trois-personnes-blessees-en-bretagne-c7955aca-e44b-11f1-a3b1-0c6de532ce7d"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "pologne-allies-font-bloc-2026-11-20-soir",
+    "titre": "Missiles russes en Pologne : Varsovie dénonce une « provocation », ses alliés font bloc",
+    "portee": "international",
+    "detectee_le": "2026-11-20T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réactions diplomatiques à l'alerte Pologne déjà proposée à 15h, aucun bilan ni fait nouveau majeur (pas de mise à jour)",
+    "sources": [
+      "https://www.boursorama.com/actualite-economique/actualites/missiles-russes-en-pologne-varsovie-denonce-une-provocation-ses-allies-font-bloc-6c4d15b9117d80b339d4c2928ada52cf",
+      "https://www.opex360.com/2026/11/20/deux-missiles-et-un-drone-dattaque-russes-sont-tombes-en-pologne-pres-de-la-zone-ou-se-deroule-lexercice-koalicja/"
+    ],
+    "plannerUrls": []
   }
 ]
