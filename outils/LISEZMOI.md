@@ -79,6 +79,7 @@ Les images publiées vont dans un dossier daté (`AAAA-MM-JJ/`). Lien public : `
 Cinq modèles, sur le style des maquettes Angers Direct : `score` (score final avec buteurs et statistiques), `classement` (Ligue 1, ligne d'Angers surlignée), `calendrier` (matchs du mois), `jdm_story` (jour de match 1080x1920) et `jdm_paysage` (jour de match 1920x1080).
 Exemples de fiches dans `outils/exemples/`. Champs `sport` (football, hockey, basket) et `competition` (« Ligue 1 » par défaut, « Ligue Magnus », « Nationale 1 ») : `journee` ne contient que la journée (« 8e journée »). Logos des 18 clubs de Ligue 1 dans `outils/logos/<slug>.png`, trouvés automatiquement à partir du nom du club (laisser `logo` vide). Un club sans fichier (promu, coupe) s'affiche avec ses initiales.
 Pour un résultat : publier `score` + `classement` en carrousel (Facebook et fil Instagram), en validation (autoPublish false).
+**Jamais de score ni d'affiche de match sans logo (règle de Valentin, 20 novembre 2026)** : `sport.py` refuse de produire un visuel dès qu'un club n'a pas son logo dans `outils/logos/` (plus d'initiales à la place). Ajouter le logo (et l'alias du sport dans `ALIAS_SPORT`) ou le demander à la rédaction avant toute programmation. Logo basket ajouté : `cep-lorient-basket.png` (le FC Lorient reste pour le foot).
 Ne jamais remplir une statistique, un buteur ou une ligne de classement sans l'avoir vérifié sur deux sources.
 
 ## Stories : toujours en 1080x1920

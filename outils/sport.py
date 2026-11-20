@@ -44,7 +44,7 @@ ALIAS_AUTRES = {'ducs': 'ducs-angers', 'étoile angers': 'eab', 'eab': 'eab'}
 ALIAS_SPORT = {'handball': {'tremblay': 'tremblay-handball', 'sco': 'sco-handball', 'angers': 'sco-handball', 'belfort': 'belfort-handball', 'paris': 'psg-handball', 'psg': 'psg-handball', 'saint-germain': 'psg-handball'},
                'hockey': {'angers': 'ducs-angers', 'rouen': 'rouen-dragons', 'chamonix': 'chamonix-pionniers', 'nice': 'nice-aigles', 'amiens': 'amiens-gothiques', 'anglet': 'anglet-hormadi', 'bordeaux': 'bordeaux-boxers', 'briançon': 'briancon-diables-rouges', 'briancon': 'briancon-diables-rouges', 'cergy': 'cergy-jokers', 'gap': 'gap-rapaces', 'grenoble': 'grenoble-bruleurs-de-loups', 'marseille': 'marseille-spartiates'},
                'roller': {'hawks': 'hawks-angers', 'angers': 'hawks-angers', 'aiglons': 'valence-aiglons', 'valence': 'valence-aiglons'},
-               'basket': {'angers': 'eab', 'tarbes': 'union-tarbes-lourdes', 'rennes': 'union-rennes-basket', 'challans': 'challans', 'sables': 'les-sables-basket'}}
+               'basket': {'angers': 'eab', 'tarbes': 'union-tarbes-lourdes', 'rennes': 'union-rennes-basket', 'challans': 'challans', 'sables': 'les-sables-basket', 'lorient': 'cep-lorient-basket'}}
 CTX = {'foot': True, 'fond': 'stade-tribunes.jpg', 'sport': 'football'}
 
 
@@ -57,11 +57,17 @@ def trouver_slug(nom):
     return ''
 
 
+# Règle de Valentin (20 nov. 2026) : jamais de score ni d'affiche de match publiés sans logo.
+# Tout club sans fichier dans outils/logos/ est noté ici ; main() refuse alors de produire le visuel.
+MANQUANTS = set()
+
+
 def logo(slug, nom, taille):
     slug = slug or trouver_slug(nom)
     f = ICI / 'logos' / f'{slug}.png'
     if slug and f.exists():
         return f'<img src="file://{f}" style="width:{taille}px;height:{taille}px;object-fit:contain">'
+    MANQUANTS.add(nom)
     init = ''.join(w[0] for w in nom.replace('-', ' ').split() if w[0].isalpha())[:3].upper()
     return f'<div style="{BC};font-weight:700;font-size:{int(taille*0.42)}px;color:#3B4656">{e(init)}</div>'
 
@@ -223,6 +229,9 @@ def main():
     sortie = pathlib.Path(sys.argv[2]).resolve()
     fn, W, H = TYPES[fiche['type']]
     page = f"<!doctype html><html><head><meta charset='utf-8'><style>{polices()}body{{margin:0}}</style></head><body>{fn(fiche)}</body></html>"
+    if MANQUANTS:
+        sys.exit("LOGO MANQUANT : " + ", ".join(sorted(MANQUANTS)) + ". Ajouter le logo dans outils/logos/ (et l'alias dans sport.py) "
+                 "ou le demander à la rédaction. Règle : jamais de score ni d'affiche de match sans logo.")
     tmp = sortie.with_suffix('.html')
     tmp.write_text(page)
     with sync_playwright() as p:
