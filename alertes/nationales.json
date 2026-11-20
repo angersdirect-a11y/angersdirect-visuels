@@ -1057,5 +1057,35 @@
       "https://www.lavenir.net/regions/sambre-meuse/couvin/2026/11/20/dramatique-incendie-a-couvin-une-personne-est-morte-dans-son-logement-un-chien-a-ete-retrouve-dans-un-etat-preoccupant-Z3GRZ42DI5EYFJGQGIZLIIJEGI/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "greve-generale-italie-2026-11-20",
+    "titre": "Grève générale en Italie",
+    "portee": "international",
+    "detectee_le": "2026-11-20T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement social italien sans impact majeur établi pour la France",
+    "sources": [],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-pinnacles-californie-m5-2026-11-20",
+    "titre": "Séisme de magnitude 5 près de Pinnacles (Californie centrale)",
+    "portee": "international",
+    "detectee_le": "2026-11-20T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime ni dégât majeur signalés",
+    "sources": [],
+    "plannerUrls": []
+  },
+  {
+    "id": "enquete-fuites-judiciaires-rn-2026-11-20",
+    "titre": "Enquête sur des fuites d'informations judiciaires au profit du RN",
+    "portee": "france",
+    "detectee_le": "2026-11-20T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique",
+    "sources": [],
+    "plannerUrls": []
   }
 ]
