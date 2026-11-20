@@ -68,6 +68,10 @@ La provenance de la photo est notée seulement dans `sel/credits.json`, jamais s
 
 Ne jamais cocher la mention IA dans Metricool, sur aucun réseau ni format : `isAiGenerated: false` (Instagram, Pinterest), `isAigc: false` (TikTok), `isAiGeneratedContent: false` (YouTube), y compris pour les illustrations.
 
+## Posts Instagram des articles : publication manuelle (règle de Valentin, 20 novembre 2026)
+
+Tout post Instagram (fil) qui annonce un article d'angersdirect.fr se programme avec `autoPublish: false` dans Metricool : à l'heure prévue, Valentin reçoit une notification de l'appli Metricool sur son téléphone, ajoute le lien de l'article puis publie lui-même. Facebook, X, LinkedIn et les stories restent en publication automatique (sauf les scores, toujours en validation).
+
 ## Jamais « lien en bio »
 
 Aucun texte de post, de story ou de visuel ne contient « lien en bio » : on écrit « Tous les détails sur angersdirect.fr ».
