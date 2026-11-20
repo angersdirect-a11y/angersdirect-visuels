@@ -1021,5 +1021,41 @@
       "https://www.sortiraparis.com/actualites/a-paris/articles/358759-vigilance-jaune-vent-a-paris-et-en-ile-de-france-ce-20-novembre-2026"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "seisme-los-angeles-m44-2026-11-20",
+    "titre": "Séisme de magnitude 4,2 à 4,4 dans la région de Los Angeles",
+    "portee": "international",
+    "detectee_le": "2026-11-20T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : séisme modéré, aucune victime ni dégât majeur signalés",
+    "sources": [
+      "https://www.ouest-france.fr/monde/catastrophes/seisme/un-seisme-de-magnitude-estimee-entre-4-2-et-4-4-secoue-la-region-de-los-angeles-en-californie-c7858a66-e4e4-11f1-bd4e-6f30b8f49e21"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "yemen-hodeida-appel-evacuation-port-2026-11-20",
+    "titre": "La coalition saoudienne appelle les civils à quitter une partie du port de Hodeïda",
+    "portee": "international",
+    "detectee_le": "2026-11-20T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : simple appel, aucune attaque confirmée",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-20-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "incendie-couvin-belgique-2026-11-20",
+    "titre": "Incendie mortel à Couvin (Belgique)",
+    "portee": "international",
+    "detectee_le": "2026-11-20T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers avec un décès",
+    "sources": [
+      "https://www.lavenir.net/regions/sambre-meuse/couvin/2026/11/20/dramatique-incendie-a-couvin-une-personne-est-morte-dans-son-logement-un-chien-a-ete-retrouve-dans-un-etat-preoccupant-Z3GRZ42DI5EYFJGQGIZLIIJEGI/"
+    ],
+    "plannerUrls": []
   }
 ]
