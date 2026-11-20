@@ -1087,5 +1087,29 @@
     "raison": "campagne politique",
     "sources": [],
     "plannerUrls": []
+  },
+  {
+    "id": "explosion-gaz-castres-2026-11-20",
+    "titre": "Explosion de gaz dans une maison près de Castres, deux blessés",
+    "portee": "france",
+    "detectee_le": "2026-11-20T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional, deux blessés",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/occitanie/tarn/albi/explosion-de-gaz-dans-une-maison-pres-de-castres-deux-blesses-dont-un-grave-evacue-vers-toulouse-3453261.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "tentative-explosion-station-service-soissons-2026-11-20",
+    "titre": "Garde à vue après une tentative d'explosion de bouteilles de gaz dans une station-service (Aisne)",
+    "portee": "france",
+    "detectee_le": "2026-11-20T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional sans victime",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/hauts-de-france/aisne/soissons/un-homme-place-en-garde-a-vue-apres-avoir-tente-de-faire-exploser-des-bouteilles-de-gaz-situees-dans-une-station-service-3453162.html"
+    ],
+    "plannerUrls": []
   }
 ]
