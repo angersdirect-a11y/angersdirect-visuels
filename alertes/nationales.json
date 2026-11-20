@@ -1111,5 +1111,17 @@
       "https://france3-regions.franceinfo.fr/hauts-de-france/aisne/soissons/un-homme-place-en-garde-a-vue-apres-avoir-tente-de-faire-exploser-des-bouteilles-de-gaz-situees-dans-une-station-service-3453162.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "collision-bus-lyceens-bretagne-2026-11-20",
+    "titre": "Collision entre un bus de lycéens et un fourgon en Bretagne, onze blessés",
+    "portee": "france",
+    "detectee_le": "2026-11-20T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident régional, blessés, aucun décès signalé",
+    "sources": [
+      "https://ouest-france.fr/faits-divers/accidents/un-bus-de-lyceens-et-un-minibus-entrent-en-collision-trois-personnes-blessees-en-bretagne-c7955aca-e44b-11f1-a3b1-0c6de532ce7d"
+    ],
+    "plannerUrls": []
   }
 ]
