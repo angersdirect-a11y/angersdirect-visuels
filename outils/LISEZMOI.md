@@ -68,6 +68,10 @@ La provenance de la photo est notée seulement dans `sel/credits.json`, jamais s
 
 Ne jamais cocher la mention IA dans Metricool, sur aucun réseau ni format : `isAiGenerated: false` (Instagram, Pinterest), `isAigc: false` (TikTok), `isAiGeneratedContent: false` (YouTube), y compris pour les illustrations.
 
+## Chaque article : un visuel Instagram + une story (règle de Valentin, 20 novembre 2026)
+
+Tout article d'angersdirect.fr (y compris l'article du carrousel week-end) a toujours son visuel Instagram 1080x1350 (`visuel.py`, type `article` ou `sombre`, avec photo) et sa story 1080x1920 (`story_points.py`, même photo). Le post Instagram part en publication manuelle (voir la règle du 20 novembre ci-dessous), la story en publication automatique 5 minutes après. Exemple : `2026-11-20/week-end/article-instagram.json` et `article-story.json`.
+
 ## Posts Instagram des articles : publication manuelle (règle de Valentin, 20 novembre 2026)
 
 Tout post Instagram (fil) qui annonce un article d'angersdirect.fr se programme avec `autoPublish: false` dans Metricool : à l'heure prévue, Valentin reçoit une notification de l'appli Metricool sur son téléphone, ajoute le lien de l'article puis publie lui-même. Le lien complet de l'article est préparé à l'avance dans la légende, à la place de « Tous les détails sur angersdirect.fr » : « 👉 L'article : https://angersdirect.fr/<rubrique>/<slug> », pour qu'il n'ait qu'à le copier. Facebook, X, LinkedIn et les stories restent en publication automatique (sauf les scores, toujours en validation).
