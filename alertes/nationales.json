@@ -984,5 +984,42 @@
       "https://www.yahoo.com/news/world/articles/two-russian-missiles-jet-drone-104900283.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "otan-condamne-missiles-pologne-2026-11-20",
+    "titre": "L'Otan condamne de « graves violations » après les missiles russes en Pologne",
+    "portee": "international",
+    "detectee_le": "2026-11-20T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réaction diplomatique à l'alerte Pologne déjà proposée à 15h, aucun bilan ni fait nouveau majeur (pas de mise à jour)",
+    "sources": [
+      "https://www.europe1.fr/international/missiles-russes-en-pologne-varsovie-denonce-une-provocation-lotan-condamne-de-graves-violations-1241164",
+      "https://www.yahoo.com/news/articles/polish-army-investigates-report-unknown-080106538.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "seisme-kumamoto-20261120-21h46",
+    "titre": "Séisme dans la préfecture de Kumamoto (Japon) le 20 novembre à 21h46 locales",
+    "portee": "international",
+    "detectee_le": "2026-11-20T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : aucune victime ni dégât signalés",
+    "sources": [
+      "https://infoslocalesaujapon.org/seisme/seisme-du-20-novembre-2026-a-21h46/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-jaune-vent-idf-2026-11-20",
+    "titre": "Vigilance jaune vent en Île-de-France",
+    "portee": "france",
+    "detectee_le": "2026-11-20T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune, pas de vigilance rouge",
+    "sources": [
+      "https://www.sortiraparis.com/actualites/a-paris/articles/358759-vigilance-jaune-vent-a-paris-et-en-ile-de-france-ce-20-novembre-2026"
+    ],
+    "plannerUrls": []
   }
 ]
