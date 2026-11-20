@@ -969,5 +969,20 @@
       "https://www.euronews.com/video/2026/11/20/fiona-the-hippo-dies-after-swallowing-a-visitors-hat"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-20-pologne-missiles-russes",
+    "titre": "Des missiles russes tombent dans le sud-est de la Pologne",
+    "portee": "international",
+    "detectee_le": "2026-11-20T15:25+01:00",
+    "statut": "proposee",
+    "sources": [
+      "https://www.lavenir.net/actu/monde/2026/11/20/guerre-en-ukraine-chute-de-deux-missiles-russes-dans-le-sud-est-de-la-pologne-CYO4UMHDDNCBXHRJTFDAIEAKDM/",
+      "https://www.france24.com/fr/europe/20261120-deux-missiles-chutent-pologne-premier-ministre-donald-tusk-d%C3%A9nonce-provocation-russie",
+      "https://www.ouest-france.fr/europe/ukraine/un-missile-russe-tombe-dans-le-sud-est-de-la-pologne-lors-dune-attaque-russe-massive-contre-lukraine-81b5eefa-e4ca-11f1-bd4e-6f30b8f49e21",
+      "https://hromadske.ua/en/war/274695-two-russian-missiles-and-drone-land-in-poland-during-strikes-on-ukraine-defense-minister-says",
+      "https://www.yahoo.com/news/world/articles/two-russian-missiles-jet-drone-104900283.html"
+    ],
+    "plannerUrls": []
   }
 ]
