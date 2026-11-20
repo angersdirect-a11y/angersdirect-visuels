@@ -70,7 +70,7 @@ Ne jamais cocher la mention IA dans Metricool, sur aucun réseau ni format : `is
 
 ## Posts Instagram des articles : publication manuelle (règle de Valentin, 20 novembre 2026)
 
-Tout post Instagram (fil) qui annonce un article d'angersdirect.fr se programme avec `autoPublish: false` dans Metricool : à l'heure prévue, Valentin reçoit une notification de l'appli Metricool sur son téléphone, ajoute le lien de l'article puis publie lui-même. Facebook, X, LinkedIn et les stories restent en publication automatique (sauf les scores, toujours en validation).
+Tout post Instagram (fil) qui annonce un article d'angersdirect.fr se programme avec `autoPublish: false` dans Metricool : à l'heure prévue, Valentin reçoit une notification de l'appli Metricool sur son téléphone, ajoute le lien de l'article puis publie lui-même. Le lien complet de l'article est préparé à l'avance dans la légende, à la place de « Tous les détails sur angersdirect.fr » : « 👉 L'article : https://angersdirect.fr/<rubrique>/<slug> », pour qu'il n'ait qu'à le copier. Facebook, X, LinkedIn et les stories restent en publication automatique (sauf les scores, toujours en validation).
 
 ## Jamais « lien en bio »
 
