@@ -1136,5 +1136,29 @@
       "https://www.opex360.com/2026/11/20/deux-missiles-et-un-drone-dattaque-russes-sont-tombes-en-pologne-pres-de-la-zone-ou-se-deroule-lexercice-koalicja/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "frappes-ukraine-bilan-11-morts-2026-11-20-soir",
+    "titre": "Frappes russes sur l'Ukraine : au moins 11 morts (Kiev, Lviv, Kryvyi Rig)",
+    "portee": "international",
+    "detectee_le": "2026-11-20T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite des frappes du 20/11 déjà traitées (alerte Kiev proposée à 11h), bilan revu de 8 à 11 morts, pas un fait nouveau majeur",
+    "sources": [
+      "https://www.boursorama.com/actualite-economique/actualites/une-pluie-de-missiles-et-drones-russes-s-abat-sur-l-ukraine-67e3575105c12aa808d70918f8a92c67"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-pluie-inondation-6-dep-2026-11-20",
+    "titre": "Vigilance orange pluie-inondation dans 6 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-20T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-orange-pluies-inondations-risque-marque-d-inondations-rapides-dans-6-departements-ce-20-novembre-2026_8291729.html"
+    ],
+    "plannerUrls": []
   }
 ]
