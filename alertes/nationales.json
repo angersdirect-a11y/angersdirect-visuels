@@ -1438,5 +1438,29 @@
       "https://www.ouest-france.fr/societe/faits-divers/a-vannes-mortiers-et-incendies-ce-samedi-soir-dans-le-quartier-de-menimur-ce38b5bc-e5e4-11f1-afa7-9a0bb82a33d1"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-21-deces-paolo-bulgari",
+    "titre": "Mort de Paolo Bulgari, président historique de la maison de joaillerie",
+    "portee": "international",
+    "detectee_le": "2026-11-21T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : personnalité qui n'est pas de tout premier plan pour le grand public",
+    "sources": [
+      "https://entrevue.fr/people/mort-de-paolo-bulgari-a-89-ans-le-monde-du-luxe-perd-lun-des-plus-grands"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-21-iran-drone-americain-ormuz",
+    "titre": "Les Gardiens de la révolution affirment avoir abattu un drone américain au-dessus d'Ormuz",
+    "portee": "international",
+    "detectee_le": "2026-11-21T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : aucune victime, survenu vers midi, hors fenêtre de 3 heures",
+    "sources": [
+      "https://newscura.com/global/timeline/2026-11-21"
+    ],
+    "plannerUrls": []
   }
 ]
