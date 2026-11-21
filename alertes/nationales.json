@@ -1414,5 +1414,29 @@
       "https://www.ouest-france.fr/societe/manifestation/direct-manifestations-du-21-novembre-une-journee-de-mobilisation-pour-le-droit-au-logement-en-europe-183040e1-1e72-4a94-b536-4a410dc0fba2"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "piratage-base-fbi-21-11",
+    "titre": "FBI : piratage d'une base de données criminelles",
+    "portee": "international",
+    "detectee_le": "2026-11-21T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : cyberattaque sans victime, faible impact pour le public français",
+    "sources": [
+      "https://newscura.com/global/timeline/2026-11-21"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vannes-menimur-mortiers-21-11",
+    "titre": "Vannes : mortiers et incendies dans le quartier de Ménimur",
+    "portee": "france",
+    "detectee_le": "2026-11-21T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional sans victime signalée",
+    "sources": [
+      "https://www.ouest-france.fr/societe/faits-divers/a-vannes-mortiers-et-incendies-ce-samedi-soir-dans-le-quartier-de-menimur-ce38b5bc-e5e4-11f1-afa7-9a0bb82a33d1"
+    ],
+    "plannerUrls": []
   }
 ]
