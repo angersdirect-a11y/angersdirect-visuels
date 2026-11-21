@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/cholet-ateliers-industrie.jpg",
+ "credit": "",
+ "rubrique": "ÉCONOMIE",
+ "logo": "haut",
+ "titre": "L'industrie à l'essai à Cholet",
+ "points": [
+  {
+   "chiffre": "16 nov.",
+   "texte": "Lundi, de 9h à 12h, campus Eurespace"
+  },
+  {
+   "chiffre": "3",
+   "texte": "Ateliers : logistique, ligne de production, câblage"
+  },
+  {
+   "chiffre": "Public",
+   "texte": "Demandeurs d'emploi et personnes en reconversion"
+  },
+  {
+   "chiffre": "Visites",
+   "texte": "D'entreprises locales, en plus des ateliers"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

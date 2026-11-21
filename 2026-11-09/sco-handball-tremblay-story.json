@@ -1,0 +1,25 @@
+{
+ "photo": "outils/sel/sco-handball-tremblay.jpg",
+ "credit": "",
+ "rubrique": "SPORT",
+ "logo": "haut",
+ "titre": "Le SCO Handball sur sa lancée",
+ "points": [
+  {
+   "chiffre": "33-29",
+   "texte": "Belfort renversé le 24 octobre à la salle du Haras"
+  },
+  {
+   "chiffre": "36-33",
+   "texte": "Rezé battu en Coupe de France le 31 octobre"
+  },
+  {
+   "chiffre": "18h30",
+   "texte": "Samedi 14 novembre, face à Tremblay"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

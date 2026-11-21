@@ -1,0 +1,16 @@
+{"duree_scene": 3.8,
+ "musique": false,
+ "scenes": [
+  {"type": "photo", "photo": "monument-epoque.jpg", "cadrage": "52% 50%",
+   "titre": "[20 000 Angevins] ne sont jamais revenus", "sous_titre": "11 novembre 1918 : l'armistice."},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "11h",
+   "titre": "Les armes se taisent", "lignes": ["Armistice signé à l'aube à Rethondes,", "le 11 novembre 1918."]},
+  {"type": "photo", "photo": "defile-poilus.jpg", "mode": "haut", "rubrique": "1914-1918",
+   "titre": "Près de [20 millions] de morts", "sous_titre": "Dont 1,4 million de soldats français."},
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "19 818",
+   "titre": "Angevins tués sur le front", "lignes": ["Selon les Archives du Maine-et-Loire.", "Six fusillés « pour l'exemple »."]},
+  {"type": "photo", "photo": "monument-leclerc.jpg", "mode": "haut", "rubrique": "ANGERS",
+   "titre": "Le monument aux [Enfants de l'Anjou]", "sous_titre": "Place du Général-Leclerc depuis 1988."},
+  {"type": "photo", "photo": "liesse-paris.jpg", "cadrage": "55% 40%",
+   "titre": "108 ans après, [on se souvient]", "sous_titre": "À tous les morts pour la France."}
+ ]}

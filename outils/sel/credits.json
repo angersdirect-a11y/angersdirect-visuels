@@ -1,0 +1,29 @@
+{
+ "marche-noel-couronne-artisan": {
+  "source": "pexels",
+  "page": "https://www.pexels.com/photo/a-hand-holding-a-hanging-christmas-wreath-6063155/",
+  "licence": "Licence Pexels (libre, sans crédit obligatoire)",
+  "usage": "2026-11-18/marche-noel-ponts-de-ce-athletis"
+ },
+ "theatre-scene-vide": {
+  "source": "pexels",
+  "page": "https://www.pexels.com/photo/illuminated-stage-of-an-empty-theater-19658083/",
+  "licence": "Licence Pexels (libre, sans crédit obligatoire)",
+  "usage": "2026-11-18/killer-joe-grand-theatre"
+ },
+ "magasin-meubles-showroom": {
+  "source": "pexels",
+  "page": "https://www.pexels.com/photo/contemporary-store-with-elegant-furniture-for-bedroom-and-living-room-7535062/",
+  "licence": "Licence Pexels (libre, sans crédit obligatoire)",
+  "usage": "2026-11-18/ikea-atoll-ouvert-infos-pratiques"
+ },
+ "tram-angers-redaction-trail": {
+  "source": "rédaction (outils/photos/tram-angers-redaction.jpg)",
+  "usage": "2026-11-18/trail-apocalypse-tram-bus-devies"
+ },
+ "concert-scene-illustration": {
+  "source": "illustration originale générée par outils/concert_scene.py (outils/photos/concert-scene-illustration.jpg)",
+  "licence": "aucun droit tiers",
+  "usage": "2026-11-21/sinclair-reporte"
+ }
+}

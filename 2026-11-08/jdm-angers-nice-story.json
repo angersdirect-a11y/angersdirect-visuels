@@ -1,0 +1,19 @@
+{
+ "sport": "football",
+ "competition": "Ligue 1",
+ "journee": "10e journée",
+ "dom": {
+  "nom": "Angers SCO",
+  "logo": "angers-sco"
+ },
+ "ext": {
+  "nom": "OGC Nice",
+  "logo": "ogc-nice"
+ },
+ "date": "DIMANCHE 8 NOVEMBRE",
+ "heure": "17 H 15",
+ "stade": "Stade Raymond-Kopa",
+ "diffusion": "",
+ "type": "jdm_story",
+ "live": false
+}

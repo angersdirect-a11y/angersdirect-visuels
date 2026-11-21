@@ -1,0 +1,7 @@
+{"duree_scene": 3.2, "musique": true, "graine": 4,
+ "scenes": [
+  {"type":"photo","photo":"outils/photos/stade-raymond-kopa.jpg","cadrage":"50% 50%","titre":"Le SCO tombe [à domicile]","sous_titre":"Angers SCO 0-2 OGC Nice, 10e journée de Ligue 1."},
+  {"type":"texte","rubrique":"SPORT","chiffre":"2'","titre":"Nice frappe d'entrée","lignes":["Sofiane Diop ouvre le score","dès la 2e minute."]},
+  {"type":"texte","rubrique":"SPORT","chiffre":"78'","titre":"Clauss fait le break","lignes":["Jonathan Clauss double la mise","et scelle le match."]},
+  {"type":"photo","photo":"outils/photos/stade-tribunes.jpg","cadrage":"50% 50%","rubrique":"SPORT","titre":"Prochain match : [Paris FC]","sous_titre":"Dimanche 22 novembre à 15h00."}
+ ]}

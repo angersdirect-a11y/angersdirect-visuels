@@ -1,0 +1,28 @@
+{
+ "modele": "info",
+ "format": "story",
+ "tag": "ANGERS · PRÉFECTURE",
+ "titre": "Rassemblements interdits dans l'hyper-centre d'Angers ce samedi",
+ "blocs": [
+  {
+   "label": "QUAND",
+   "texte": "Ce samedi 14 novembre, jusqu'à dimanche 7h"
+  },
+  {
+   "label": "OÙ",
+   "texte": "Une partie de l'hyper-centre d'Angers"
+  },
+  {
+   "label": "INTERDIT",
+   "texte": "Rassemblements, cortèges, défilés et attroupements"
+  },
+  {
+   "label": "AUSSI INTERDITS",
+   "texte": "Armes, pétards, produits inflammables, équipements de protection et sacs à dos"
+  },
+  {
+   "label": "CONSEIL",
+   "texte": "Respectez le périmètre et quittez tout rassemblement en cas de débordements"
+  }
+ ]
+}

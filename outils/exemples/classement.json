@@ -1,0 +1,170 @@
+{
+ "type": "classement",
+ "titre": "Ligue 1",
+ "sous_titre": "Après la Xe journée (exemple)",
+ "lignes": [
+  {
+   "rang": 1,
+   "nom": "AJ Auxerre",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 2,
+   "nom": "Angers SCO",
+   "logo": "angers-sco",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": true
+  },
+  {
+   "rang": 3,
+   "nom": "AS Monaco",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 4,
+   "nom": "ES Troyes AC",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 5,
+   "nom": "FC Lorient",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 6,
+   "nom": "Le Havre AC",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 7,
+   "nom": "Le Mans FC",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 8,
+   "nom": "LOSC Lille",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 9,
+   "nom": "OGC Nice",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 10,
+   "nom": "Olympique de Marseille",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 11,
+   "nom": "Olympique lyonnais",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 12,
+   "nom": "Paris FC",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 13,
+   "nom": "Paris Saint-Germain",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 14,
+   "nom": "RC Lens",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 15,
+   "nom": "RC Strasbourg",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 16,
+   "nom": "Stade Brestois",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 17,
+   "nom": "Stade rennais",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  },
+  {
+   "rang": 18,
+   "nom": "Toulouse FC",
+   "logo": "",
+   "diff": "+0",
+   "j": 0,
+   "pts": 0,
+   "surligne": false
+  }
+ ],
+ "source": "Source : ligue officielle · angersdirect.fr"
+}

@@ -1,0 +1,54 @@
+{
+ "duree_scene": 3.2,
+ "musique": true,
+ "graine": 5,
+ "scenes": [
+  {
+   "type": "texte",
+   "rubrique": "ÉCONOMIE",
+   "chiffre": "1 502 €",
+   "titre": "Le smic net au [1er décembre]",
+   "lignes": [
+    "Annoncé lundi par le gouvernement.",
+    "Pour un temps plein (35 h par semaine)."
+   ]
+  },
+  {
+   "type": "texte",
+   "rubrique": "ÉCONOMIE",
+   "chiffre": "+24 €",
+   "titre": "De plus [chaque mois]",
+   "lignes": [
+    "Contre 1 478 € aujourd'hui.",
+    "Soit une hausse de 1,6 %."
+   ]
+  },
+  {
+   "type": "texte",
+   "rubrique": "ÉCONOMIE",
+   "chiffre": "1er",
+   "titre": "[Coup de pouce] depuis 2012",
+   "lignes": [
+    "La hausse de janvier est avancée.",
+    "Et le gouvernement y ajoute un geste."
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "outils/sel/smic-courbe-video.png",
+   "cadrage": "50% 50%",
+   "rubrique": "ÉCONOMIE",
+   "titre": "[+283 €] depuis 2020",
+   "sous_titre": "De 1 219 € en janvier 2020 à 1 502 € en décembre 2026."
+  },
+  {
+   "type": "texte",
+   "chiffre": "?",
+   "titre": "Et pour vous, [est-ce suffisant] ?",
+   "lignes": [
+    "Dites-le en commentaire."
+   ],
+   "rubrique": "ÉCONOMIE"
+  }
+ ]
+}

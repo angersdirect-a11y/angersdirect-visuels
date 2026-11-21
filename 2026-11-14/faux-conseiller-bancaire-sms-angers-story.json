@@ -1,0 +1,28 @@
+{
+ "photo": "outils/sel/faux-conseiller-bancaire-sms-angers.jpg",
+ "credit": "",
+ "rubrique": "ÉCONOMIE",
+ "titre": "Faux conseiller bancaire : les bons réflexes",
+ "points": [
+  {
+   "chiffre": "0 code",
+   "texte": "Un vrai conseiller ne demande jamais de code ni de valider une opération"
+  },
+  {
+   "chiffre": "33700",
+   "texte": "Le numéro gratuit pour transférer un SMS frauduleux"
+  },
+  {
+   "chiffre": "13 mois",
+   "texte": "Le délai pour contester un paiement frauduleux auprès de sa banque"
+  },
+  {
+   "chiffre": "24h/24",
+   "texte": "L'opposition sur sa carte, au 0 892 705 705 (numéro surtaxé)"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

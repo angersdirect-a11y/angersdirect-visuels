@@ -1,0 +1,54 @@
+{
+ "duree_scene": 3.2,
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "outils/sel/v-chateau.jpg",
+   "cadrage": "62% 50%",
+   "titre": "Que faire à Angers [ce dimanche] ?",
+   "sous_titre": "5 idées pour les petits et les grands."
+  },
+  {
+   "type": "photo",
+   "photo": "outils/sel/v-terra.jpg",
+   "cadrage": "38% 50%",
+   "rubrique": "CULTURE",
+   "titre": "La [Fête de l'Automne] à Terra Botanica",
+   "sous_titre": "Jusqu'au 1er novembre."
+  },
+  {
+   "type": "photo",
+   "photo": "outils/sel/v-heroic.jpg",
+   "cadrage": "52% 50%",
+   "rubrique": "CULTURE",
+   "titre": "L'expo [HeROIc] au château d'Angers",
+   "sous_titre": "Jusqu'au 3 janvier."
+  },
+  {
+   "type": "texte",
+   "rubrique": "CULTURE",
+   "chiffre": "2 expos",
+   "titre": "Tolkien s'invite à Angers",
+   "lignes": [
+    "« Aubusson tisse Tolkien » au musée Jean-Lurçat, jusqu'au 8 novembre.",
+    "« Voyage en Terre du milieu » au Muséum des sciences naturelles."
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "outils/photos/patinage.jpg",
+   "rubrique": "SPORT",
+   "titre": "Dernier jour du [Grand Prix de France]",
+   "sous_titre": "Patinage artistique à l'Angers IceParc.",
+   "cadrage": "50% 50%"
+  },
+  {
+   "type": "photo",
+   "photo": "outils/sel/v-sco.jpg",
+   "cadrage": "50% 50%",
+   "rubrique": "SPORT",
+   "titre": "Angers SCO - Lorient à [17h15]",
+   "sous_titre": "Au stade Raymond-Kopa."
+  }
+ ]
+}

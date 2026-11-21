@@ -1,0 +1,29 @@
+{
+ "photo": "outils/sel/livre-de-k-quai.jpg",
+ "credit": "",
+ "rubrique": "CULTURE",
+ "logo": "haut",
+ "titre": "Le Livre de K au Quai",
+ "points": [
+  {
+   "chiffre": "25-26",
+   "texte": "Mercredi 25 et jeudi 26 novembre"
+  },
+  {
+   "chiffre": "11",
+   "texte": "Comédiens et comédiennes sur scène"
+  },
+  {
+   "chiffre": "LSF",
+   "texte": "Une pièce jouée notamment en langue des signes"
+  },
+  {
+   "chiffre": "14 ans",
+   "texte": "L'âge conseillé pour voir le spectacle"
+  }
+ ],
+ "encart": {
+  "label": "TOUT SAVOIR",
+  "texte": "L'article complet sur angersdirect.fr"
+ }
+}

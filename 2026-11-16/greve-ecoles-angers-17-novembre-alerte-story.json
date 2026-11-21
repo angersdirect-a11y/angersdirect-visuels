@@ -1,0 +1,28 @@
+{
+ "modele": "info",
+ "format": "story",
+ "tag": "ANGERS · ÉCOLES",
+ "titre": "Grève mardi : les écoles publiques d'Angers perturbées",
+ "blocs": [
+  {
+   "label": "QUAND",
+   "texte": "Ce mardi 17 novembre, journée nationale de grève"
+  },
+  {
+   "label": "QUI",
+   "texte": "Enseignants et agents municipaux des écoles"
+  },
+  {
+   "label": "CE QUI PEUT FERMER",
+   "texte": "Cantine, garderie et TAP, selon les écoles"
+  },
+  {
+   "label": "ACCUEIL DES ENFANTS",
+   "texte": "Service minimum d'accueil dès 25 % d'enseignants grévistes dans une école"
+  },
+  {
+   "label": "CONSEIL",
+   "texte": "Vérifiez auprès de l'école ou sur angers.fr"
+  }
+ ]
+}

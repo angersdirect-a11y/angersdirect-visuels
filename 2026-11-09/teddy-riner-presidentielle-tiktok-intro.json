@@ -1,0 +1,5 @@
+{"duree_scene": 3.2, "musique": true, "graine": 4,
+ "scenes": [
+  {"type": "texte", "rubrique": "ACTU", "chiffre": "ALERTE",
+   "titre": "Teddy Riner [candidat] à la présidentielle", "lignes": ["Le triple champion olympique de judo", "se lance pour 2027."]}
+ ]}

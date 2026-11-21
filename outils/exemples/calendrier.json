@@ -1,0 +1,39 @@
+{
+ "type": "calendrier",
+ "mois": "de novembre",
+ "matchs": [
+  {
+   "date": "SAM. 1",
+   "adversaire": "Adversaire",
+   "logo": "",
+   "domicile": true,
+   "lieu": "Stade Raymond-Kopa",
+   "heure": "21 H 00"
+  },
+  {
+   "date": "DIM. 9",
+   "adversaire": "Adversaire",
+   "logo": "",
+   "domicile": false,
+   "lieu": "ville",
+   "heure": "17 H 15"
+  },
+  {
+   "date": "SAM. 22",
+   "adversaire": "Adversaire",
+   "logo": "",
+   "domicile": true,
+   "lieu": "Stade Raymond-Kopa",
+   "heure": "19 H 00"
+  },
+  {
+   "date": "DIM. 30",
+   "adversaire": "Adversaire",
+   "logo": "",
+   "domicile": false,
+   "lieu": "ville",
+   "heure": "15 H 00"
+  }
+ ],
+ "pied": "Horaires sous réserve · angersdirect.fr"
+}

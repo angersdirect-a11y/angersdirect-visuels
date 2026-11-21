@@ -1,0 +1,20 @@
+{
+ "modele": "info",
+ "tag": "INTERNATIONAL",
+ "titre": "Crimée : l'Ukraine frappe le pont de Kertch",
+ "format": "post",
+ "blocs": [
+  {
+   "label": "QUOI",
+   "texte": "Missiles et drones ukrainiens ont visé le pont dans la nuit de lundi à mardi."
+  },
+  {
+   "label": "DÉGÂTS",
+   "texte": "Une arche de la partie routière s'est effondrée, selon les images diffusées par Kiev."
+  },
+  {
+   "label": "ET APRÈS",
+   "texte": "Circulation routière suspendue. Moscou ouvre une enquête pour terrorisme."
+  }
+ ]
+}
