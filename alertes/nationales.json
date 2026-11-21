@@ -1307,5 +1307,18 @@
       "https://www.newsofbahrain.com/en/article/cyclone-akvan-bears-down-on-indias-eastern-coast"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "seisme-mer-de-banda-timor-m68-21-11",
+    "titre": "Séisme de magnitude 6,8 en mer de Banda, près du Timor oriental",
+    "portee": "international",
+    "detectee_le": "2026-11-21T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : séisme en mer, aucune victime ni dégât signalés, pas de menace de tsunami",
+    "sources": [
+      "https://sg.news.yahoo.com/magnitude-6-8-earthquake-strikes-100537642.html",
+      "https://adaderana.lk/news/252058"
+    ],
+    "plannerUrls": []
   }
 ]
