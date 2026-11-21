@@ -1,8 +1,0 @@
-{"modele": "trafic", "format": "story", "tag": "TRAM · IRIGO",
- "titre": "Tram A, B et C coupés dans le centre d'Angers pendant la manifestation",
- "blocs": [
-  {"label": "QUAND", "texte": "Depuis 10h ce mardi 17 novembre, pendant la manifestation"},
-  {"label": "CENTRE-VILLE", "texte": "Les stations du centre ne sont pas desservies"},
-  {"label": "TERMINUS PROVISOIRES", "texte": "Depuis Avrillé Ardenne : Berges de Maine. Depuis Belle-Beille Campus : Le Quai. Depuis Angers Roseraie : Les Gares. Depuis Monplaisir : Conservatoire."},
-  {"label": "INFOS", "texte": "Irigo au 02 41 33 64 64"}
- ]}

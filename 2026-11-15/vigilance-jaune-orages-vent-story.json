@@ -1,9 +1,0 @@
-{"modele": "info", "format": "story", "tag": "MÉTÉO · MAINE-ET-LOIRE",
- "titre": "Vigilance jaune orages et vent ce dimanche",
- "blocs": [
-  {"label": "ORAGES", "texte": "Averses orageuses de 10h à 18h."},
-  {"label": "VENT", "texte": "Rafales jusqu'à 90 km/h par endroits, de 11h à 20h."},
-  {"label": "SUR LA ROUTE", "texte": "Redoublez de prudence, attention aux branches et aux objets projetés."},
-  {"label": "EN EXTÉRIEUR", "texte": "Évitez les zones boisées et ne vous abritez jamais sous un arbre en cas d'orage."},
-  {"label": "CHEZ VOUS", "texte": "Rangez ou fixez les objets qui craignent le vent (mobilier de jardin, poubelles)."}
- ]}
