@@ -1401,5 +1401,18 @@
       "https://www.euronews.com/video/2026/11/21/latest-news-bulletin-november-21st-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "mobilisation-21-11-bilan-soir",
+    "titre": "Mobilisation du 21 novembre : 82 500 manifestants selon l'Intérieur, au moins 144 interpellations",
+    "portee": "france",
+    "detectee_le": "2026-11-21T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan de manifestations déjà écartées, aucune paralysie du pays ni incident majeur",
+    "sources": [
+      "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html",
+      "https://www.ouest-france.fr/societe/manifestation/direct-manifestations-du-21-novembre-une-journee-de-mobilisation-pour-le-droit-au-logement-en-europe-183040e1-1e72-4a94-b536-4a410dc0fba2"
+    ],
+    "plannerUrls": []
   }
 ]
