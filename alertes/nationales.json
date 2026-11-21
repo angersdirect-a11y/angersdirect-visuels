@@ -1364,5 +1364,42 @@
       "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "navire-russe-drones-golfe-finlande-21-11",
+    "titre": "Un cargo russe touché par des drones dans le golfe de Finlande",
+    "portee": "international",
+    "detectee_le": "2026-11-21T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : incendie d'un navire, aucune victime confirmée, suite d'une guerre en cours",
+    "sources": [
+      "https://gcaptain.com/russian-military-linked-cargo-ship-burns-after-suspected-drone-strike-in-gulf-of-finland/",
+      "https://www.kyivpost.com/post/90814"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "mexique-violences-arrestation-21-11",
+    "titre": "Mexique : flambée de violences après une arrestation",
+    "portee": "international",
+    "detectee_le": "2026-11-21T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source, trop mineur : aucun bilan officiel",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/21/linfo-du-jour-21-novembre-2026-soir"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "estonie-fermeture-frontiere-russie-21-11",
+    "titre": "Estonie : fermeture de la frontière avec la Russie",
+    "portee": "international",
+    "detectee_le": "2026-11-21T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/21/latest-news-bulletin-november-21st-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
