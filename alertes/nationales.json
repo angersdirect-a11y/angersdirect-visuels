@@ -1234,5 +1234,42 @@
       "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/montargis/une-peniche-a-explose-dans-le-port-de-montargis-en-pleine-nuit-trois-blesses-dont-un-grave-3453501.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "incendie-centrale-basra-irak-2026-11-21",
+    "titre": "Incendie dans une centrale électrique à Bassora (Irak), au moins 4 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-21T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan limité, faible impact pour le public français",
+    "sources": [
+      "https://theprint.in/world/fire-at-power-station-in-iraqs-basra-kills-at-least-4-injures-35/3105153/",
+      "https://www.yahoo.com/news/world/articles/iraq-fire-basra-power-station-062240563.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-orange-crues-pas-de-calais-2026-11-21",
+    "titre": "Vigilance orange crues-inondations dans le Pas-de-Calais",
+    "portee": "france",
+    "detectee_le": "2026-11-21T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/alerte-vigilance-orange-crues-inondations-montees-des-eaux-attendues-dans-le-pas-de-calais-ce-21-novembre-2026_8293418.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "accident-route-gard-2026-11-21",
+    "titre": "Accident de la route mortel dans le Gard",
+    "portee": "france",
+    "detectee_le": "2026-11-21T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/occitanie/gard/nimes/choc-d-une-extreme-violence-un-mort-et-un-blesse-grave-un-tragique-accident-de-la-route-fait-une-jeune-victime-sur-une-route-departementale-3453495.html"
+    ],
+    "plannerUrls": []
   }
 ]
