@@ -20,5 +20,10 @@
  "tram-angers-redaction-trail": {
   "source": "rédaction (outils/photos/tram-angers-redaction.jpg)",
   "usage": "2026-11-18/trail-apocalypse-tram-bus-devies"
+ },
+ "concert-scene-illustration": {
+  "source": "illustration originale générée par outils/concert_scene.py (outils/photos/concert-scene-illustration.jpg)",
+  "licence": "aucun droit tiers",
+  "usage": "2026-11-21/sinclair-reporte"
  }
 }
