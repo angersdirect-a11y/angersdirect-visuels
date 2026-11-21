@@ -1271,5 +1271,41 @@
       "https://france3-regions.franceinfo.fr/occitanie/gard/nimes/choc-d-une-extreme-violence-un-mort-et-un-blesse-grave-un-tragique-accident-de-la-route-fait-une-jeune-victime-sur-une-route-departementale-3453495.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "ormuz-petroliers-mines-21-11",
+    "titre": "Pétroliers en feu après avoir heurté des mines dans le détroit d'Ormuz, selon la marine iranienne",
+    "portee": "international",
+    "detectee_le": "2026-11-21T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : affirmation de la marine iranienne seule, suite des attaques de navires déjà écartées à 10h, aucun bilan",
+    "sources": [
+      "https://www.lorientlejour.com/article/1553659/un-petrolier-en-feu-apres-avoir-heurte-une-mine-dans-le-detroit-dormuz-selon-la-marine-iranienne.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "danemark-complot-rappeur-21-11",
+    "titre": "Le Danemark réclame des mesures contre Moscou après un complot présumé contre un rappeur ukraino-américain",
+    "portee": "international",
+    "detectee_le": "2026-11-21T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réaction diplomatique, aucune victime",
+    "sources": [
+      "https://www.timesofisrael.com/liveblog_entry/denmark-urges-concrete-steps-against-moscow-over-alleged-plot-to-assassinate-us-ukrainian-rapper/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "cyclone-akvan-inde-21-11",
+    "titre": "Cyclone Akvan sur la côte est de l'Inde",
+    "portee": "international",
+    "detectee_le": "2026-11-21T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : arrivée sur les côtes le 20/11, hors fenêtre de 3 heures, aucun bilan majeur confirmé",
+    "sources": [
+      "https://www.newsofbahrain.com/en/article/cyclone-akvan-bears-down-on-indias-eastern-coast"
+    ],
+    "plannerUrls": []
   }
 ]
