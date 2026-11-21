@@ -1320,5 +1320,17 @@
       "https://adaderana.lk/news/252058"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "gaza-frappe-vehicule-aide-21-11",
+    "titre": "Frappe sur un véhicule d'aide à Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-21T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://theprint.in/world/israeli-strike-kills-three-in-vehicle-distributing-aid-in-gaza-witnesses-say/3105306/"
+    ],
+    "plannerUrls": []
   }
 ]
