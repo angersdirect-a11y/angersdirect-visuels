@@ -1332,5 +1332,37 @@
       "https://theprint.in/world/israeli-strike-kills-three-in-vehicle-distributing-aid-in-gaza-witnesses-say/3105306/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-21-236173",
+    "titre": "COP31 à Antalya : négociations prolongées",
+    "portee": "international",
+    "detectee_le": "2026-11-21T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : prolongation des négociations, aucun accord adopté confirmé",
+    "sources": [],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-21-70786",
+    "titre": "Atterrissage d'urgence réussi à Davao (Philippines)",
+    "portee": "international",
+    "detectee_le": "2026-11-21T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun blessé signalé",
+    "sources": [],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-21-763828",
+    "titre": "Mobilisation du 21 novembre en France : participation en baisse selon le ministère de l'Intérieur",
+    "portee": "france",
+    "detectee_le": "2026-11-21T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : déjà écartée à 9h, aucun incident majeur ni paralysie du pays",
+    "sources": [
+      "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html"
+    ],
+    "plannerUrls": []
   }
 ]
