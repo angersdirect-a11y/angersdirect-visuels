@@ -1547,5 +1547,29 @@
       "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/alerte-vigilance-orange-pluies-inondations-fortes-precipitations-dangereuses-dans-le-jura-et-dans-l-ain-ce-22-novembre-2026_8294462.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1225-1",
+    "titre": "Riyad : la tour du fonds souverain PIF endommagée par des débris de missile",
+    "portee": "international",
+    "detectee_le": "2026-11-22T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime signalée, faits survenus le 19/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://gulfbusiness.com/en/2026/saudi-arabia/saudi-pif-tower-hit-in-riyadh-attack-sources-say/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1225-2",
+    "titre": "Incendie d'usine en Indonésie : sept corps retrouvés, 50 disparus",
+    "portee": "international",
+    "detectee_le": "2026-11-22T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite de l'incendie déjà écarté à 8h25, bilan non officiel, faible impact pour le public français",
+    "sources": [
+      "https://www.dawn.com/news/2046306/seven-body-bags-recovered-50-missing-after-indonesia-factory-fire"
+    ],
+    "plannerUrls": []
   }
 ]
