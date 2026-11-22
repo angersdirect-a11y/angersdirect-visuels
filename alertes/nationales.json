@@ -1511,5 +1511,41 @@
       "https://www.lemonde.fr/international/article/2026/11/22/scandale-de-triche-a-l-ia-en-coree-du-sud-sous-pression-le-ministre-de-l-education-demissionne_6814190_3210.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1125-1",
+    "titre": "Cargo Miro G échoué sur le littoral des Landes (Lit-et-Mixe), équipage évacué",
+    "portee": "france",
+    "detectee_le": "2026-11-22T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : échouement survenu le 20/11, hors fenêtre de 3 heures, aucun mort selon la préfecture maritime",
+    "sources": [
+      "https://www.premar-atlantique.gouv.fr/communiques-presse/point-de-situation-le-miro-g-echoue-sur-une-plage-dans-les-landes"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1125-2",
+    "titre": "Bahreïn : frappe iranienne sur un site industriel, sans victime",
+    "portee": "international",
+    "detectee_le": "2026-11-22T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, aucune victime, faits survenus samedi 21/11",
+    "sources": [
+      "https://www.gmanetwork.com/news/topstories/world/1010356/bahrain-says-iranian-attack-hits-industrial-facility-as-air-defenses-intercept-attacks/story/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1125-3",
+    "titre": "Vigilance orange pluie-inondation dans l'Ain et le Jura",
+    "portee": "france",
+    "detectee_le": "2026-11-22T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/alerte-vigilance-orange-pluies-inondations-fortes-precipitations-dangereuses-dans-le-jura-et-dans-l-ain-ce-22-novembre-2026_8294462.html"
+    ],
+    "plannerUrls": []
   }
 ]
