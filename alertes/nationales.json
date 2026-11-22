@@ -1757,5 +1757,41 @@
       "https://www.cnn.com/2026/11/22/us/delta-airlines-ground-delay"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-ohio-(états-unis)-:-fusillade-",
+    "titre": "Ohio (États-Unis) : fusillade lors d'une baby shower à Parma, 3 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-22T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers américain, faible impact pour le public français",
+    "sources": [
+      "https://www.nbcnews.com/news/us-news/parma-ohio-baby-shower-shooting-rcna610722"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-incendie-près-de-clermont-ferr",
+    "titre": "Incendie près de Clermont-Ferrand : une septuagénaire décédée",
+    "portee": "france",
+    "detectee_le": "2026-11-22T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/puy-de-dome/clermont-ferrand/incendie-en-cours-pres-de-clermont-ferrand-une-femme-de-70-ans-decedee-3454125.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-ormuz-:-incident-impliquant-un",
+    "titre": "Ormuz : incident impliquant un pétrolier et des forces militaires",
+    "portee": "international",
+    "detectee_le": "2026-11-22T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, aucune victime confirmée, une seule source",
+    "sources": [
+      "https://www.euronews.com/2026/11/22/tanker-incident-involving-military-forces-reported-in-strait-of-hormuz"
+    ],
+    "plannerUrls": []
   }
 ]
