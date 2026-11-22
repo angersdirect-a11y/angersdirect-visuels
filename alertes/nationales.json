@@ -1636,5 +1636,17 @@
       "https://sports.orange.fr/plus-de-sport/article/un-double-champion-du-monde-francais-de-chute-libre-decede-au-mont-blanc-exclu-CNT000002neDZT.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1625-1",
+    "titre": "Bilan annuel du parquet national antiterroriste : trois attentats en France en 2026",
+    "portee": "france",
+    "detectee_le": "2026-11-22T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan annuel, pas un événement de dernière minute",
+    "sources": [
+      "https://fr.qz.com/procureur-antiterroriste-recense-trois-attentats-sept-projets-dejoues-112226"
+    ],
+    "plannerUrls": []
   }
 ]
