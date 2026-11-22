@@ -1,0 +1,12 @@
+{
+ "sport": "football",
+ "competition": "Ligue 1",
+ "journee": "11e journée",
+ "dom": {"nom": "Paris FC", "logo": ""},
+ "ext": {"nom": "Angers SCO", "logo": ""},
+ "date": "DIMANCHE 22 NOVEMBRE",
+ "heure": "15 H 00",
+ "stade": "Stade Jean-Bouin",
+ "diffusion": "",
+ "type": "jdm_paysage"
+}
