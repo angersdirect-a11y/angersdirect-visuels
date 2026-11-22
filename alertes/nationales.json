@@ -1462,5 +1462,54 @@
       "https://newscura.com/global/timeline/2026-11-21"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-0825-1",
+    "titre": "Naufrage à Bayelsa (Nigeria) : au moins 24 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-22T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : naufrage survenu le 20/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://libnanews.com/nigeria-au-moins-24-morts-dans-un-naufrage-a-bayelsa/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-0825-2",
+    "titre": "Incendie d'une usine en Indonésie : trois morts et 36 disparus",
+    "portee": "international",
+    "detectee_le": "2026-11-22T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : article principal illisible, bilan et date non recoupés",
+    "sources": [
+      "https://fr.qz.com/incendie-usine-bonbons-indonesie-trois-morts-36-disparus-112226",
+      "https://libnanews.com/indonesie-un-incendie-dusine-fait-au-moins-trois-morts/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-0825-3",
+    "titre": "Iran : coupures d'électricité programmées à partir du 22 novembre",
+    "portee": "international",
+    "detectee_le": "2026-11-22T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : faible impact pour le public français",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-22-novembre-2026-8-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-0825-4",
+    "titre": "Corée du Sud : le ministre de l'Éducation démissionne après un scandale de triche à l'IA",
+    "portee": "international",
+    "detectee_le": "2026-11-22T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français",
+    "sources": [
+      "https://www.lemonde.fr/international/article/2026/11/22/scandale-de-triche-a-l-ia-en-coree-du-sud-sous-pression-le-ministre-de-l-education-demissionne_6814190_3210.html"
+    ],
+    "plannerUrls": []
   }
 ]
