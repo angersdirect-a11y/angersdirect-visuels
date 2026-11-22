@@ -1597,5 +1597,44 @@
       "https://actu.orange.fr/societe/environnement/un-seisme-de-magnitude-6-7-au-perou-fait-15-blesses-CNT000002tWgkh.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1525-1",
+    "titre": "COP31 à Antalya : la conférence se sépare sans accord final",
+    "portee": "international",
+    "detectee_le": "2026-11-22T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : échec de négociations climatiques, hors des catégories d'alerte (ni catastrophe, ni accord de paix)",
+    "sources": [
+      "https://ici.radio-canada.ca/article/info/2302365/cop31-changement-climatique-union-europeenne",
+      "https://fr.lapresse.it/etranger-fr/2026/11/22/cop-31-president-le-projet-daccord-final-nest-pas-adopte/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1525-2",
+    "titre": "Golfe : l'Iran revendique le contrôle d'Ormuz et des frappes contre des bases américaines à Bahreïn",
+    "portee": "international",
+    "detectee_le": "2026-11-22T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, frappes du 21/11 hors fenêtre de 3 heures, revendications non vérifiées, bilan contradictoire (2 blessés ou aucun)",
+    "sources": [
+      "https://www.thenationalnews.com/news/mena/2026/11/22/live-bahrain-attack-iran-war/",
+      "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf",
+      "https://www.yahoo.com/news/world/articles/iran-asserts-control-over-hormuz-084019847.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1525-3",
+    "titre": "Décès d'un double champion du monde français de chute libre au Mont-Blanc",
+    "portee": "france",
+    "detectee_le": "2026-11-22T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : personnalité qui n'est pas de tout premier plan pour le grand public",
+    "sources": [
+      "https://sports.orange.fr/plus-de-sport/article/un-double-champion-du-monde-francais-de-chute-libre-decede-au-mont-blanc-exclu-CNT000002neDZT.html"
+    ],
+    "plannerUrls": []
   }
 ]
