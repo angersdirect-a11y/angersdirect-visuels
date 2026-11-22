@@ -1648,5 +1648,53 @@
       "https://fr.qz.com/procureur-antiterroriste-recense-trois-attentats-sept-projets-dejoues-112226"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "soudan-sud-tonj-east-attaque-22-11",
+    "titre": "Soudan du Sud : attaque à Tonj East, au moins 15 civils tués",
+    "portee": "international",
+    "detectee_le": "2026-11-22T19:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://www.newsbytesapp.com/news/world/officials-say-tonj-east-attack-killed-at-least-15-civilians/tldr"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur"
+  },
+  {
+    "id": "belgique-greve-nationale-trafic-aerien-23-11",
+    "titre": "Belgique : grève nationale lundi, trafic aérien à l'arrêt",
+    "portee": "international",
+    "detectee_le": "2026-11-22T19:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://english.aawsat.com/world/5344155-belgium-faces-air-traffic-shutdown-due-national-strike-monday"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur"
+  },
+  {
+    "id": "liban-deces-georges-khodr-22-11",
+    "titre": "Liban : décès du métropolite émérite Georges Khodr",
+    "portee": "international",
+    "detectee_le": "2026-11-22T19:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-22-novembre-2026-18-h/"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur"
+  },
+  {
+    "id": "bepicolombo-orbite-mercure-22-11",
+    "titre": "La sonde BepiColombo entre en orbite autour de Mercure",
+    "portee": "international",
+    "detectee_le": "2026-11-22T19:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://fr.euronews.com/2026/11/22/mercure-la-sonde-euro-japonaise-bepicolombo-entre-en-orbite-apres-8-ans-de-voyage"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur"
   }
 ]
