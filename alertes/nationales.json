@@ -1709,5 +1709,17 @@
       "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-libye-benghazi-navire-russe-drone",
+    "titre": "Libye : un navire russe touché par un drone présumé à Benghazi",
+    "portee": "international",
+    "detectee_le": "2026-11-22T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : blessés en nombre inconnu, aucun mort, suite d'une guerre en cours, aucune revendication",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/22/suspected-drone-strike-hits-russian-vessel-in-libya"
+    ],
+    "plannerUrls": []
   }
 ]
