@@ -1696,5 +1696,18 @@
     ],
     "plannerUrls": [],
     "raison": "trop mineur"
+  },
+  {
+    "id": "2026-11-22-golfe-bahrein-blocus-petroliers",
+    "titre": "Golfe : Bahreïn intercepte des attaques iraniennes, Téhéran prépare des pétroliers pour forcer le blocus américain",
+    "portee": "international",
+    "detectee_le": "2026-11-22T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, aucune victime ni escalade majeure confirmée",
+    "sources": [
+      "https://gulfnews.com/world/mena/middle-east-conflict-bahrain-intercepts-iranian-attacks-as-tehran-prepares-14-oil-tankers-to-breach-us-naval-blockade-1.500756662",
+      "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf"
+    ],
+    "plannerUrls": []
   }
 ]
