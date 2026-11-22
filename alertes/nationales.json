@@ -1721,5 +1721,41 @@
       "https://www.aljazeera.com/news/2026/11/22/suspected-drone-strike-hits-russian-vessel-in-libya"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-2225-1",
+    "titre": "Libye : Kiev désigné derrière l'explosion du navire russe à Benghazi",
+    "portee": "international",
+    "detectee_le": "2026-11-22T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'un événement déjà écarté à 21h25, revendication non officielle, aucun mort",
+    "sources": [
+      "https://titrespresse.com/30151752603/libye-benghazi-afp"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-2225-2",
+    "titre": "Val Thorens : un skieur retrouvé mort sur une piste",
+    "portee": "france",
+    "detectee_le": "2026-11-22T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://www.titrespresse.com/30171512603/val-thorens-savoie"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-2225-3",
+    "titre": "États-Unis : retards en série des vols Delta après un arrêt au sol à Atlanta",
+    "portee": "international",
+    "detectee_le": "2026-11-22T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français, une seule source",
+    "sources": [
+      "https://www.cnn.com/2026/11/22/us/delta-airlines-ground-delay"
+    ],
+    "plannerUrls": []
   }
 ]
