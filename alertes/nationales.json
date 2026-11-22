@@ -1571,5 +1571,31 @@
       "https://www.dawn.com/news/2046306/seven-body-bags-recovered-50-missing-after-indonesia-factory-fire"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1325-1",
+    "titre": "Dymer (région de Kiev) : un drone russe détruit un immeuble, au moins 14 disparus",
+    "portee": "international",
+    "detectee_le": "2026-11-22T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, frappe survenue dans la nuit, bilan non consolidé (1 mort, disparus selon Zelensky)",
+    "sources": [
+      "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "https://www.usnews.com/news/world/articles/2026-11-22/at-least-14-people-missing-after-russian-drone-hit-building-in-kyiv-region-zelenskiy-says",
+      "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-1325-2",
+    "titre": "Séisme de magnitude 6,7 au Pérou : au moins 15 blessés",
+    "portee": "international",
+    "detectee_le": "2026-11-22T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun mort, séisme survenu le 20/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://actu.orange.fr/societe/environnement/un-seisme-de-magnitude-6-7-au-perou-fait-15-blesses-CNT000002tWgkh.html"
+    ],
+    "plannerUrls": []
   }
 ]
