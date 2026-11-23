@@ -1891,5 +1891,41 @@
       "https://france3-regions.franceinfo.fr/normandie/seine-maritime/dieppe/grave-accident-entre-trois-voitures-et-deux-pietonnes-pres-de-dieppe-une-femme-tuee-une-cellule-psychologique-ouverte-3453792.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-cleon-interpellations",
+    "titre": "Déraillement du TER à Cléon : trois hommes interpellés",
+    "portee": "france",
+    "detectee_le": "2026-11-23T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite judiciaire d'un accident survenu il y a deux mois, information régionale",
+    "sources": [
+      "https://www.ici.fr/normandie/seine-maritime-76/cleon/info-ici-normandie-un-pere-et-ses-deux-fils-interpelles-apres-le-deraillement-du-train-rouen-caen-3984233"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-zelensky-navires-russes-libye",
+    "titre": "Zelensky affirme que l'Ukraine a frappé deux navires russes près de la Libye",
+    "portee": "international",
+    "detectee_le": "2026-11-23T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite de l'événement de Benghazi déjà écarté le 22/11, revendication non vérifiée, aucun bilan",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-chu-guadeloupe-cyberattaque",
+    "titre": "CHU de Guadeloupe : plan blanc après une cyberattaque",
+    "portee": "france",
+    "detectee_le": "2026-11-23T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : perturbation locale, urgences maintenues, survenue samedi",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
   }
 ]
