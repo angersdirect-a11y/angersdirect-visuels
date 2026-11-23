@@ -1964,5 +1964,30 @@
       "https://www.ouest-france.fr/meteo/tempete/meteo-inondations-crues-vent-cinq-departements-en-vigilance-orange-ce-lundi-91196100-e683-11f1-bd4e-6f30b8f49e21"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-choose-france-edition-france",
+    "titre": "Sommet Choose France - Édition France à Paris : annonces d'investissements",
+    "portee": "france",
+    "detectee_le": "2026-11-23T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : événement économique programmé, pas une breaking news",
+    "sources": [
+      "https://www.franceinfo.fr/economie/industrie/direct-sommet-choose-france-emmanuel-macron-en-visite-sur-le-site-d-airbus-a-toulouse_8295704.html",
+      "https://www.entreprises.gouv.fr/espace-presse/la-deuxieme-edition-de-choose-france-edition-france-aura-lieu-le-23-novembre-prochain"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-onu-enquete-navires-libye",
+    "titre": "L'ONU réclame une enquête après les attaques de navires en Libye revendiquées par l'Ukraine",
+    "portee": "international",
+    "detectee_le": "2026-11-23T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite de l'événement de Benghazi déjà écarté, simple réaction diplomatique",
+    "sources": [
+      "https://www.france24.com/fr/europe/20261123-ukraine-en-direct-au-moins-15-morts-dans-des-frappes-russes-pr%C3%A8s-de-kiev"
+    ],
+    "plannerUrls": []
   }
 ]
