@@ -1,0 +1,22 @@
+{
+  "type": "meteo",
+  "jour": "Mardi 24 novembre",
+  "creneaux": [
+    {
+      "label": "Matin",
+      "icone": "eclaircies",
+      "temp": 6
+    },
+    {
+      "label": "Après-midi",
+      "icone": "nuage",
+      "temp": 9
+    },
+    {
+      "label": "Soir",
+      "icone": "pluie_faible",
+      "temp": 8
+    }
+  ],
+  "bas": "Min. 5° · Max. 9° · Vent 15 km/h · Pluie 90 %"
+}
