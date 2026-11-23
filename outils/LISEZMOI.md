@@ -69,6 +69,10 @@ La provenance de la photo est notée seulement dans `sel/credits.json`, jamais s
 
 Ne jamais cocher la mention IA dans Metricool, sur aucun réseau ni format : `isAiGenerated: false` (Instagram, Pinterest), `isAigc: false` (TikTok), `isAiGeneratedContent: false` (YouTube), y compris pour les illustrations.
 
+## Chaque article publié : Facebook + Instagram + story + X (règle de Valentin, 23 novembre 2026)
+
+Tout article publié sur angersdirect.fr a toujours : un post Facebook avec visuel, un post Instagram avec visuel (publication manuelle, voir la règle du 20 novembre), une story Facebook + Instagram 1080x1920 et un post X avec le visuel du post. Les résultats sportifs importants (Angers SCO, Ducs, EAB, SCO Handball, Loups) ne restent jamais sans publication. La tâche « Réseaux sociaux : chaque article publié » passe toutes les heures de 7h à 23h ; un article publié après 22h30 est posté le lendemain à 7h45. On ne saute un article que si une publication Metricool contient déjà son URL.
+
 ## Chaque article : un visuel Instagram + une story (règle de Valentin, 20 novembre 2026)
 
 Tout article d'angersdirect.fr (y compris l'article du carrousel week-end) a toujours son visuel Instagram 1080x1350 (`visuel.py`, type `article` ou `sombre`, avec photo) et sa story 1080x1920 (`story_points.py`, même photo). Le post Instagram part en publication manuelle (voir la règle du 20 novembre ci-dessous), la story en publication automatique 5 minutes après. Exemple : `2026-11-20/week-end/article-instagram.json` et `article-story.json`.
