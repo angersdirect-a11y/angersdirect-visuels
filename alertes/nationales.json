@@ -1867,5 +1867,29 @@
       "https://www.ksat.com/business/2026/11/23/us-futures-climb-and-asian-shares-mostly-decline-as-some-tech-stocks-fall/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-perou-seisme-6-7",
+    "titre": "Séisme de magnitude 6,7 dans le centre du Pérou",
+    "portee": "international",
+    "detectee_le": "2026-11-23T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : séisme survenu le week-end, hors fenêtre de 3 heures, aucun bilan officiel de victimes recoupé",
+    "sources": [
+      "https://la1ere.franceinfo.fr/polynesie/seisme-de-magnitude-6-7-dans-le-centre-du-perou-1760109.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-dieppe-accident-pietonnes",
+    "titre": "Accident près de Dieppe : deux piétonnes tuées",
+    "portee": "france",
+    "detectee_le": "2026-11-23T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/normandie/seine-maritime/dieppe/grave-accident-entre-trois-voitures-et-deux-pietonnes-pres-de-dieppe-une-femme-tuee-une-cellule-psychologique-ouverte-3453792.html"
+    ],
+    "plannerUrls": []
   }
 ]
