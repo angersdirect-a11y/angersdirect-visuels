@@ -36,7 +36,7 @@ def corps(f):
 {logo_haut}
 <div style="position:absolute;left:72px;right:72px;top:660px;display:flex;flex-direction:column;align-items:flex-start">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg);margin-bottom:24px"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px">{e(f['rubrique'].upper())}</div></div>
-<div style="font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1.02;margin-bottom:30px">{e(f['titre'])}</div>
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1.02;margin-bottom:30px">{e(f['titre'].replace('[','').replace(']',''))}</div>
 <div style="width:100%">{points}</div>{encart}</div>
 {logo_bas}<div style="position:absolute;right:72px;top:1760px;font-weight:500;font-size:28px;letter-spacing:1px;color:#C9D3E0">angersdirect.fr</div></div>'''
 

@@ -114,7 +114,7 @@ def article(f):
 <div style="position:absolute;left:0;top:570px;height:140px;box-sizing:border-box;padding:0 70px 0 72px;background:{BLOC};clip-path:polygon(0 0,100% 0,calc(100% - 30px) 100%,0 100%);display:flex;align-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:84px;line-height:1;color:#FFFFFF">{e(f['bloc'])}</div>
 <div style="position:absolute;left:72px;right:72px;top:755px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg)"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
-<div style="font-family:'Barlow Condensed';font-weight:700;font-size:66px;line-height:1.08">{e(f['titre'])}</div>
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:66px;line-height:1.08">{e(f['titre'].replace('[','').replace(']',''))}</div>
 <div style="font-size:32px;line-height:1.55;color:#3B4656">{e(f['texte'])}</div></div>
 <img src="file://{ICI}/assets/logo_bleu.png" style="position:absolute;left:72px;top:1222px;width:146px">
 <div style="position:absolute;right:70px;top:1240px;font-size:26px;letter-spacing:1px;color:#3B4656">angersdirect.fr</div></div>'''
@@ -128,7 +128,7 @@ def carte(f):
 <div style="position:absolute;left:72px;right:72px;top:150px;font-family:'Barlow Condensed';font-weight:700;font-size:{taille_chiffre(f['chiffre'])}px;line-height:1;white-space:nowrap;color:#FFFFFF">{e(f['chiffre'])}</div>
 <div style="position:absolute;left:72px;right:72px;top:575px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
 <div style="padding:6px 22px;background:{couleur};transform:skewX(-12deg)"><div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:600;font-size:34px;letter-spacing:1px;color:#FFFFFF">{e(f['rubrique'].upper())}</div></div>
-<div style="font-family:'Barlow Condensed';font-weight:700;font-size:72px;line-height:1.05">{e(f['titre'])}</div>
+<div style="font-family:'Barlow Condensed';font-weight:700;font-size:72px;line-height:1.05">{e(f['titre'].replace('[','').replace(']',''))}</div>
 <div style="font-size:34px;line-height:1.5;color:#3B4656">{e(f['texte'])}</div></div>
 <img src="file://{ICI}/assets/logo_bleu.png" style="position:absolute;left:72px;top:1222px;width:146px">
 {page}</div>'''
