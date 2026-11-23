@@ -1989,5 +1989,53 @@
       "https://www.france24.com/fr/europe/20261123-ukraine-en-direct-au-moins-15-morts-dans-des-frappes-russes-pr%C3%A8s-de-kiev"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-nigeria-niger-state-attaques-weekend",
+    "titre": "Nigeria : attaques meurtrières dans l'État de Niger",
+    "portee": "international",
+    "detectee_le": "2026-11-23T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : attaques du week-end hors fenêtre de 3 heures, bilan non officiel (habitants)",
+    "sources": [
+      "https://www.usnews.com/news/world/articles/2026-11-23/dozens-killed-in-weekend-attacks-in-nigerias-niger-state-residents-say"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-nvidia-retour-jensen-huang",
+    "titre": "Nvidia : Jensen Huang réintégré à la tête du groupe",
+    "portee": "international",
+    "detectee_le": "2026-11-23T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : actualité économique, pas une breaking news grand public",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-iran-ormuz-conditions-baqaei",
+    "titre": "Iran : conditions pour rouvrir le détroit d'Ormuz",
+    "portee": "international",
+    "detectee_le": "2026-11-23T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : simple déclaration dans une guerre en cours, aucune décision actée",
+    "sources": [
+      "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-sud-liban-frappes",
+    "titre": "Sud-Liban : frappes signalées",
+    "portee": "international",
+    "detectee_le": "2026-11-23T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
   }
 ]
