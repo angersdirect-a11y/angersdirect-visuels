@@ -2135,5 +2135,29 @@
       "https://www.franceinfo.fr/economie/greve/l-encaissement-de-plus-d-un-million-de-cheques-bloque-a-cause-d-une-greve-d-agents-des-finances-publiques-a-rennes_8296731.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-manchester-concert-evacuation",
+    "titre": "Manchester : plus de 12 000 spectateurs évacués d'un concert après la diffusion d'une substance inconnue",
+    "portee": "international",
+    "detectee_le": "2026-11-23T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : aucun blessé signalé",
+    "sources": [
+      "https://www.crossville-chronicle.com/news/ap_news/ap-news-summary-at-3-27-p-m-est/article_385804e1-8291-5da1-b53a-a605e5194703.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-nvidia-huang-reinstalle",
+    "titre": "Nvidia : Jensen Huang réinstallé PDG",
+    "portee": "international",
+    "detectee_le": "2026-11-23T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : actualité économique, suite d'un événement déjà écarté",
+    "sources": [
+      "https://www.crossville-chronicle.com/news/ap_news/ap-news-summary-at-3-27-p-m-est/article_385804e1-8291-5da1-b53a-a605e5194703.html"
+    ],
+    "plannerUrls": []
   }
 ]
