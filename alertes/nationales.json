@@ -2074,5 +2074,41 @@
       "https://gvwire.com/2026/11/23/israeli-strikes-kill-at-least-three-in-gaza-including-worker-with-un-palestinian-agency/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-algerie-batna-accident-bus",
+    "titre": "Algérie : un mort et 28 blessés dans un accident de bus à Batna",
+    "portee": "international",
+    "detectee_le": "2026-11-23T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan limité, faible impact pour le public français, une seule source",
+    "sources": [
+      "https://www.tsa-algerie.com/un-mort-et-28-blesses-dans-un-accident-de-bus-a-batna/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-macron-aeronautique-350-millions",
+    "titre": "Macron annonce 350 millions d'euros pour l'aéronautique à Blagnac",
+    "portee": "france",
+    "detectee_le": "2026-11-23T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : annonce économique, pas une breaking news",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/23/linfo-du-jour-23-novembre-2026-soir"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-ue-sanctions-russie",
+    "titre": "L'UE adopte un nouveau train de sanctions contre la Russie",
+    "portee": "international",
+    "detectee_le": "2026-11-23T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mesure attendue, pas une breaking news grand public",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/23/linfo-du-jour-23-novembre-2026-soir"
+    ],
+    "plannerUrls": []
   }
 ]
