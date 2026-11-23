@@ -1793,5 +1793,30 @@
       "https://www.euronews.com/2026/11/22/tanker-incident-involving-military-forces-reported-in-strait-of-hormuz"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-indonesie-incendie-usine-24-morts",
+    "titre": "Incendie d'usine en Indonésie : les autorités annoncent 24 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-23T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite de l'incendie déjà écarté le 22/11, faible impact pour le public français",
+    "sources": [
+      "https://www.freemalaysiatoday.com/category/world/2026/11/23/indonesia-says-24-killed-in-factory-blaze-as-rescuers-search-for-dozens-missing",
+      "https://theprint.in/world/indonesia-says-24-killed-in-factory-blaze-as-rescuers-search-for-dozens-missing/3106086/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-ukraine-region-kiev-13-morts",
+    "titre": "Ukraine : 13 morts dans la région de Kiev après la frappe sur Dymer",
+    "portee": "international",
+    "detectee_le": "2026-11-23T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une frappe déjà écartée le 22/11, guerre en cours, hors fenêtre de 3 heures",
+    "sources": [
+      "https://www.ouest-france.fr/europe/ukraine/guerre-en-ukraine-13-morts-dans-la-region-de-kiev-navire-russe-attaque-le-point-sur-la-nuit-a1d1b13c-e6f1-11f1-bd4e-6f30b8f49e21"
+    ],
+    "plannerUrls": []
   }
 ]
