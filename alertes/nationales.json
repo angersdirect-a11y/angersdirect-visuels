@@ -1854,5 +1854,18 @@
       "https://www.boursorama.com/actualite-economique/actualites/france-macron-confirme-envisager-de-reunir-le-congres-a-versailles-pour-une-regle-d-or-budgetaire-8c64d05af5d0b3e77fe2fb998f4f4cc4"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-bourses-asie-ia",
+    "titre": "Bourses asiatiques en baisse après la chute de Wall Street (craintes sur l'IA)",
+    "portee": "international",
+    "detectee_le": "2026-11-23T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
+      "https://www.ksat.com/business/2026/11/23/us-futures-climb-and-asian-shares-mostly-decline-as-some-tech-stocks-fall/"
+    ],
+    "plannerUrls": []
   }
 ]
