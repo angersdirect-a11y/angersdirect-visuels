@@ -2110,5 +2110,30 @@
       "https://fr.euronews.com/video/2026/11/23/linfo-du-jour-23-novembre-2026-soir"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-belgique-manifestation-nationale",
+    "titre": "Belgique : manifestation nationale à Bruxelles, heurts près de la gare du Midi",
+    "portee": "international",
+    "detectee_le": "2026-11-23T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement social belge, faible impact pour le public français",
+    "sources": [
+      "https://www.rtbf.be/article/direct-manifestation-nationale-du-23-novembre-retour-au-calme-pres-de-la-gare-du-midi-apres-des-affrontements-avec-les-forces-de-l-ordre-11819601",
+      "https://lavenir.net/actu/belgique/2026/11/23/manifestation-nationale-du-23-novembre-les-transports-en-commun-perturbes-greve-du-trafic-aerien-direct-WLYE7H6MXFGUTJ4YDJJTDTZH54"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-rennes-greve-finances-publiques-cheques",
+    "titre": "Rennes : grève aux finances publiques, plus d'un million de chèques bloqués",
+    "portee": "france",
+    "detectee_le": "2026-11-23T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : perturbation administrative localisée",
+    "sources": [
+      "https://www.franceinfo.fr/economie/greve/l-encaissement-de-plus-d-un-million-de-cheques-bloque-a-cause-d-une-greve-d-agents-des-finances-publiques-a-rennes_8296731.html"
+    ],
+    "plannerUrls": []
   }
 ]
