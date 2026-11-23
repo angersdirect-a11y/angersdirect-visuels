@@ -1927,5 +1927,42 @@
       "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-12-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-22-barcelone-bus-explosion",
+    "titre": "Barcelone : un bus prend feu et explose, des immeubles touchés",
+    "portee": "international",
+    "detectee_le": "2026-11-23T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun mort signalé, survenu le 22/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://bnonews.com/index.php/2026/11/bus-catches-fire-and-explodes-in-barcelona-flames-reach-nearby-buildings/",
+      "https://www.telecinco.es/noticias/sucesos/20261122/brutal-incendio-explosion-autobus-barcelona_18_020783025.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-golfe-attaques-petroliers",
+    "titre": "Golfe : attaques de pétroliers au plus haut depuis le début de la guerre",
+    "portee": "international",
+    "detectee_le": "2026-11-23T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, attaques des 20-21/11 hors fenêtre, aucun bilan confirmé",
+    "sources": [
+      "https://gulfnews.com/uae/usisrael-iran-war-what-uae-residents-need-to-know-today-nov-23-2026-1.500757486"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-vigilance-orange-crues-vent",
+    "titre": "Vigilance orange crues et vents dans cinq départements",
+    "portee": "france",
+    "detectee_le": "2026-11-23T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange seulement, pas de vigilance rouge nationale",
+    "sources": [
+      "https://www.ouest-france.fr/meteo/tempete/meteo-inondations-crues-vent-cinq-departements-en-vigilance-orange-ce-lundi-91196100-e683-11f1-bd4e-6f30b8f49e21"
+    ],
+    "plannerUrls": []
   }
 ]
