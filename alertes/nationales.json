@@ -1818,5 +1818,41 @@
       "https://www.ouest-france.fr/europe/ukraine/guerre-en-ukraine-13-morts-dans-la-region-de-kiev-navire-russe-attaque-le-point-sur-la-nuit-a1d1b13c-e6f1-11f1-bd4e-6f30b8f49e21"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-soudan-khartoum-frappes-drones",
+    "titre": "Soudan : frappes de drones dans le Grand Khartoum, au moins 4 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-23T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité, faible impact pour le public français",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-23-2026/4133974"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-italie-deces-paolo-bulgari",
+    "titre": "Décès du joaillier italien Paolo Bulgari",
+    "portee": "international",
+    "detectee_le": "2026-11-23T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : personnalité qui n'est pas de tout premier plan, décès annoncé le week-end",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-23-2026/4133974"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-macron-congres-regle-d-or",
+    "titre": "Macron envisage un Congrès à Versailles pour une règle d'or budgétaire",
+    "portee": "france",
+    "detectee_le": "2026-11-23T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : simple projet envisagé, pas une décision institutionnelle actée",
+    "sources": [
+      "https://www.boursorama.com/actualite-economique/actualites/france-macron-confirme-envisager-de-reunir-le-congres-a-versailles-pour-une-regle-d-or-budgetaire-8c64d05af5d0b3e77fe2fb998f4f4cc4"
+    ],
+    "plannerUrls": []
   }
 ]
