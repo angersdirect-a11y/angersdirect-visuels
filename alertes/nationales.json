@@ -2037,5 +2037,42 @@
       "https://libnanews.com/lessentiel-en-5-minutes-23-novembre-2026-18-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-indonesie-raffinerie-explosion",
+    "titre": "Indonésie : explosion dans une raffinerie, un ouvrier tué",
+    "portee": "international",
+    "detectee_le": "2026-11-23T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : un mort, faible impact pour le public français",
+    "sources": [
+      "https://x.com/Reuters/status/2123350626209783816"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-seismes-kyushu-maluku",
+    "titre": "Séismes de magnitude 4,1 (Kyushu, Japon) et 5,4 (Maluku, Indonésie)",
+    "portee": "international",
+    "detectee_le": "2026-11-23T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime signalée",
+    "sources": [
+      "https://www.spa.gov.sa/fr/N2734211",
+      "https://www.spa.gov.sa/fr/N2734315"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-23-gaza-frappes",
+    "titre": "Frappes à Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-23T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://gvwire.com/2026/11/23/israeli-strikes-kill-at-least-three-in-gaza-including-worker-with-un-palestinian-agency/"
+    ],
+    "plannerUrls": []
   }
 ]
