@@ -2195,5 +2195,41 @@
       "https://aninews.in/news/world/asia/earthquake-of-magnitude-54-strikes-nepal-tremors-felt-across-india-bhutan-china20261124074736"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "hanoi-explosion-gaz-2026-11-24",
+    "titre": "Vietnam : explosion liée au gaz dans un commerce de Hanoï, au moins 6 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-24T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://ksevradio.com/explosion-kills-6-injures-10-in-vietnam-capital-hanoi/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "russie-arme-nucleaire-espace-2026-11-24",
+    "titre": "Alliés : mise en garde sur une possible arme nucléaire russe dans l'espace",
+    "portee": "international",
+    "detectee_le": "2026-11-24T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur (mises en garde, pas d'événement ; une seule source)",
+    "sources": [
+      "https://www.10things.news/p/10-things-global-news-24th-november-b13"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-jaune-avalanche-2026-11-24",
+    "titre": "Vigilance jaune avalanche dans 4 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-24T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-avalanche-risque-localise-en-montagne-dans-4-departements-ce-24-novembre-2026_8297154.html"
+    ],
+    "plannerUrls": []
   }
 ]
