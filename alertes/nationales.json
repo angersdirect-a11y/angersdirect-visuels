@@ -2365,5 +2365,41 @@
       "https://www.dawn.com/news/2046778/israeli-strikes-in-gaza-kill-7-including-senior-security-official"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "sanofi-rachat-insmed-2026-11-24",
+    "titre": "Sanofi rachète l'américain Insmed pour environ 41 milliards de dollars",
+    "portee": "international",
+    "detectee_le": "2026-11-24T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : opération économique, pas une breaking news grand public",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-24-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "coree-avion-nord-coreen-espace-aerien-2026-11-24",
+    "titre": "Séoul signale une possible intrusion d'un aéronef nord-coréen",
+    "portee": "international",
+    "detectee_le": "2026-11-24T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source, trop mineur : signalement non recoupé, aucune conséquence connue",
+    "sources": [
+      "https://everythingbriefing.substack.com/p/todays-news-history-and-thanksgiving"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "liban-sud-frappes-2026-11-24",
+    "titre": "Frappes israéliennes dans le sud du Liban",
+    "portee": "international",
+    "detectee_le": "2026-11-24T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-24-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
   }
 ]
