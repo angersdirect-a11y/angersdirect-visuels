@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "post", "tag": "BUS · IRIGO",
+ "titre": "Ligne 1 déviée la nuit boulevard Foch",
+ "blocs": [
+  {"label": "QUAND", "texte": "Nuits du 30 novembre au 1er décembre et du 1er au 2 décembre, de 22h à 5h30"},
+  {"label": "POURQUOI", "texte": "Démontage d'une grue boulevard Foch"},
+  {"label": "NON DESSERVIS (VERS LORRAINE)", "texte": "Foch-Haras, Foch-St-Aubin, Lorraine"},
+  {"label": "ARRÊT DE REPORT", "texte": "Paul Bert"}
+ ]}

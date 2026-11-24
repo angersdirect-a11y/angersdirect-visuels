@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "story", "tag": "BUS · IRIGO",
+ "titre": "Ligne 2 déviée la nuit boulevard Foch",
+ "blocs": [
+  {"label": "QUAND", "texte": "Nuits du 30 novembre au 1er décembre et du 1er au 2 décembre, de 22h à 5h30"},
+  {"label": "POURQUOI", "texte": "Démontage d'une grue boulevard Foch"},
+  {"label": "NON DESSERVIS (VERS ST-BARTHÉLEMY)", "texte": "Foch-Haras, Foch-St-Aubin, Lorraine - Foch-Maison Bleue"},
+  {"label": "ARRÊTS DE REPORT", "texte": "Lices, Roi René, Château, St-Serge Université, Mendès France"}
+ ]}
