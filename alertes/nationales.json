@@ -2413,5 +2413,31 @@
       "https://www.cnews.fr/france/2026-11-24/crues-voici-les-9-departements-places-en-vigilance-jaune-ce-mardi-1959770"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-carthagene-prise-otages",
+    "titre": "Colombie : prise d'otages lors d'un braquage dans un magasin de Carthagène",
+    "portee": "international",
+    "detectee_le": "2026-11-24T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : braquage raté à l'étranger, aucune victime signalée, faible impact pour le public français, chiffres divergents (25 à 30 otages)",
+    "sources": [
+      "https://www.nbcnewyork.com/news/national-international/armed-men-take-30-hostages-in-cartagena-store-one-of-colombias-top-tourist-destinations/6575911/",
+      "https://colombiaone.com/2026/11/24/cartagena-store-hostage-robbery"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-pornic-collision-car",
+    "titre": "Loire-Atlantique : collision entre un car et une voiture près de Pornic, un mort et 22 blessés",
+    "portee": "france",
+    "detectee_le": "2026-11-24T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident régional survenu vers 13h, hors fenêtre de 3 heures",
+    "sources": [
+      "https://saintnazaire-infos.fr/collision-entre-un-car-et-une-voiture-pres-de-pornic-mardi-24-novembre-un-mort-et-plusieurs-blesses/",
+      "https://fr.news.yahoo.com/collision-entre-voiture-car-route-155149743.html"
+    ],
+    "plannerUrls": []
   }
 ]
