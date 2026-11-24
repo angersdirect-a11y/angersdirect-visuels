@@ -2439,5 +2439,30 @@
       "https://fr.news.yahoo.com/collision-entre-voiture-car-route-155149743.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-seisme-rodrigues-maurice",
+    "titre": "Séisme de magnitude 6,4 au nord-est de Rodrigues (Maurice)",
+    "portee": "international",
+    "detectee_le": "2026-11-24T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : en mer, non ressenti, aucune victime signalée, survenu vers 12h06",
+    "sources": [
+      "https://defimedia.info/au-nord-est-de-rodrigues-un-seisme-de-magnitude-64-enregistre"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-tas-can-senegal",
+    "titre": "CAN 2025 : le TAS donne raison au Sénégal",
+    "portee": "international",
+    "detectee_le": "2026-11-24T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : décision sportive, pas un titre français",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/24/latest-news-bulletin-november-24th-2026-evening",
+      "https://libnanews.com/lessentiel-en-5-minutes-24-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
   }
 ]
