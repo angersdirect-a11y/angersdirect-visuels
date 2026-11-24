@@ -2401,5 +2401,17 @@
       "https://libnanews.com/lessentiel-en-5-minutes-24-novembre-2026-12-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-vigilance-jaune-crues-9-departements",
+    "titre": "Vigilance jaune crues dans 9 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-24T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune, pas de vigilance rouge",
+    "sources": [
+      "https://www.cnews.fr/france/2026-11-24/crues-voici-les-9-departements-places-en-vigilance-jaune-ce-mardi-1959770"
+    ],
+    "plannerUrls": []
   }
 ]
