@@ -2464,5 +2464,29 @@
       "https://libnanews.com/lessentiel-en-5-minutes-24-novembre-2026-18-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-vigilance-orange-var-alpes-maritimes",
+    "titre": "Var et Alpes-Maritimes en vigilance orange pluie-inondation mercredi",
+    "portee": "france",
+    "detectee_le": "2026-11-24T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange régionale, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/le-var-et-les-alpes-maritimes-places-en-vigilance-orange-mercredi-pour-pluie-inondation_8297946.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-zelensky-pourparlers-quadripartites",
+    "titre": "Zelensky appelle à des pourparlers à quatre avec Russie, Europe et États-Unis",
+    "portee": "international",
+    "detectee_le": "2026-11-24T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : simple déclaration, aucune décision actée",
+    "sources": [
+      "https://www.france24.com/en/europe/20261124-zelensky-urges-four-way-peace-talks-with-russia-europe-and-us-as-soon-as-possible"
+    ],
+    "plannerUrls": []
   }
 ]
