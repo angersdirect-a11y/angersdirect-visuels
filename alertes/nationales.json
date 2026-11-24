@@ -2292,5 +2292,53 @@
       "https://edition.cnn.com/2026/11/24/us/iowa-lead-detonation-army"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "lancon-provence-accident-d113-2026-11-24",
+    "titre": "Lançon-Provence : deux morts dans un accident sur la D113",
+    "portee": "france",
+    "detectee_le": "2026-11-24T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/une-moto-percute-un-pieton-deux-hommes-de-50-ans-et-19-ans-meurent-dans-un-accident-de-la-circulation-sur-la-d113-3454823.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "nimes-incendie-containers-2026-11-24",
+    "titre": "Nîmes : un mort dans l'incendie de containers aménagés",
+    "portee": "france",
+    "detectee_le": "2026-11-24T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/occitanie/gard/nimes/une-personne-retrouvee-morte-dans-l-incendie-de-deux-containers-amenages-en-habitats-precaires-3454802.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "usa-ohio-collision-bus-2026-11-24",
+    "titre": "États-Unis : collision de bus près de Columbus (Ohio)",
+    "portee": "international",
+    "detectee_le": "2026-11-24T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : accident local à l'étranger, date non recoupée",
+    "sources": [
+      "https://www.wgauradio.com/news/trending/2-bus-drivers-killed-9-people-injured-after-head-on-crash-near-ohio-state-fairgrounds/KWIXXHZVKBFWFHG57SYNPXNQCI/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "belgique-greve-24-26-novembre-2026",
+    "titre": "Belgique : grève des 24, 25 et 26 novembre",
+    "portee": "international",
+    "detectee_le": "2026-11-24T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement social belge annoncé, faible impact pour le public français",
+    "sources": [
+      "https://www.bruxellestoday.be/actualite/greve-24-25-26-novembre-perturbations.html"
+    ],
+    "plannerUrls": []
   }
 ]
