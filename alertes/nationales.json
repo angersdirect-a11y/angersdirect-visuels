@@ -2159,5 +2159,41 @@
       "https://www.crossville-chronicle.com/news/ap_news/ap-news-summary-at-3-27-p-m-est/article_385804e1-8291-5da1-b53a-a605e5194703.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-eau-ras-al-khaimah-accident-bus",
+    "titre": "Émirats : collision bus-camion à Ras Al Khaimah, 11 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-24T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : accident routier à l'étranger, faible impact pour le public français",
+    "sources": [
+      "https://www.usnews.com/news/world/articles/2026-11-24/bus-and-truck-collision-kills-11-in-uaes-ras-al-khaimah"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-ukraine-zaporijjia-frappe",
+    "titre": "Ukraine : frappe russe sur Zaporijjia, 2 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-24T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité",
+    "sources": [
+      "https://www.brecorder.com/news/40450496/russian-attack-kills-2-people-wounds-22-in-ukraines-zaporizhzhia-official-says"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-24-nepal-seisme-5-3",
+    "titre": "Népal : séisme de magnitude 5,3 dans la province de Koshi",
+    "portee": "international",
+    "detectee_le": "2026-11-24T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime signalée",
+    "sources": [
+      "https://aninews.in/news/world/asia/earthquake-of-magnitude-54-strikes-nepal-tremors-felt-across-india-bhutan-china20261124074736"
+    ],
+    "plannerUrls": []
   }
 ]
