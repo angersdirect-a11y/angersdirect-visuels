@@ -2340,5 +2340,30 @@
       "https://www.bruxellestoday.be/actualite/greve-24-25-26-novembre-perturbations.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "colombie-villavicencio-voiture-piegee-2026-11-24",
+    "titre": "Colombie : voiture piégée contre le siège du gouvernement régional du Meta à Villavicencio",
+    "portee": "international",
+    "detectee_le": "2026-11-24T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun mort selon le président colombien, survenu lundi soir, hors fenêtre de 3 heures",
+    "sources": [
+      "https://www.lalibre.be/dernieres-depeches/2026/11/24/colombie-des-batiments-officiels-detruits-dans-lexplosion-dune-voiture-piegee-XMPCAEP5GNH4DEGBSPQ6TKLONY/",
+      "https://www.ouest-france.fr/monde/colombie/colombie-des-batiments-officiels-detruits-dans-lexplosion-dune-voiture-piegee-e999221a-e7bf-11f1-86c1-70195b4d2e52"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "gaza-frappes-2026-11-24",
+    "titre": "Frappes à Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-24T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://www.dawn.com/news/2046778/israeli-strikes-in-gaza-kill-7-including-senior-security-official"
+    ],
+    "plannerUrls": []
   }
 ]
