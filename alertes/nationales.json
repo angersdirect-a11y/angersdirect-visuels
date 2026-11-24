@@ -2268,5 +2268,29 @@
       "https://latele.ch/articles/yemen-26-morts-dans-des-frappes-sur-des-vehicules"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "france-policier-renvoi-assises-nanterre-2026-11-24",
+    "titre": "Le policier mis en cause dans la mort d'un adolescent à Nanterre renvoyé aux assises",
+    "portee": "france",
+    "detectee_le": "2026-11-24T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : étape judiciaire, pas une breaking news de la liste (et personne mise en cause)",
+    "sources": [
+      "https://www.usnews.com/news/world/articles/2026-11-24/french-police-officer-who-shot-teenager-will-face-murder-trial"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "usa-iowa-detonation-armee-2026-11-24",
+    "titre": "Iowa : l'armée américaine autorisée à faire exploser des munitions",
+    "portee": "international",
+    "detectee_le": "2026-11-24T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://edition.cnn.com/2026/11/24/us/iowa-lead-detonation-army"
+    ],
+    "plannerUrls": []
   }
 ]
