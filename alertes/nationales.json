@@ -2231,5 +2231,42 @@
       "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-avalanche-risque-localise-en-montagne-dans-4-departements-ce-24-novembre-2026_8297154.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "iran-ormuz-trois-navires-mines-2026-11-24",
+    "titre": "Ormuz : l'Iran affirme que trois navires ont pris feu après avoir heurté des mines",
+    "portee": "international",
+    "detectee_le": "2026-11-24T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, aucune victime confirmée, annonce iranienne seule",
+    "sources": [
+      "https://www.aljazeera.com/news/",
+      "https://www.connaissancedesenergies.org/afp/iran-trois-nouveaux-petroliers-en-feu-dans-le-detroit-dormuz-gardiens-261108"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "haiti-soldats-salvadoriens-tues-2026-11-24",
+    "titre": "Haïti : Bukele détaille la mort de soldats salvadoriens de la force d'intervention",
+    "portee": "international",
+    "detectee_le": "2026-11-24T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : faible impact pour le public français",
+    "sources": [
+      "https://www.aljazeera.com/news/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "yemen-frappes-vehicules-26-morts-2026-11-24",
+    "titre": "Yémen : 26 morts dans des frappes sur des véhicules",
+    "portee": "international",
+    "detectee_le": "2026-11-24T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, date et bilan non recoupés",
+    "sources": [
+      "https://latele.ch/articles/yemen-26-morts-dans-des-frappes-sur-des-vehicules"
+    ],
+    "plannerUrls": []
   }
 ]
