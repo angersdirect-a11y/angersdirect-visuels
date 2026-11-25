@@ -2839,5 +2839,24 @@
       "https://www.tmz.com/2026/11/25/army-iowa-detonation/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "egypte-incendie-camion-citerne-caire-2026-11-25",
+    "titre": "Égypte : au moins 30 morts dans l'incendie d'un camion près du Caire",
+    "portee": "international",
+    "detectee_le": "2026-11-25T21:25:00+01:00",
+    "statut": "proposee",
+    "sources": [
+      "https://www.arabnews.com/middle-east/at-least-30-killed-in-blaze-after-vehicle-overturns-in-egypt-health-ministry-says-3014042",
+      "https://kfgo.com/2026/11/25/at-least-21-killed-in-blaze-after-vehicle-overturns-in-egypt-health-ministry-says/",
+      "https://www.thenationalnews.com/news/mena/2026/11/25/at-least-21-killed-after-tanker-explosion-near-cairo/",
+      "https://www.trtworld.com/article/1c78d3d25fb3",
+      "https://gulfnews.com/world/mena/death-toll-rises-to-30-in-egypt-ring-road-tanker-fire-1.500761119"
+    ],
+    "plannerUrls": [],
+    "visuels": [
+      "2026-11-25/egypte-incendie-camion-caire-alerte-post.png",
+      "2026-11-25/egypte-incendie-camion-caire-alerte-story.png"
+    ]
   }
 ]
