@@ -2718,5 +2718,65 @@
       "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-18-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "indonesie-mine-or-pongkor-inondee-2026-11-25",
+    "titre": "Indonésie : mine d'or illégale inondée à Pongkor (Java-Ouest), 8 morts et 18 mineurs piégés",
+    "portee": "international",
+    "detectee_le": "2026-11-25T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : inondation depuis lundi, faible impact pour le public français",
+    "sources": [
+      "https://bdnews24.com/world/iie6vml58j"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "ukraine-frappes-russes-7-morts-raffineries-2026-11-25",
+    "titre": "Ukraine : frappes russes, 7 morts, Kiev frappe trois raffineries",
+    "portee": "international",
+    "detectee_le": "2026-11-25T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité, déjà écarté plus tôt",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/25/latest-news-bulletin-november-25th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "usa-droits-de-douane-14-economies-2026-11-25",
+    "titre": "États-Unis : droits de douane proposés sur 14 économies, 15 % pour l'UE",
+    "portee": "international",
+    "detectee_le": "2026-11-25T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : proposition, pas une décision actée, audiences à partir du 25 janvier",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "chine-shenzhou-24-2026-11-25",
+    "titre": "Chine : lancement de Shenzhou-24 avec un astronaute pakistanais",
+    "portee": "international",
+    "detectee_le": "2026-11-25T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/25/latest-news-bulletin-november-25th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "liban-explosion-kounine-2026-11-25",
+    "titre": "Sud-Liban : explosion à Kounine attribuée à l'armée israélienne",
+    "portee": "international",
+    "detectee_le": "2026-11-25T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
   }
 ]
