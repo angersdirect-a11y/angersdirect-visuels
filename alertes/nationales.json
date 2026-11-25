@@ -2858,5 +2858,18 @@
       "2026-11-25/egypte-incendie-camion-caire-alerte-post.png",
       "2026-11-25/egypte-incendie-camion-caire-alerte-story.png"
     ]
+  },
+  {
+    "id": "nigeria-niger-borgu-attaque-30-morts-2026-11-25",
+    "titre": "Nigeria : au moins 30 morts dans une attaque dans l'État du Niger (Borgu)",
+    "portee": "international",
+    "detectee_le": "2026-11-25T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, bilan non officiel : bilan donné par des habitants, faible impact pour le public français",
+    "sources": [
+      "https://www.usnews.com/news/world/articles/2026-11-25/suspected-militants-kill-at-least-30-in-nigerias-niger-state-residents-say",
+      "https://www.naijanews.com/2026/11/25/police-reinforce-security-in-niger-after-deadly-borgu-attacks-claim-over-30-lives/"
+    ],
+    "plannerUrls": []
   }
 ]
