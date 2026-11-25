@@ -2670,5 +2670,17 @@
       "https://www.timesofisrael.com/liveblog-november-25-2026/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-ukraine-odessa-kyiv-3-morts",
+    "titre": "Ukraine : attaques russes sur les régions d'Odessa et de Kyiv, 3 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-25T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité, déjà écarté à 12h25 (Odessa)",
+    "sources": [
+      "https://thechrissampson.substack.com/p/ukraine-daily-november-25-2026-three"
+    ],
+    "plannerUrls": []
   }
 ]
