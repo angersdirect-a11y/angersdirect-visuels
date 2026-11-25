@@ -136,3 +136,12 @@ Modèle de fiche vidéo : `outils/exemples/video.json` (scène d'accroche sans r
 ## Visuels X (`paysage.py`)
 
 `python3 outils/paysage.py fiche.json sortie.png` : visuel 1200x675 (16:9) pour X, photo à gauche, titre sur panneau bleu nuit à droite. Fiche : `photo`, `rubrique`, `titre` (mots entre crochets dans la teinte de la rubrique), `date` et `cadrage` facultatifs. Exemple : `2026-10-29/pepina-x.json`. Instagram, Facebook et LinkedIn gardent le 1080x1350, les stories le 1080x1920.
+
+## Remplacer un visuel déjà programmé ou publié (règle du 25/11/2026)
+
+Incident du 25/11/2026 : le visuel du sondage Harris a été republié avec l'ancienne photo, car le nouveau fichier n'avait jamais été poussé (git add en échec, fin de chaîne silencieuse) et le lien raw renvoyait l'ancienne version.
+
+1. Toujours un NOUVEAU nom de fichier (ex. `…-v2-post.png`), jamais écraser l'ancien : le cache de raw.githubusercontent.com peut servir l'ancienne image plusieurs minutes.
+2. Après le push, vérifier que `git log origin/main` contient bien le commit, puis que le fichier téléchargé depuis le lien raw est identique au fichier local (même empreinte md5).
+3. Dans Metricool, utiliser un lien raw épinglé sur le commit (`…/angersdirect-visuels/<sha du commit>/<chemin>`), pas `main`.
+4. Montrer les visuels à Valentin et attendre son accord avant de republier ; programmer en brouillon en attendant.
