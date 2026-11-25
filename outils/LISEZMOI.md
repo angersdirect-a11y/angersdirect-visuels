@@ -12,6 +12,7 @@
   - `autoroute-nuit-chantier-illustration.jpg` : illustration originale générée par `outils/autoroute_nuit.py` (autoroute la nuit, balisage de chantier), libre de droits
   - `numerique-recup-illustration.jpg` : illustration originale générée par `outils/numerique_recup.py` (vieux ordinateurs, écran, téléphones), libre de droits, pour les collectes et le réemploi du numérique
   - `concert-scene-illustration.jpg` : illustration originale générée par `outils/concert_scene.py` (scène de concert vide, projecteurs, micro), libre de droits, pour les concerts reportés ou sans photo
+  - `retrogaming-manettes-illustration.jpg` : illustration originale générée par `outils/manettes.py` (deux manettes rétro, confettis pixel), libre de droits, pour le rétrogaming et le jeu vidéo
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
 ## Site angersdirect.fr : zéro crédit Lovable (règle de Valentin, 17 novembre 2026)
