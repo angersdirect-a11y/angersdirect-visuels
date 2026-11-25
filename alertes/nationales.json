@@ -2488,5 +2488,41 @@
       "https://www.france24.com/en/europe/20261124-zelensky-urges-four-way-peace-talks-with-russia-europe-and-us-as-soon-as-possible"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "mississippi-crash-avion-2026-11-24",
+    "titre": "Mississippi : crash d'un petit avion au large de Horn Island, 6 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-25T11:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://openthemagazine.com/world/six-killed-as-plane-crashes-off-mississippi-coast-including-two-children"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur, une seule source : accident d'avion de tourisme survenu mardi vers 22h45, hors fenêtre de 3 heures"
+  },
+  {
+    "id": "vigilance-jaune-neige-2026-11-25",
+    "titre": "Vigilance jaune neige-verglas dans 25 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-25T11:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-neige-verglas-episode-neigeux-a-surveiller-dans-25-departements-ce-25-novembre-2026_8298852.html"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur : vigilance jaune, pas de vigilance rouge"
+  },
+  {
+    "id": "yemen-hodeidah-frappes-2026-11-25",
+    "titre": "Yémen : frappes de la coalition sur le port de Hodeïda",
+    "portee": "international",
+    "detectee_le": "2026-11-25T11:25:00+01:00",
+    "statut": "ignoree",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-12-h/"
+    ],
+    "plannerUrls": [],
+    "raison": "trop mineur, une seule source : aucun bilan vérifié"
   }
 ]
