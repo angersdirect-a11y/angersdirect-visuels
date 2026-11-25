@@ -2622,5 +2622,53 @@
       "https://gmanetwork.com/news/topstories/regions/1010696/magnitude-5-1-earthquake-hits-antique/story"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "paris-evacuation-campement-migrants-2026-11-25",
+    "titre": "Paris : évacuation du dernier campement de migrants sous le métro aérien",
+    "portee": "france",
+    "detectee_le": "2026-11-25T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : opération locale, pas une breaking news nationale",
+    "sources": [
+      "https://www.boursorama.com/actualite-economique/actualites/paris-evacuation-du-dernier-campement-de-migrants-sous-la-ligne-du-metro-aerien-1b6a8eb5258c2f481de5503c4672453b"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "darmanin-igj-procureur-siege-rn-2026-11-25",
+    "titre": "Procureur au siège du RN : Gérald Darmanin saisit l'Inspection générale de la justice",
+    "portee": "france",
+    "detectee_le": "2026-11-25T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique, trop mineur",
+    "sources": [
+      "https://fr.headtopics.com/news/procureur-present-au-siege-du-rn-gerald-darmanin-saisit-90168035"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "gaza-frappes-2026-11-25",
+    "titre": "Frappes à Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-25T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://www.nation.com.pk/25-Nov-2026/senior-hamas-security-official-among-7-killed-israeli-strikes-gaza"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "israel-netanyahou-proces-2026-11-25",
+    "titre": "Israël : procès de Netanyahou, recommandation du tribunal",
+    "portee": "international",
+    "detectee_le": "2026-11-25T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien (sujet lié), trop mineur",
+    "sources": [
+      "https://www.timesofisrael.com/liveblog-november-25-2026/"
+    ],
+    "plannerUrls": []
   }
 ]
