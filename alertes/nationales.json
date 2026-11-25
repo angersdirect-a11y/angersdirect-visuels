@@ -2524,5 +2524,54 @@
     ],
     "plannerUrls": [],
     "raison": "trop mineur, une seule source : aucun bilan vérifié"
+  },
+  {
+    "id": "2026-11-25-1225-1",
+    "titre": "Ukraine : frappe russe dans la région d'Odessa, 2 morts",
+    "portee": "international",
+    "detectee_le": "2026-11-25T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité",
+    "sources": [
+      "https://www.virginradiodubai.com/trending/international-news/russian-strike-kills-2-people-in-ukraines-odesa-region-governor-says/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-1225-2",
+    "titre": "Libye : deux marins tués à Benghazi dans une attaque revendiquée par Kiev",
+    "portee": "international",
+    "detectee_le": "2026-11-25T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, non recoupé",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-12-h/",
+      "https://theshillongtimes.com/2026/11/25/russian-strike-on-ukraine-kills-two-hurts-kids-kyiv-explains-libya-attack/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-1225-3",
+    "titre": "Liban : grève des transports et des banques",
+    "portee": "international",
+    "detectee_le": "2026-11-25T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement social à l'étranger, faible impact pour le public français",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-1225-4",
+    "titre": "Nigeria : mort de l'acteur Pete Edochie",
+    "portee": "international",
+    "detectee_le": "2026-11-25T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : personnalité peu connue du grand public français, une seule source",
+    "sources": [
+      "https://nairobilawmonthly.com/nollywood-actor-pete-edochie-dies/"
+    ],
+    "plannerUrls": []
   }
 ]
