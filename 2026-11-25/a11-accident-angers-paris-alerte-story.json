@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "story", "tag": "ROUTES",
+ "titre": "Accident sur l'A11 près d'Angers, direction Paris",
+ "blocs": [
+  {"label": "QUOI", "texte": "Collision entre un poids lourd et une voiture"},
+  {"label": "OÙ", "texte": "A11 près d'Angers, dans le sens Nantes-Paris"},
+  {"label": "QUAND", "texte": "Ce mercredi 25 novembre"},
+  {"label": "CIRCULATION", "texte": "Autoroute coupée vers Paris selon les premières informations, trafic très perturbé"}
+ ]}
