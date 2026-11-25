@@ -2778,5 +2778,54 @@
       "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-18-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "houthis-ras-tanura-2026-11-25",
+    "titre": "Houthis : attaque revendiquée contre la raffinerie saoudienne de Ras Tanura",
+    "portee": "international",
+    "detectee_le": "2026-11-25T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : revendication, la coalition dit avoir intercepté quatre drones, aucune victime confirmée",
+    "sources": [
+      "https://www.thenationalnews.com/news/gulf/2026/11/25/yemens-houthis-say-they-attacked-saudi-arabias-ras-tanura-refinery/",
+      "https://www.al-monitor.com/originals/2026/11/yemens-houthis-say-they-attacked-saudi-arabias-ras-tanura-refinery"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "var-vigilance-orange-crues-2026-11-25",
+    "titre": "Var en vigilance orange crues, Alpes-Maritimes en orange pluie-inondation",
+    "portee": "france",
+    "detectee_le": "2026-11-25T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance orange régionale, pas de vigilance rouge",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-var-passe-en-vigilance-orange-crues-l-alerte-pluie-inondation-se-poursuit-dans-ce-departement-et-dans-les-alpes-maritimes_8298813.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "budget-europeen-ultimatum-france-2026-11-25",
+    "titre": "Budget européen : la France menace de mettre fin aux négociations au-delà de décembre",
+    "portee": "france",
+    "detectee_le": "2026-11-25T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : déclaration, pas une décision qui change la vie quotidienne",
+    "sources": [
+      "https://www.franceinfo.fr/monde/europe/union-europeenne/la-france-mettra-fin-aux-negociations-sur-le-budget-europeen-si-aucun-accord-n-est-trouve-au-dela-de-decembre_8299746.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "violences-elus-2026-11-25",
+    "titre": "Plus de 3 100 faits de violences sur des élus recensés en 2026",
+    "portee": "france",
+    "detectee_le": "2026-11-25T19:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan statistique, pas une breaking news",
+    "sources": [
+      "https://www.franceinfo.fr/faits-divers/plus-de-3-100-faits-de-violences-sur-des-elus-ont-ete-recenses-en-2026-un-chiffre-en-hausse-de-25-par-rapport-a-2025_8300025.html"
+    ],
+    "plannerUrls": []
   }
 ]
