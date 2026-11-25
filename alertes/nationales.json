@@ -2573,5 +2573,54 @@
       "https://nairobilawmonthly.com/nollywood-actor-pete-edochie-dies/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "eurostar-greve-surprise-2026-11-25",
+    "titre": "Eurostar : grève surprise, trains annulés entre Paris et Londres",
+    "portee": "france",
+    "detectee_le": "2026-11-25T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : perturbation limitée à la liaison transmanche, pas une paralysie nationale",
+    "sources": [
+      "https://www.ici.fr/hauts-de-france/pas-de-calais-62/greve-surprise-a-eurostar-d-importantes-perturbations-ce-mercredi-entre-londres-et-paris-selon-la-compagnie-3078735",
+      "https://www.tourmag.com/Eurostar-une-greve-surprise-perturbe-le-trafic_a134168.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "greve-territoriaux-2026-11-25",
+    "titre": "Grève dans les mairies, crèches et cantines",
+    "portee": "france",
+    "detectee_le": "2026-11-25T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mouvement social annoncé, pas une paralysie du pays",
+    "sources": [
+      "https://www.actu-alt-plus.com/idees-solutions/greve-25-novembre-2026-mairies-creches-cantines/44155/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "caen-accident-poids-lourd-2026-11-25",
+    "titre": "Caen : accident de poids lourd sur le périphérique",
+    "portee": "france",
+    "detectee_le": "2026-11-25T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://ouest-france.fr/economie/transports/routes/apres-un-accident-de-poids-lourd-des-bouchons-sur-le-peripherique-de-caen-ce-mercredi-25-novembre-330b8488-e8ab-11f1-9b33-2f81462d3339"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "philippines-antique-seisme-5-1-2026-11-25",
+    "titre": "Philippines : séisme de magnitude 5,1 à Antique",
+    "portee": "international",
+    "detectee_le": "2026-11-25T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime signalée",
+    "sources": [
+      "https://gmanetwork.com/news/topstories/regions/1010696/magnitude-5-1-earthquake-hits-antique/story"
+    ],
+    "plannerUrls": []
   }
 ]
