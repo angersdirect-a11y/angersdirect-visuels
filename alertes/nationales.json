@@ -2827,5 +2827,17 @@
       "https://www.franceinfo.fr/faits-divers/plus-de-3-100-faits-de-violences-sur-des-elus-ont-ete-recenses-en-2026-un-chiffre-en-hausse-de-25-par-rapport-a-2025_8300025.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "usa-iowa-destruction-explosifs-armee-2026-11-25",
+    "titre": "États-Unis : l'armée détruit près de 5 tonnes d'explosifs dans l'Iowa",
+    "portee": "international",
+    "detectee_le": "2026-11-25T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : opération planifiée, aucune victime signalée",
+    "sources": [
+      "https://www.tmz.com/2026/11/25/army-iowa-detonation/"
+    ],
+    "plannerUrls": []
   }
 ]
