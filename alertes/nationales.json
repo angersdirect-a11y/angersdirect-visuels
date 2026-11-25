@@ -2871,5 +2871,17 @@
       "https://www.naijanews.com/2026/11/25/police-reinforce-security-in-niger-after-deadly-borgu-attacks-claim-over-30-lives/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-syrie-hasaka-attaque-ei",
+    "titre": "Syrie : attaque de l'État islamique à Hasaka, deux membres des forces de sécurité tués",
+    "portee": "international",
+    "detectee_le": "2026-11-25T23:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan limité, source unique (médias d'État syriens)",
+    "sources": [
+      "https://www.yahoo.com/news/world/articles/islamic-state-attack-kills-two-210422272.html"
+    ],
+    "plannerUrls": []
   }
 ]
