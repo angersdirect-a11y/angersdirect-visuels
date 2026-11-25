@@ -2682,5 +2682,41 @@
       "https://thechrissampson.substack.com/p/ukraine-daily-november-25-2026-three"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-ormuz-mines-navires",
+    "titre": "Ormuz : l'Iran affirme que des navires ont heurté des mines et exige une coordination du passage",
+    "portee": "international",
+    "detectee_le": "2026-11-25T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, annonce iranienne seule, aucune victime confirmée",
+    "sources": [
+      "https://theprint.in/world/iran-says-ships-hit-mines-in-hormuz-warns-vessels-to-coordinate-passage/3108652/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-rouen-incendie-immeuble",
+    "titre": "Rouen : incendie dans un immeuble du centre-ville",
+    "portee": "france",
+    "detectee_le": "2026-11-25T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional, aucune victime, survenu en fin de matinée",
+    "sources": [
+      "https://www.titrespresse.com/30511922603/rouen-seine-maritime"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-25-gaza-frappe-shati",
+    "titre": "Frappe à Gaza (camp d'Al-Shati)",
+    "portee": "international",
+    "detectee_le": "2026-11-25T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-25-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
   }
 ]
