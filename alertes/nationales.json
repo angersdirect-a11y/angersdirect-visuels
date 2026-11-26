@@ -3054,5 +3054,53 @@
       "https://www.nst.com.my/world/world/2026/11/1586349/israel-kills-nine-gaza-including-territorys-deputy-education-minister"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "golfe-explosion-petrolier-dubai-20261126",
+    "titre": "Golfe : explosion signalée près d'un pétrolier à l'ouest de Dubaï",
+    "portee": "international",
+    "detectee_le": "2026-11-26T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : équipage sain et sauf, aucun dégât selon l'UKMTO, une seule source",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "sud-liban-explosions-qantara-20261126",
+    "titre": "Sud-Liban : explosions dans le secteur de Qantara",
+    "portee": "international",
+    "detectee_le": "2026-11-26T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "ue-conseil-europeen-budget-ukraine-20261126",
+    "titre": "Bruxelles : Conseil européen sur le budget pluriannuel et le financement de l'Ukraine",
+    "portee": "international",
+    "detectee_le": "2026-11-26T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réunion en cours, aucune décision annoncée",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-12-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "coree-nord-expulsion-diplomate-suisse-20261126",
+    "titre": "Corée du Nord : le diplomate suisse sommé de quitter Pyongyang sous 48 heures",
+    "portee": "international",
+    "detectee_le": "2026-11-26T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source",
+    "sources": [
+      "https://globetv.app/news/world-news-24-hours-november-26-2026"
+    ],
+    "plannerUrls": []
   }
 ]
