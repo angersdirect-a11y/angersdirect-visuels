@@ -3138,5 +3138,29 @@
       "https://www.brecorder.com/news/40450867/israel-kills-nine-in-gaza-including-a-hamas-appointed-minister-officials-say"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-vigilance-jaune-grand-froid-10-departements",
+    "titre": "Vigilance jaune grand froid dans 10 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-26T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune, pas de vigilance rouge nationale",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-grand-froid-chute-des-temperatures-localement-dans-10-departements-ce-26-novembre-2026_8300850.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-trump-rutte-ukraine-floride",
+    "titre": "Trump et Rutte appellent à une paix rapide en Ukraine",
+    "portee": "international",
+    "detectee_le": "2026-11-26T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : déclarations, aucun accord ni cessez-le-feu",
+    "sources": [
+      "https://lavocedinewyork.com/en/news/2026/11/26/trump-and-rutte-urge-swift-peace-in-ukraine-after-florida-talks"
+    ],
+    "plannerUrls": []
   }
 ]
