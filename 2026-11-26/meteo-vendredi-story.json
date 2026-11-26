@@ -1,0 +1,22 @@
+{
+  "type": "meteo_story",
+  "jour": "Vendredi 27 novembre",
+  "creneaux": [
+    {
+      "label": "Matin",
+      "icone": "nuage",
+      "temp": 6
+    },
+    {
+      "label": "Après-midi",
+      "icone": "eclaircies",
+      "temp": 10
+    },
+    {
+      "label": "Soir",
+      "icone": "nuage",
+      "temp": 8
+    }
+  ],
+  "bas": "Min. 5° · Max. 11° · Vent 10 km/h · Pluie 10 %"
+}
