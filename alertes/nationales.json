@@ -3283,5 +3283,29 @@
       "https://www.euronews.com/video/2026/11/26/latest-news-bulletin-november-26th-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-indonesie-mine-or-13-mineurs",
+    "titre": "Indonésie : 13 mineurs piégés dans une mine d'or illégale inondée",
+    "portee": "international",
+    "detectee_le": "2026-11-26T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : secours en cours, pas de bilan officiel",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/26/latest-news-bulletin-november-26th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-californie-grandes-marees-ponton",
+    "titre": "Californie : grandes marées, un ponton détruit et des maisons inondées",
+    "portee": "international",
+    "detectee_le": "2026-11-26T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/26/latest-news-bulletin-november-26th-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
