@@ -3114,5 +3114,29 @@
       "https://www.france24.com/en/live-news/20261126-china-warns-of-necessary-measures-after-new-us-tariffs"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-bangkok-explosion-depot-petrolier-bilan-blesses",
+    "titre": "Bangkok : explosion sur un site pétrolier, sept blessés dont quatre graves",
+    "portee": "international",
+    "detectee_le": "2026-11-26T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun mort, faible impact pour le public français (bilan revu depuis 10h25, pas un fait nouveau majeur)",
+    "sources": [
+      "https://www.ouest-france.fr/monde/thailande/sept-blesses-dont-quatre-dans-un-etat-grave-dans-lexplosion-dun-site-petrolier-a-bangkok-en-thailande-9a4baf9a-e97a-11f1-86c1-70195b4d2e52"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-gaza-frappes-ministre-hamas",
+    "titre": "Gaza : frappes, neuf morts dont un ministre",
+    "portee": "international",
+    "detectee_le": "2026-11-26T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://www.brecorder.com/news/40450867/israel-kills-nine-in-gaza-including-a-hamas-appointed-minister-officials-say"
+    ],
+    "plannerUrls": []
   }
 ]
