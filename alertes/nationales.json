@@ -3162,5 +3162,77 @@
       "https://lavocedinewyork.com/en/news/2026/11/26/trump-and-rutte-urge-swift-peace-in-ukraine-after-florida-talks"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "belgique-explosion-strepy-2026-11-26",
+    "titre": "Belgique : explosion mortelle à Strépy",
+    "portee": "international",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional belge, une seule source",
+    "sources": [
+      "https://www.rtbf.be/article/le-recap-de-ce-jeudi-26-novembre-explosion-mortelle-a-strepy-europe-sous-pression-budgetaire-et-agricole-virus-en-hausse-et-aidants-proches-preserves-11821700"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "bordeaux-tirs-mortier-lycee-2026-11-26",
+    "titre": "Bordeaux : tirs de mortier dans un lycée, établissement fermé",
+    "portee": "france",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional, sans victime grave signalée",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/scene-de-panique-lycee-ferme-appel-a-temoins-ce-que-l-on-sait-des-tirs-de-mortier-survenus-dans-un-lycee-de-bordeaux-3456518.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "depardieu-renvoi-proces-2026-11-26",
+    "titre": "Gérard Depardieu renvoyé devant la cour criminelle",
+    "portee": "france",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : décision judiciaire, hors catégories d'alerte",
+    "sources": [
+      "https://abcnews.com/Entertainment/wireStory/french-actor-grard-depardieu-stand-trial-rape-charge-138468068"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "serbie-presidentielle-27-decembre-2026-11-26",
+    "titre": "Serbie : présidentielle fixée au 27 décembre",
+    "portee": "international",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique : annonce de calendrier électoral",
+    "sources": [
+      "https://abcnews.com/International/wireStory/serbia-sets-presidential-election-dec-27-after-students-138465505"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "ukraine-kyiv-centre-commercial-kharkiv-2026-11-26",
+    "titre": "Ukraine : centre commercial frappé à Kyiv, deux morts à Kharkiv",
+    "portee": "international",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, une seule source",
+    "sources": [
+      "https://thechrissampson.substack.com/p/ukraine-daily-november-26-2026-kyiv"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "belgique-accident-landenne-2026-11-26",
+    "titre": "Belgique : accident de la route à Landenne, un mort",
+    "portee": "international",
+    "detectee_le": "2026-11-26T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident de la route régional",
+    "sources": [
+      "https://lavenir.net/regions/namur/andenne/2026/11/26/accident-a-landenne-deux-voitures-impliquees-et-la-circulation-coupee-DSDTLVWU3BDLBMLPRBVQ46LUOI"
+    ],
+    "plannerUrls": []
   }
 ]
