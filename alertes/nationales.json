@@ -2907,5 +2907,42 @@
       "https://www.business-standard.com/amp/world-news/nepal-begins-process-to-declare-213-indians-missing-in-floods-presumed-dead-126112600147_1.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-miami-fedex-md11-sortie-piste",
+    "titre": "Miami : un avion cargo FedEx sort de piste, vols suspendus vers l'aéroport",
+    "portee": "international",
+    "detectee_le": "2026-11-26T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucun blessé, perturbation temporaire",
+    "sources": [
+      "https://www.cbsnews.com/miami/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
+      "http://www.greenevillesun.com/news/ap_national_news/fedex-airplane-overruns-runway-at-miami-airport-temporarily-closing-all-but-1-runway/article_39be2517-7509-5b36-a729-8ce070840108.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-mobilisation-etudiants-enseignants-policiers",
+    "titre": "Mobilisation du jeudi 26 novembre : étudiants, enseignants du supérieur, policiers",
+    "portee": "france",
+    "detectee_le": "2026-11-26T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : mobilisation sectorielle annoncée, pas de paralysie du pays",
+    "sources": [
+      "https://www.franceinfo.fr/societe/education/blocage-des-lycees/etudiants-enseignants-du-superieur-policiers-a-quoi-faut-il-s-attendre-pour-la-mobilisation-de-jeudi_8299044.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-coree-sud-greve-cheminots",
+    "titre": "Corée du Sud : grève du zèle des cheminots, trains retardés",
+    "portee": "international",
+    "detectee_le": "2026-11-26T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français",
+    "sources": [
+      "https://news.sbs.co.kr/english/article.do?news_id=N1008864795"
+    ],
+    "plannerUrls": []
   }
 ]
