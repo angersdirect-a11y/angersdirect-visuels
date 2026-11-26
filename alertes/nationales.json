@@ -2883,5 +2883,29 @@
       "https://www.yahoo.com/news/world/articles/islamic-state-attack-kills-two-210422272.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-sud-liban-frappes-taloussa",
+    "titre": "Sud-Liban : frappe aérienne sur Taloussa et tirs d'artillerie",
+    "portee": "international",
+    "detectee_le": "2026-11-26T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-8-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-nepal-213-indiens-disparus",
+    "titre": "Népal : procédure pour déclarer présumés morts 213 Indiens disparus dans des inondations",
+    "portee": "international",
+    "detectee_le": "2026-11-26T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : procédure administrative, événement ancien",
+    "sources": [
+      "https://www.business-standard.com/amp/world-news/nepal-begins-process-to-declare-213-indians-missing-in-floods-presumed-dead-126112600147_1.html"
+    ],
+    "plannerUrls": []
   }
 ]
