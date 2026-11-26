@@ -3102,5 +3102,17 @@
       "https://globetv.app/news/world-news-24-hours-november-26-2026"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "chine-mesures-droits-douane-usa-20261126",
+    "titre": "Chine : Pékin promet des « mesures nécessaires » après les nouveaux droits de douane américains",
+    "portee": "international",
+    "detectee_le": "2026-11-26T12:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : réaction diplomatique, aucune mesure actée",
+    "sources": [
+      "https://www.france24.com/en/live-news/20261126-china-warns-of-necessary-measures-after-new-us-tariffs"
+    ],
+    "plannerUrls": []
   }
 ]
