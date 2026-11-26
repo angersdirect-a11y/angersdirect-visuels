@@ -3234,5 +3234,29 @@
       "https://lavenir.net/regions/namur/andenne/2026/11/26/accident-a-landenne-deux-voitures-impliquees-et-la-circulation-coupee-DSDTLVWU3BDLBMLPRBVQ46LUOI"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-1725-1",
+    "titre": "Ormuz : pétrolier touché par un projectile au large de Khasab",
+    "portee": "international",
+    "detectee_le": "2026-11-26T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faits de la veille, équipage sain et sauf, aucune marée noire signalée",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-1725-2",
+    "titre": "Iran : arrestation du scénariste Mehdi Mahmoudian",
+    "portee": "international",
+    "detectee_le": "2026-11-26T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-18-h/"
+    ],
+    "plannerUrls": []
   }
 ]
