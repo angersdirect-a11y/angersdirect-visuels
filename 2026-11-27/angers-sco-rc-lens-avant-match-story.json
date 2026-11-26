@@ -1,0 +1,18 @@
+{
+ "entete": "AVANT-MATCH",
+ "journee": "12e journée",
+ "dom": {
+  "nom": "Angers SCO",
+  "logo": "angers-sco"
+ },
+ "ext": {
+  "nom": "RC Lens",
+  "logo": "rc-lens"
+ },
+ "date": "SAMEDI 28 NOVEMBRE",
+ "heure": "17 H 15",
+ "stade": "Stade Raymond-Kopa",
+ "diffusion": "",
+ "live": false,
+ "type": "jdm_story"
+}
