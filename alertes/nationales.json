@@ -3271,5 +3271,17 @@
       "https://www.thenationalnews.com/news/gulf/2026/11/26/two-italian-workers-killed-in-iranian-drone-attack-on-kuwait/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-ibiza-petrolier-coule",
+    "titre": "Ibiza : un caboteur pétrolier coule, un marin mort, risque de pollution",
+    "portee": "international",
+    "detectee_le": "2026-11-26T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : fait divers maritime à l'étranger, faible impact pour le public français",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/26/latest-news-bulletin-november-26th-2026-evening"
+    ],
+    "plannerUrls": []
   }
 ]
