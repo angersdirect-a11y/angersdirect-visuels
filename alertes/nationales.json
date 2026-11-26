@@ -3004,5 +3004,55 @@
       "https://tsa-algerie.com/accidents-en-algerie-tamanrasset-endeuillee-batna-et-laghouat-sous-le-choc"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-bangkok-explosion-depot-petrolier",
+    "titre": "Thaïlande : explosion dans un dépôt pétrolier de Bangchak à Bangkok",
+    "portee": "international",
+    "detectee_le": "2026-11-26T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime signalée, incendie éteint en moins d'une heure selon les autorités de Bangkok",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok",
+      "https://www.wral.com/news/ap/e8098-large-explosion-reported-at-a-major-oil-facility-in-the-thai-capital/",
+      "https://english.news.cn/20261126/fb6d0da1557048f98b8c97986548513c/c.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-audincourt-fusillade",
+    "titre": "Audincourt (Doubs) : fusillade, un mort et un blessé grave",
+    "portee": "france",
+    "detectee_le": "2026-11-26T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional, une seule source",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/doubs/pays-de-montbeliard/un-homme-decede-un-autre-entre-la-vie-et-la-mort-apres-une-fusillade-a-audincourt-dans-le-doubs-3456176.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-rdc-ebola-12000-cas",
+    "titre": "RDC : l'épidémie d'Ebola dépasse 12 000 cas",
+    "portee": "international",
+    "detectee_le": "2026-11-26T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : épidémie en cours, cap statistique, pas un fait nouveau des 3 dernières heures",
+    "sources": [
+      "https://theprint.in/world/congos-ebola-cases-exceed-12000-as-responders-struggle-to-contain-outbreak/3109550/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-gaza-frappes-9-morts",
+    "titre": "Frappes à Gaza",
+    "portee": "international",
+    "detectee_le": "2026-11-26T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://www.nst.com.my/world/world/2026/11/1586349/israel-kills-nine-gaza-including-territorys-deputy-education-minister"
+    ],
+    "plannerUrls": []
   }
 ]
