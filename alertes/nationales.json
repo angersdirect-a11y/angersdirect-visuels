@@ -3258,5 +3258,18 @@
       "https://libnanews.com/lessentiel-en-5-minutes-26-novembre-2026-18-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-26-koweit-italiens-drones",
+    "titre": "Koweït : deux techniciens italiens tués dans une attaque de drones attribuée à l'Iran",
+    "portee": "international",
+    "detectee_le": "2026-11-26T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilan limité, l'Iran dément être responsable",
+    "sources": [
+      "https://www.lalibre.be/international/moyen-orient/2026/11/26/koweit-deux-italiens-tues-dans-une-attaque-de-drones-attribuee-a-liran-HENMEFIAA5HVBPS7Z44MAIRILI/",
+      "https://www.thenationalnews.com/news/gulf/2026/11/26/two-italian-workers-killed-in-iranian-drone-attack-on-kuwait/"
+    ],
+    "plannerUrls": []
   }
 ]
