@@ -3440,5 +3440,65 @@
       "https://www.titrespresse.com/30753902603/chalon-saone-pres"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "norse-atlantic-vols-suspendus-2026-11-27",
+    "titre": "Norse Atlantic suspend tous ses vols avant une possible faillite",
+    "portee": "international",
+    "detectee_le": "2026-11-27T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : compagnie low-cost norvégienne, faible impact pour le public français",
+    "sources": [
+      "https://www.nationthailand.com/news/world/40073984"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "syrie-vehicule-piege-2026-11-27",
+    "titre": "Syrie : un attentat au véhicule piégé fait deux morts",
+    "portee": "international",
+    "detectee_le": "2026-11-27T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source",
+    "sources": [
+      "https://ouest-france.fr/monde/syrie/un-attentat-au-vehicule-piege-fait-deux-morts-en-syrie-ba63d91e-e912-11f1-86c1-70195b4d2e52"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "vigilance-jaune-grand-froid-19-dep-2026-11-27",
+    "titre": "Vigilance jaune grand froid étendue à 19 départements",
+    "portee": "france",
+    "detectee_le": "2026-11-27T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : vigilance jaune, pas de vigilance rouge nationale",
+    "sources": [
+      "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-grand-froid-froid-intense-sur-plusieurs-secteurs-dans-19-departements-ce-27-novembre-2026_8302560.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "japon-seisme-ishikawa-2026-11-27",
+    "titre": "Japon : séisme dans la préfecture d'Ishikawa à 0h11 (heure locale)",
+    "portee": "international",
+    "detectee_le": "2026-11-27T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : aucune victime ni dégât rapporté par les grands médias",
+    "sources": [
+      "https://infoslocalesaujapon.org/seisme/seisme-du-27-novembre-2026-a-0h11-ishikawa-pref/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "paris-metro-ligne-2-panne-2026-11-27",
+    "titre": "Paris : panne à Porte Dauphine, ligne 2 du métro perturbée",
+    "portee": "france",
+    "detectee_le": "2026-11-27T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : incident de transport local, une seule source",
+    "sources": [
+      "https://stephanelarue.com/metro-ligne-2-la-panne-de-porte-dauphine-perturbe-les-25-stations-les-itineraires-bis/"
+    ],
+    "plannerUrls": []
   }
 ]
