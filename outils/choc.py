@@ -27,6 +27,7 @@ def e(t):
 
 
 def polices():
+    __import__('charte').verifier_polices(FONTS)
     out = ''
     for fam, d, ws in [('Barlow', 'barlow', [500, 600]), ('Barlow Condensed', 'barlow-condensed', [600, 700, 800])]:
         for w in ws:
