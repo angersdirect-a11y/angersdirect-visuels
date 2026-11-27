@@ -3701,5 +3701,29 @@
       "https://fr.euronews.com/video/2026/11/27/incidents-entre-supporters-de-besiktas-et-police-a-batoumi-lors-dun-match-deuropa-league"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-algerie-blida-seisme-3-3",
+    "titre": "Algérie : séisme de magnitude 3,3 à Blida",
+    "portee": "international",
+    "detectee_le": "2026-11-27T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : secousse faible, aucune victime",
+    "sources": [
+      "https://www.algerie360.com/seisme-blida-craag-magnitude-3-3/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-lisnard-projet-migratoire-dalloz",
+    "titre": "Critiques du projet migratoire de David Lisnard",
+    "portee": "france",
+    "detectee_le": "2026-11-27T22:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "campagne politique",
+    "sources": [
+      "https://www.politiquematin.fr/marie-christine-dalloz-bfmtv-david-lisnard-titres-sejour-27-novembre-2026"
+    ],
+    "plannerUrls": []
   }
 ]
