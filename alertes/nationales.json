@@ -3572,5 +3572,41 @@
       "https://www.quotidiano.net/esteri/ucraina-russia-diretta-oggi-27-11-2026-e57g05zl"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "nigeria-plateau-tafigana-17-morts",
+    "titre": "Nigeria : au moins 17 villageois tués dans l'État du Plateau",
+    "portee": "international",
+    "detectee_le": "2026-11-27T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : attaque du mercredi 25/11, hors fenêtre de 3 heures, faible impact pour le public français",
+    "sources": [
+      "https://www.yahoo.com/news/world/articles/armed-men-kill-17-villagers-121541332.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "bce-hernandez-de-cos-successeur-lagarde",
+    "titre": "BCE : Pablo Hernández de Cos proposé pour succéder à Christine Lagarde",
+    "portee": "international",
+    "detectee_le": "2026-11-27T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : proposition, nomination non actée",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-27-novembre-2026-12-h"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "insee-pib-t3-2026-revise",
+    "titre": "Insee : PIB du 3e trimestre révisé à -0,2 %",
+    "portee": "france",
+    "detectee_le": "2026-11-27T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : révision statistique, hors catégories d'alerte",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-27-novembre-2026-12-h"
+    ],
+    "plannerUrls": []
   }
 ]
