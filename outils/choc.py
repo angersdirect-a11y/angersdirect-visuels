@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080)}
 
 
 def e(t):
@@ -102,12 +102,75 @@ def page_une(f):
 </div></body></html>'''
 
 
+def page_duel(f):
+    """Couverture « duel » : écran coupé en diagonale aux couleurs des deux clubs, logos sans pastille, VS au centre."""
+    W, H = 1920, 1080
+    cg, cd = f.get('couleurs_dom', ['#111111', '#2A2A2A']), f.get('couleurs_ext', ['#E2001A', '#FFD600'])
+    L = 360; cy = 410
+    rayures = 'repeating-linear-gradient(90deg,#0E0E0E 0px,#0E0E0E 60px,#1C1C1C 60px,#1C1C1C 120px)'
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:#0B1422">
+  <div style="position:absolute;inset:0;background:{rayures};clip-path:polygon(0 0,58% 0,42% 100%,0 100%)"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 28% 38%,rgba(255,255,255,0.18) 0%,rgba(255,255,255,0) 45%);clip-path:polygon(0 0,58% 0,42% 100%,0 100%)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,{cd[0]} 0%,#B00014 45%,#7A000E 100%);clip-path:polygon(58% 0,100% 0,100% 100%,42% 100%)"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 72% 38%,rgba(255,214,0,0.45) 0%,rgba(255,214,0,0) 45%);clip-path:polygon(58% 0,100% 0,100% 100%,42% 100%)"></div>
+  <div style="position:absolute;left:0;top:0;width:{W}px;height:{H}px;background:linear-gradient(90deg,transparent calc(50% - 18px),#FFFFFF calc(50% - 18px),#FFFFFF calc(50% + 18px),transparent calc(50% + 18px));transform:skewX(-8.4deg);opacity:0.95;filter:drop-shadow(0 0 30px rgba(90,182,241,0.9))"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(5,10,20,0.85) 100%)"></div>
+  <img src="file://{ICI}/logos/{f['dom']['logo']}.png" style="position:absolute;left:{W//2-260-L}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;filter:drop-shadow(0 0 2px #FFF) drop-shadow(0 0 2px #FFF) drop-shadow(0 20px 40px rgba(0,0,0,0.6))">
+  <img src="file://{ICI}/logos/{f['ext']['logo']}.png" style="position:absolute;left:{W//2+260}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.6))">
+  <div style="position:absolute;left:50%;top:{cy}px;transform:translate(-50%,-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:8px 38px;box-shadow:0 20px 60px rgba(0,0,0,0.6)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:170px;line-height:1;color:#FFFFFF">VS</div></div>
+  <div style="position:absolute;left:0;right:0;top:70px;text-align:center;font-family:'Barlow Condensed';font-weight:700;font-size:46px;letter-spacing:12px;text-shadow:0 3px 16px rgba(0,0,0,0.8)">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+</div></body></html>'''
+
+
+def page_impact(f):
+    """Couverture « impact » : les deux logos foncent l'un vers l'autre et se percutent au centre (éclair, rayons, éclats, étincelles)."""
+    import random
+    random.seed(28)
+    W, H = 1920, 1080
+    L = 330; cy = 400; cx = W // 2
+    rayons = ''.join(f'<div style="position:absolute;left:{cx}px;top:{cy}px;width:{random.randint(700,1300)}px;height:{random.choice([3,4,6,8])}px;transform-origin:0 50%;transform:rotate({a + random.uniform(-4,4):.1f}deg);background:linear-gradient(90deg,rgba(255,255,255,0.95),rgba(255,255,255,0))"></div>' for a in range(0, 360, 9))
+    eclats = ''
+    for _ in range(26):
+        a = random.uniform(0, 6.283); d = random.uniform(120, 430)
+        import math
+        x = cx + math.cos(a) * d; y = cy + math.sin(a) * d * 0.7; t = random.randint(14, 46)
+        col = random.choice(['#FFFFFF', '#5AB6F1', '#FFD600', '#E2001A', '#FFFFFF'])
+        eclats += f'<div style="position:absolute;left:{x:.0f}px;top:{y:.0f}px;width:{t}px;height:{int(t*0.6)}px;background:{col};clip-path:polygon(0 30%,100% 0,70% 100%);transform:rotate({math.degrees(a):.0f}deg);opacity:{random.uniform(0.6,1):.2f};box-shadow:0 0 12px {col}"></div>'
+    for _ in range(60):
+        a = random.uniform(0, 6.283); d = random.uniform(60, 620)
+        import math
+        x = cx + math.cos(a) * d; y = cy + math.sin(a) * d * 0.65; r = random.randint(3, 8)
+        eclats += f'<div style="position:absolute;left:{x:.0f}px;top:{y:.0f}px;width:{r}px;height:{r}px;border-radius:50%;background:#FFF6C8;box-shadow:0 0 {r*3}px #FFD600"></div>'
+    def logo(nom, x, rot, sens):
+        trace = ''.join(f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x - sens*i*70}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;opacity:{0.22 - i*0.05:.2f};filter:blur({i*3}px);transform:rotate({rot}deg)">' for i in (3, 2, 1))
+        halo = 'drop-shadow(0 0 2px #FFF) drop-shadow(0 0 2px #FFF) ' if nom == 'angers-sco' else ''
+        return trace + f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;transform:rotate({rot}deg);filter:{halo}drop-shadow(0 25px 40px rgba(0,0,0,0.7))">'
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:radial-gradient(ellipse at 50% 37%,#1D5FD0 0%,#0F2547 35%,#070D19 75%)">
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0) 45%),linear-gradient(280deg,rgba(226,0,26,0.45) 0%,rgba(226,0,26,0) 45%)"></div>
+  <div style="position:absolute;inset:0;opacity:0.55">{rayons}</div>
+  <div style="position:absolute;left:{cx-560}px;top:{cy-380}px;width:1120px;height:760px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,255,255,1) 0%,rgba(255,244,190,0.95) 10%,rgba(255,214,0,0.55) 22%,rgba(90,182,241,0.45) 42%,rgba(90,182,241,0) 70%)"></div>
+  <div style="position:absolute;left:{cx-18}px;top:{cy-260}px;width:36px;height:520px;background:#FFFFFF;clip-path:polygon(50% 0,70% 22%,40% 38%,75% 55%,35% 72%,60% 100%,45% 100%,20% 74%,55% 56%,15% 40%,45% 22%);filter:drop-shadow(0 0 18px #FFFFFF) drop-shadow(0 0 30px #5AB6F1)"></div>
+  {eclats}
+  {logo(f['dom']['logo'], cx - L - 30, -8, 1)}
+  {logo(f['ext']['logo'], cx + 30, 8, -1)}
+  <div style="position:absolute;left:50%;top:{cy+L//2+20}px;transform:translateX(-50%) rotate(-4deg) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:4px 40px;box-shadow:0 20px 50px rgba(0,0,0,0.6)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:96px;line-height:1;letter-spacing:6px;color:#FFFFFF">LE CHOC</div></div>
+  <div style="position:absolute;left:0;right:0;top:60px;text-align:center;font-family:'Barlow Condensed';font-weight:700;font-size:44px;letter-spacing:12px;text-shadow:0 3px 16px rgba(0,0,0,0.8)">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(5,10,20,0.85) 100%)"></div>
+</div></body></html>'''
+
+
 def main():
     f = json.loads(pathlib.Path(sys.argv[1]).read_text())
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page_une(f) if f.get('format') == 'une' else page(f))
+    tmp.write_text(page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
