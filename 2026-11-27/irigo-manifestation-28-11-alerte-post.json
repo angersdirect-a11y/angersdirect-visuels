@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "post", "tag": "TRAM · IRIGO",
+ "titre": "Manifestation : tram et bus perturbés samedi à Angers",
+ "blocs": [
+  {"label": "QUAND", "texte": "Samedi 28 novembre, dès 13h15"},
+  {"label": "OÙ", "texte": "Centre-ville non desservi pendant la manifestation"},
+  {"label": "TRAM", "texte": "Lignes A, B et C coupées dans le centre, terminus provisoires"},
+  {"label": "BUS", "texte": "Lignes 1 à 11 et E20 adaptées, la 12 circule normalement"}
+ ]}
