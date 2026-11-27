@@ -3500,5 +3500,17 @@
       "https://stephanelarue.com/metro-ligne-2-la-panne-de-porte-dauphine-perturbe-les-25-stations-les-itineraires-bis/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-usa-crash-avion-six-morts",
+    "titre": "États-Unis : six morts dont deux enfants dans un accident d'avion",
+    "portee": "international",
+    "detectee_le": "2026-11-27T11:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident d'avion de tourisme à l'étranger, faible impact pour le public français",
+    "sources": [
+      "https://ouest-france.fr/economie/transports/avion/etats-unis-deux-enfants-de-huit-et-dix-ans-ainsi-que-quatre-adultes-trouvent-la-mort-dans-un-accident-davion-f10df2dc-e8be-11f1-b706-1d273d1ab155"
+    ],
+    "plannerUrls": []
   }
 ]
