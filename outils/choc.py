@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080)}
 
 
 def e(t):
@@ -79,12 +79,35 @@ def page(f):
 </div></body></html>'''
 
 
+def page_une(f):
+    """Couverture d'article (une du site) : logos et VS dans la zone centrale haute, rien en bas (le titre du site s'y superpose)."""
+    W, H = 1920, 1080
+    fond = ICI / 'photos' / f.get('fond', 'stade-raymond-kopa.jpg')
+    L = 330
+    cy = 400
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden;background:#0B1422">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow">
+  <img src="file://{fond}" style="position:absolute;top:0;right:0;height:100%;width:230%;object-fit:cover;object-position:{f.get('cadrage','100% 45%')};filter:blur(1.5px) saturate(1.15) contrast(1.1) brightness(0.8)">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,15,28,0.55) 0%,rgba(8,15,28,0.25) 40%,rgba(8,15,28,0.55) 70%,rgba(8,15,28,0.9) 100%)"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 37%,rgba(90,182,241,0.35) 0%,rgba(90,182,241,0) 50%)"></div>
+  <div style="position:absolute;left:-10%;top:{cy-6}px;width:120%;height:12px;background:linear-gradient(90deg,rgba(90,182,241,0),#5AB6F1,rgba(255,255,255,0.9),#F5C400,rgba(245,196,0,0));transform:rotate(-5deg);opacity:0.85"></div>
+  <div style="position:absolute;left:0;right:0;top:{cy-L//2-120}px;text-align:center;font-family:Barlow;font-weight:600;font-size:40px;letter-spacing:10px;color:#5AB6F1;text-shadow:0 2px 14px rgba(0,0,0,0.8)">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+  <div style="position:absolute;left:0;right:0;top:{cy-L//2}px;display:flex;align-items:center;justify-content:center;gap:60px">
+    {badge(f['dom']['logo'], L, 'rgba(90,182,241,0.6)')}
+    <div style="background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 34px;transform:skewX(-12deg);box-shadow:0 20px 50px rgba(0,0,0,0.6)">
+      <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:150px;line-height:1;color:#FFFFFF">VS</div></div>
+    {badge(f['ext']['logo'], L, 'rgba(255,196,0,0.5)')}
+  </div>
+</div></body></html>'''
+
+
 def main():
     f = json.loads(pathlib.Path(sys.argv[1]).read_text())
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page(f))
+    tmp.write_text(page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
