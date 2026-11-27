@@ -6,7 +6,7 @@ Logos : outils/logos/<slug>.png (PNG transparent). Sans fichier, un badge avec l
 
 Fiches (exemples complets dans outils/exemples/) :
   sport (facultatif : football, hockey, basket, handball ou roller, choisit la photo de fond) ; competition (facultatif, défaut « Ligue 1 » ; ex. « Ligue Magnus », « Nationale 1 ») et journee (« 8e journée », sans le nom de la compétition)
-  score       : (score_story = même fiche en story pleine page 1080x1920) journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
+  score       : (entete facultatif, défaut « SCORE FINAL », ex. « EN DIRECT » ou « FIN DU 1ER TIERS » pour un live) (score_story = même fiche en story pleine page 1080x1920) journee, dom{nom,logo}, ext{nom,logo}, score[a,b], buteurs_dom[], buteurs_ext[], stats[{label,dom,ext,vdom,vext}] (facultatif), pied
   classement  : titre, sous_titre, lignes[{rang,nom,logo,diff,j,pts,surligne}]
   calendrier  : mois ("d'octobre"), matchs[{date,adversaire,logo,domicile(bool),lieu,heure}], pied
   jdm_story / jdm_paysage / jdm_post (1080x1350, fil Instagram) : entete (facultatif, défaut « JOUR DE MATCH », ex. « NOUVEL HORAIRE »), journee, dom{nom,logo}, ext{nom,logo}, date, heure, stade, diffusion (facultatif), live (facultatif, défaut true : false retire « Live texte sur angersdirect.fr »)
@@ -111,7 +111,7 @@ def score(f, H=1350):
 <div style="position:absolute;left:70px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:{530-wl}px;top:{y+56}px;width:{wl}px;height:9px;background:#FFFFFF"></div>
 <div style="position:absolute;left:550px;top:{y+56}px;width:460px;height:9px;background:#2A3646"></div><div style="position:absolute;left:550px;top:{y+56}px;width:{wr}px;height:9px;background:#D3D5D9"></div>'''
         y += 92
-    return f'''<div style="width:1080px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,H)}<div style="position:absolute;left:0;top:{dy}px;width:1080px;height:1350px">{entete(1080,'SCORE FINAL',True)}
+    return f'''<div style="width:1080px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(1080,H)}<div style="position:absolute;left:0;top:{dy}px;width:1080px;height:1350px">{entete(1080,f.get('entete','SCORE FINAL'),True)}
 <div style="position:absolute;left:0;right:0;top:272px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()}{(' · ' + e(f['journee']).upper()) if f.get('journee') else ''}</div>
 <div style="position:absolute;left:0;right:0;top:346px;height:282px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:44px;top:369px">{rond(f['dom'].get('logo'),f['dom']['nom'],236)}</div>
