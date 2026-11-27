@@ -263,7 +263,7 @@ def page_nuit(f):
         return (f'<polyline points="{q}" fill="none" stroke="#7CC4FF" stroke-width="10" opacity="0.5" filter="url(#ga)"/>'
                 f'<polyline points="{q}" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9"/>')
     arcs = ''
-    if f.get('eclair'):
+    if f.get('arcs'):
         arcs = ('<svg width="1920" height="1080" style="position:absolute;left:0;top:0"><defs><filter id="ga"><feGaussianBlur stdDeviation="6"/></filter></defs>'
                 + arc(cx - 70, cx - dx + 175, cy - 20) + arc(cx - 60, cx - dx + 170, cy + 55)
                 + arc(cx + 70, cx + dx - 160, cy - 40) + arc(cx + 55, cx + dx - 165, cy + 40) + '</svg>')
@@ -277,7 +277,7 @@ def page_nuit(f):
     return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
 <body style="width:{W}px;height:{H}px;overflow:hidden">
 <div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:linear-gradient(180deg,#0C1A34 0%,#0A1528 50%,#071022 72%,#0A1E2E 100%)">
-  {faisceau(-120, -28)}{faisceau(1520, 28)}
+  {faisceau(-120, -28) + faisceau(1520, 28) if f.get('projecteurs') else ''}
   <div style="position:absolute;left:0;right:0;top:700px;height:380px;background:linear-gradient(180deg,rgba(10,40,50,0) 0%,rgba(14,60,64,0.55) 100%)"></div>
   {terrain}
   {halo(cx-dx, '110,190,255')}
