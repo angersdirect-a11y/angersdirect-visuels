@@ -241,31 +241,58 @@ def eclair(cx, y0, y1):
 
 
 def page_nuit(f):
-    """Couverture sobre : bleu nuit uni, halo derrière chaque logo, VS typographique sans cadre, horaire en étiquette bleue.
-    Tout le contenu au-dessus de 650 px (le titre du site recouvre le bas)."""
+    """Couverture bleu nuit : projecteurs, terrain en perspective, halos derrière les logos, grand éclair (option « eclair »)
+    avec arcs électriques vers les deux logos. Contenu utile au-dessus de 650 px (le titre du site recouvre le bas)."""
+    import random
+    random.seed(11)
     W, H = 1920, 1080
-    L = 300; cy = 390; cx = W // 2; dx = 400
-    def halo(x, couleur):
-        return (f'<div style="position:absolute;left:{x-340}px;top:{cy-340}px;width:680px;height:680px;border-radius:50%;'
-                f'background:radial-gradient(circle,{couleur} 0%,{couleur.replace("0.9","0.35")} 30%,rgba(0,0,0,0) 64%)"></div>')
+    L = 340; cy = 395; cx = W // 2; dx = 420
+    def halo(x, c):
+        return (f'<div style="position:absolute;left:{x-420}px;top:{cy-420}px;width:840px;height:840px;border-radius:50%;'
+                f'background:radial-gradient(circle,rgba({c},0.75) 0%,rgba({c},0.38) 22%,rgba({c},0.12) 45%,rgba({c},0) 68%)"></div>'
+                f'<div style="position:absolute;left:{x-205}px;top:{cy-205}px;width:410px;height:410px;border-radius:50%;border:2px solid rgba({c},0.35);box-shadow:0 0 40px rgba({c},0.35),inset 0 0 40px rgba({c},0.25)"></div>')
     def logo(nom, x):
         net = 'drop-shadow(0 0 1.5px #FFF) drop-shadow(0 0 1.5px #FFF) ' if nom == 'angers-sco' else ''
         return f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x-L//2}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;filter:{net}drop-shadow(0 30px 50px rgba(0,0,0,0.65))">'
+    def arc(x0, x1, y):
+        pts = [(x0, y)]; n = 6
+        for i in range(1, n):
+            pts.append((x0 + (x1 - x0) * i / n, y + random.uniform(-22, 22)))
+        pts.append((x1, y + random.uniform(-10, 10)))
+        q = ' '.join(f'{a:.0f},{b:.0f}' for a, b in pts)
+        return (f'<polyline points="{q}" fill="none" stroke="#7CC4FF" stroke-width="10" opacity="0.5" filter="url(#ga)"/>'
+                f'<polyline points="{q}" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9"/>')
+    arcs = ''
+    if f.get('eclair'):
+        arcs = ('<svg width="1920" height="1080" style="position:absolute;left:0;top:0"><defs><filter id="ga"><feGaussianBlur stdDeviation="6"/></filter></defs>'
+                + arc(cx - 70, cx - dx + 175, cy - 20) + arc(cx - 60, cx - dx + 170, cy + 55)
+                + arc(cx + 70, cx + dx - 160, cy - 40) + arc(cx + 55, cx + dx - 165, cy + 40) + '</svg>')
+    poussiere = ''.join(f'<div style="position:absolute;left:{random.randint(120,1800)}px;top:{random.randint(80,700)}px;width:{r}px;height:{r}px;border-radius:50%;background:#FFFFFF;opacity:{random.uniform(0.15,0.6):.2f};box-shadow:0 0 {r*4}px #9FD3FF"></div>' for r in [random.choice([2, 2, 3, 4]) for _ in range(45)])
+    faisceau = lambda x, rot: (f'<div style="position:absolute;left:{x}px;top:-120px;width:520px;height:1300px;transform-origin:50% 0;transform:rotate({rot}deg);'
+                               f'background:linear-gradient(180deg,rgba(200,230,255,0.22) 0%,rgba(200,230,255,0.06) 45%,rgba(200,230,255,0) 75%);clip-path:polygon(45% 0,55% 0,100% 100%,0 100%);filter:blur(6px)"></div>')
+    terrain = ('<svg width="1920" height="1080" style="position:absolute;left:0;top:0;opacity:0.22">'
+               '<ellipse cx="960" cy="905" rx="420" ry="95" fill="none" stroke="#9FD3FF" stroke-width="4"/>'
+               '<line x1="0" y1="905" x2="1920" y2="905" stroke="#9FD3FF" stroke-width="4"/>'
+               '<circle cx="960" cy="905" r="9" fill="#9FD3FF"/></svg>')
     return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
 <body style="width:{W}px;height:{H}px;overflow:hidden">
-<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:linear-gradient(180deg,#0B1830 0%,#0A1426 55%,#060C18 100%)">
-  <div style="position:absolute;left:{cx-900}px;top:-420px;width:1800px;height:900px;border-radius:50%;background:radial-gradient(ellipse,rgba(90,182,241,0.20) 0%,rgba(90,182,241,0) 65%)"></div>
-  {halo(cx-dx, 'rgba(120,195,255,0.9)')}
-  {halo(cx+dx, 'rgba(255,200,70,0.9)')}
-  {eclair(cx, 225, 660) if f.get('eclair') else ''}
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:linear-gradient(180deg,#0C1A34 0%,#0A1528 50%,#071022 72%,#0A1E2E 100%)">
+  {faisceau(-120, -28)}{faisceau(1520, 28)}
+  <div style="position:absolute;left:0;right:0;top:700px;height:380px;background:linear-gradient(180deg,rgba(10,40,50,0) 0%,rgba(14,60,64,0.55) 100%)"></div>
+  {terrain}
+  {halo(cx-dx, '110,190,255')}
+  {halo(cx+dx, '255,196,60')}
+  {poussiere}
+  {arcs}
+  {eclair(cx, 205, 670) if f.get('eclair') else ''}
   {logo(f['dom']['logo'], cx-dx)}
   {logo(f['ext']['logo'], cx+dx)}
-  <div style="display:{'none' if f.get('eclair') else 'block'};position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;letter-spacing:2px;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))">VS</div>
-  <div style="position:absolute;left:0;right:0;top:56px;text-align:center">
+  <div style="display:{'none' if f.get('eclair') else 'block'};position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent">VS</div>
+  <div style="position:absolute;left:0;right:0;top:44px;text-align:center">
     <div style="font-family:'Barlow Condensed';font-weight:700;font-size:34px;letter-spacing:14px;color:#5AB6F1">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
-    <div style="margin-top:4px;font-family:'Barlow Condensed';font-weight:800;font-size:104px;line-height:1;letter-spacing:12px">LE CHOC</div>
+    <div style="margin-top:2px;font-family:'Barlow Condensed';font-weight:800;font-size:112px;line-height:1;letter-spacing:14px;text-shadow:0 0 40px rgba(90,182,241,0.55),0 6px 24px rgba(0,0,0,0.6)">LE CHOC</div>
   </div>
-  <div style="position:absolute;left:50%;top:{cy+L//2+46}px;transform:translateX(-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 40px;white-space:nowrap;box-shadow:0 18px 44px rgba(0,0,0,0.5)">
+  <div style="position:absolute;left:50%;top:{cy+L//2+52}px;transform:translateX(-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 42px;white-space:nowrap;box-shadow:0 0 40px rgba(79,168,255,0.45),0 18px 44px rgba(0,0,0,0.5)">
     <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:62px;line-height:1.05;letter-spacing:4px;color:#FFFFFF">{e(f.get('quand','AUJOURD\'HUI · 17H15'))}</div></div>
 </div></body></html>'''
 
