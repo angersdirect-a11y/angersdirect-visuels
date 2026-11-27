@@ -15,6 +15,14 @@
   - `retrogaming-manettes-illustration.jpg` : illustration originale générée par `outils/manettes.py` (deux manettes rétro, confettis pixel), libre de droits, pour le rétrogaming et le jeu vidéo
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 
+## Une des matchs importants : modèle « UNE CHOC » (règle de Valentin, 27 novembre 2026)
+
+Le jour d'un match important, l'article d'avant-match passe en une toute la journée, avec comme photo de couverture le visuel « UNE CHOC » (validé sur Angers SCO - RC Lens, `2026-11-28/sco-lens-eclair.png`). Toujours ce même modèle, ne pas en inventer un autre :
+- `python3 outils/choc.py fiche.json sortie.png` avec `"format": "une_choc"` (exemple : `outils/exemples/une-choc.json`) ; ne changer que `competition`, `journee`, `quand` (« AUJOURD'HUI · 17H15 ») et les logos (`outils/logos/<slug>.png`, club angevin en `dom`).
+- 1920x1080, bleu nuit, halo bleu derrière le club angevin, halo doré derrière l'adversaire, grand éclair blanc entre les deux logos qui dépasse sous l'étiquette horaire, « LE CHOC » en haut, rond central en transparence en bas. Le bas reste libre : le titre de l'article s'y affiche en une.
+- Pas de projecteurs, pas d'arcs électriques, pas de « VS » encadré de blanc (refusés par Valentin).
+- Photo de couverture sans légende ni crédit. Les posts et stories du match restent les modèles habituels (« Jour de match » / « Avant-match » de `sport.py`).
+
 ## Site angersdirect.fr : zéro crédit Lovable (règle de Valentin, 17 novembre 2026)
 
 Ne jamais passer par l'assistant IA de Lovable (`send_message`, `create_project`…) pour ajouter ou modifier du contenu : il consomme les crédits. Uniquement s'il n'existe aucune autre voie, et après accord explicite de Valentin.

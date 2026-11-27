@@ -1,4 +1,11 @@
-"""Visuel « choc » d'avant-match : logo contre logo, plein cadre sur la photo du stade.
+"""MODÈLE OFFICIEL « UNE CHOC » (validé par Valentin le 27/11/2026, SCO-Lens) : format "une_choc".
+À utiliser comme photo de couverture de l'article en une le jour des matchs importants.
+    python3 outils/choc.py outils/exemples/une-choc.json sortie.png
+Bleu nuit, halo bleu derrière le club angevin, halo doré derrière l'adversaire, grand éclair blanc entre les logos,
+« LE CHOC » en haut, étiquette en dégradé bleu (« AUJOURD'HUI · 17H15 »), rond central en transparence en bas.
+Ne rien ajouter (pas de projecteurs, pas d'arcs, pas de VS encadré). Photo de couverture sans légende ni crédit.
+
+Visuel « choc » d'avant-match : logo contre logo, plein cadre sur la photo du stade.
 
 Usage : python3 outils/choc.py fiche.json sortie.png
 Fiche : {"format": "post" | "story" | "paysage", "fond": "stade-raymond-kopa.jpg",
@@ -12,7 +19,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080), 'nuit': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080), 'nuit': (1920, 1080), 'une_choc': (1920, 1080)}
 
 
 def e(t):
@@ -302,7 +309,7 @@ def main():
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page_nuit(f) if f.get('format') == 'nuit' else page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
+    tmp.write_text(page_nuit({**f, 'eclair': True}) if f.get('format') == 'une_choc' else page_nuit(f) if f.get('format') == 'nuit' else page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
