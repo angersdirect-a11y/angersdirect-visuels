@@ -3657,5 +3657,25 @@
       "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-marseille-velodrome-violences-supporters",
+    "titre": "Marseille : violences entre supporters au Vélodrome avant OM-Levski Sofia",
+    "portee": "france",
+    "detectee_le": "2026-11-27T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers sportif, faits hors fenêtre de 3 heures",
+    "sources": [],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-liban-sud-tirs-kfar-tebnit",
+    "titre": "Liban sud : tirs près de Kfar Tebnit et Mansouri",
+    "portee": "international",
+    "detectee_le": "2026-11-27T20:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [],
+    "plannerUrls": []
   }
 ]
