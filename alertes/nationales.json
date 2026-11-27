@@ -3677,5 +3677,29 @@
     "raison": "conflit israélo-palestinien",
     "sources": [],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-smolensk-rapport-experts",
+    "titre": "Smolensk : rapport d'experts sur le crash de 2010",
+    "portee": "international",
+    "detectee_le": "2026-11-27T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : rapport d'enquête sur un accident ancien, pas une breaking news",
+    "sources": [
+      "https://www.euronews.com/2026/11/27/smolensk-crash-experts-identify-landing-errors-rule-out-explosion"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-batoumi-incidents-besiktas",
+    "titre": "Incidents entre supporters de Besiktas et police à Batoumi",
+    "portee": "international",
+    "detectee_le": "2026-11-27T21:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers sportif, aucun bilan",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/27/incidents-entre-supporters-de-besiktas-et-police-a-batoumi-lors-dun-match-deuropa-league"
+    ],
+    "plannerUrls": []
   }
 ]
