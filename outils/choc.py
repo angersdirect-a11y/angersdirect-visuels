@@ -284,7 +284,7 @@ def page_nuit(f):
   {halo(cx+dx, '255,196,60')}
   {poussiere}
   {arcs}
-  {eclair(cx, 205, 770) if f.get('eclair') else ''}
+  {eclair(cx, 245, 800) if f.get('eclair') else ''}
   {logo(f['dom']['logo'], cx-dx)}
   {logo(f['ext']['logo'], cx+dx)}
   <div style="display:{'none' if f.get('eclair') else 'block'};position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent">VS</div>
