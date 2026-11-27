@@ -1,0 +1,19 @@
+{
+ "type": "jdm_paysage",
+ "sport": "hockey",
+ "competition": "Ligue Magnus",
+ "journee": "18e journée",
+ "dom": {
+  "nom": "Ducs d'Angers",
+  "logo": ""
+ },
+ "ext": {
+  "nom": "Jokers de Cergy-Pontoise",
+  "logo": ""
+ },
+ "date": "VENDREDI 27 NOVEMBRE",
+ "heure": "20 H 30",
+ "stade": "Angers IceParc",
+ "diffusion": "",
+ "live": false
+}

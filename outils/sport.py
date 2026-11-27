@@ -203,14 +203,17 @@ def jdm(f, paysage, post=False):
 <div style="position:absolute;left:0;right:0;top:1127px;text-align:center;font-size:28px;color:#D3D5D9">{e(pied_jdm(f))}</div>'''
     ny = cy + band_h + 22
     nm = 60 if post else 0  # fil Instagram : noms longs (« Angers SCO Handball ») sur une ligne
+    # Formats 1080 de large : un nom long (« Jokers de Cergy-Pontoise ») réduit sa taille pour ne pas toucher le bord.
+    def tn(nom):
+        return 48 if W > 1080 or len(nom) <= 20 else max(36, int(48 * 20 / len(nom)))
     return f'''<div style="width:{W}px;height:{H}px;position:relative;overflow:hidden;font-family:Barlow;color:#FFFFFF">{fond(W,H)}{entete(W,f.get('entete','JOUR DE MATCH'),False,top)}
 <div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-size:34px;letter-spacing:4px;color:{BLEU}">{e(f.get('competition', 'Ligue 1')).upper()}{(' · ' + e(f['journee']).upper()) if f.get('journee') else ''}</div>
 <div style="position:absolute;left:0;right:0;top:{cy-8}px;height:{band_h}px;background:rgba(255,255,255,0.10);border-top:2px solid rgba(255,255,255,0.4);border-bottom:2px solid rgba(255,255,255,0.4)"></div>
 <div style="position:absolute;left:{lx}px;top:{cy}px">{rond(f['dom'].get('logo'),f['dom']['nom'],d)}</div>
 <div style="position:absolute;left:{rx}px;top:{cy}px">{rond(f['ext'].get('logo'),f['ext']['nom'],d)}</div>
 <div style="position:absolute;left:{W//2 - vs_w//2}px;top:{cy + d//2 - vs_h//2}px;width:{vs_w}px;height:{vs_h}px;background:#FFFFFF;transform:skewX(-12deg);display:flex;align-items:center;justify-content:center"><div style="transform:skewX(12deg);{BC};font-weight:700;font-size:{int(vs_h*0.72)}px;color:#0F1B2D">VS</div></div>
-<div style="position:absolute;left:{lx-nm}px;width:{d+2*nm}px;top:{ny}px;text-align:center;{BC};font-weight:600;font-size:48px;white-space:nowrap">{e(f['dom']['nom'])}</div>
-<div style="position:absolute;left:{rx-nm}px;width:{d+2*nm}px;top:{ny}px;text-align:center;{BC};font-weight:600;font-size:48px;white-space:nowrap">{e(f['ext']['nom'])}</div>
+<div style="position:absolute;left:{lx-nm}px;width:{d+2*nm}px;top:{ny}px;text-align:center;{BC};font-weight:600;font-size:{tn(f['dom']['nom'])}px;white-space:nowrap">{e(f['dom']['nom'])}</div>
+<div style="position:absolute;left:{rx-nm}px;width:{d+2*nm}px;top:{ny}px;text-align:center;{BC};font-weight:600;font-size:{tn(f['ext']['nom'])}px;white-space:nowrap">{e(f['ext']['nom'])}</div>
 {infos}</div>'''
 
 
