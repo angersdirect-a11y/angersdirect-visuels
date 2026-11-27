@@ -3404,5 +3404,41 @@
       "https://allafrica.com/stories/202611270160.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-ukraine-frappes-kyiv-kharkiv",
+    "titre": "Ukraine : frappes russes sur Kyiv et Kharkiv dans la nuit",
+    "portee": "international",
+    "detectee_le": "2026-11-27T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, bilans partiels non recoupés",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-guinee-bissau-elections-reportees-2028",
+    "titre": "Guinée-Bissau : la junte reporte les élections à 2028",
+    "portee": "international",
+    "detectee_le": "2026-11-27T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : report de calendrier électoral, faible impact pour le public français",
+    "sources": [
+      "https://globetv.app/news/world-news-24-hours-november-27-2026"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-chalon-policier-renverse",
+    "titre": "Chalon-sur-Saône : un policier renversé par un véhicule",
+    "portee": "france",
+    "detectee_le": "2026-11-27T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : fait divers régional",
+    "sources": [
+      "https://www.titrespresse.com/30753902603/chalon-saone-pres"
+    ],
+    "plannerUrls": []
   }
 ]
