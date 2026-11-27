@@ -1,0 +1,8 @@
+{"modele": "trafic", "format": "story", "tag": "ROUTES",
+ "titre": "Accident sur l'A85 près de Vivy, vers Angers",
+ "blocs": [
+  {"label": "QUOI", "texte": "Collision entre une camionnette et un poids lourd, un blessé"},
+  {"label": "OÙ", "texte": "A85 à hauteur de Vivy, dans le sens Tours-Angers"},
+  {"label": "QUAND", "texte": "Ce vendredi 27 novembre après-midi"},
+  {"label": "CIRCULATION", "texte": "Autoroute coupée vers Angers, bouchon de plusieurs kilomètres"}
+ ]}
