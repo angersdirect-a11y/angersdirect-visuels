@@ -3356,5 +3356,53 @@
       "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-ormuz-deux-petroliers-mines-khasab",
+    "titre": "Ormuz : deux pétroliers en feu après des mines au nord de Khasab, selon les Gardiens de la révolution",
+    "portee": "international",
+    "detectee_le": "2026-11-27T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source (revendication iranienne), aucun bilan humain, suite d'événements déjà écartés",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-russie-efremov-drones-usine",
+    "titre": "Russie : attaque de drones contre une usine et une centrale à Efremov (région de Toula)",
+    "portee": "international",
+    "detectee_le": "2026-11-27T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, aucun bilan",
+    "sources": [
+      "https://theglobaleye.it/2026/11/27/global-news-27-november-2026/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-pologne-president-tribunal-constitutionnel-suspendu",
+    "titre": "Pologne : le président du Tribunal constitutionnel suspendu 12 mois",
+    "portee": "international",
+    "detectee_le": "2026-11-27T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-egypte-camion-citerne-bilan-31",
+    "titre": "Égypte : bilan porté à 31 morts dans l'incendie du camion près du Caire",
+    "portee": "international",
+    "detectee_le": "2026-11-27T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "déjà proposée le 25/11 (30 morts) : bilan à peine revu, pas de fait nouveau majeur",
+    "sources": [
+      "https://allafrica.com/stories/202611270160.html"
+    ],
+    "plannerUrls": []
   }
 ]
