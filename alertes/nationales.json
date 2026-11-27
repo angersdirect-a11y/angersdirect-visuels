@@ -3608,5 +3608,29 @@
       "https://libnanews.com/lessentiel-en-5-minutes-27-novembre-2026-12-h"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-grand-quevilly-incendie-appartement",
+    "titre": "Deux morts dans un incendie d'appartement à Grand-Quevilly",
+    "portee": "france",
+    "detectee_le": "2026-11-27T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/normandie/seine-maritime/rouen/deux-morts-et-une-blessee-dans-un-incendie-d-appartement-a-grand-quevilly-3457103.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-toulouse-collision-mortelle",
+    "titre": "Collision mortelle près de Toulouse",
+    "portee": "france",
+    "detectee_le": "2026-11-27T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident de la route régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/mort-d-une-personne-d-une-cinquantaine-d-annees-lors-d-une-collision-entre-deux-vehicules-3457115.html"
+    ],
+    "plannerUrls": []
   }
 ]
