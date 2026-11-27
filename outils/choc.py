@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080), 'nuit': (1920, 1080)}
 
 
 def e(t):
@@ -222,12 +222,41 @@ def page_duel2(f):
 </div></body></html>'''
 
 
+def page_nuit(f):
+    """Couverture sobre : bleu nuit uni, halo derrière chaque logo, VS typographique sans cadre, horaire en étiquette bleue.
+    Tout le contenu au-dessus de 650 px (le titre du site recouvre le bas)."""
+    W, H = 1920, 1080
+    L = 300; cy = 390; cx = W // 2; dx = 400
+    def halo(x, couleur):
+        return (f'<div style="position:absolute;left:{x-340}px;top:{cy-340}px;width:680px;height:680px;border-radius:50%;'
+                f'background:radial-gradient(circle,{couleur} 0%,{couleur.replace("0.9","0.35")} 30%,rgba(0,0,0,0) 64%)"></div>')
+    def logo(nom, x):
+        net = 'drop-shadow(0 0 1.5px #FFF) drop-shadow(0 0 1.5px #FFF) ' if nom == 'angers-sco' else ''
+        return f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x-L//2}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;filter:{net}drop-shadow(0 30px 50px rgba(0,0,0,0.65))">'
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:linear-gradient(180deg,#0B1830 0%,#0A1426 55%,#060C18 100%)">
+  <div style="position:absolute;left:{cx-900}px;top:-420px;width:1800px;height:900px;border-radius:50%;background:radial-gradient(ellipse,rgba(90,182,241,0.20) 0%,rgba(90,182,241,0) 65%)"></div>
+  {halo(cx-dx, 'rgba(120,195,255,0.9)')}
+  {halo(cx+dx, 'rgba(255,200,70,0.9)')}
+  {logo(f['dom']['logo'], cx-dx)}
+  {logo(f['ext']['logo'], cx+dx)}
+  <div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;letter-spacing:2px;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))">VS</div>
+  <div style="position:absolute;left:0;right:0;top:56px;text-align:center">
+    <div style="font-family:'Barlow Condensed';font-weight:700;font-size:34px;letter-spacing:14px;color:#5AB6F1">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+    <div style="margin-top:4px;font-family:'Barlow Condensed';font-weight:800;font-size:104px;line-height:1;letter-spacing:12px">LE CHOC</div>
+  </div>
+  <div style="position:absolute;left:50%;top:{cy+L//2+46}px;transform:translateX(-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 40px;white-space:nowrap;box-shadow:0 18px 44px rgba(0,0,0,0.5)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:62px;line-height:1.05;letter-spacing:4px;color:#FFFFFF">{e(f.get('quand','AUJOURD\'HUI · 17H15'))}</div></div>
+</div></body></html>'''
+
+
 def main():
     f = json.loads(pathlib.Path(sys.argv[1]).read_text())
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
+    tmp.write_text(page_nuit(f) if f.get('format') == 'nuit' else page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
