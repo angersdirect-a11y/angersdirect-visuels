@@ -72,8 +72,8 @@ def page(f):
   </div>
   <div style="position:absolute;left:0;right:0;bottom:{bas_infos}px;text-align:center">
     <div style="font-family:'Barlow Condensed';font-weight:700;font-size:{int(t*(0.065 if paysage else 0.075))}px;line-height:1;letter-spacing:2px">{e(f['date'])}</div>
-    <div style="display:inline-block;margin-top:{int(t*0.02)}px;padding:4px 34px;background:#5AB6F1;transform:skewX(-12deg)">
-      <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:{int(t*(0.09 if paysage else 0.11))}px;line-height:1.05;color:#0B1422">{e(f['heure'])}</div></div>
+    <div style="display:inline-block;margin-top:{int(t*0.02)}px;padding:4px 38px;background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);transform:skewX(-12deg);box-shadow:0 14px 40px rgba(29,95,208,0.45)">
+      <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:{int(t*(0.09 if paysage else 0.11))}px;line-height:1.05;color:#FFFFFF">{e(f['heure'])}</div></div>
     <div style="margin-top:{int(t*0.025)}px;font-family:Barlow;font-weight:500;font-size:{int(t*0.032)}px;letter-spacing:1px;opacity:0.92">{e(f['stade'])} · angersdirect.fr</div>
   </div>
 </div></body></html>'''
