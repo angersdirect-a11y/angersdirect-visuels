@@ -222,6 +222,24 @@ def page_duel2(f):
 </div></body></html>'''
 
 
+def eclair(cx, y0, y1):
+    """Grand éclair stylisé (SVG) : forme pleine effilée, cœur blanc, lueur bleue, petites ramifications."""
+    h = y1 - y0
+    # Forme d'éclair classique, coordonnées relatives (largeur ~0.55 h), pointe en bas.
+    rel = [(0.10, 0.00), (0.36, 0.00), (0.16, 0.38), (0.33, 0.38), (-0.12, 1.00), (0.03, 0.52), (-0.15, 0.52), (0.10, 0.00)]
+    P = ' '.join(f'{cx + (x - 0.10) * h:.0f},{y0 + y * h:.0f}' for x, y in rel)
+    r1 = ' '.join(f'{cx + x * h:.0f},{y0 + y * h:.0f}' for x, y in [(0.18, 0.40), (0.30, 0.47), (0.33, 0.55), (0.42, 0.60)])
+    r2 = ' '.join(f'{cx + x * h:.0f},{y0 + y * h:.0f}' for x, y in [(-0.12, 0.53), (-0.22, 0.58), (-0.24, 0.66), (-0.33, 0.70)])
+    return (f'<svg width="1920" height="1080" style="position:absolute;left:0;top:0">'
+            f'<defs><filter id="g1" x="-80%" y="-50%" width="260%" height="200%"><feGaussianBlur stdDeviation="34"/></filter>'
+            f'<filter id="g2" x="-80%" y="-50%" width="260%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>'
+            f'<linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFE9FF"/></linearGradient></defs>'
+            f'<polygon points="{P}" fill="#2F8CFF" filter="url(#g1)" opacity="0.95"/>'
+            f'<polygon points="{P}" fill="#9FD3FF" filter="url(#g2)"/>'
+            f'<polygon points="{P}" fill="#2F8CFF" filter="url(#g1)" opacity="0.9"/>'
+            f'<polygon points="{P}" fill="url(#gc)"/></svg>')
+
+
 def page_nuit(f):
     """Couverture sobre : bleu nuit uni, halo derrière chaque logo, VS typographique sans cadre, horaire en étiquette bleue.
     Tout le contenu au-dessus de 650 px (le titre du site recouvre le bas)."""
@@ -239,9 +257,10 @@ def page_nuit(f):
   <div style="position:absolute;left:{cx-900}px;top:-420px;width:1800px;height:900px;border-radius:50%;background:radial-gradient(ellipse,rgba(90,182,241,0.20) 0%,rgba(90,182,241,0) 65%)"></div>
   {halo(cx-dx, 'rgba(120,195,255,0.9)')}
   {halo(cx+dx, 'rgba(255,200,70,0.9)')}
+  {eclair(cx, 225, 660) if f.get('eclair') else ''}
   {logo(f['dom']['logo'], cx-dx)}
   {logo(f['ext']['logo'], cx+dx)}
-  <div style="position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;letter-spacing:2px;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))">VS</div>
+  <div style="display:{'none' if f.get('eclair') else 'block'};position:absolute;left:0;right:0;top:{cy-80}px;text-align:center;font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:150px;line-height:1;letter-spacing:2px;background:linear-gradient(180deg,#FFFFFF 0%,#9FD3FF 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))">VS</div>
   <div style="position:absolute;left:0;right:0;top:56px;text-align:center">
     <div style="font-family:'Barlow Condensed';font-weight:700;font-size:34px;letter-spacing:14px;color:#5AB6F1">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
     <div style="margin-top:4px;font-family:'Barlow Condensed';font-weight:800;font-size:104px;line-height:1;letter-spacing:12px">LE CHOC</div>
