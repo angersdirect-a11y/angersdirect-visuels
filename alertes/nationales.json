@@ -3512,5 +3512,65 @@
       "https://ouest-france.fr/economie/transports/avion/etats-unis-deux-enfants-de-huit-et-dix-ans-ainsi-que-quatre-adultes-trouvent-la-mort-dans-un-accident-davion-f10df2dc-e8be-11f1-b706-1d273d1ab155"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-a9-poids-lourd-renverse",
+    "titre": "A9 : un poids lourd renversé bloque la circulation entre Béziers et Montpellier",
+    "portee": "france",
+    "detectee_le": "2026-11-27T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : accident de la route régional",
+    "sources": [
+      "https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/accident-de-la-route-grosse-pagaille-sur-l-autoroute-un-poids-lourd-se-renverse-sur-l-a9-la-circulation-est-bloquee-entre-beziers-et-montpellier-3456839.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-yemen-frappe-11-morts",
+    "titre": "Yémen : les Houthis font état de 11 morts dans une frappe aérienne",
+    "portee": "international",
+    "detectee_le": "2026-11-27T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, bilan non officiel",
+    "sources": [
+      "https://infonews.ca/news/7995490/houthis-report-11-killed-including-children-in-an-airstrike-and-other-mideast-news/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-usa-tempetes-thanksgiving",
+    "titre": "États-Unis : tempêtes et inondations à Thanksgiving, plus de 800 000 foyers privés d'électricité",
+    "portee": "international",
+    "detectee_le": "2026-11-27T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faits de la veille, sans bilan humain confirmé, faible impact pour le public français",
+    "sources": [
+      "https://www.clintonherald.com/news/national_news/ap-news-summary-at-5-19-a-m-est/article_925d70b7-334e-5aa8-b8d4-f5dc556cd769.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-nouvelle-zelande-resultats-definitifs",
+    "titre": "Nouvelle-Zélande : décompte final des législatives",
+    "portee": "international",
+    "detectee_le": "2026-11-27T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français",
+    "sources": [
+      "https://www.clintonherald.com/news/national_news/ap-news-summary-at-5-19-a-m-est/article_925d70b7-334e-5aa8-b8d4-f5dc556cd769.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-ukraine-moscou-europe-negociations",
+    "titre": "Ukraine : Moscou accepterait l'Europe aux négociations",
+    "portee": "international",
+    "detectee_le": "2026-11-27T13:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : déclarations, aucun accord ni cessez-le-feu",
+    "sources": [
+      "https://www.quotidiano.net/esteri/ucraina-russia-diretta-oggi-27-11-2026-e57g05zl"
+    ],
+    "plannerUrls": []
   }
 ]
