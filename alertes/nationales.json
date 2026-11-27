@@ -3307,5 +3307,54 @@
       "https://www.euronews.com/video/2026/11/26/latest-news-bulletin-november-26th-2026-evening"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-niger-sanam-attaque-soldats",
+    "titre": "Niger : au moins 13 soldats tués dans une attaque à Sanam",
+    "portee": "international",
+    "detectee_le": "2026-11-27T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faible impact pour le public français",
+    "sources": [
+      "https://www.aljazeera.com/news/2026/11/27/at-least-13-niger-soldiers-killed-in-sanam-armed-attack"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-afp-cyberattaque",
+    "titre": "Cyberattaque contre une agence de presse, plateforme hors ligne",
+    "portee": "france",
+    "detectee_le": "2026-11-27T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : pas de paralysie pour le grand public",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-yemen-coalition-50-cibles",
+    "titre": "Yémen : la coalition saoudienne dit avoir frappé 50 cibles houthies",
+    "portee": "international",
+    "detectee_le": "2026-11-27T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une guerre en cours, aucun bilan confirmé",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900",
+      "https://libnanews.com/lessentiel-en-5-minutes-27-novembre-2026-8-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-arabie-jazan-raffinerie",
+    "titre": "Arabie saoudite : attaque contre une raffinerie à Jazan, un mort",
+    "portee": "international",
+    "detectee_le": "2026-11-27T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source",
+    "sources": [
+      "https://www.aa.com.tr/en/world/morning-briefing-nov-27-2026/4139900"
+    ],
+    "plannerUrls": []
   }
 ]
