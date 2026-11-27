@@ -3632,5 +3632,30 @@
       "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/mort-d-une-personne-d-une-cinquantaine-d-annees-lors-d-une-collision-entre-deux-vehicules-3457115.html"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-ue-sommet-budget-echec",
+    "titre": "Sommet européen sur le budget : pas d'accord entre les dirigeants",
+    "portee": "international",
+    "detectee_le": "2026-11-27T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : négociation budgétaire sans conséquence immédiate pour le grand public",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/27/latest-news-bulletin-november-27th-2026-evening"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-27-estonie-fermeture-frontiere-russie",
+    "titre": "L'Estonie prépare la fermeture de ses cinq points de passage routiers avec la Russie",
+    "portee": "international",
+    "detectee_le": "2026-11-27T18:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'une décision annoncée les 15 et 20/11, pas un fait nouveau",
+    "sources": [
+      "https://www.euronews.com/video/2026/11/27/estonia-prepares-to-close-all-five-road-border-crossings-with-russia",
+      "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker"
+    ],
+    "plannerUrls": []
   }
 ]
