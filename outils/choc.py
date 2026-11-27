@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080)}
 
 
 def e(t):
@@ -165,12 +165,69 @@ def page_impact(f):
 </div></body></html>'''
 
 
+def page_duel2(f):
+    """Couverture « duel » v2 : écran coupé en diagonale, traînées de vitesse vers le centre, étincelles sur la ligne de choc,
+    « LE CHOC » en haut et l'horaire du jour sous les logos. Tout le contenu reste au-dessus de 650 px (le titre du site recouvre le bas)."""
+    import random, math
+    random.seed(7)
+    W, H = 1920, 1080
+    L = 310; cy = 395; cx = W // 2
+    gauche = 'polygon(0 0,57% 0,43% 100%,0 100%)'
+    droite = 'polygon(57% 0,100% 0,100% 100%,43% 100%)'
+    def trainees(cote):
+        out = ''
+        for _ in range(16):
+            y = random.randint(140, 760); lg = random.randint(260, 620); ep = random.choice([3, 4, 6, 10])
+            if cote == 'g':
+                x = random.randint(40, 520); grad = 'linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,0.55))'
+            else:
+                x = random.randint(1180, 1660) - lg // 3; grad = 'linear-gradient(270deg,rgba(255,214,0,0),rgba(255,214,0,0.6))'
+            out += f'<div style="position:absolute;left:{x}px;top:{y}px;width:{lg}px;height:{ep}px;background:{grad};transform:rotate(-8deg);border-radius:4px"></div>'
+        return out
+    etincelles = ''
+    for _ in range(70):
+        t = random.uniform(0.02, 0.75); xs = cx + (0.07 - 0.14 * t) * W + random.uniform(-90, 90); ys = t * H + random.uniform(-30, 30)
+        r = random.randint(3, 9); col = random.choice(['#FFFFFF', '#FFF2B0', '#5AB6F1', '#FFD600'])
+        etincelles += f'<div style="position:absolute;left:{xs:.0f}px;top:{ys:.0f}px;width:{r}px;height:{r}px;border-radius:50%;background:{col};box-shadow:0 0 {r*3}px {col}"></div>'
+    for _ in range(18):
+        t = random.uniform(0.1, 0.6); xs = cx + (0.07 - 0.14 * t) * W + random.uniform(-160, 160); ys = t * H + random.uniform(-60, 60)
+        tl = random.randint(16, 40); col = random.choice(['#FFFFFF', '#5AB6F1', '#FFD600'])
+        etincelles += f'<div style="position:absolute;left:{xs:.0f}px;top:{ys:.0f}px;width:{tl}px;height:{int(tl*0.55)}px;background:{col};clip-path:polygon(0 35%,100% 0,65% 100%);transform:rotate({random.randint(0,360)}deg);box-shadow:0 0 10px {col}"></div>'
+    def logo(nom, x, rot):
+        halo = 'drop-shadow(0 0 2px #FFF) drop-shadow(0 0 2px #FFF) ' if nom == 'angers-sco' else ''
+        return f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;transform:rotate({rot}deg);filter:{halo}drop-shadow(0 0 40px rgba(255,255,255,0.25)) drop-shadow(0 25px 40px rgba(0,0,0,0.7))">'
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:#0B1422">
+  <div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg,#0D0D0D 0px,#0D0D0D 64px,#1E1E1E 64px,#1E1E1E 128px);clip-path:{gauche}"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 37%,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0) 42%);clip-path:{gauche}"></div>
+  <div style="position:absolute;inset:0;clip-path:{gauche};overflow:hidden">{trainees('g')}</div>
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#E2001A 0%,#B00014 50%,#6E000C 100%);clip-path:{droite}"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 37%,rgba(255,214,0,0.55) 0%,rgba(255,214,0,0) 42%);clip-path:{droite}"></div>
+  <div style="position:absolute;inset:0;clip-path:{droite};overflow:hidden">{trainees('d')}</div>
+  <div style="position:absolute;left:0;top:0;width:{W}px;height:{H}px;background:linear-gradient(90deg,transparent calc(50% - 70px),rgba(90,182,241,0.55) calc(50% - 20px),#FFFFFF calc(50% - 9px),#FFFFFF calc(50% + 9px),rgba(255,214,0,0.55) calc(50% + 20px),transparent calc(50% + 70px));transform:skewX(-7.6deg);filter:blur(1px)"></div>
+  <div style="position:absolute;left:{cx-330}px;top:{cy-260}px;width:660px;height:520px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,255,255,0.85) 0%,rgba(255,240,180,0.45) 18%,rgba(90,182,241,0) 60%)"></div>
+  {etincelles}
+  {logo(f['dom']['logo'], cx - L - 210, -6)}
+  {logo(f['ext']['logo'], cx + 210, 6)}
+  <div style="position:absolute;left:50%;top:{cy}px;transform:translate(-50%,-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 34px;box-shadow:0 0 0 6px rgba(255,255,255,0.9),0 20px 60px rgba(0,0,0,0.6)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:150px;line-height:1;color:#FFFFFF">VS</div></div>
+  <div style="position:absolute;left:0;right:0;top:46px;text-align:center">
+    <div style="font-family:'Barlow Condensed';font-weight:800;font-size:96px;line-height:1;letter-spacing:10px;text-shadow:0 6px 30px rgba(0,0,0,0.8)">LE CHOC</div>
+    <div style="margin-top:6px;font-family:'Barlow Condensed';font-weight:700;font-size:36px;letter-spacing:12px;color:#FFFFFF;opacity:0.85;text-shadow:0 3px 16px rgba(0,0,0,0.8)">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+  </div>
+  <div style="position:absolute;left:50%;top:{cy+L//2+40}px;transform:translateX(-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:6px 44px;white-space:nowrap;box-shadow:0 20px 50px rgba(0,0,0,0.6)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:800;font-size:72px;line-height:1.05;letter-spacing:3px;color:#FFFFFF">{e(f.get('quand','AUJOURD\'HUI · 17H15'))}</div></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 66%,rgba(5,10,20,0.8) 100%)"></div>
+</div></body></html>'''
+
+
 def main():
     f = json.loads(pathlib.Path(sys.argv[1]).read_text())
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
+    tmp.write_text(page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
