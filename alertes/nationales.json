@@ -3786,5 +3786,17 @@
       "https://libnanews.com/lessentiel-en-5-minutes-28-novembre-2026-8-h/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-taiwan-elections-locales",
+    "titre": "Taïwan : élections locales sous pression chinoise",
+    "portee": "international",
+    "detectee_le": "2026-11-28T08:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://focustaiwan.tw/politics/202611280005"
+    ],
+    "plannerUrls": []
   }
 ]
