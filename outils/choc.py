@@ -19,7 +19,7 @@ from playwright.sync_api import sync_playwright
 
 ICI = pathlib.Path(__file__).resolve().parent
 FONTS = ICI / 'node_modules/@fontsource'
-TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080), 'nuit': (1920, 1080), 'une_choc': (1920, 1080)}
+TAILLES = {'post': (1080, 1350), 'story': (1080, 1920), 'paysage': (1920, 1080), 'une': (1920, 1080), 'duel': (1920, 1080), 'impact': (1920, 1080), 'duel2': (1920, 1080), 'nuit': (1920, 1080), 'une_choc': (1920, 1080), 'une_choc_story': (1080, 1920)}
 
 
 def e(t):
@@ -230,7 +230,7 @@ def page_duel2(f):
 </div></body></html>'''
 
 
-def eclair(cx, y0, y1):
+def eclair(cx, y0, y1, W=1920, H=1080):
     """Grand éclair stylisé (SVG) : forme pleine effilée, cœur blanc, lueur bleue, petites ramifications."""
     h = y1 - y0
     # Forme d'éclair classique, coordonnées relatives (largeur ~0.55 h), pointe en bas.
@@ -238,7 +238,7 @@ def eclair(cx, y0, y1):
     P = ' '.join(f'{cx + (x - 0.10) * h:.0f},{y0 + y * h:.0f}' for x, y in rel)
     r1 = ' '.join(f'{cx + x * h:.0f},{y0 + y * h:.0f}' for x, y in [(0.18, 0.40), (0.30, 0.47), (0.33, 0.55), (0.42, 0.60)])
     r2 = ' '.join(f'{cx + x * h:.0f},{y0 + y * h:.0f}' for x, y in [(-0.12, 0.53), (-0.22, 0.58), (-0.24, 0.66), (-0.33, 0.70)])
-    return (f'<svg width="1920" height="1080" style="position:absolute;left:0;top:0">'
+    return (f'<svg width="{W}" height="{H}" style="position:absolute;left:0;top:0">'
             f'<defs><filter id="g1" x="-80%" y="-50%" width="260%" height="200%"><feGaussianBlur stdDeviation="34"/></filter>'
             f'<filter id="g2" x="-80%" y="-50%" width="260%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>'
             f'<linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFE9FF"/></linearGradient></defs>'
@@ -305,12 +305,53 @@ def page_nuit(f):
 </div></body></html>'''
 
 
+def page_une_choc_story(f):
+    """Version story 1080x1920 du modèle « UNE CHOC » (28/11/2026) : mêmes codes (bleu nuit, halos bleu/doré,
+    éclair blanc, « LE CHOC », étiquette dégradée), en pleine page. Contenu dans la zone sûre (250 px en haut et en bas)."""
+    import random
+    random.seed(11)
+    W, H = 1080, 1920
+    L = 330; cy = 900; cx = W // 2; dx = 275
+    def halo(x, c):
+        return (f'<div style="position:absolute;left:{x-330}px;top:{cy-330}px;width:660px;height:660px;border-radius:50%;'
+                f'background:radial-gradient(circle,rgba({c},0.75) 0%,rgba({c},0.38) 22%,rgba({c},0.12) 45%,rgba({c},0) 68%)"></div>'
+                f'<div style="position:absolute;left:{x-195}px;top:{cy-195}px;width:390px;height:390px;border-radius:50%;border:2px solid rgba({c},0.35);box-shadow:0 0 40px rgba({c},0.35),inset 0 0 40px rgba({c},0.25)"></div>')
+    def logo(nom, x):
+        net = 'drop-shadow(0 0 1.5px #FFF) drop-shadow(0 0 1.5px #FFF) ' if nom == 'angers-sco' else ''
+        return f'<img src="file://{ICI}/logos/{nom}.png" style="position:absolute;left:{x-L//2}px;top:{cy-L//2}px;width:{L}px;height:{L}px;object-fit:contain;filter:{net}drop-shadow(0 30px 50px rgba(0,0,0,0.65))">'
+    poussiere = ''.join(f'<div style="position:absolute;left:{random.randint(60,1020)}px;top:{random.randint(120,1500)}px;width:{r}px;height:{r}px;border-radius:50%;background:#FFFFFF;opacity:{random.uniform(0.15,0.6):.2f};box-shadow:0 0 {r*4}px #9FD3FF"></div>' for r in [random.choice([2, 2, 3, 4]) for _ in range(55)])
+    terrain = (f'<svg width="{W}" height="{H}" style="position:absolute;left:0;top:0;opacity:0.22">'
+               '<ellipse cx="540" cy="1590" rx="380" ry="90" fill="none" stroke="#9FD3FF" stroke-width="4"/>'
+               '<line x1="0" y1="1590" x2="1080" y2="1590" stroke="#9FD3FF" stroke-width="4"/>'
+               '<circle cx="540" cy="1590" r="9" fill="#9FD3FF"/></svg>')
+    return f'''<html><head><meta charset="utf-8"><style>{polices()}*{{margin:0;padding:0;box-sizing:border-box}}</style></head>
+<body style="width:{W}px;height:{H}px;overflow:hidden">
+<div style="position:relative;width:{W}px;height:{H}px;overflow:hidden;color:#FFFFFF;font-family:Barlow;background:linear-gradient(180deg,#0C1A34 0%,#0A1528 45%,#071022 70%,#0A1E2E 100%)">
+  <div style="position:absolute;left:0;right:0;top:1300px;height:620px;background:linear-gradient(180deg,rgba(10,40,50,0) 0%,rgba(14,60,64,0.55) 100%)"></div>
+  {terrain}
+  {halo(cx-dx, '110,190,255')}
+  {halo(cx+dx, '255,196,60')}
+  {poussiere}
+  {eclair(cx, 640, 1170, W, H)}
+  {logo(f['dom']['logo'], cx-dx)}
+  {logo(f['ext']['logo'], cx+dx)}
+  <div style="position:absolute;left:0;right:0;top:300px;text-align:center">
+    <div style="font-family:'Barlow Condensed';font-weight:700;font-size:40px;letter-spacing:12px;color:#5AB6F1">{e(f.get('competition','LIGUE 1'))} · {e(f['journee'].upper())}</div>
+    <div style="margin-top:6px;font-family:'Barlow Condensed';font-weight:800;font-size:170px;line-height:1;letter-spacing:16px;text-shadow:0 0 50px rgba(90,182,241,0.55),0 6px 24px rgba(0,0,0,0.6)">LE CHOC</div>
+  </div>
+  <div style="position:absolute;left:50%;top:1200px;transform:translateX(-50%) skewX(-12deg);background:linear-gradient(90deg,#4FA8FF 0%,#1D5FD0 100%);padding:8px 46px;white-space:nowrap;box-shadow:0 0 40px rgba(79,168,255,0.45),0 18px 44px rgba(0,0,0,0.5)">
+    <div style="transform:skewX(12deg);font-family:'Barlow Condensed';font-weight:700;font-size:76px;line-height:1.05;letter-spacing:4px;color:#FFFFFF">{e(f.get('quand','AUJOURD\'HUI · 17H15'))}</div></div>
+  <div style="position:absolute;left:0;right:0;top:1335px;text-align:center;font-family:'Barlow Condensed';font-weight:600;font-size:46px;letter-spacing:6px;color:#CFE9FF">{e(f.get('stade','').upper())}</div>
+  <div style="position:absolute;left:0;right:0;top:1705px;text-align:center;font-family:'Barlow Condensed';font-weight:700;font-size:38px;letter-spacing:8px;color:#5AB6F1">ANGERSDIRECT.FR</div>
+</div></body></html>'''
+
+
 def main():
     f = json.loads(pathlib.Path(sys.argv[1]).read_text())
     W, H = TAILLES[f.get('format', 'post')]
     out = pathlib.Path(sys.argv[2]).resolve()
     tmp = out.with_suffix('.html')
-    tmp.write_text(page_nuit({**f, 'eclair': True}) if f.get('format') == 'une_choc' else page_nuit(f) if f.get('format') == 'nuit' else page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
+    tmp.write_text(page_une_choc_story(f) if f.get('format') == 'une_choc_story' else page_nuit({**f, 'eclair': True}) if f.get('format') == 'une_choc' else page_nuit(f) if f.get('format') == 'nuit' else page_duel2(f) if f.get('format') == 'duel2' else page_impact(f) if f.get('format') == 'impact' else page_duel(f) if f.get('format') == 'duel' else page_une(f) if f.get('format') == 'une' else page(f))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': W, 'height': H})
