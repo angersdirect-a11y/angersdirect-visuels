@@ -12,7 +12,7 @@ from PIL import Image, ImageFilter, ImageEnhance
 W, H = 1080, 1920
 src = Image.open(sys.argv[1]).convert('RGB')
 if src.size == (W, H):
-    src.save(sys.argv[2]); print('ok (déjà 1080x1920)', sys.argv[2]); sys.exit()
+    src.save(sys.argv[2]); __import__('auteur').signer(sys.argv[2]); print('ok (déjà 1080x1920)', sys.argv[2]); sys.exit()
 r = max(W / src.width, H / src.height)
 fond = src.resize((round(src.width * r), round(src.height * r)), Image.LANCZOS)
 fond = fond.crop(((fond.width - W) // 2, (fond.height - H) // 2, (fond.width - W) // 2 + W, (fond.height - H) // 2 + H))
@@ -20,4 +20,4 @@ fond = ImageEnhance.Brightness(fond.filter(ImageFilter.GaussianBlur(40))).enhanc
 k = min(W / src.width, H / src.height)
 img = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
 fond.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
-fond.save(sys.argv[2], optimize=True); print('ok', sys.argv[2])
+fond.save(sys.argv[2], optimize=True); __import__('auteur').signer(sys.argv[2]); print('ok', sys.argv[2])

@@ -155,3 +155,9 @@ Incident du 25/11/2026 : le visuel du sondage Harris a été republié avec l'an
 2. Après le push, vérifier que `git log origin/main` contient bien le commit, puis que le fichier téléchargé depuis le lien raw est identique au fichier local (même empreinte md5).
 3. Dans Metricool, utiliser un lien raw épinglé sur le commit (`…/angersdirect-visuels/<sha du commit>/<chemin>`), pas `main`.
 4. Montrer les visuels à Valentin et attendre son accord avant de republier ; programmer en brouillon en attendant.
+
+## Auteur dans les métadonnées (règle du 28/11/2026)
+Chaque image ou vidéo produite par les générateurs porte « angersdirect.fr » comme auteur
+(PNG : Author/Copyright/Source/Software ; JPEG/WebP : EXIF Artist/Copyright ; MP4 : artist/copyright/comment).
+Aucune mention de claude.ai ni d'un autre outil n'est écrite dans les fichiers.
+Pour signer un fichier fait à la main : `python3 outils/auteur.py fichier.png` (ou un dossier entier).

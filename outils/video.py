@@ -171,6 +171,7 @@ def main():
         b.close()
     ff.stdin.close()
     ff.wait()
+    __import__('auteur').signer(str(sortie))
     tmp.unlink()
     wav.unlink(missing_ok=True)
     print('ok', sortie, f'{total:.1f} s', n, 'images')

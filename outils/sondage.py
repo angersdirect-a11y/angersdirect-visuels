@@ -58,6 +58,7 @@ def main():
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': H})
         pg.goto(f'file://{tmp}'); pg.wait_for_load_state('networkidle'); pg.evaluate('document.fonts.ready')
         pg.screenshot(path=str(sortie)); b.close()
+        __import__('auteur').signer(str(sortie))
     tmp.unlink()
     print('ok', sortie)
 

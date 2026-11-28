@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale (aucun droit tiers) : trois verres de dégustation (rouge, rosé, blanc) sur une table,
 grappe de raisin et feuilles de vigne, lumières chaudes floues en fond. Pour les salons et foires aux vins.
 Usage : python3 outils/vin_degustation.py sortie.jpg"""
@@ -83,5 +84,6 @@ with sync_playwright() as p:
     pg = b.new_page(viewport={'width': W, 'height': H})
     pg.set_content(f'<html><body style="margin:0">{svg}</body></html>')
     pg.screenshot(path=sys.argv[1], type='jpeg', quality=90)
+    __import__('auteur').signer(sys.argv[1])
     b.close()
 print('ok', sys.argv[1])

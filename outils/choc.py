@@ -317,6 +317,7 @@ def main():
         pg.goto(f'file://{tmp}')
         pg.wait_for_timeout(400)
         pg.screenshot(path=str(out))
+        __import__('auteur').signer(str(out))
         b.close()
     tmp.unlink()
 

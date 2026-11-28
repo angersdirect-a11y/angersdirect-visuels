@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from PIL import Image, ImageDraw, ImageFilter
 import random
 W,H=2400,1600; S=1
@@ -35,4 +36,5 @@ ctrl(780,1000,0.85,14,(205,205,215),(230,60,80))
 ctrl(1650,700,0.95,-10,(70,70,90),(255,80,120))
 im=im.filter(ImageFilter.GaussianBlur(0.6))
 im.save('/home/claude/angersdirect-visuels/outils/photos/retrogaming-manettes-illustration.jpg',quality=90)
+__import__('auteur').signer('/home/claude/angersdirect-visuels/outils/photos/retrogaming-manettes-illustration.jpg')
 im.resize((800,533)).save('/tmp/claude-0/m.jpg')

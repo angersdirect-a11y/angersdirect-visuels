@@ -245,6 +245,7 @@ def main():
         pg.evaluate('document.fonts.ready')
         pg.wait_for_timeout(500)
         pg.screenshot(path=str(sortie), clip={'x': 0, 'y': 0, 'width': W, 'height': H})
+        __import__('auteur').signer(str(sortie))
         b.close()
     tmp.unlink()
     print('ok', sortie)

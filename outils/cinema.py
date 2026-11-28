@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale : salle de projection au cinéma fantastique (écran avec lune, forêt et château), faisceau du projecteur, spectateurs en silhouette."""
 import numpy as np, math, random
 from PIL import Image, ImageDraw, ImageFilter
@@ -78,4 +79,5 @@ for row,(yb,s) in enumerate([(1180,1.0),(1290,1.25)]):
         x+=int(random.randint(150,200)*s)
 im=im.filter(ImageFilter.GaussianBlur(0.8))
 im.save('outils/photos/cinema-fantastique.jpg',quality=92)
+__import__('auteur').signer('outils/photos/cinema-fantastique.jpg')
 print('ok')

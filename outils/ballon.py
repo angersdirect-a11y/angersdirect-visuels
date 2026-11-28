@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale (générée, libre de droits) : ballon de basket sur fond de salle. Usage : python3 outils/ballon.py -> outils/photos/ballon-basket.jpg"""
 import numpy as np
 from PIL import Image, ImageFilter
@@ -41,3 +42,4 @@ img[m]=ball[m]
 im=Image.fromarray(img.clip(0,255).astype(np.uint8))
 im=im.filter(ImageFilter.GaussianBlur(0.6))
 im.save('outils/photos/ballon-basket.jpg',quality=92)
+__import__('auteur').signer('outils/photos/ballon-basket.jpg')

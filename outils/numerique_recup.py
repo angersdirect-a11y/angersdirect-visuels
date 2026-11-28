@@ -58,5 +58,6 @@ with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1600, 'height': 2000})
     pg.set_content(f'<html><body style="margin:0">{SVG}</body></html>')
     pg.screenshot(path=str(ICI / 'photos/numerique-recup-illustration.jpg'), type='jpeg', quality=90)
+    __import__('auteur').signer(str(ICI / 'photos/numerique-recup-illustration.jpg'))
     b.close()
 print('ok')

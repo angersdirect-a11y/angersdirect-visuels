@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale : radar tourelle au bord d'une route de campagne, au crépuscule.
 Dessin vectoriel (SVG) rendu en JPG, aucun droit tiers.
 Usage : python3 outils/radar.py sortie.jpg"""
@@ -94,5 +95,6 @@ with sync_playwright() as p:
     pg = b.new_page(viewport={'width': W, 'height': H})
     pg.set_content(f'<html><body style="margin:0">{svg}</body></html>')
     pg.screenshot(path=sys.argv[1], type='jpeg', quality=92)
+    __import__('auteur').signer(sys.argv[1])
     b.close()
 print('ok', sys.argv[1])

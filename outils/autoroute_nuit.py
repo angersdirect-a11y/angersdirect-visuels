@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale : autoroute la nuit, chantier balisé (flèches lumineuses orange, cônes), traînées de phares.
 Aucun droit tiers. Usage : python3 outils/autoroute_nuit.py sortie.jpg"""
 import sys
@@ -79,3 +80,4 @@ a += refl * masque
 # grain léger
 a += rng.normal(0, 3, a.shape)
 Image.fromarray(a.clip(0, 255).astype(np.uint8)).save(sys.argv[1], quality=92)
+__import__('auteur').signer(sys.argv[1])

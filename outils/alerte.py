@@ -84,6 +84,7 @@ def main():
         # garde-fou : le contenu ne doit pas déborder du cadre
         bas = pg.evaluate("Math.max(...[...document.querySelectorAll('body *')].map(n => n.getBoundingClientRect().bottom))")
         pg.screenshot(path=str(sortie), clip={'x': 0, 'y': 0, 'width': W, 'height': H})
+        __import__('auteur').signer(str(sortie))
         b.close()
     tmp.unlink()
     print('ok', sortie, 'bas du contenu', int(bas), '/', H)

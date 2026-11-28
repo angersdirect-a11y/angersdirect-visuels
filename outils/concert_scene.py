@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale (aucun droit tiers) : scène de concert vide, projecteurs colorés, micro sur pied.
 Usage : python3 outils/concert_scene.py sortie.jpg"""
 import sys, random
@@ -31,3 +32,4 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}"><defs
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
     pg.set_content(f'<body style="margin:0">{svg}</body>'); pg.screenshot(path=sys.argv[1], type='jpeg', quality=92); b.close()
+    __import__('auteur').signer(sys.argv[1])

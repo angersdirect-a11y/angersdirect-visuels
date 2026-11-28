@@ -44,6 +44,7 @@ def main():
         pg.wait_for_timeout(300)
         bas = pg.evaluate("document.getElementById('paras').getBoundingClientRect().bottom")
         pg.screenshot(path=str(sortie))
+        __import__('auteur').signer(str(sortie))
         b.close()
     tmp.unlink()
     print('ok', sortie, f'bas du texte {bas:.0f} / 1590' + ('  DÉBORDE' if bas > 1590 else ''))

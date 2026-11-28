@@ -1,3 +1,4 @@
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 """Illustration originale : route de campagne la nuit, gyrophares bleus flous et reflets sur l'asphalte mouillé.
 Aucun droit tiers. Usage : python3 outils/gyrophares.py sortie.jpg"""
 import sys, math
@@ -75,3 +76,4 @@ im = Image.fromarray(out).filter(ImageFilter.GaussianBlur(3))
 n = rng.normal(0, 4, (H, W, 1))
 im = Image.fromarray(np.clip(np.asarray(im, np.float32) + n, 0, 255).astype(np.uint8))
 im.save(sys.argv[1], quality=92)
+__import__('auteur').signer(sys.argv[1])
