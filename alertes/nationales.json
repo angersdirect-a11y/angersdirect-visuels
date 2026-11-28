@@ -3822,5 +3822,53 @@
       "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-28-2026"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-afghanistan-kunar-explosion-ecole",
+    "titre": "Afghanistan : explosion près d'une école dans la province de Kunar",
+    "portee": "international",
+    "detectee_le": "2026-11-28T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : explosion accidentelle à l'étranger, bilan provisoire provincial non recoupé, faible impact pour le public français",
+    "sources": [
+      "https://en.apa.az/asia/at-least-six-students-killed-in-blast-beside-school-in-afghanistans-kunar-updated-539081"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-cologne-bonn-drones-vols-suspendus",
+    "titre": "Allemagne : vols suspendus à l'aéroport de Cologne-Bonn après des drones",
+    "portee": "international",
+    "detectee_le": "2026-11-28T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : interruption temporaire",
+    "sources": [
+      "https://en.apa.az/asia/at-least-six-students-killed-in-blast-beside-school-in-afghanistans-kunar-updated-539081"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-ukraine-drones-russie-raffineries",
+    "titre": "Ukraine : vaste attaque de drones sur des sites pétroliers russes",
+    "portee": "international",
+    "detectee_le": "2026-11-28T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, aucun bilan",
+    "sources": [
+      "https://en.apa.az/asia/at-least-six-students-killed-in-blast-beside-school-in-afghanistans-kunar-updated-539081"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-le-havre-flers-incendies",
+    "titre": "Normandie : incendies d'appartements au Havre et à Flers",
+    "portee": "france",
+    "detectee_le": "2026-11-28T10:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : fait divers régional",
+    "sources": [
+      "https://www.ouest-france.fr/faits-divers/incendie/incendie-dans-un-appartement-en-normandie-dans-la-nuit-du-vendredi-27-au-samedi-28-novembre-une-femme-de-70-ans-est-decedee-5cb31af4-eb02-11f1-8e4e-f44a9b15a834"
+    ],
+    "plannerUrls": []
   }
 ]
