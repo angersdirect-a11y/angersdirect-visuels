@@ -3954,5 +3954,30 @@
       "https://www.timesofisrael.com/liveblog-november-28-2026/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-acte-vii-vie-chere-manifestations",
+    "titre": "Manifestations contre la vie chère et les violences faites aux femmes, samedi 28/11",
+    "portee": "france",
+    "detectee_le": "2026-11-28T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : journée de mobilisation dans une série en cours, tensions ponctuelles, pas de paralysie du pays ni bilan officiel grave",
+    "sources": [
+      "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-nouvelle-journee-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes_8304345.html",
+      "https://www.cnews.fr/france/2026-11-28/manifestation-du-28-novembre-le-cortege-selance-de-la-place-de-la-republique"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-russie-1246-drones-ukrainiens",
+    "titre": "La Russie affirme avoir abattu 1 246 drones ukrainiens dans la nuit",
+    "portee": "international",
+    "detectee_le": "2026-11-28T16:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : revendication russe dans une guerre en cours, aucun bilan",
+    "sources": [
+      "https://www.france24.com/fr/europe/20261128-en-direct-la-russie-annonce-l-interception-de-plus-de-1-200-drones-ukrainiens"
+    ],
+    "plannerUrls": []
   }
 ]
