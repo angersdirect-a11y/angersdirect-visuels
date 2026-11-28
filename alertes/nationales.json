@@ -3725,5 +3725,66 @@
       "https://www.politiquematin.fr/marie-christine-dalloz-bfmtv-david-lisnard-titres-sejour-27-novembre-2026"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-el-hierro-pirogue-14-morts",
+    "titre": "Canaries : 14 morts sur une embarcation de migrants au large d'El Hierro",
+    "portee": "international",
+    "detectee_le": "2026-11-28T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faits du vendredi 27/11, hors fenêtre de 3 heures, une seule source",
+    "sources": [
+      "https://english.news.cn/20261128/37bd4526dea7440796bf25a3346f38d6/c.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-sp-france-perspective-negative",
+    "titre": "S&P maintient la note A+ de la France, perspective abaissée à négative",
+    "portee": "france",
+    "detectee_le": "2026-11-28T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : décision financière sans effet immédiat sur la vie quotidienne",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-28-novembre-2026-8-h/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-golfe-oman-pacific-archer",
+    "titre": "Golfe d'Oman : l'armée américaine neutralise un vraquier qui tentait de forcer le blocus iranien",
+    "portee": "international",
+    "detectee_le": "2026-11-28T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : suite d'un blocus en cours, aucun bilan humain",
+    "sources": [
+      "https://aljazeera.com/news/2026/11/27/us-military-says-it-disabled-merchant-ship-trying-to-breach-iran-blockade",
+      "https://www.japantimes.co.jp/news/2026/11/28/world/us-military-fires-ship-iran-blockade/"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-slovaquie-kolackov-incendie",
+    "titre": "Slovaquie : incendie mortel dans un campement à Kolačkov",
+    "portee": "international",
+    "detectee_le": "2026-11-28T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : faits du jeudi 26/11, hors fenêtre de 3 heures",
+    "sources": [
+      "https://english.news.cn/20261128/37bd4526dea7440796bf25a3346f38d6/c.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-gaza-clinique-msf",
+    "titre": "Gaza : frappe sur une clinique MSF",
+    "portee": "international",
+    "detectee_le": "2026-11-28T07:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "conflit israélo-palestinien",
+    "sources": [
+      "https://libnanews.com/lessentiel-en-5-minutes-28-novembre-2026-8-h/"
+    ],
+    "plannerUrls": []
   }
 ]
