@@ -3870,5 +3870,65 @@
       "https://www.ouest-france.fr/faits-divers/incendie/incendie-dans-un-appartement-en-normandie-dans-la-nuit-du-vendredi-27-au-samedi-28-novembre-une-femme-de-70-ans-est-decedee-5cb31af4-eb02-11f1-8e4e-f44a9b15a834"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-equateur-perou-inondations-34-morts",
+    "titre": "Équateur et Pérou : au moins 34 morts dans des inondations",
+    "portee": "international",
+    "detectee_le": "2026-11-28T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : bilan cumulé annoncé vendredi 27/11, hors fenêtre de 3 heures, faible impact pour le public français",
+    "sources": [
+      "https://www.boursorama.com/actualite-economique/actualites/des-milliers-de-personnes-affectees-par-des-inondations-au-perou-et-en-equateur-10b4fe67e4fc2823552902de4bd60eb1"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-moscou-462-drones-ukrainiens",
+    "titre": "Moscou : des centaines de drones ukrainiens dans la nuit",
+    "portee": "international",
+    "detectee_le": "2026-11-28T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, aucun bilan",
+    "sources": [
+      "https://www.presse-evasion.fr/article/revue-presse-28-11-2026"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-pentagone-cyberattaque-possible",
+    "titre": "Pentagone : possible cyberattaque sur le cloud de l'armée de l'air",
+    "portee": "international",
+    "detectee_le": "2026-11-28T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : non confirmé, démenti par le Pentagone",
+    "sources": [
+      "https://www.presse-evasion.fr/article/revue-presse-28-11-2026"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-russie-sous-marin-nucleaire",
+    "titre": "Poutine présente un nouveau sous-marin nucléaire",
+    "portee": "international",
+    "detectee_le": "2026-11-28T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur",
+    "sources": [
+      "https://fr.euronews.com/video/2026/11/28/linfo-du-jour-28-novembre-2026-mi-journee"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-new-york-stewart-cousins-deces",
+    "titre": "Décès d'Andrea Stewart-Cousins, cheffe de la majorité au Sénat de New York",
+    "portee": "international",
+    "detectee_le": "2026-11-28T14:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : personnalité politique locale américaine, décès constaté le 27/11",
+    "sources": [
+      "https://midhudsonnews.com/2026/11/28/senate-majority-leader-andrea-stewart-cousins-dies-at-76-2/"
+    ],
+    "plannerUrls": []
   }
 ]
