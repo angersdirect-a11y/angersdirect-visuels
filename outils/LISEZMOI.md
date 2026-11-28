@@ -13,6 +13,7 @@
   - `numerique-recup-illustration.jpg` : illustration originale générée par `outils/numerique_recup.py` (vieux ordinateurs, écran, téléphones), libre de droits, pour les collectes et le réemploi du numérique
   - `concert-scene-illustration.jpg` : illustration originale générée par `outils/concert_scene.py` (scène de concert vide, projecteurs, micro), libre de droits, pour les concerts reportés ou sans photo
   - `retrogaming-manettes-illustration.jpg` : illustration originale générée par `outils/manettes.py` (deux manettes rétro, confettis pixel), libre de droits, pour le rétrogaming et le jeu vidéo
+  - `stationnement-zone-verte-illustration.jpg` : illustration originale (rue en tuffeau, voitures garées, panneau P et horodateur vert), libre de droits, pour le stationnement
   - `tennis-court-dur-illustration.jpg` : illustration originale (court de tennis bleu en salle, balle, projecteurs), libre de droits, pour le tennis en salle
   - `ballon-basket.jpg` : illustration originale générée par `outils/ballon.py` (aucun droit tiers), pour le basket quand aucune photo libre n'est disponible
 

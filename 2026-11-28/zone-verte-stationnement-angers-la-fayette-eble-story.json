@@ -1,0 +1,29 @@
+{
+ "photo": "outils/photos/stationnement-zone-verte-illustration.jpg",
+ "credit": "",
+ "rubrique": "VILLE",
+ "titre": "La zone verte payante bientôt à La Fayette-Éblé",
+ "points": [
+  {
+   "chiffre": "LUNDI",
+   "texte": "Vote au conseil municipal le 30 novembre"
+  },
+  {
+   "chiffre": "4 AXES",
+   "texte": "Chanzy, Evain, Dupetit-Thouars et boulevard de Strasbourg délimitent le secteur"
+  },
+  {
+   "chiffre": "01/02",
+   "texte": "Entrée en vigueur prévue le 1er février 2027"
+  },
+  {
+   "chiffre": "TARIFS",
+   "texte": "Ceux de la zone verte actuelle, sans changement"
+  }
+ ],
+ "encart": {
+  "label": "RÉSIDENTS",
+  "texte": "Des conditions dédiées sont prévues : gratuité et forfait annuel."
+ },
+ "logo": "bas"
+}
