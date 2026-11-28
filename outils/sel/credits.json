@@ -37,5 +37,17 @@
   "page": "https://www.pexels.com/photo/assorted-clothing-hanging-in-the-clothing-racks-6069079/",
   "licence": "Licence Pexels (libre, sans crédit obligatoire)",
   "usage": "2026-11-22/galeries-recyclettes-ponts-de-ce"
+ },
+ "chalet-bois-noel-guirlandes": {
+  "source": "unsplash",
+  "author": "Maksim Shutov",
+  "page": "https://unsplash.com/photos/rustic-wooden-stall-decorated-with-christmas-lights-rHnEjicRh8U",
+  "licence": "Unsplash License (libre, sans crédit obligatoire)",
+  "usage": "2026-11-28/marche-noel-bouchemaine"
+ },
+ "tennis-court-dur-illustration": {
+  "source": "illustration originale (SVG généré par la rédaction, session veille 28/11)",
+  "licence": "libre de droits",
+  "usage": "2026-11-28/open-angers-loire-trelaze"
  }
 }
