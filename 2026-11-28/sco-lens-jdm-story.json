@@ -1,0 +1,12 @@
+{
+ "sport": "football",
+ "competition": "Ligue 1",
+ "journee": "12e journée",
+ "dom": {"nom": "Angers SCO", "logo": ""},
+ "ext": {"nom": "RC Lens", "logo": ""},
+ "date": "SAMEDI 28 NOVEMBRE",
+ "heure": "17 H 15",
+ "stade": "Stade Raymond-Kopa",
+ "diffusion": "",
+ "type": "jdm_story"
+}
