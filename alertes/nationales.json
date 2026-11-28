@@ -3798,5 +3798,29 @@
       "https://focustaiwan.tw/politics/202611280005"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-mobilisation-samedi-violences-femmes",
+    "titre": "Nouvelle journée de mobilisation samedi 28/11, notamment contre les violences faites aux femmes",
+    "portee": "france",
+    "detectee_le": "2026-11-28T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : journée de mobilisation dans une série en cours, pas de paralysie du pays",
+    "sources": [
+      "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-nouvelle-journee-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes_8304345.html"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-houthis-missile-riyad-intercepte",
+    "titre": "Missile de croisière houthi visant Riyad intercepté par la coalition",
+    "portee": "international",
+    "detectee_le": "2026-11-28T09:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur, une seule source : suite d'une guerre en cours, aucun bilan",
+    "sources": [
+      "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-28-2026"
+    ],
+    "plannerUrls": []
   }
 ]
