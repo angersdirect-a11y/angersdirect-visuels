@@ -3979,5 +3979,30 @@
       "https://www.france24.com/fr/europe/20261128-en-direct-la-russie-annonce-l-interception-de-plus-de-1-200-drones-ukrainiens"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-birmanie-frappe-ecole",
+    "titre": "Birmanie : frappe aérienne de l'armée sur une école de village",
+    "portee": "international",
+    "detectee_le": "2026-11-28T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source : bilan non officiel (opposition), chiffres contradictoires (20 ou 30 morts)",
+    "sources": [
+      "https://www.internazionale.it/ultime-notizie-reuters/2026/11/28/myanmar-military-airstrike-on-village-school-kills-at-least-30-people-opposition-says",
+      "https://democrata.es/fr/international/au-moins-20-morts-dans-une-frappe-aerienne-de-l-armee-birmane"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-deces-bronson-reed",
+    "titre": "Décès du catcheur Bronson Reed à 38 ans",
+    "portee": "international",
+    "detectee_le": "2026-11-28T17:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : personnalité qui n'est pas de tout premier plan",
+    "sources": [
+      "https://www.franceinfo.fr/sports/la-star-du-catch-bronson-reed-decede-a-38-ans_8304387.html"
+    ],
+    "plannerUrls": []
   }
 ]
