@@ -3930,5 +3930,29 @@
       "https://midhudsonnews.com/2026/11/28/senate-majority-leader-andrea-stewart-cousins-dies-at-76-2/"
     ],
     "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-kamtchatka-seisme-6-7",
+    "titre": "Séisme de magnitude 6,7 près de Ielizovo (Kamtchatka, Russie), à 188 km de profondeur",
+    "portee": "international",
+    "detectee_le": "2026-11-28T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "une seule source, trop mineur : séisme profond, faible risque de dégâts, aucune victime rapportée",
+    "sources": [
+      "https://aroundprague.cz/en/news/world/earthquake-today-magnitude-6-7-quake-strikes-near-yelizovo-russia-at-188-km"
+    ],
+    "plannerUrls": []
+  },
+  {
+    "id": "2026-11-28-malouines-tribunal-projet-petrolier",
+    "titre": "Un tribunal soutenu par l'ONU rejette le recours de l'Argentine contre un projet pétrolier au large des Malouines",
+    "portee": "international",
+    "detectee_le": "2026-11-28T15:25:00+01:00",
+    "statut": "ignoree",
+    "raison": "trop mineur : décision judiciaire sans impact pour le grand public français",
+    "sources": [
+      "https://www.timesofisrael.com/liveblog-november-28-2026/"
+    ],
+    "plannerUrls": []
   }
 ]
